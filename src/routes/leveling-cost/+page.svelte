@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['leveling-cost'][$lang]} | mHY-notes</title>
+  <title>{$l10n['leveling-cost'][$lang]}</title>
 </svelte:head>
 
 <h1>{$l10n['leveling-cost'][$lang]}</h1>

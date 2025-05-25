@@ -1,4 +1,4 @@
-# mHY-notes
+# mHY一图流
 
 A collection of simple tools and infographic contents related to games created by miHoYo.
 

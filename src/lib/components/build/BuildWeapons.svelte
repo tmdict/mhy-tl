@@ -21,9 +21,7 @@
       <Icon
         id={weapon.name}
         title={details ? details['name'] : weapon.name}
-        src={isHover === weapon.name
-          ? $images[`/src/lib/img/weapon/ascension/${weapon.name}.png`]
-          : $images[`/src/lib/img/weapon/${weapon.name}.png`]}
+        src={$images[`/src/lib/img/weapon${isHover === weapon.name ? '-ascension/' : '/'}${weapon.name}.png`]}
         rarity={$rarity[weapon.name]}
         size="50px"
         margin="0 2px"

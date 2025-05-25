@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['upgrade-material'][$lang]} | mHY-notes</title>
+  <title>{$l10n['upgrade-material'][$lang]}</title>
 </svelte:head>
 
 <h1>{$l10n['weekly-boss-mat'][$lang]}</h1>

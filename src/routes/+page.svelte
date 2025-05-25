@@ -54,7 +54,7 @@
 </script>
 
 <svelte:head>
-  <title>mHY-notes</title>
+  <title>mHY一图流</title>
 </svelte:head>
 
 <svelte:component this={top[$lang]} />

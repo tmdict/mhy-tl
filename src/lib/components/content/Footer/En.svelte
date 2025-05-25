@@ -1,1 +1,1 @@
-Have a question? <a href="https://github.com/tmdict/mhy-notes/issues">Contact us</a>
+Have a question? <a href="https://github.com/tmdict/mhy-tl/issues">Contact us</a>

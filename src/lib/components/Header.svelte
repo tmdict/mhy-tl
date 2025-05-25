@@ -43,12 +43,12 @@
 
       <div class="content-col nav">
         <div id="name">
-          mHY<span class="highlight">notes</span>
+          mHY<span class="highlight">一图流</span>
         </div>
         <div class="content-row icons">
           <LangSelect />
           <div id="svg-icons">
-            <a class="last" href="https://github.com/tmdict/mhy-notes"><GitIcon /></a>
+            <a class="last" href="https://github.com/tmdict/mhy-tl"><GitIcon /></a>
             <div
               class="theme-toggle"
               class:spin-left={spin}

@@ -57,7 +57,7 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['craftable-weapons'][$lang]} | mHY-notes</title>
+  <title>{$l10n['craftable-weapons'][$lang]}</title>
 </svelte:head>
 
 <h1>{$l10n['craftable-weapons'][$lang]}</h1>
@@ -88,7 +88,7 @@
               <div class="weapon-icon" role="presentation">
                 <Icon
                   id={weapon}
-                  src={$images[`/src/lib/img/weapon/ascension/${weapon}.png`]}
+                  src={$images[`/src/lib/img/weapon-ascension/${weapon}.png`]}
                   rarity={$rarity[weapon]}
                   hasTooltip={true}
                   tooltipContent={`

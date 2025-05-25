@@ -43,7 +43,7 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['character-builds'][$lang]} | mHY-notes</title>
+  <title>{$l10n['character-builds'][$lang]}</title>
 </svelte:head>
 
 <h1>{$l10n['character-builds'][$lang]}</h1>

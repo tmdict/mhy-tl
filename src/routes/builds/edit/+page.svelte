@@ -80,7 +80,7 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['build-editor'][$lang]} | mHY-notes</title>
+  <title>{$l10n['build-editor'][$lang]}</title>
 </svelte:head>
 
 <h1>{$l10n['build-editor'][$lang]}</h1>

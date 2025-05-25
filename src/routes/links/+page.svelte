@@ -177,7 +177,7 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['useful-links'][$lang]} | mHY-notes</title>
+  <title>{$l10n['useful-links'][$lang]}</title>
 </svelte:head>
 
 <h1>{$l10n['useful-links'][$lang]}</h1>

@@ -24,7 +24,7 @@
 
 <svelte:head>
   {#if validator.validateBuild(build, $lang)}
-    <title>{$characters[build.character].data[$lang].name} · {build.name[$lang]} | mHY-notes</title>
+    <title>{$characters[build.character].data[$lang].name} · {build.name[$lang]}</title>
   {/if}
 </svelte:head>
 

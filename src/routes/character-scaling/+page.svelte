@@ -82,7 +82,7 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['character-scaling'][$lang]} | mHY-notes</title>
+  <title>{$l10n['character-scaling'][$lang]}</title>
 </svelte:head>
 
 <h1>{$l10n['character-scaling'][$lang]}</h1>
