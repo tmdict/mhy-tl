@@ -57,4 +57,3 @@ function createFilters() {
 
 export const buildsFilters = createFilters();
 export const charScalingFilters = createFilters();
-export const hsrBuildsFilters = createFilters();
