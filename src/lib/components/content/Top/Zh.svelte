@@ -5,7 +5,7 @@
 <Top>
   <span slot="intro"
     ><p>
-      mHY一图流是一个提供跟<a href="https://www.mihoyo.com/">miHoYo</a>的游戏相关的小工具和信息的网站。其内容注重构造简单，以便用于快速使用以及参考。
+      mHY一图流是一个提供跟原神相关的一图流网站。其内容注重构造简单，以便用于快速使用以及参考。
     </p></span
   >
 </Top>
