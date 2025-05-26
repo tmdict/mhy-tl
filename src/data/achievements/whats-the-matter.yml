@@ -1,0 +1,16 @@
+---
+achievement: whats-the-matter
+version: "3.0"
+achievementType: "wonders-of-the-world"
+region: sumeru
+checklist: 3
+name: "What’s the Matter?"
+description: "Enjoy three of Jafar’s dishes."
+commission:
+- "Eat and Learn"
+notes: | 
+  Completing all three versions of the commission grants the achievement.
+checklistItem:
+  1: "Delicious Minty Bean Soup"
+  2: "Delicious Panipuri"
+  3: "Delicious Shawarma Wrap"

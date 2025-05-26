@@ -1,0 +1,14 @@
+---
+achievement: a-question-of-diet
+version: "2.0"
+achievementType: "wonders-of-the-world"
+region: inazuma
+checklist: 1
+name: "A Question of Diet"
+description: "Help Parvaneh proofread all the recipes."
+commission:
+- "The Gourmet Supremos: Foodie Quiz"
+notes: | 
+  Answering all three questions correctly will grant Wonders of the World achievement “A Question of Diet”. Unique questions are not required.
+checklistItem:
+  1: "The Gourmet Supremos: Foodie Quiz"

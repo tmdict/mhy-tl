@@ -1,0 +1,18 @@
+---
+achievement: kalimis-fungus
+version: "3.0"
+achievementType: "wonders-of-the-world"
+region: sumeru
+checklist: 1
+name: "Kalimi’s Fungus"
+description: "Watch Hatim make a killing on the exchange!"
+commission:
+- "Gold Devouring and Mora Gathering"
+notes: | 
+  After getting the initial commission “Gold Devouring and Mora Gathering”, you will receive this achievement if the follow-up commission is the one where Hatim makes a fortune.
+  
+  Getting the “Bargain-Hunting” version will lead to the “When Wealth Comes A-Knockin’” achievement. Other follow-ups yield no achievements.
+
+  Follow-up commission seems to be completely random and not affected by the type and quality of food used.
+checklistItem:
+  1: "Fortune Version"

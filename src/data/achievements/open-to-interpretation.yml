@@ -1,0 +1,25 @@
+---
+achievement: open-to-interpretation
+version: "1.0"
+achievementType: "wonders-of-the-world"
+region: liyue
+checklist: 4
+name: "Open to Interpretation"
+commission:
+- "Good Sign"
+description: "Ruin 4 signs of an imminent romance."
+notes: |
+  There are 5 signs but each commission will only give you two at random. Four have two possible outcomes, so at minimum you need to do this commission 5 times to unlock both achievements.
+
+  Ruining 4 “signs of an imminent romance” grants the hidden achievement “Open to Interpretation”:
+  1. Killing the pigeons
+  2. Scaring the dogs away
+  3. Harvesting or killing the fish or the cat
+  4. Burning or blowing away the leaves
+
+  (Finding all 5 “signs of an imminent romance” grants the achievement “Love is All Around”)
+checklistItem:
+  1: "Killing the pigeons"
+  2: "Scaring the dogs away"
+  3: "Harvesting or killing the fish or the cat"
+  4: "Burning or blowing away the leaves"

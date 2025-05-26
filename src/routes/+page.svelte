@@ -1,5 +1,5 @@
 <script>
-  import En from '$lib/components/content/Top/En.svelte';
+  import Top from '$lib/components/content/Top.svelte';
 
   const links = [
     {
@@ -48,7 +48,7 @@
   <title>mHY一图流</title>
 </svelte:head>
 
-<En />
+<Top />
 
 {#each links as link, i}
   <a class:first={i === 0} href="/{link.url}">

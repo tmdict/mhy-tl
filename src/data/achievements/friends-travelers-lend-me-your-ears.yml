@@ -1,0 +1,17 @@
+---
+achievement: friends-travelers-lend-me-your-ears
+version: "1.0"
+achievementType: "stone-harbors-nostalgia-series-i"
+region: liyue
+checklist: 2
+name: "Friends, Travelers, Lend Me Your Ears…"
+description: "Finish listening to the tale of the Ring of Raining Blades in “Cliffhanger.”"
+commission:
+- "Cliffhanger"
+notes: |
+  All three NPCs will appear during the commission (prior to version 3.5 only two random NPCs would appear). Each will give you a different story excerpt.
+
+  Choosing The Wrath of Haishan will give you the “Once Upon a Time…” achievement.
+checklistItem:
+  1: "Ring of Raining Blades - Part I"
+  2: "Ring of Raining Blades - Part II"

@@ -1,0 +1,16 @@
+---
+achievement: telling-it-how-it-is
+version: "1.0"
+achievementType: "snezhnaya-does-not-believe-in-tears-series-i"
+region: mondstadt
+checklist: 3
+name: "Telling It How It Is"
+description: "Gather intelligence concerning Snezhnaya in “Tales of Winter.”"
+commission:
+- "Tales of Winter"
+notes: |
+  Completing “Tales of Winter” after selecting each of the 3 questions (by completing the commission at least 3 times) will grant the achievement “Telling It How It Is”. 
+checklistItem:
+  1: "Fatui"
+  2: "Delusion"
+  3: "Tsaritsa"

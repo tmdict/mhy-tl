@@ -1,0 +1,16 @@
+---
+achievement: relaxation-therapy
+version: "3.0"
+achievementType: "wonders-of-the-world"
+region: sumeru
+checklist: 3
+name: "Relaxation Therapy"
+description: "Fulfill the 3 patients’ wishes."
+commission:
+- "Doctor’s Orders"
+notes: | 
+  This achievement is granted after giving all three patients their medicine, and talking to them again immediately afterwards to give them an additional item.
+checklistItem:
+  1: "Gurgen’s Medicine: Helped with weeds"
+  2: "Azra’s Medicine: Gave Sugar x1"
+  3: "Aftab’s Medicine: Gave Delicious Steak x1"

@@ -1,0 +1,15 @@
+---
+achievement: level-up
+version: "1.0"
+achievementType: "wonders-of-the-world"
+region: liyue
+checklist: 2
+name: "Level Up"
+commission:
+- "Stairway to Wangshu"
+description: "Help Huai’an repair Wangshu Inn’s broken bridge."
+notes: |
+  Completing both parts of this quest will award the achievement “Level Up”.
+checklistItem:
+  1: "1"
+  2: "2"

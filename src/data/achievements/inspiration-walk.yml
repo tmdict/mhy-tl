@@ -1,0 +1,21 @@
+---
+achievement: inspiration-walk
+version: "5.0"
+achievementType: "wonders-of-the-world"
+region: natlan
+checklist: 1
+name: "Inspiration Walk"
+description: "Help Zicheng gather inspiration for poetry…?"
+commission:
+- "Sharpshooter on Hand"
+notes: | 
+  The commission has three different versions and each version has a side task. A notice stating “Camera has been adjusted to a suitable angle” will be shown if the player’s camera is correctly facing the side task’s target.
+
+  Side task:
+  - Courier’s Longhouse (17:00 – 18:00): Take a photo of the Yumkasaurus mural located next to the teleport waypoint south of the Courier’s Longhouse.
+  - Stage Tepetl (11:00 – 13:00): Take a photo of Muhuru’s Gemporium, including its gems.
+  - Djembe Studios (06:00 – 08:00): Take two more photos of popular stores with unique signs (Xochicuicatl Records and Atlahua’s Net).
+
+  Completing both the main task and the hidden side task of any location grants the achievement.
+checklistItem:
+  1: "Sharpshooter on Hand"

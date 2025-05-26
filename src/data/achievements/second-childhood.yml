@@ -1,0 +1,19 @@
+---
+achievement: second-childhood
+version: "4.0"
+achievementType: "wonders-of-the-world"
+region: fontaine
+checklist: 4
+name: "Second Childhood"
+description: "Play with the kids, and witness their story."
+commission:
+- "Their Childhood"
+- "Their Childhood: Time Waits for No One"
+- "Their Childhood: City Caper"
+notes: | 
+  Complete “Their Childhood” twice to trigger follow-up daily commission “Their Childhood: Time Waits for No One”. Completing this commission once unlocks the daily commission “Their Childhood: City Caper” which grants the achievement.
+checklistItem:
+  1: "Their Childhood x1"
+  2: "Their Childhood x2"
+  3: "Their Childhood: Time Waits for No One"
+  4: "Their Childhood: City Caper"

@@ -1,0 +1,25 @@
+---
+achievement: prelude-to-the-journey
+version: "2.4"
+achievementType: "wonders-of-the-world"
+region: liyue
+checklist: 4
+name: "Prelude to the Journey"
+commission:
+- "Pirate Invasion, in Liyue Harbor!"
+- "Ahoy! A Pirate's Growth for Ye!"
+- "Troubles Traveling Through Tributaries"
+- "The Little Pirate Goes Out to Sea"
+description: "A young man is about to embark on a long journey…"
+notes: |
+  Granted after completing the following series of daily commissions:
+
+  1. Pirate Invasion, in Liyue Harbor! (Receive the “Pirates! Argh!” achievement)
+  2. Ahoy! A Pirate's Growth for Ye!
+  3. Troubles Traveling Through Tributaries
+  4. The Little Pirate Goes Out to Sea
+checklistItem:
+  1: "Pirate Invasion, in Liyue Harbor!"
+  2: "Ahoy! A Pirate's Growth for Ye!"
+  3: "Troubles Traveling Through Tributaries"
+  4: "The Little Pirate Goes Out to Sea"

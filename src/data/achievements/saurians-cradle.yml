@@ -1,0 +1,16 @@
+---
+achievement: saurians-cradle
+version: "5.0"
+achievementType: "wonders-of-the-world"
+region: natlan
+checklist: 3
+name: "Saurian’s Cradle"
+description: "Become friends with a little Yumkasaur."
+commission:
+- "How to Make Friends"
+notes: | 
+  Complete the quest three times, each time choosing the option to comfort the Yumkasaurus, grants the grants the achievement.
+checklistItem:
+  1: "Comfort the Yumkasaurus x1"
+  2: "Comfort the Yumkasaurus x2"
+  3: "Comfort the Yumkasaurus x3"

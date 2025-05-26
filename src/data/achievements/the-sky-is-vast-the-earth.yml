@@ -1,0 +1,16 @@
+---
+achievement: the-sky-is-vast-the-earth
+version: "3.0"
+achievementType: "wonders-of-the-world"
+region: sumeru
+checklist: 3
+name: "The Sky is Vast; The Earth…"
+commission:
+- "To Measure the World!"
+description: "Help Farghani perform measurements."
+notes: | 
+  Complete all versions of “To Measure the World!”.
+checklistItem:
+  1: "Defeating monsters"
+  2: "Setting up beacons"
+  3: "Retrieving up beacons"

@@ -1,0 +1,14 @@
+---
+achievement: boom-shaka-laka-more-boom-shaka-laka
+version: "2.0"
+achievementType: "wonders-of-the-world"
+region: inazuma
+checklist: 1
+name: "Boom Shaka-Laka, More Boom-Shaka-Laka"
+description: "Consult Xiangling regarding special cooking methods"
+commission:
+- "The Gourmet Supremos: Breakthrough Thinking"
+notes: | 
+  To complete this achievement, during the commission “The Gourmet Supremos: Breakthrough Thinking” instead of giving the Jueyun Chili and Fowl to Chef Mao, talk to Xiangling who is near the waypoint southwest of Qingce Village.
+checklistItem:
+  1: "The Gourmet Supremos: Breakthrough Thinking"

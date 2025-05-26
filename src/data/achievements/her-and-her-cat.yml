@@ -1,0 +1,25 @@
+---
+achievement: her-and-her-cat
+version: "2.1"
+achievementType: "wonders-of-the-world"
+region: inazuma
+checklist: 4
+name: "Her and Her Cat"
+description: "Follow Neko up Mt. Yougou to find “Hibiki”’s trail."
+commission:
+- "A Fishy Flavor"
+- "Shrine Cleanup"
+- "The Cat’s Trail"
+notes: | 
+  Complete “Neko Is a Cat” World Quest series, and 4 total completions of any of the following daily commission:
+
+  - A Fishy Flavor
+  - Shrine Cleanup
+  - The Cat’s Trail
+
+  This unlocks the World Quest “The Narukami Trail”, completing it grants the achievement.
+checklistItem:
+  1: "1"
+  2: "2"
+  3: "3"
+  4: "4"

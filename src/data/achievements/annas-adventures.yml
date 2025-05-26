@@ -1,0 +1,33 @@
+---
+achievement: annas-adventures
+version: "2.4"
+achievementType: "wonders-of-the-world"
+region: mondstadt
+checklist: 8
+name: "Anna’s Adventures"
+description: "Help Anna become an adventurer."
+commission:
+- "Miracle Medicine"
+- "Recuperating From a Severe Illness"
+- "Adventurer Exam: Battle Tactics"
+- "Adventurer Exam: The Art of Adventure"
+- "Adventurer Exam: Taking Flight"
+- "Anna the Adventurer!"
+notes: | 
+  Complete “Anna the Adventurer!” to receive the achievement. To unlock the quest you need to complete the following series of daily commissions:
+
+  1. Miracle Medicine x3
+  2. Recuperating From a Severe Illness x3 (Receive “Marvelous Medicine” achievement on first completion)
+  3. Adventurer Exam: Battle Tactics
+  4. Adventurer Exam: The Art of Adventure
+  5. Adventurer Exam: Taking Flight (need to give right answers to receive next commission, select the first choice for all three questions: “One person per glider” “To select appropriate take-off points and to assume the correct take-off posture” and “Select an appropriate landing spot, and do not fold your wind glider in abruptly”)
+  6. Anna the Adventurer!
+checklistItem:
+  1: "Miracle Medicine x3"
+  2: "Recuperating From a Severe Illness - Windmill"
+  3: "Recuperating From a Severe Illness - Archon Statue"
+  4: "Recuperating From a Severe Illness - Cathedral"
+  5: "Adventurer Exam: Battle Tactics"
+  6: "Adventurer Exam: The Art of Adventure"
+  7: "Adventurer Exam: Taking Flight"
+  8: "Anna the Adventurer!"

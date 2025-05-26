@@ -1,7 +1,7 @@
 <script>
   import ExportData from '$lib/components/ExportData.svelte';
   import ImportData from '$lib/components/ImportData.svelte';
-  import ManageDataEn from '$lib/components/content/ManageData/En.svelte';
+  import ManageData from '$lib/components/content/ManageData.svelte';
 
   let show = false;
 </script>
@@ -13,7 +13,7 @@
       <ImportData /> · <ExportData />
     </p>
     <p class="tip">
-      <svelte:component this={ManageDataEn} />
+      <ManageData />
     </p>
   </div>
 {/if}

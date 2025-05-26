@@ -1,0 +1,21 @@
+---
+achievement: in-the-name-of-favonius
+version: "1.0"
+achievementType: "wonders-of-the-world"
+region: mondstadt
+checklist: 4
+name: "In the Name of Favonius"
+description: "Witness Jilliana's tale."
+commission:
+- "A Surprise Gift"
+notes: | 
+  Completing Vile's version grants the achievement “In the Name of Favonius”.
+
+  The first time you get “A Surprise Gift”, you are locked into Marjorie’s version. The second time, an option for Quinn is unlocked. The third time, Sara’s version is unlocked, and Vile’s is unlocked last.
+  
+  You do not need to choose the new option to unlock the next option. For example, Vile’s option will be unlocked even if you played only Marjorie's version for the previous three times.
+checklistItem:
+  1: "Marjorie"
+  2: "Quinn"
+  3: "Sara"
+  4: "Vile"

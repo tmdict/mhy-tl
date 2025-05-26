@@ -1,0 +1,16 @@
+---
+achievement: aha-whats-on-the-hook
+version: "3.0"
+achievementType: "wonders-of-the-world"
+region: sumeru
+checklist: 3
+name: "Aha! What's on the Hook?"
+description: "Fish some strange things up with Kayvan…"
+commission:
+- "Supreme Hookshot?"
+notes: | 
+  Completing this commission three times (any version) unlocks the World Quest “Cost-Effective Hook” the following day, completing it grants the achievement.
+checklistItem:
+  1: "Special Mushroom Version"
+  2: "Special Bird Eggs Version"
+  3: "Zaytun Peach Version"

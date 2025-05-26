@@ -1,0 +1,18 @@
+---
+achievement: when-wealth-comes-a-knockin
+version: "3.0"
+achievementType: "wonders-of-the-world"
+region: sumeru
+checklist: 1
+name: "When Wealth Comes A-Knockin’"
+description: "Give Hatim some Apple Cider."
+commission:
+- "Gold Devouring and Mora Gathering"
+notes: | 
+  After getting the initial commission “Gold Devouring and Mora Gathering”, you will receive this achievement if the follow-up commission is the one where Hatim goes bargain-hunting.
+  
+  Getting the “Fortune” version will lead to the “Kalimi’s Fungus” achievement. Other follow-ups yield no achievements.
+
+  Follow-up commission seems to be completely random and not affected by the type and quality of food used.
+checklistItem:
+  1: "Bargain-Hunting Version"

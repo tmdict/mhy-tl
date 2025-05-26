@@ -4,7 +4,7 @@
   import { buildsFilters } from '@store/filterlist';
   import { localData } from '@store/localdata';
   import Build from '$lib/components/build/Build.svelte';
-  import BuildFaqEn from '$lib/components/content/BuildFaq/En.svelte';
+  import BuildFaq from '$lib/components/content/BuildFaq.svelte';
   import BuildFilter from '$lib/components/build/BuildFilter.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
 
@@ -13,7 +13,6 @@
   let filteredBuilds = $builds;
   let filteredSavedBuilds = $localData['builds'];
   buildsFilters.init(Object.keys($buildfilters));
-  const faq = { en: BuildFaqEn };
 
   $: {
     filteredBuilds = filterBuilds($builds, Object.values($buildsFilters));
@@ -59,7 +58,7 @@
 </div>
 {#if showFaq}
   <div id="faq">
-    <svelte:component this={faq.en} />
+    <BuildFaq />
   </div>
 {/if}
 <div id="content">

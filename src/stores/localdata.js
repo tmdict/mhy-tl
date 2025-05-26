@@ -2,7 +2,7 @@ import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
 function createLocalData() {
-  const importedAchievements = import.meta.glob('../../data/achievements/*.yml', { eager: true });
+  const importedAchievements = import.meta.glob('@data/achievements/*.yml', { eager: true });
 
   const defaultData = {
     builds: [],

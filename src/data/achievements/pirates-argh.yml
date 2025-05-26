@@ -1,0 +1,16 @@
+---
+achievement: pirates-argh
+version: "1.0"
+achievementType: "wonders-of-the-world"
+region: liyue
+checklist: 3
+name: "Pirates! Argh!"
+commission:
+- "Pirate Invasion, in Liyue Harbor!"
+description: "Play a game of pirates with Little Lulu, Little Fei, and Little Meng."
+notes: |
+  Complete all three versions of the quest.
+checklistItem:
+  1: "Little Meng"
+  2: "Little Lulu"
+  3: "Little Fei"

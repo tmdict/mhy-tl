@@ -2,29 +2,29 @@
   import Fuse from 'fuse.js';
   import cloneDeep from 'lodash.clonedeep';
   import { slide } from 'svelte/transition';
-  import { achievements } from '@store/gamedata';
   import { localData } from '@store/localdata';
   import Achievement from '$lib/components/Achievement.svelte';
+  import AchievementFaq from '$lib/components/content/AchievementFaq.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
-  import AchievementFaqEn from '$lib/components/content/AchievementFaq/En.svelte';
   import { highlight } from '$lib/util/highlight';
+
+  const achievementData = import.meta.glob('@data/achievements/*.yml', { eager: true });
+  const achievements = Object.values(achievementData).map((d) => d.default);
 
   let searchTerm = '';
   let filters = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'fontaine', 'natlan'];
 
-  let filteredList = cloneDeep($achievements);
+  let filteredList = cloneDeep(achievements);
   let currentFilter = { field: '', value: '' };
   let sortByCompletion = false;
   let showFaq = false;
-
-  const faq = { en: AchievementFaqEn };
 
   $: {
     // 1. filter by search
     if (searchTerm !== '') {
       // Update what language to search for
       let minMatchCharLen = (searchTerm.length > 3) ? searchTerm.length - 2 : 2
-      const fuse = new Fuse($achievements, {
+      const fuse = new Fuse(achievements, {
         ...{
           includeMatches: true,
           minMatchCharLength: minMatchCharLen,
@@ -33,7 +33,7 @@
           ignoreLocation: true,
           threshold: 0.0,
         },
-        keys: [{ name: 'en.commission', weight: 2 }, 'en.name', 'en.description']
+        keys: [{ name: 'commission', weight: 2 }, 'name', 'description']
       });
       const results = fuse.search(searchTerm);
       if (results.length > 0) {
@@ -42,7 +42,7 @@
         filteredList = highlight(cloneDeep(results));
       }
     } else {
-      filteredList = cloneDeep($achievements);
+      filteredList = cloneDeep(achievements);
     }
     // 2. filter by static filters
     filteredList =
@@ -66,7 +66,7 @@
   }
 
   function clearAll() {
-    filteredList = cloneDeep($achievements);
+    filteredList = cloneDeep(achievements);
     currentFilter = { field: '', value: '' };
     sortByCompletion = false;
     searchTerm = '';
@@ -74,7 +74,7 @@
 </script>
 
 <svelte:head>
-  <title>Daily Commission Achievements</title>
+  <title>Achievements</title>
 </svelte:head>
 
 <div class="top">
@@ -106,7 +106,7 @@
 
 {#if showFaq}
   <div id="faq" transition:slide>
-    <svelte:component this={faq.en} />
+    <AchievementFaq />
   </div>
 {/if}
 

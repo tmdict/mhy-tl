@@ -1,0 +1,16 @@
+---
+achievement: poet-vs-paycheck
+version: "1.0"
+achievementType: "wonders-of-the-world"
+region: liyue
+checklist: 2
+name: "Poet Vs. Paycheck"
+commission:
+- "One Ship, Two Ships, Three Ships…"
+- "So-Called Work"
+description: "Complete “So-called Work” and receive Linling’s poetry anthology."
+notes: |
+  Incorrectly reporting the ship numbers to Linling in the “One Ship, Two Ships, Three Ships…” commission triggers the “So-Called Work” commission the next day, completing it grants the achievement.
+checklistItem:
+  1: "One Ship, Two Ships, Three Ships…"
+  2: "So-Called Work"

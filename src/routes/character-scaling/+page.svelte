@@ -2,9 +2,9 @@
   import { slide, fade } from 'svelte/transition';
   import { charScalingFilters } from '@store/filterlist';
   import { characters, misc } from '@store/gamedata';
+  import ScalingFaq from '$lib/components/content/ScalingFaq.svelte';
   import ScalingFilter from '$lib/components/scaling/ScalingFilter.svelte';
   import ScalingStatCol from '$lib/components/scaling/ScalingStatCol.svelte';
-  import ScalingFaqEn from '$lib/components/content/ScalingFaq/En.svelte';
 
   const statFilter = [
     'hp',
@@ -31,8 +31,6 @@
   ];
 
   const baseFilter = ['base-stat', 'a', 'e', 'q', 'a1', 'a4', 'constellation', 'sand', 'goblet', 'circlet'];
-
-  const faq = { en: ScalingFaqEn };
 
   const allScalings = Object.keys($misc.scaling.data)
     .sort((a, b) => $characters[b].released.localeCompare($characters[a].released) || b.localeCompare(a))
@@ -80,10 +78,10 @@
 </script>
 
 <svelte:head>
-  <title>Character Stat Scaling</title>
+  <title>Character Scaling</title>
 </svelte:head>
 
-<h1>Character Stat Scaling</h1>
+<h1>Character Scaling</h1>
 
 <div class="menu">
   <a href="/#" on:click|preventDefault={() => (showFilter = !showFilter)}
@@ -96,7 +94,7 @@
 
 {#if showFaq}
   <div id="faq" transition:slide>
-    <svelte:component this={faq.en} />
+    <ScalingFaq />
   </div>
 {/if}
 

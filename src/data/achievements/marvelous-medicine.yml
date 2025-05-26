@@ -1,0 +1,18 @@
+---
+achievement: marvelous-medicine
+version: "1.0"
+achievementType: "wonders-of-the-world"
+region: mondstadt
+checklist: 4
+name: "Marvelous Medicine"
+commission:
+- "Miracle Medicine"
+- "Recuperating From a Severe Illness"
+description: "Cure Anna’s illness."
+notes: |
+  Can be completed three times, after which you can receive the achievement “Marvelous Medicine” by completing “Recuperating From a Severe Illness”.
+checklistItem:
+  1: "Miracle Medicine 1"
+  2: "Miracle Medicine 2"
+  3: "Miracle Medicine 3"
+  4: "Recuperating From a Severe Illness"

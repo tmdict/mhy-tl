@@ -1,0 +1,30 @@
+---
+achievement: is-there-but-one-truth
+version: "2.0"
+achievementType: "wonders-of-the-world"
+region: inazuma
+checklist: 12
+name: "Is There But One Truth…?"
+description: "Witness Ryuuji’s tale."
+commission:
+- "Bantan Sango Case File"
+- "Bantan Sango Case File: The Search"
+- "Bantan Sango Case File: Misdirection"
+- "Bantan Sango Case File: The Right Identity"
+- "Bantan Sango Case File: Case-Closing Time"
+- "Bantan Sango Case File: Cleanup Work"
+notes: | 
+  Complete Bantan Sango Case File series.
+checklistItem:
+  1: "Bantan Sango Case File"
+  2: "Bantan Sango Case File: The Search - Commission"
+  3: "Bantan Sango Case File: The Search - East of Inazuma City"
+  4: "Bantan Sango Case File: The Search - East of Amakane Island"
+  5: "Bantan Sango Case File: The Search - Northeast of Kamisato Estate, at the base of the cliff"
+  6: "Bantan Sango Case File: Misdirection - Commission"
+  7: "Bantan Sango Case File: Misdirection - East of Inazuma City"
+  8: "Bantan Sango Case File: Misdirection - East of Amakane Island"
+  9: "Bantan Sango Case File: Misdirection - Northeast of Kamisato Estate, at the base of the cliff"
+  10: "Bantan Sango Case File: The Right Identity"
+  11: "Bantan Sango Case File: Case-Closing Time"
+  12: "Bantan Sango Case File: Cleanup Work"

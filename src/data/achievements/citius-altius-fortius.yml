@@ -1,0 +1,14 @@
+---
+achievement: citius-altius-fortius
+version: "5.0"
+achievementType: "wonders-of-the-world"
+region: natlan
+checklist: 1
+name: "Citius, Altius, Fortius!"
+description: "Give a perfect training demonstration to Alem."
+commission:
+- "Grow Up Quickly, Littl’Un"
+notes: | 
+  In either version, completing the dig without being in the radius of an explosion or completing the endurance training perfectly‍ grants the achievement.
+checklistItem:
+  1: "Grow Up Quickly, Littl'Un"

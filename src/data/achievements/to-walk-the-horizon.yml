@@ -1,0 +1,24 @@
+---
+achievement: to-walk-the-horizon
+version: "3.3"
+achievementType: "wonders-of-the-world"
+region: liyue
+checklist: 8
+name: "To Walk The Horizon…?"
+description: "Witness Sun Yu’s tale."
+commission:
+- "The Sparrow Studies the Blade"
+- "The Day the Sword Departs"
+notes: | 
+  After completing “The Sparrow Studies the Blade”, finish “The Day the Sword Departs” series of commissions to receive the achievment.
+  
+  Because this is a new achievement, previous completions of “The Sparrow Studies the Blade” do not count and you need to complete it once after version 3.3.
+checklistItem:
+  1: "The Sparrow Studies the Blade"
+  2: "The Day the Sword Departs - Encounter"
+  3: "The Day the Sword Departs - Training 1"
+  4: "The Day the Sword Departs - Training 2"
+  5: "The Day the Sword Departs - Monster fighting"
+  6: "The Day the Sword Departs - Cross-country training"
+  7: "The Day the Sword Departs - Departure (collect soil)"
+  8: "The Day the Sword Departs - Departure (take photo)"

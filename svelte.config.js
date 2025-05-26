@@ -10,7 +10,8 @@ const config = {
     adapter: adapter(),
     appDir: 'bin',
     alias: {
-      '@data': fileURLToPath(new URL('./data', import.meta.url)), // alias to static dir
+      '@dataTmp': fileURLToPath(new URL('./data', import.meta.url)), // alias to static dir
+      '@data': fileURLToPath(new URL('./src/data', import.meta.url)), // alias to data
       '@store': fileURLToPath(new URL('./src/stores', import.meta.url)) // alias to stores
     }
   },

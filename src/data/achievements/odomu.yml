@@ -1,0 +1,14 @@
+---
+achievement: odomu
+version: "1.0"
+achievementType: "olah-series-i"
+region: mondstadt
+checklist: 1
+name: "…Odomu?"
+description: "Successfully conduct cultural exchange with the hilichurls in “Language Exchange.”"
+commission:
+- "Language Exchange"
+notes: |
+  You are granted the achievement upon first-time success.
+checklistItem:
+  1: "Language Exchange"

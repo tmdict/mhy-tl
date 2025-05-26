@@ -1,0 +1,21 @@
+---
+achievement: editorial-opinion
+version: "2.0"
+achievementType: "wonders-of-the-world"
+region: inazuma
+checklist: 4
+name: "Editorial Opinion"
+description: "Help Shigeru and Junkichi return to the right artist path."
+commission:
+- "Is This Novel Amazing?"
+- "This Novel Seems… Problematic?"
+- "This Novel… Seems Familiar?"
+notes: | 
+  During “Is This Novel Amazing?”, siding with Junkichi will unlock the chance to receive “This Novel Seems… Problematic?” while siding with Shigeru will unlock a chance to receive “This Novel… Seems Familiar?”, completing both commissions grants the achievement.
+
+  Submitting the book “Literature Club” first unlocks the “Storytelling Method” World Quest, which grants the “Well, At Least It Ended” achievement.
+checklistItem:
+  1: "Is This Novel Amazing? - Side with Junkichi"
+  2: "Is This Novel Amazing? - Side with Shigeru"
+  3: "This Novel Seems… Problematic?"
+  4: "This Novel… Seems Familiar? - Literature Club"

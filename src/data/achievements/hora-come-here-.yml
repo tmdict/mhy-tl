@@ -1,0 +1,17 @@
+---
+achievement: hora-come-here-
+version: "5.0"
+achievementType: "wonders-of-the-world"
+region: natlan
+checklist: 3
+name: "Hora, Come Here—"
+description: "You’ve had a little too much fun with Hora…"
+commission:
+- "Tending to a Tepetlisaurus"
+- "Tending to a Tepetlisaurus: In Need of a Trim"
+notes: | 
+  Complete “In Need of a Trim” three times, each time petting Hora or squeezing Hora instead of trimming his claws grants the achievement.
+checklistItem:
+  1: "Petting or squeezing x1"
+  2: "Petting or squeezing x2"
+  3: "Petting or squeezing x3"

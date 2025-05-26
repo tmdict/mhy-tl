@@ -4,13 +4,11 @@
   import { misc, rarity, weapons as weaponsData } from '@store/gamedata';
   import { localData } from '@store/localdata';
   import { images } from '@store/site';
+  import CraftableWeaponsFaq from '$lib/components/content/CraftableWeaponsFaq.svelte';
   import Icon from '$lib/components/Icon.svelte';
-  import CraftableWeaponsEn from '$lib/components/content/CraftableWeaponsFaq/En.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
 
   let showFaq = false;
-
-  const faq = { en: CraftableWeaponsEn };
 
   // Initialize craftable weapon data
   if ($localData['billets']) {
@@ -69,7 +67,7 @@
 
 {#if showFaq}
   <div id="faq" transition:slide>
-    <svelte:component this={faq.en} />
+    <CraftableWeaponsFaq />
   </div>
 {/if}
 

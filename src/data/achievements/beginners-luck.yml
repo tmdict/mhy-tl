@@ -1,0 +1,13 @@
+---
+achievement: beginners-luck
+version: "1.0"
+achievementType: "wonders-of-the-world"
+region: liyue
+checklist: 1
+name: "Beginner’s Luck"
+commission:
+- "Diamond in the Rough…"
+description: "Select the highest-value jade on your first try."
+notes: ""
+checklistItem:
+  1: "Diamond in the Rough…"

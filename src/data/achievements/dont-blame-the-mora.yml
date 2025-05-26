@@ -1,0 +1,22 @@
+---
+achievement: dont-blame-the-mora
+version: "3.1"
+achievementType: "wonders-of-the-world"
+region: inazuma
+checklist: 2
+name: "Don’t Blame the Mora!"
+description: "Witness the Gourmet Supremos’ adventures in Sumeru…"
+commission:
+- "The Gourmet Supremos: Foodie Quiz"
+- "The Gourmet Supremos: Cook-Off"
+- "The Gourmet Supremos: Extreme Cookery"
+- "The Gourmet Supremos: Where’d the Ingredients Go?"
+notes: | 
+  Finish all achievements related to the Gourmet Supremos daily commissions in Inazuma (A Question of Diet, Meal For Two, Samurice).
+  
+  Afterwards, get and complete the daily commission “The Gourmet Supremos: Where’d the Ingredients Go?” in Inazuma.
+  
+  Finally, go to Port Ormos and complete the new world quest “Gourmet Supremos: Within Our Duties” to receive the achievement (completing this also removes all Gourmet Supremos commissions from Inazuma).
+checklistItem:
+  1: "Complete previous Inazuma Gourmet Supremos achievements (A Question of Diet, Meal For Two, Samurice)"
+  2: "The Gourmet Supremos: Where’d the Ingredients Go?"
