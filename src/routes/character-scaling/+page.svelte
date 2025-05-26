@@ -1,6 +1,6 @@
 <script>
   import { slide, fade } from 'svelte/transition';
-  import { charScalingFilters } from '@store/filterlist';
+  import { filterlist } from "@store/filterlist.svelte.js"
   import { characters, misc } from '@store/gamedata';
   import ScalingFaq from '$lib/components/content/ScalingFaq.svelte';
   import ScalingFilter from '$lib/components/scaling/ScalingFilter.svelte';
@@ -36,21 +36,19 @@
     .sort((a, b) => $characters[b].released.localeCompare($characters[a].released) || b.localeCompare(a))
     .map((char) => ({ ...$misc.scaling.data[char], id: char }));
 
-  let showFilter = true;
-  let showFaq = false;
-  let filteredScalings = allScalings;
+  let showFilter = $state(true);
+  let showFaq = $state(false);
 
-  charScalingFilters.init(['stat', 'base']);
-  charScalingFilters.updateCommonFilter('base', 'base-stat');
-  statFilter.forEach((stat) => charScalingFilters.updateCommonFilter('stat', stat));
+  filterlist.init(['stat', 'base']);
+  filterlist.updateCommonFilter('base', 'base-stat');
+  statFilter.forEach((stat) => filterlist.updateCommonFilter('stat', stat));
+  //console.log(filterlist.get('stat').common)
 
-  $: filteredScalings = filterScalings(allScalings, $charScalingFilters);
-
-  function filterScalings(list, filters) {
-    return list.filter((item) => {
+  let filteredScalings = $derived.by(() => {
+    return allScalings.filter((item) => {
       for (const base of baseFilter) {
         // Go through each base filter and check if it is selected
-        if (!filters.base.common.includes(base)) {
+        if (!filterlist.get('base').common.includes(base)) {
           continue;
         }
         if (base === 'constellation') {
@@ -59,14 +57,14 @@
             if (
               Object.values(c)
                 .flat()
-                .some((e) => filters.stat.common.includes(e))
+                .some((e) => filterlist.get('stat').common.includes(e))
             ) {
               return true;
             }
           }
         } else {
           // If at least one element in current scaling base is selected in stats filter
-          if (item[base].some((e) => filters.stat.common.includes(e))) {
+          if (item[base].some((e) => filterlist.get('stat').common.includes(e))) {
             return true;
           }
         }
@@ -74,6 +72,13 @@
       // Selected filters not found in current character scaling
       return false;
     });
+  });
+  
+  function preventDefault(fn) {
+    return function (event) {
+      event.preventDefault();
+      fn.call(this, event);
+    };
   }
 </script>
 
@@ -84,12 +89,12 @@
 <h1>Character Scaling</h1>
 
 <div class="menu">
-  <a href="/#" on:click|preventDefault={() => (showFilter = !showFilter)}
+  <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}
     >Filters
     {#if showFilter}-{:else}+{/if}</a
   >
   <span class="menu-separator"></span>
-  <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>FAQ</a>
+  <a href="/#" onclick={preventDefault(() => (showFaq = !showFaq))}>FAQ</a>
 </div>
 
 {#if showFaq}

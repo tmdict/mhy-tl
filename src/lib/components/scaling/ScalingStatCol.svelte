@@ -1,14 +1,10 @@
 <script>
-  import { charScalingFilters } from '@store/filterlist';
+  import { filterlist } from "@store/filterlist.svelte.js"
   import { characters, rarity } from '@store/gamedata';
   import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
-  export let data;
-  export let baseKey;
-  export let isRecommended = false;
-  export let icon = false;
-  export let fill = false;
+  let { data, baseKey, isRecommended = false, icon = false, fill = false } = $props();
 
   const colors = {
     anemo: 'anemo',
@@ -21,7 +17,7 @@
     pyro: 'pyro'
   };
 
-  let windowWidth;
+  let windowWidth = $state(0);
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
@@ -53,8 +49,8 @@
           {#each cstats as cstat, j}
             {j > 0 ? ', ' : ''}
             <span
-              class:highlight={$charScalingFilters.stat.common.includes(cstat) &&
-                $charScalingFilters.base.common.includes(baseKey)}
+              class:highlight={filterlist.get('stat').common.includes(cstat) &&
+                filterlist.get('base').common.includes(baseKey)}
               class={colors[cstat]}>{cstat}</span
             >
           {/each}
@@ -63,8 +59,8 @@
         {i > 0 ? ', ' : ''}
         <span
           class={colors[base]}
-          class:highlight={$charScalingFilters.stat.common.includes(base) &&
-            $charScalingFilters.base.common.includes(baseKey)}
+          class:highlight={filterlist.get('stat').common.includes(base) &&
+            filterlist.get('base').common.includes(baseKey)}
           class:recommended={isRecommended &&
             data['recommended-talent'] &&
             data['recommended-talent'].includes(baseKey)}>{base}</span

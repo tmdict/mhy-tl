@@ -1,13 +1,18 @@
 <script>
-  import { charScalingFilters } from '@store/filterlist';
+  import { filterlist } from "@store/filterlist.svelte.js"
 
-  export let filterHeader;
-  export let filterKey;
-  export let filter;
+  let { filterHeader, filterKey, filter } = $props();
 
   function addAll(filters, type) {
-    charScalingFilters.resetByType(type);
-    filters.forEach((item) => charScalingFilters.updateCommonFilter(type, item));
+    filterlist.resetByType(type);
+    filters.forEach((item) => filterlist.updateCommonFilter(type, item));
+  }
+
+  function preventDefault(fn) {
+    return function (event) {
+      event.preventDefault();
+      fn.call(this, event);
+    };
   }
 </script>
 
@@ -17,15 +22,15 @@
     {#each filter as key}
       <li>
         <a
-          class:active={$charScalingFilters[filterKey].common.includes(key)}
+          class:active={filterlist.get(filterKey).common.includes(key)}
           href="/#"
-          on:click|preventDefault={() => charScalingFilters.updateCommonFilter(filterKey, key)}>{key}</a
+          onclick={preventDefault(() => filterlist.updateCommonFilter(filterKey, key))}>{key}</a
         >
       </li>
     {/each}
-    <li><a href="/#" on:click|preventDefault={() => addAll(filter, filterKey)}>All</a></li>
+    <li><a href="/#" onclick={preventDefault(() => addAll(filter, filterKey))}>All</a></li>
     <li>
-      <a href="/#" on:click|preventDefault={() => charScalingFilters.resetByType(filterKey)}
+      <a href="/#" onclick={preventDefault(() => filterlist.resetByType(filterKey))}
         >Clear All</a
       >
     </li>
