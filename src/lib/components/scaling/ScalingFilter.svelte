@@ -3,16 +3,11 @@
 
   let { filterHeader, filterKey, filter } = $props();
 
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+
   function addAll(filters, type) {
     filterlist.resetByType(type);
     filters.forEach((item) => filterlist.updateCommonFilter(type, item));
-  }
-
-  function preventDefault(fn) {
-    return function (event) {
-      event.preventDefault();
-      fn.call(this, event);
-    };
   }
 </script>
 

@@ -1,5 +1,4 @@
-import { derived } from 'svelte/store';
-import { characters } from '@store/gamedata';
+import { characters2 } from '@store/gamedata';
 import { parser } from '$lib/util/parser';
 
 export const buildtypes = [
@@ -27,25 +26,23 @@ function parseBuilds(buildsData, charactersData) {
   );
 }
 
-export const builds = derived([characters], ([$characters]) => {
-  const buildData = import.meta.glob('../../data/builds/*.yml', { eager: true });
-  return parseBuilds(buildData, $characters);
+// Build Data
+
+const buildData = import.meta.glob('../../data/builds/*.yml', { eager: true });
+export const BUILDS = parseBuilds(buildData, characters2);
+
+// Build Filters
+
+const filters = Object.values(BUILDS).reduce((acc, b) => {
+  b['type'].forEach(t => acc.type.filter.add(t)); // Build type
+  acc['vision'].filter.add(b.attr.vision); // Vision
+  acc['weapon-type'].filter.add(b.attr.weapon); // Weapon type
+  b['artifact'].forEach(sets => sets.set.forEach(s => acc.artifact.filter.add(s))); // Artifacts
+  return acc;
+}, {
+  'type': { type: 'text', filter: new Set() },
+  'vision': { type: 'icon', filter: new Set() },
+  'weapon-type': { type: 'icon', filter: new Set() },
+  'artifact': { type: 'icon', filter: new Set() }
 });
-
-export const buildfilters = derived([builds], ([$builds]) => {
-  const filters = {
-    type: { type: 'text', filter: new Set() },
-    vision: { type: 'icon', filter: new Set() },
-    'weapon-type': { type: 'icon', filter: new Set() },
-    artifact: { type: 'icon', filter: new Set() }
-  };
-
-  Object.values($builds).forEach((b) => {
-    b.type.forEach((t) => filters.type.filter.add(t)); // Build type
-    filters.vision.filter.add(b.attr.vision); // Vision
-    filters['weapon-type'].filter.add(b.attr.weapon); // Weapon type
-    b.artifact.forEach((sets) => sets.set.forEach((s) => filters.artifact.filter.add(s))); // Artifacts
-  });
-
-  return filters;
-});
+export const BUILD_FILTERS = filters;

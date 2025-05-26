@@ -1,23 +1,24 @@
 <script>
   import { slide } from 'svelte/transition';
-  import { builds, buildfilters } from '@store/builds';
+  import { BUILDS, BUILD_FILTERS } from '@store/builds';
   import { buildsFilters } from '@store/filterlist';
+  import { filterlist } from "@store/filterlist.svelte.js"
   import { localData } from '@store/localdata';
   import Build from '$lib/components/build/Build.svelte';
   import BuildFaq from '$lib/components/content/BuildFaq.svelte';
   import BuildFilter from '$lib/components/build/BuildFilter.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
 
-  let expandAllFilters = true;
-  let showFaq = false;
-  let filteredBuilds = $builds;
-  let filteredSavedBuilds = $localData['builds'];
-  buildsFilters.init(Object.keys($buildfilters));
+  let expandAllFilters = $state(true);
+  let showFaq = $state(false);
 
-  $: {
-    filteredBuilds = filterBuilds($builds, Object.values($buildsFilters));
-    filteredSavedBuilds = filterBuilds($localData['builds'], Object.values($buildsFilters));
-  }
+  buildsFilters.init(Object.keys(BUILD_FILTERS));
+  filterlist.init(Object.keys(BUILD_FILTERS));
+
+  let filteredBuilds = $derived(filterBuilds(BUILDS, Object.values(filterlist.all)));
+  let filteredSavedBuilds = $derived(filterBuilds($localData['builds'], Object.values(filterlist.all)));
+
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
 
   function filterBuilds(list, filters) {
     return list.filter((b) => {
@@ -46,13 +47,13 @@
 <h1>Character Builds</h1>
 
 <div class="menu">
-  <a href="/#" class={expandAllFilters ? 'show' : 'collapse'} on:click|preventDefault={() => expandAllFilters = !expandAllFilters}>
+  <a href="/#" class={expandAllFilters ? 'show' : 'collapse'} onclick={preventDefault(() => expandAllFilters = !expandAllFilters)}>
     {#if !expandAllFilters}Expand All{:else}Close All{/if} Filters
   </a>
   <span class="menu-separator"></span>
   <a href="/builds/edit">Create Builds</a>
   <span class="menu-separator"></span>
-  <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>FAQ</a>
+  <a href="/#" onclick={preventDefault(() => (showFaq = !showFaq))}>FAQ</a>
   <span class="menu-separator"></span>
   <ManageData />
 </div>
@@ -64,7 +65,7 @@
 <div id="content">
   {#if expandAllFilters}
     <div id="filter-list" transition:slide={{ duration: 200 }}>
-      {#each Object.entries($buildfilters) as [n, f]}
+      {#each Object.entries(BUILD_FILTERS) as [n, f]}
         <BuildFilter filter={{ name: n, type: f.type, filter: [...f.filter].sort() }} />
       {/each}
     </div>

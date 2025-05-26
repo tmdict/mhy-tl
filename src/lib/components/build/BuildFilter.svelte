@@ -1,17 +1,18 @@
 <script>
-  import { buildsFilters } from '@store/filterlist';
+  import { filterlist } from "@store/filterlist.svelte.js"
   import BuildFilterItem from '$lib/components/build/BuildFilterItem.svelte';
 
-  export let filter;
-  export let showFilter = false;
+  let { filter, showFilter = false } = $props()
   if (['type', 'vision'].includes(filter.name)) {
     showFilter = true;
   }
+
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
 </script>
 
 <div class="filter">
   <h4>
-    <a href="/#" on:click|preventDefault={() => (showFilter = !showFilter)}>  
+    <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}>  
       {filter.name}
       <span class="show">{#if showFilter}-{:else}+{/if}</span>
     </a
@@ -22,11 +23,11 @@
         <BuildFilterItem name={filter.name} type={filter.type} {item} />
       {/each}
       <div>
-        <a class="clear" href="/#" on:click|preventDefault={() => buildsFilters.resetByType(filter.name)}>
+        <a class="clear" href="/#" onclick={preventDefault(() => filterlist.resetByType(filter.name))}>
           Clear
         </a>
         ·
-        <a class="clear" href="/#" on:click|preventDefault={() => buildsFilters.reset()}>
+        <a class="clear" href="/#" onclick={preventDefault(() => filterlist.reset())}>
           Clear All
         </a>
       </div>

@@ -9,6 +9,7 @@ const grouped = Object.values(raw).reduce((acc, d) => {
 
 export const artifacts = readable(grouped.artifact);
 export const characters = readable(grouped.character);
+export const characters2 = grouped.character;
 export const enemies = readable(grouped.enemy);
 export const materials = readable(grouped.material);
 export const weapons = readable(grouped.weapon);
@@ -22,6 +23,3 @@ Object.values(grouped).forEach((data) => {
   });
 });
 export const rarity = readable(rarityData);
-
-const achievementData = import.meta.glob('../../data/achievements/*.yml', { eager: true });
-export const achievements = readable(Object.values(achievementData).map((d) => d.default));

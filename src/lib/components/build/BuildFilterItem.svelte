@@ -1,24 +1,22 @@
 <script>
-  import { buildsFilters } from '@store/filterlist';
+  import { filterlist } from "@store/filterlist.svelte.js"
   import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
-  export let name;
-  export let type;
-  export let item;
+  let { name, type, item } = $props();
 </script>
 
 <div class="filter-item"
-  class:active={$buildsFilters[name].quick === item || $buildsFilters[name].common.includes(item)}
+  class:active={filterlist.get(name).quick === item || filterlist.get(name).common.includes(item)}
   role="presentation"
 >
   <div
     class="quick content-row list-{type === 'icon' ? 'icon' : 'text'}"
-    class:active={$buildsFilters[name].quick === item}
+    class:active={filterlist.get(name).quick === item}
     role="button"
     tabindex="0"
-    on:click={() => buildsFilters.updateQuickFilter(name, item)}
-    on:keydown={() => buildsFilters.updateQuickFilter(name, item)}
+    onclick={() => filterlist.updateQuickFilter(name, item)}
+    onkeydown={() => filterlist.updateQuickFilter(name, item)}
   >
     {#if type === 'icon' && name === 'artifact'}
       <Icon
@@ -54,11 +52,11 @@
   </div>
   <div
     class="common list-{type}"
-    class:active={$buildsFilters[name].common.includes(item)}
+    class:active={filterlist.get(name).common.includes(item)}
     role="button"
     tabindex="0"
-    on:click={() => buildsFilters.updateCommonFilter(name, item)}
-    on:keydown={() => buildsFilters.updateCommonFilter(name, item)}
+    onclick={() => filterlist.updateCommonFilter(name, item)}
+    onkeydown={() => filterlist.updateCommonFilter(name, item)}
   ></div>
 </div>
 

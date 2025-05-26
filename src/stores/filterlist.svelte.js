@@ -2,6 +2,7 @@
 let _filterlist = $state({});
 
 export const filterlist = {
+  get all() { return _filterlist },
   get: (filterType) => { return _filterlist[filterType]; },
   getFilters: () => { return Object.keys(_filterlist); },
   // Given a list of keys, create an empty filter for each key

@@ -30,6 +30,7 @@
     'elemental-burst'
   ];
 
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
   const baseFilter = ['base-stat', 'a', 'e', 'q', 'a1', 'a4', 'constellation', 'sand', 'goblet', 'circlet'];
 
   const allScalings = Object.keys($misc.scaling.data)
@@ -42,7 +43,6 @@
   filterlist.init(['stat', 'base']);
   filterlist.updateCommonFilter('base', 'base-stat');
   statFilter.forEach((stat) => filterlist.updateCommonFilter('stat', stat));
-  //console.log(filterlist.get('stat').common)
 
   let filteredScalings = $derived.by(() => {
     return allScalings.filter((item) => {
@@ -73,13 +73,6 @@
       return false;
     });
   });
-  
-  function preventDefault(fn) {
-    return function (event) {
-      event.preventDefault();
-      fn.call(this, event);
-    };
-  }
 </script>
 
 <svelte:head>
