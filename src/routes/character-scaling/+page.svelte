@@ -2,11 +2,9 @@
   import { slide, fade } from 'svelte/transition';
   import { charScalingFilters } from '@store/filterlist';
   import { characters, misc } from '@store/gamedata';
-  import { l10n, lang } from '@store/site';
   import ScalingFilter from '$lib/components/scaling/ScalingFilter.svelte';
   import ScalingStatCol from '$lib/components/scaling/ScalingStatCol.svelte';
   import ScalingFaqEn from '$lib/components/content/ScalingFaq/En.svelte';
-  import ScalingFaqZh from '$lib/components/content/ScalingFaq/Zh.svelte';
 
   const statFilter = [
     'hp',
@@ -34,7 +32,7 @@
 
   const baseFilter = ['base-stat', 'a', 'e', 'q', 'a1', 'a4', 'constellation', 'sand', 'goblet', 'circlet'];
 
-  const faq = { en: ScalingFaqEn, zh: ScalingFaqZh };
+  const faq = { en: ScalingFaqEn };
 
   const allScalings = Object.keys($misc.scaling.data)
     .sort((a, b) => $characters[b].released.localeCompare($characters[a].released) || b.localeCompare(a))
@@ -82,23 +80,23 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['character-scaling'][$lang]}</title>
+  <title>Character Stat Scaling</title>
 </svelte:head>
 
-<h1>{$l10n['character-scaling'][$lang]}</h1>
+<h1>Character Stat Scaling</h1>
 
 <div class="menu">
   <a href="/#" on:click|preventDefault={() => (showFilter = !showFilter)}
-    >{$l10n['filters'][$lang]}
+    >Filters
     {#if showFilter}-{:else}+{/if}</a
   >
   <span class="menu-separator"></span>
-  <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>{$l10n['faq'][$lang]}</a>
+  <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>FAQ</a>
 </div>
 
 {#if showFaq}
   <div id="faq" transition:slide>
-    <svelte:component this={faq[$lang]} />
+    <svelte:component this={faq.en} />
   </div>
 {/if}
 
@@ -113,21 +111,21 @@
   <div class="header sticky">
     <div class="content-row top">
       <div class="col empty separator"></div>
-      <div class="col mainstat separator">{$l10n['recommended-artifact-mainstats'][$lang]}</div>
-      <div class="col charscaling">{$l10n['character-scaling'][$lang]}</div>
+      <div class="col mainstat separator">Recommended Main Stats</div>
+      <div class="col charscaling">Character Stat Scaling</div>
     </div>
     <div class="content-row">
-      <div class="col name">{$l10n['name'][$lang]}</div>
-      <div class="col base-stat separator">{$l10n['base-stat'][$lang]}</div>
-      <div class="col sand">{$l10n['sand'][$lang]}</div>
-      <div class="col goblet">{$l10n['goblet'][$lang]}</div>
-      <div class="col circlet separator">{$l10n['circlet'][$lang]}</div>
-      <div class="col normal-attack">{$l10n['a'][$lang]}</div>
-      <div class="col elemental-skill">{$l10n['e'][$lang]}</div>
-      <div class="col elemental-burst">{$l10n['q'][$lang]}</div>
-      <div class="col ascension-1">{$l10n['a1'][$lang]}</div>
-      <div class="col ascension-4">{$l10n['a4'][$lang]}</div>
-      <div class="col constellation">{$l10n['constellation'][$lang]}</div>
+      <div class="col name">Name</div>
+      <div class="col base-stat separator">Base Stat</div>
+      <div class="col sand">Sand</div>
+      <div class="col goblet">Goblet</div>
+      <div class="col circlet separator">Circlet</div>
+      <div class="col normal-attack">A</div>
+      <div class="col elemental-skill">E</div>
+      <div class="col elemental-burst">Q</div>
+      <div class="col ascension-1">Ascend 1</div>
+      <div class="col ascension-4">Ascend 4</div>
+      <div class="col constellation">Const</div>
     </div>
   </div>
 

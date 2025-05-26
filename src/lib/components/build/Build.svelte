@@ -1,6 +1,5 @@
 <script>
   import { slide } from 'svelte/transition';
-  import { lang } from '@store/site';
   import { characters } from '@store/gamedata';
   import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
   import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
@@ -30,7 +29,7 @@
 >
   <div
     class="content-row build-info"
-    style={$lang === 'en' ? '--text-size: 0.8rem' : '--text-size: 0.9rem'}
+    style="--text-size: 0.8rem"
   >
     <div class="content-row build-character">
       <BuildCharacter
@@ -39,10 +38,10 @@
       />
       <div class="content-col names">
         <div class="character-name">
-          {$characters[build.character].data[$lang].name}
+          {$characters[build.character].data.en.name}
         </div>
         <div class="build-name">
-          {build.name[$lang] ? build.name[$lang] : build.name[lang.default()]}
+          {build.name.en ? build.name.en : build.name.en}
         </div>
       </div>
     </div>

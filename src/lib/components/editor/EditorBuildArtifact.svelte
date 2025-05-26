@@ -1,14 +1,13 @@
 <script>
   import { availableInputs, buildEditor } from '@store/editor';
   import { artifacts } from '@store/gamedata';
-  import { lang } from '@store/site';
   import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
 
   export let artifactKey;
   const keys = buildEditor.getKeys.artifact(artifactKey);
 
   $: l10n = Object.values($artifacts).reduce((acc, a) => {
-    const name = a['data'] && a['data'][$lang] ? a['data'][$lang]['name'] : a.id;
+    const name = a['data'] && a['data'].en ? a['data'].en['name'] : a.id;
     return { ...acc, [a.id]: name };
   }, {});
 </script>

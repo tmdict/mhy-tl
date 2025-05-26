@@ -1,6 +1,6 @@
 <script>
   import { rarity, weapons as weaponsData } from '@store/gamedata';
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
   export let weapons;
@@ -10,7 +10,7 @@
 
 <div class="content-row align-center">
   {#each weapons as weapon}
-    {@const details = data[weapon.name] ? data[weapon.name].data[$lang] : false}
+    {@const details = data[weapon.name] ? data[weapon.name].data.en : false}
     <div
       class="weapon"
       role="presentation"
@@ -28,8 +28,8 @@
         hasTooltip={true}
         tooltipContent={`
           <span class="heading">${details ? details['name'] : weapon.name}</span><br />
-          <span class="highlight">${$l10n['sub-stat'][$lang]}:</span> ${
-          data[weapon.name] ? $l10n[data[weapon.name].subStat][$lang] : ''
+          <span class="highlight">Sub Stat:</span> ${
+          data[weapon.name] ? data[weapon.name].subStat : ''
         }<br />
           ${
             details

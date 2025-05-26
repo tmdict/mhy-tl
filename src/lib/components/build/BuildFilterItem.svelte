@@ -1,6 +1,6 @@
 <script>
   import { buildsFilters } from '@store/filterlist';
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
   export let name;
@@ -35,7 +35,7 @@
         margin="0 5px 0 0"
       />
       {#if ['vision', 'weapon-type'].includes(name)}
-        {$l10n[item][$lang]}
+        {item}
       {/if}
     {:else if type === 'icon' && name === 'vision'}
       <Icon
@@ -46,10 +46,10 @@
         margin="0 5px 0 0"
       />
       {#if ['vision', 'weapon-type'].includes(name)}
-        {$l10n[item][$lang]}
+        {item}
       {/if}
     {:else}
-      {$l10n[item][$lang]}
+      {item}
     {/if}
   </div>
   <div

@@ -1,5 +1,4 @@
 <script>
-  import { l10n, lang } from '@store/site';
   import { characters } from '@store/gamedata';
   import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
   import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
@@ -21,20 +20,20 @@
 <div class="content-row header">
   <BuildCharacter character={build.character} constellation={build.constellation} size="80px" />
   <div class="content-row name">
-    <h1>{$characters[build.character].data[$lang].name} · {build.name[$lang] ? build.name[$lang] : build.name[lang.default()]} <a href="./build#{link}">#</a></h1>
+    <h1>{$characters[build.character].data.en.name} · {build.name.en ? build.name.en : build.name.en} <a href="./build#{link}">#</a></h1>
   </div>
 </div>
 
 <div class="content-col build">
   <div class="types">
-    <span class="build-heading">{$l10n['type'][$lang]}:</span>
+    <span class="build-heading">Type:</span>
     {#each build.type as type, i}
-      {i !== 0 ? ' · ' : ''}{$l10n[type] ? $l10n[type][$lang] : type}
+      {i !== 0 ? ' · ' : ''}{type}
     {/each}
   </div>
   <div
     class="content-row build-info align-center"
-    style={$lang === 'en' ? '--text-size: 0.8rem' : '--text-size: 0.9rem'}
+    style="--text-size: 0.8rem"
   >
     <div class="content-row">
       <div class="content-row weapons">

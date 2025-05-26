@@ -1,22 +1,19 @@
 <script>
-  import { l10n, lang } from '@store/site';
   import ExportData from '$lib/components/ExportData.svelte';
   import ImportData from '$lib/components/ImportData.svelte';
   import ManageDataEn from '$lib/components/content/ManageData/En.svelte';
-  import ManageDataZh from '$lib/components/content/ManageData/Zh.svelte';
 
   let show = false;
-  const content = { en: ManageDataEn, zh: ManageDataZh };
 </script>
 
-<a href="/#" class="important" on:click|preventDefault={() => (show = !show)}>{$l10n['manage-data'][$lang]}</a>
+<a href="/#" class="important" on:click|preventDefault={() => (show = !show)}>Manage Data</a>
 {#if show}
   <div class="manage-data">
     <p>
       <ImportData /> · <ExportData />
     </p>
     <p class="tip">
-      <svelte:component this={content[$lang]} />
+      <svelte:component this={ManageDataEn} />
     </p>
   </div>
 {/if}

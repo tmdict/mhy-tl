@@ -1,6 +1,6 @@
 <script>
   import { artifacts as artifactsData, rarity } from '@store/gamedata';
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
   export let artifacts;
@@ -13,7 +13,7 @@
 {#each artifacts as artifact, i}
   <div class="content-row" class:divider={i !== 0}>
     {#each artifact.set as set}
-      {@const details = data[set] ? data[set].data[$lang] : false}
+      {@const details = data[set] ? data[set].data.en : false}
       <div class="artifact" role="button" tabindex="0" on:click|stopPropagation on:keydown|stopPropagation>
         <Icon
           id={set}
@@ -27,13 +27,9 @@
           <span class="heading">${details ? details['name'] : set}</span><br />
           ${
             details
-              ? '<span class="highlight">' +
-                $l10n['set-2p-bonus'][$lang] +
-                ':</span> ' +
+              ? '<span class="highlight">2-Piece Bonus:</span> ' +
                 details['2p'] +
-                '<br /><span class="highlight">' +
-                $l10n['set-4p-bonus'][$lang] +
-                ':</span> ' +
+                '<br /><span class="highlight">4-Piece Bonus:</span> ' +
                 details['4p']
               : ''
           }

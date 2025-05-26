@@ -1,7 +1,6 @@
 <script>
   import { buildtypes } from '@store/builds';
   import { buildEditor } from '@store/editor';
-  import { l10n, lang } from '@store/site';
   import EditorAutoComplete from '$lib/components/editor/EditorAutoComplete.svelte';
 
   let selectedOptions = $buildEditor['type'] ? $buildEditor['type'] : [];
@@ -22,19 +21,19 @@
 <div class="content-col">
   <EditorAutoComplete
     id="build-type"
-    label={$l10n['build-type'][$lang]}
-    placeholder={$l10n['build-type-placeholder'][$lang]}
+    label="Build Type"
+    placeholder="Select build type"
     options={buildtypes}
-    l10n={buildtypes.reduce((acc, t) => ({ ...acc, [t]: $l10n[t][$lang] }), {})}
+    l10n={buildtypes.reduce((acc, t) => ({ ...acc, [t]: t }), {})}
     onSubmit={handleSubmit}
   />
 
   <div class="type-label content-row">
     {#each selectedOptions as option}
-      <span class="label">{$l10n[option] ? $l10n[option][$lang] : option}</span>
+      <span class="label">{option}</span>
     {/each}
     {#if selectedOptions.length > 0}
-      <a class="clear" on:click|preventDefault={clearAll} href="/#">{$l10n['clear-all'][$lang]}</a>
+      <a class="clear" on:click|preventDefault={clearAll} href="/#">Clear All</a>
     {/if}
   </div>
 </div>

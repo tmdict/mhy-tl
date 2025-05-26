@@ -1,6 +1,4 @@
 <script>
-  import { l10n, lang } from '@store/site';
-
   const guides = [
     {
       name: 'Keqing Mains',
@@ -177,13 +175,13 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['useful-links'][$lang]}</title>
+  <title>Useful Apps and Links</title>
 </svelte:head>
 
-<h1>{$l10n['useful-links'][$lang]}</h1>
+<h1>Useful Apps and Links</h1>
 
 <div id="content">
-  <h4>{$l10n['guides'][$lang]}</h4>
+  <h4>Guides</h4>
   {#each guides as link, i}
     <div class="content-col link" class:alt={i % 2 === 0}>
       <a href={link.url}>
@@ -198,7 +196,7 @@
     </div>
   {/each}
 
-  <h4>{$l10n['achievements'][$lang]}</h4>
+  <h4>Achievements</h4>
   {#each achievements as link, i}
     <div class="content-col link" class:alt={i % 2 === 0}>
       <a href={link.url}>
@@ -213,7 +211,7 @@
     </div>
   {/each}
 
-  <h4>{$l10n['resources'][$lang]}</h4>
+  <h4>Resources</h4>
   {#each resource as link, i}
     <div class="content-col link" class:alt={i % 2 === 0}>
       <a href={link.url}>

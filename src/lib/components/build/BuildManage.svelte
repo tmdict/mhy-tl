@@ -3,7 +3,6 @@
   import lzstring from 'lz-string';
   import { browser } from '$app/environment';
   import { localData } from '@store/localdata';
-  import { l10n, lang } from '@store/site';
   import { compressBuild, encodeBuild } from '$lib/util/codec';
 
   export let build;
@@ -27,12 +26,12 @@
 </script>
 
 <div class="menu manage">
-  <a on:click|stopPropagation href="/builds/build#{encoded}">{$l10n['link'][$lang]}</a>
+  <a on:click|stopPropagation href="/builds/build#{encoded}">Link</a>
   <span class="menu-separator"></span>
-  <a on:click|stopPropagation href="/builds/edit#{encoded}">{$l10n['edit'][$lang]}</a>
+  <a on:click|stopPropagation href="/builds/edit#{encoded}">Edit</a>
   {#if 'id' in build}
     <span class="menu-separator"></span>
-    <a href="/#" on:click|stopPropagation|preventDefault={deleteBuild}>{$l10n['delete'][$lang]}</a>
+    <a href="/#" on:click|stopPropagation|preventDefault={deleteBuild}>Delete</a>
   {/if}
 </div>
 

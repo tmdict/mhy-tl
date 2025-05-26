@@ -1,6 +1,5 @@
 <script>
   import { buildsFilters } from '@store/filterlist';
-  import { l10n, lang } from '@store/site';
   import BuildFilterItem from '$lib/components/build/BuildFilterItem.svelte';
 
   export let filter;
@@ -13,7 +12,7 @@
 <div class="filter">
   <h4>
     <a href="/#" on:click|preventDefault={() => (showFilter = !showFilter)}>  
-      {$l10n[filter.name][$lang]}
+      {filter.name}
       <span class="show">{#if showFilter}-{:else}+{/if}</span>
     </a
   ></h4>
@@ -24,11 +23,11 @@
       {/each}
       <div>
         <a class="clear" href="/#" on:click|preventDefault={() => buildsFilters.resetByType(filter.name)}>
-          {$l10n['clear'][$lang]}
+          Clear
         </a>
         ·
         <a class="clear" href="/#" on:click|preventDefault={() => buildsFilters.reset()}>
-          {$l10n['clear-all'][$lang]}
+          Clear All
         </a>
       </div>
     </div>

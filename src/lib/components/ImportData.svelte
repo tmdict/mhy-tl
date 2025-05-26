@@ -2,7 +2,6 @@
   import { toast } from '@store/toast';
   import { browser } from '$app/environment';
   import { localData } from '@store/localdata';
-  import { l10n, lang } from '@store/site';
 
   // Support drag and drop in the future
   function getFilesFromInputEvent({ target }) {
@@ -30,7 +29,7 @@
 
 <span class="file-upload">
   <label for="file-import">
-    <span class="import">{$l10n['import-data'][$lang]}</span>
+    <span class="import">Import Data</span>
   </label>
 
   <input

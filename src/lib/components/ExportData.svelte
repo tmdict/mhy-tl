@@ -1,6 +1,5 @@
 <script>
   import { localData } from '@store/localdata';
-  import { l10n, lang } from '@store/site';
 
   function download(content, filename, contentType = 'application/json;charset=utf-8') {
     // Generate date postfix for file name
@@ -21,5 +20,4 @@
   }
 </script>
 
-<a href="/#" on:click|preventDefault={() => download($localData, `genshin.tmdict.com`)}>{$l10n['export-data'][$lang]}</a
->
+<a href="/#" on:click|preventDefault={() => download($localData, `genshin.tmdict.com`)}>Export Data</a>

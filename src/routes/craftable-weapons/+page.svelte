@@ -3,15 +3,14 @@
   import { slide } from 'svelte/transition';
   import { misc, rarity, weapons as weaponsData } from '@store/gamedata';
   import { localData } from '@store/localdata';
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
   import CraftableWeaponsEn from '$lib/components/content/CraftableWeaponsFaq/En.svelte';
-  import CraftableWeaponsZh from '$lib/components/content/CraftableWeaponsFaq/Zh.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
 
   let showFaq = false;
 
-  const faq = { en: CraftableWeaponsEn, zh: CraftableWeaponsZh };
+  const faq = { en: CraftableWeaponsEn };
 
   // Initialize craftable weapon data
   if ($localData['billets']) {
@@ -57,20 +56,20 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['craftable-weapons'][$lang]}</title>
+  <title>Craftable Weapons</title>
 </svelte:head>
 
-<h1>{$l10n['craftable-weapons'][$lang]}</h1>
+<h1>Craftable Weapons</h1>
 
 <div class="menu">
-  <a href="/#" onclick={preventDefault(() => (showFaq = !showFaq))}>{$l10n['faq'][$lang]}</a>
+  <a href="/#" onclick={preventDefault(() => (showFaq = !showFaq))}>FAQ</a>
   <span class="menu-separator"></span>
   <ManageData />
 </div>
 
 {#if showFaq}
   <div id="faq" transition:slide>
-    <svelte:component this={faq[$lang]} />
+    <svelte:component this={faq.en} />
   </div>
 {/if}
 
@@ -83,7 +82,7 @@
             <Icon id="{billet}-{type}" src={$images[`/src/lib/img/billet/${billet}-${type}.png`]} />
           </div>
           {#each Object.entries(weapons) as [weapon, count]}
-            {@const details = $weaponsData[weapon] ? $weaponsData[weapon].data[$lang] : false}
+            {@const details = $weaponsData[weapon] ? $weaponsData[weapon].data.en : false}
             <div class="content-row weapon">
               <div class="weapon-icon" role="presentation">
                 <Icon
@@ -93,8 +92,8 @@
                   hasTooltip={true}
                   tooltipContent={`
                     <span class="heading">${details ? details['name'] : weapon}</span><br />
-                    <span class="highlight">${$l10n['sub-stat'][$lang]}:</span> ${
-                      $weaponsData[weapon] ? $l10n[$weaponsData[weapon].subStat][$lang] : ''
+                    <span class="highlight">Sub Stat:</span> ${
+                      $weaponsData[weapon] ? $weaponsData[weapon].subStat : ''
                   }<br />
                     ${
                       details

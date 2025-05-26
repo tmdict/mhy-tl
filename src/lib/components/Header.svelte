@@ -1,8 +1,5 @@
 <script>
   import { getContext } from 'svelte';
-  import LangSelect from '$lib/components/LangSelect.svelte';
-
-  import { l10n, lang } from '@store/site';
   import GitIcon from '$lib/svg/git.svelte';
   import ToggleDark from '$lib/svg/moon.svelte';
   import ToggleLight from '$lib/svg/sun.svelte';
@@ -46,7 +43,6 @@
           mHY<span class="highlight">一图流</span>
         </div>
         <div class="content-row icons">
-          <LangSelect />
           <div id="svg-icons">
             <a class="last" href="https://github.com/tmdict/mhy-tl"><GitIcon /></a>
             <div
@@ -71,23 +67,23 @@
 
     <div class="content-row content-menu">
       <div class="group">
-        <a href="/builds" style="margin-left:0;">{$l10n['builds'][$lang]}</a>
+        <a href="/builds" style="margin-left:0;">Builds</a>
         <span class="separator">·</span>
-        <a href="/character-scaling">{$l10n['character-scaling'][$lang]}</a>
+        <a href="/character-scaling">Character Scaling</a>
       </div>
       <div class="group">
-        <a href="/talent-materials">{$l10n['talent-materials'][$lang]}</a>
+        <a href="/talent-materials">Talent Materials</a>
         <span class="separator">·</span>
-        <a href="/weekly-boss-materials">{$l10n['boss-materials'][$lang]}</a>
+        <a href="/weekly-boss-materials">Boss Materials</a>
         <span class="separator">·</span>
-        <a href="/leveling-cost">{$l10n['leveling-cost'][$lang]}</a>
+        <a href="/leveling-cost">Leveling Cost</a>
         <span class="separator">·</span>
-        <a href="/craftable-weapons">{$l10n['craftable-weapons'][$lang]}</a>
+        <a href="/craftable-weapons">Craftable Weapons</a>
       </div>
       <div class="group">
-        <a href="/achievements">{$l10n['achievements'][$lang]}</a>
+        <a href="/achievements">Achievements</a>
         <span class="separator">·</span>
-        <a href="/links">{$l10n['links'][$lang]}</a>
+        <a href="/links">Links</a>
       </div>
     </div>
   </div>

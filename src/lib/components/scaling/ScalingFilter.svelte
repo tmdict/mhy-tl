@@ -1,6 +1,5 @@
 <script>
   import { charScalingFilters } from '@store/filterlist';
-  import { l10n, lang } from '@store/site';
 
   export let filterHeader;
   export let filterKey;
@@ -20,14 +19,14 @@
         <a
           class:active={$charScalingFilters[filterKey].common.includes(key)}
           href="/#"
-          on:click|preventDefault={() => charScalingFilters.updateCommonFilter(filterKey, key)}>{$l10n[key][$lang]}</a
+          on:click|preventDefault={() => charScalingFilters.updateCommonFilter(filterKey, key)}>{key}</a
         >
       </li>
     {/each}
-    <li><a href="/#" on:click|preventDefault={() => addAll(filter, filterKey)}>{$l10n['all'][$lang]}</a></li>
+    <li><a href="/#" on:click|preventDefault={() => addAll(filter, filterKey)}>All</a></li>
     <li>
       <a href="/#" on:click|preventDefault={() => charScalingFilters.resetByType(filterKey)}
-        >{$l10n['clear-all'][$lang]}</a
+        >Clear All</a
       >
     </li>
   </ul>

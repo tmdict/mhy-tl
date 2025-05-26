@@ -1,5 +1,5 @@
 <script>
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
 
   export let type;
   export let stats;
@@ -11,7 +11,7 @@
   </div>
   <div>
     {#each stats as stat, i}
-      {i !== 0 ? ' · ' : ''}{$l10n[stat] ? $l10n[stat][$lang] : 'undefined'}
+      {i !== 0 ? ' · ' : ''}{stat}
     {/each}
   </div>
 </div>

@@ -1,6 +1,5 @@
 <script>
   import { slide } from 'svelte/transition';
-  import { l10n, lang } from '@store/site';
   import LevelingCostItem from '$lib/components/leveling/LevelingCostItem.svelte';
 
   export let tableData;
@@ -16,7 +15,7 @@
 
 <div class="content-row row total" role="button" tabindex="0" on:click={toggleDetails} on:keydown={toggleDetails}>
   <div class="content-row group separator">
-    <div class="content-row level">{$l10n['total'][$lang]}</div>
+    <div class="content-row level">Total</div>
   </div>
   {#each Object.values(keys) as characterKeys, n}
     <div class="content-row group" class:separator={n < Object.keys(keys).length - 1}>

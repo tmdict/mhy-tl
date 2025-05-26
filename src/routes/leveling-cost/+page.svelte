@@ -1,6 +1,5 @@
 <script>
   import { misc } from '@store/gamedata';
-  import { l10n, lang } from '@store/site';
   import LevelingCostTable from '$lib/components/leveling/LevelingCostTable.svelte';
 
   const character = {
@@ -50,19 +49,19 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['leveling-cost'][$lang]}</title>
+  <title>Leveling Costs</title>
 </svelte:head>
 
-<h1>{$l10n['leveling-cost'][$lang]}</h1>
+<h1>Leveling Costs</h1>
 
 <div id="character">
-  <h4>{$l10n['character-ascension'][$lang]}</h4>
+  <h4>Character Ascension</h4>
   <div id="content">
     <div class="header">
       <div class="content-row">
         <div class="empty"></div>
-        <div class="levelup">{$l10n['level-up'][$lang]}</div>
-        <div class="ascension">{$l10n['ascension'][$lang]}</div>
+        <div class="levelup">Level Up</div>
+        <div class="ascension">Ascension</div>
       </div>
     </div>
     <LevelingCostTable tableData={$misc['leveling-character'].data} keys={character} total={characterTotal} />
@@ -70,12 +69,12 @@
 </div>
 
 <div id="talent">
-  <h4>{$l10n['talent'][$lang]}</h4>
+  <h4>Talent</h4>
   <div id="content">
     <div class="header">
       <div class="content-row">
         <div class="empty"></div>
-        <div class="levelup">{$l10n['level-up'][$lang]}</div>
+        <div class="levelup">Level Up</div>
       </div>
     </div>
     <LevelingCostTable tableData={$misc['leveling-talent'].data} keys={talent} total={talentTotal} />
@@ -83,13 +82,13 @@
 </div>
 
 <div id="weapon5">
-  <h4>{$l10n['5star'][$lang]} {$l10n['weapon'][$lang]}</h4>
+  <h4>5 Star Weapon</h4>
   <div id="content">
     <div class="header">
       <div class="content-row">
         <div class="empty"></div>
-        <div class="levelup">{$l10n['level-up'][$lang]}</div>
-        <div class="ascension">{$l10n['ascension'][$lang]}</div>
+        <div class="levelup">Level Up</div>
+        <div class="ascension">Ascension</div>
       </div>
     </div>
     <LevelingCostTable tableData={$misc['leveling-weapon5'].data} keys={weapon} total={weapon5Total} />
@@ -97,13 +96,13 @@
 </div>
 
 <div id="weapon4">
-  <h4>{$l10n['4star'][$lang]} {$l10n['weapon'][$lang]}</h4>
+  <h4>4 Star Weapon</h4>
   <div id="content">
     <div class="header">
       <div class="content-row">
         <div class="empty"></div>
-        <div class="levelup">{$l10n['level-up'][$lang]}</div>
-        <div class="ascension">{$l10n['ascension'][$lang]}</div>
+        <div class="levelup">Level Up</div>
+        <div class="ascension">Ascension</div>
       </div>
     </div>
     <LevelingCostTable tableData={$misc['leveling-weapon4'].data} keys={weapon} total={weapon4Total} />

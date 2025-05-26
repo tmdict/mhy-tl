@@ -5,7 +5,6 @@
   import { availableInputs, buildEditor } from '@store/editor';
   import { characters, weapons } from '@store/gamedata';
   import { localData } from '@store/localdata';
-  import { l10n, lang } from '@store/site';
   import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from '$lib/util/codec';
   import { parser } from '$lib/util/parser';
   import { validator } from '$lib/util/validator';
@@ -32,7 +31,7 @@
     if (link.length > 0) {
       try {
         const importedBuild = decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)));
-        $buildEditor = parser.importToEditor(importedBuild, buildEditor.getKeys, $lang);
+        $buildEditor = parser.importToEditor(importedBuild, buildEditor.getKeys, 'en');
       } catch (err) {
         toast.error(`Cannot read build: ${err}`);
       }
@@ -43,7 +42,7 @@
     // Re-validate everytime an input chamges
     validated = validator.validateEditorBuild($buildEditor, buildEditor.getKeys, $characters, $weapons);
     if (validated.result) {
-      parsed = parser.parse($buildEditor, buildEditor.getKeys, $characters, $lang);
+      parsed = parser.parse($buildEditor, buildEditor.getKeys, $characters, 'en');
       encoded = lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(parsed)));
     } else {
       parsed = {};
@@ -80,10 +79,10 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['build-editor'][$lang]}</title>
+  <title>Build Editor</title>
 </svelte:head>
 
-<h1>{$l10n['build-editor'][$lang]}</h1>
+<h1>Build Editor</h1>
 {#if debugMode}
   <div style="margin: 20px">
     raw: {JSON.stringify($buildEditor, null, 2)}<br /><br />
@@ -94,14 +93,14 @@
 {/if}
 
 {#if validator.character($buildEditor)}
-  <h4>{$l10n['preview'][$lang]}</h4>
+  <h4>Preview</h4>
   <div class="content-row">
     {#if !validated.result}
       <div class="warning">
-        <p>{$l10n['missing-req-field'][$lang]}:</p>
+        <p>Missing Required Fields:</p>
         <ul>
           {#each validated.missing as missing}
-            <li>{missing[$lang]}</li>
+            <li>{missing.en}</li>
           {/each}
         </ul>
       </div>
@@ -109,8 +108,8 @@
       <BuildFullPage build={parsed} link={encoded} allowEdit={false} />
 
       <div class="share">
-        <a href="/#" on:click|preventDefault={saveBuild}>{$l10n['save'][$lang]}</a> ·
-        <a href="/builds/build#{encoded}">{$l10n['share'][$lang]}</a> ·
+        <a href="/#" on:click|preventDefault={saveBuild}>Save</a> ·
+        <a href="/builds/build#{encoded}">Share</a> ·
         <span
           class="copy"
           title="Copy to clipboard"
@@ -125,14 +124,14 @@
 {/if}
 
 <div id="build-editor">
-  <h4>{$l10n['basic-info'][$lang]}</h4>
+  <h4>Basic Info</h4>
   <div class="content-row edit-section">
     <EditorDropdownList
       id="character"
-      label={$l10n['character'][$lang]}
+      label="Character"
       list={$availableInputs.characters}
       l10n={Object.values($characters).reduce(
-        (acc, c) => ({ ...acc, [c.id]: c.data && c.data[$lang] ? c.data[$lang]['name'] : c.id }),
+        (acc, c) => ({ ...acc, [c.id]: c.data && c.data.en ? c.data.en['name'] : c.id }),
         { '-': '-' }
       )}
       bind:selected={$buildEditor['character']}
@@ -140,18 +139,18 @@
     {#if validator.character($buildEditor)}
       <EditorDropdownList
         id="character-const"
-        label={$l10n['constellation'][$lang]}
+        label="Constellation"
         list={$availableInputs.const}
         inputWidth="60px"
         bind:selected={$buildEditor['constellation']}
       />
-      <EditorTextField id="build-name" label={$l10n['name'][$lang]} bind:value={$buildEditor['name']} />
+      <EditorTextField id="build-name" label="Name" bind:value={$buildEditor['name']} />
       <EditorBuildType />
     {/if}
   </div>
 
   {#if validator.character($buildEditor)}
-    <h4>{$l10n['equipments'][$lang]}</h4>
+    <h4>Equipments</h4>
     <div class="content-row edit-section">
       <div class="content-col ">
         {#each Array($buildEditor['num'].weapons) as _, i}
@@ -225,7 +224,7 @@
       </div>
     </div>
 
-    <h4>{$l10n['stats'][$lang]}</h4>
+    <h4>Stats</h4>
     <div class="content-row edit-section">
       <div class="content-col edit-mainstat">
         {#each ['sand', 'goblet', 'circlet'] as piece}
@@ -235,9 +234,9 @@
                 {@const mainstatKey = buildEditor.getKeys.mainstat(piece, i).mainstat}
                 <EditorDropdownList
                   id={mainstatKey}
-                  label={i === 0 ? `${$l10n[piece][$lang]} ${$l10n['mainstat'][$lang]}` : ''}
+                  label={i === 0 ? `${piece} Main Stats` : ''}
                   list={$availableInputs[piece]}
-                  l10n={$availableInputs[piece].reduce((acc, c) => ({ ...acc, [c]: $l10n[c][$lang] }), {})}
+                  l10n={$availableInputs[piece].reduce((acc, c) => ({ ...acc, [c]: c }), {})}
                   width="200px"
                   bind:selected={$buildEditor[mainstatKey]}
                 />
@@ -309,26 +308,26 @@
       </div>
     </div>
 
-    <h4>{$l10n['misc'][$lang]}</h4>
+    <h4>Misc</h4>
     <div class="content-row edit-section">
       <div class="content-col">
         <EditorTextField
           id="talent"
-          label={$l10n['talent-priority'][$lang]}
+          label="Talent Priority"
           placeholder="A > E > Q"
           width="300px"
           bind:value={$buildEditor['talent']}
         />
         <EditorTextField
           id="source"
-          label={$l10n['sources'][$lang]}
-          placeholder={$l10n['optional'][$lang]}
+          label="Sources"
+          placeholder="Optional"
           width="300px"
           bind:value={$buildEditor['source']}
         />
       </div>
       <div class="content-col" style="flex: 1;">
-        <EditorTextArea id="notes" label={$l10n['notes'][$lang]} bind:value={$buildEditor['notes']} />
+        <EditorTextArea id="notes" label="Notes" bind:value={$buildEditor['notes']} />
       </div>
     </div>
   {/if}

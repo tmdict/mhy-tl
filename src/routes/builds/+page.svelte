@@ -3,10 +3,8 @@
   import { builds, buildfilters } from '@store/builds';
   import { buildsFilters } from '@store/filterlist';
   import { localData } from '@store/localdata';
-  import { l10n, lang } from '@store/site';
   import Build from '$lib/components/build/Build.svelte';
   import BuildFaqEn from '$lib/components/content/BuildFaq/En.svelte';
-  import BuildFaqZh from '$lib/components/content/BuildFaq/Zh.svelte';
   import BuildFilter from '$lib/components/build/BuildFilter.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
 
@@ -15,7 +13,7 @@
   let filteredBuilds = $builds;
   let filteredSavedBuilds = $localData['builds'];
   buildsFilters.init(Object.keys($buildfilters));
-  const faq = { en: BuildFaqEn, zh: BuildFaqZh };
+  const faq = { en: BuildFaqEn };
 
   $: {
     filteredBuilds = filterBuilds($builds, Object.values($buildsFilters));
@@ -43,25 +41,25 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['character-builds'][$lang]}</title>
+  <title>Character Builds</title>
 </svelte:head>
 
-<h1>{$l10n['character-builds'][$lang]}</h1>
+<h1>Character Builds</h1>
 
 <div class="menu">
   <a href="/#" class={expandAllFilters ? 'show' : 'collapse'} on:click|preventDefault={() => expandAllFilters = !expandAllFilters}>
-    {#if !expandAllFilters}{$l10n['expand-all'][$lang]}{:else}{$l10n['close-all'][$lang]}{/if} {$l10n['filters'][$lang]}
+    {#if !expandAllFilters}Expand All{:else}Close All{/if} Filters
   </a>
   <span class="menu-separator"></span>
-  <a href="/builds/edit">{$l10n['create-builds'][$lang]}</a>
+  <a href="/builds/edit">Create Builds</a>
   <span class="menu-separator"></span>
-  <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>{$l10n['faq'][$lang]}</a>
+  <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>FAQ</a>
   <span class="menu-separator"></span>
   <ManageData />
 </div>
 {#if showFaq}
   <div id="faq">
-    <svelte:component this={faq[$lang]} />
+    <svelte:component this={faq.en} />
   </div>
 {/if}
 <div id="content">
@@ -74,13 +72,13 @@
   {/if}
   <div id="build-list">
     <div class="content-row header">
-      <div class="content-row weapons">{$l10n['weapon'][$lang]}</div>
-      <div class="content-row mainstats">{$l10n['mainstat'][$lang]}</div>
-      <div class="content-row substats">{$l10n['stats-priority'][$lang]}</div>
-      <div class="content-row artifacts">{$l10n['artifact'][$lang]}</div>
+      <div class="content-row weapons">Weapon</div>
+      <div class="content-row mainstats">Main Stats</div>
+      <div class="content-row substats">Sub Stats Priority</div>
+      <div class="content-row artifacts">Artifact</div>
     </div>
     {#if filteredSavedBuilds.length > 0}
-      <div class="header"><h4>{$l10n['saved-builds'][$lang]}</h4></div>
+      <div class="header"><h4>Saved Builds</h4></div>
       {#each filteredSavedBuilds as build, i}
         <Build {build} alt={i % 2 === 1} />
       {/each}

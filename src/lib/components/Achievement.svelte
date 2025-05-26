@@ -2,7 +2,6 @@
   import { browser } from '$app/environment';
   import { slide } from 'svelte/transition';
   import { localData } from '@store/localdata';
-  import { l10n, lang } from '@store/site';
   import { marked } from 'marked';
 
   export let achievement;
@@ -50,7 +49,7 @@
 >
   <div class="content-row">
     <h4 class:complete>{@html content.name}</h4>
-    <div class="label region">{$l10n[achievement.region][$lang]}</div>
+    <div class="label region">{achievement.region}</div>
     <div class="label version">v{achievement.version}</div>
     {#each content.commission as commission}
       <span class="label commission">{@html commission}</span>
@@ -62,7 +61,7 @@
   {#if expand}
     <div transition:slide class="notes-checklist">
       <span class="notes" role="presentation" on:click|stopPropagation on:keydown|stopPropagation>{@html marked(content.notes)}</span>
-      <h5>{$l10n['checklist'][$lang]}</h5>
+      <h5>Checklist</h5>
       <ul>
         {#each [...Array(achievement.checklist).keys()] as todo}
           <li>

@@ -1,6 +1,6 @@
 <script>
   import { characters, enemies, materials, rarity } from '@store/gamedata';
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
   const bossMaterials = Object.values($enemies)
@@ -27,10 +27,10 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['upgrade-material'][$lang]}</title>
+  <title>Upgrade Materials</title>
 </svelte:head>
 
-<h1>{$l10n['weekly-boss-mat'][$lang]}</h1>
+<h1>Weekly Boss Materials</h1>
 
 <div id="content">
   {#each Object.entries(bossMaterials) as [boss, bossData], idx}
@@ -46,7 +46,7 @@
               {#each material.characters as character}
                 <Icon
                   id={character}
-                  title={$characters[character] ? $characters[character].data[$lang].name : character}
+                  title={$characters[character] ? $characters[character].data.en.name : character}
                   src={$images[`/src/lib/img/character/${character}.png`]}
                   rarity={$rarity[character]}
                 />

@@ -1,69 +1,65 @@
 <script>
-  import { l10n, lang } from '@store/site';
   import En from '$lib/components/content/Top/En.svelte';
-  import Zh from '$lib/components/content/Top/Zh.svelte';
 
   const links = [
     {
       new: true,
-      name: 'character-builds',
+      name: 'Character Builds',
       url: 'builds',
       updated: '2025-05-22'
     },
     {
       new: true,
-      name: 'character-stat-scaling',
+      name: 'Character Stat Scaling',
       url: 'character-scaling',
       updated: '2025-05-22'
     },
     {
-      name: 'commission-achievements',
+      name: 'Commission Achievements',
       url: 'achievements',
       updated: '2025-01-19'
     },
     {
-      name: 'craftable-weapons',
+      name: 'Craftable Weapons',
       url: 'craftable-weapons',
       updated: '2024-09-14'
     },
     {
-      name: 'leveling-cost',
+      name: 'Leveling Cost',
       url: 'leveling-cost',
       updated: '2022-12-02'
     },
     {
       new: true,
-      name: 'talent-materials',
+      name: 'Talent Materials',
       url: 'talent-materials',
       updated: '2025-05-22'
     },
     {
-      name: 'links',
+      name: 'Links',
       url: 'links',
       updated: '2024-02-11'
     },
     {
       new: true,
-      name: 'weekly-boss-mat',
+      name: 'Weekly Boss Materials',
       url: 'weekly-boss-materials',
       updated: '2025-05-22'
     }
   ].sort((a, b) => b.updated.localeCompare(a.updated));
-
-  const top = { en: En, zh: Zh };
 </script>
 
 <svelte:head>
   <title>mHY一图流</title>
 </svelte:head>
 
-<svelte:component this={top[$lang]} />
+<En />
 
 {#each links as link, i}
   <a class:first={i === 0} href="/{link.url}">
     <div class="content-col link" class:alt={i % 2 === 0}>
       <div class="content-row">
-        <div class="name">{$l10n[link.name][$lang]}</div>
+        <div class="name">{link.name}</div>
         <div class="label">{link.updated}</div>
         {#if link.new}<div class="new">Updated</div>{/if}
       </div>

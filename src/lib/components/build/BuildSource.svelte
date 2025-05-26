@@ -1,6 +1,4 @@
 <script>
-  import { l10n, lang } from '@store/site';
-
   export let references;
   const sources = {
     ysmxt: { name: '原神冒险团', url: 'https://www.miyoushe.com/ys/collection/10772' },
@@ -20,7 +18,7 @@
 
 {#if references && references.length > 0}
   <div class="source">
-    <div class="build-heading">{$l10n['sources'][$lang]}</div>
+    <div class="build-heading">Sources</div>
     <ul>
       {#each references as source}
         <li>

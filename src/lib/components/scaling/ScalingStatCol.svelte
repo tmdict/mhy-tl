@@ -1,7 +1,7 @@
 <script>
   import { charScalingFilters } from '@store/filterlist';
   import { characters, rarity } from '@store/gamedata';
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
   export let data;
@@ -30,17 +30,17 @@
   {#if baseKey === 'icon'}
     <Icon
       id={data.id}
-      title={$characters[data.id] ? $characters[data.id].data[$lang].name : data.id}
+      title={$characters[data.id] ? $characters[data.id].data.en.name : data.id}
       src={$images[`/src/lib/img/character/${data.id}.png`]}
       rarity={$rarity[data.id]}
       size="50px"
       margin="0"
     />
   {:else if baseKey === 'name'}
-    <b>{$characters[data.id].data[$lang].name}</b>
+    <b>{$characters[data.id].data.en.name}</b>
   {:else}
     {#if (windowWidth < 960 && baseKey !== 'constellation') || (windowWidth < 960 && baseKey == 'constellation' && !data[baseKey].length)}<b
-        >{$l10n[baseKey][$lang]}:</b
+        >{baseKey}:</b
       >
       {#if windowWidth < 960 && !data[baseKey].length}-{/if}
     {/if}
@@ -55,7 +55,7 @@
             <span
               class:highlight={$charScalingFilters.stat.common.includes(cstat) &&
                 $charScalingFilters.base.common.includes(baseKey)}
-              class={colors[cstat]}>{$l10n[cstat][$lang]}</span
+              class={colors[cstat]}>{cstat}</span
             >
           {/each}
         {/each}
@@ -67,7 +67,7 @@
             $charScalingFilters.base.common.includes(baseKey)}
           class:recommended={isRecommended &&
             data['recommended-talent'] &&
-            data['recommended-talent'].includes(baseKey)}>{$l10n[base][$lang]}</span
+            data['recommended-talent'].includes(baseKey)}>{base}</span
         >
       {/if}
     {/each}

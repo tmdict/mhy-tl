@@ -1,7 +1,6 @@
 <script>
   import { availableInputs, buildEditor } from '@store/editor';
   import { weapons } from '@store/gamedata';
-  import { lang } from '@store/site';
   import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
 
   export let weaponKey;
@@ -11,7 +10,7 @@
   $: l10n = Object.values(availableWeapons).reduce((acc, w) => {
     const names = w.reduce((wacc, wname) => {
       const name =
-        $weapons[wname]['data'] && $weapons[wname]['data'][$lang] ? $weapons[wname]['data'][$lang]['name'] : wname;
+        $weapons[wname]['data'] && $weapons[wname]['data'].en ? $weapons[wname]['data'].en['name'] : wname;
       return { ...wacc, [wname]: name };
     }, {});
     return { ...acc, ...names };

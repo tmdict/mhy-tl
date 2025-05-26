@@ -4,11 +4,9 @@
   import { slide } from 'svelte/transition';
   import { achievements } from '@store/gamedata';
   import { localData } from '@store/localdata';
-  import { l10n, lang } from '@store/site';
   import Achievement from '$lib/components/Achievement.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
   import AchievementFaqEn from '$lib/components/content/AchievementFaq/En.svelte';
-  import AchievementFaqZh from '$lib/components/content/AchievementFaq/Zh.svelte';
   import { highlight } from '$lib/util/highlight';
 
   let searchTerm = '';
@@ -19,7 +17,7 @@
   let sortByCompletion = false;
   let showFaq = false;
 
-  const faq = { en: AchievementFaqEn, zh: AchievementFaqZh };
+  const faq = { en: AchievementFaqEn };
 
   $: {
     // 1. filter by search
@@ -35,7 +33,7 @@
           ignoreLocation: true,
           threshold: 0.0,
         },
-        keys: [{ name: $lang + '.commission', weight: 2 }, $lang + '.name', $lang + '.description']
+        keys: [{ name: 'en.commission', weight: 2 }, 'en.name', 'en.description']
       });
       const results = fuse.search(searchTerm);
       if (results.length > 0) {
@@ -76,17 +74,17 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['achievements'][$lang]}</title>
+  <title>Daily Commission Achievements</title>
 </svelte:head>
 
 <div class="top">
-  <h1>{$l10n['commission-achievements'][$lang]}</h1>
+  <h1>Daily Commission Achievements</h1>
 
   <div class="content-col">
     <input class="search" bind:value={searchTerm} />
 
     <div class="menu">
-      <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>{$l10n['faq'][$lang]}</a>
+      <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>FAQ</a>
       <span class="menu-separator"></span>
       <ManageData />
     </div>
@@ -96,26 +94,26 @@
         <a
           class:active={filter === currentFilter.value}
           href="/#"
-          on:click|preventDefault={() => (currentFilter = { field: 'region', value: filter })}>{$l10n[filter][$lang]}</a>
+          on:click|preventDefault={() => (currentFilter = { field: 'region', value: filter })}>{filter}</a>
         >{' · '}
       {/each}
-      <a href="/#" on:click|preventDefault={() => (sortByCompletion = !sortByCompletion)}>{$l10n.completed[$lang]}</a>
+      <a href="/#" on:click|preventDefault={() => (sortByCompletion = !sortByCompletion)}>Incomplete</a>
       <span class="menu-separator"></span>
-      <a href="/#" on:click|preventDefault={clearAll}>{$l10n['clear-all'][$lang]}</a>
+      <a href="/#" on:click|preventDefault={clearAll}>Clear All</a>
     </div>
   </div>
 </div>
 
 {#if showFaq}
   <div id="faq" transition:slide>
-    <svelte:component this={faq[$lang]} />
+    <svelte:component this={faq.en} />
   </div>
 {/if}
 
 {#each filteredList as achievement, i (achievement.achievement)}
   <Achievement
     {achievement}
-    content={achievement[$lang] ? achievement[$lang] : achievement[lang.default()]}
+    content={achievement.en ? achievement.en : achievement.en}
     alt={i % 2 != 0}
   />
 {/each}

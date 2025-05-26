@@ -1,9 +1,9 @@
 <script>
   import { characters, materials, rarity } from '@store/gamedata';
-  import { images, l10n, lang } from '@store/site';
+  import { images } from '@store/site';
   import Icon from '$lib/components/Icon.svelte';
 
-  const weekdays = [$l10n['day1'], $l10n['day2'], $l10n['day3']];
+  const weekdays = ['Mon · Thur', 'Tue · Fri', 'Wed · Sat'];
 
   const weaponMaterials = Object.values($materials)
     .filter((material) => material.materialType === 'weapon-ascension')
@@ -32,15 +32,15 @@
 </script>
 
 <svelte:head>
-  <title>{$l10n['upgrade-material'][$lang]}</title>
+  <title>Upgrade Material</title>
 </svelte:head>
 
-<h1>{$l10n['weekly-talent-mat'][$lang]}</h1>
+<h1>Weekly Material Rotation</h1>
 
 <div id="content">
   <div class="content-row days">
     {#each weekdays as day, i}
-      <div class="content-col medium-col" class:alt={i % 2 === 1}><h2>{day[$lang]}</h2></div>
+      <div class="content-col medium-col" class:alt={i % 2 === 1}><h2>{day}</h2></div>
     {/each}
   </div>
 
@@ -48,7 +48,7 @@
     <div class="content-row">
       {#each Object.entries(regionByDay) as [weekday, material]}
         <div class="content-col medium-col" class:alt={parseInt(weekday) % 2 === 0}>
-          <div class="content-col days-small-col"><h2>{weekdays[parseInt(weekday) - 1][$lang]}</h2></div>
+          <div class="content-col days-small-col"><h2>{weekdays[parseInt(weekday) - 1]}</h2></div>
           <div class="content-row divider">
             {#each weaponMaterials[region][weekday] as weaponMat}
               <Icon
@@ -59,7 +59,7 @@
               />
             {/each}
           </div>
-          <h3>{$l10n[material.id][$lang]}</h3>
+          <h3>{material.id}</h3>
           <div class="content-row divider">
             {#each material.group as book}
               <Icon
@@ -73,7 +73,7 @@
             {#each material.characters as character}
               <Icon
                 id={character}
-                title={$characters[character] ? $characters[character].data[$lang].name : character}
+                title={$characters[character] ? $characters[character].data.en.name : character}
                 src={$images[`/src/lib/img/character/${character}.png`]}
                 rarity={$rarity[character]}
               />
