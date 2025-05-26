@@ -10,10 +10,10 @@
   import TopLightAlt from '$lib/img/top_alt_l.png?enhanced';
 
   const { theme, toggle } = getContext('theme');
-  let spin = false;
-  let isHover = false;
+  let spin = $state(false);
+  let isHover = $state(false);
 
-  $: isDark = $theme.name === 'dark';
+  let isDark = $derived($theme.name === 'dark');
 
   function spinIcon(duration) {
     spin = true;
@@ -25,6 +25,11 @@
       ? (isHover ? TopAlt : Top)
       : (isHover ? TopLightAlt : TopLight);
   }
+
+  function updateTheme() {
+    toggle();
+    spinIcon(650);
+  }
 </script>
 
 <div id="top">
@@ -32,8 +37,9 @@
     <div class="content-row content-top">
       <a
         href="/"
-        on:mouseenter={() => (isHover = true)}
-        on:mouseleave={() => (isHover = false)}
+        aria-label="Top"
+        onmouseenter={() => (isHover = true)}
+        onmouseleave={() => (isHover = false)}
       >
         <enhanced:img src={getTopImg()} class="top-img" alt="top" />
       </a>
@@ -50,9 +56,8 @@
               class:spin-left={spin}
               role="button"
               tabindex="0"
-              on:click={toggle}
-              on:click={() => spinIcon(650)}
-              on:keydown={toggle}
+              onclick={() => updateTheme()}
+              onkeydown={toggle}
             >
               {#if isDark}
                 <ToggleLight />

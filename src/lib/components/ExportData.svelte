@@ -1,6 +1,8 @@
 <script>
   import { localData } from '@store/sitedata';
 
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+
   function download(content, filename, contentType = 'application/json;charset=utf-8') {
     // Generate date postfix for file name
     let date = new Date();
@@ -20,4 +22,4 @@
   }
 </script>
 
-<a href="/#" on:click|preventDefault={() => download($localData, `genshin.tmdict.com`)}>Export Data</a>
+<a href="/#" onclick={preventDefault(() => download($localData, `genshin.tmdict.com`))}>Export Data</a>

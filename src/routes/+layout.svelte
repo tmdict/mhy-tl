@@ -3,7 +3,7 @@
   import Footer from '$lib/components/content/Footer.svelte';
   import ThemeContext from '$lib/components/ThemeContext.svelte';
 
-  let { data, children } = $props();
+  let { children } = $props();
 </script>
 
 <ThemeContext>

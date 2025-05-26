@@ -43,14 +43,14 @@
             <div class="content-row">
               <Icon id={name} src={IMAGES[`/src/lib/img/material-weekly-boss/${name}.png`]} rarity={material.rarity} />
               {#if material.characters.length > 0}
-              {#each material.characters as character}
-                <Icon
-                  id={character}
-                  title={CHARACTERS_DATA[character] ? CHARACTERS_DATA[character].data.name : character}
-                  src={IMAGES[`/src/lib/img/character/${character}.png`]}
-                  rarity={RARITY[character]}
-                />
-              {/each}
+                {#each material.characters as character}
+                  <Icon
+                    id={character}
+                    title={CHARACTERS_DATA[character] ? CHARACTERS_DATA[character].data.name : character}
+                    src={IMAGES[`/src/lib/img/character/${character}.png`]}
+                    rarity={RARITY[character]}
+                  />
+                {/each}
               {/if}
             </div>
           {/each}

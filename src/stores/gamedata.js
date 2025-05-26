@@ -1,7 +1,7 @@
-const raw = import.meta.glob('../../data/game/**/*.json', { eager: true });
+const raw = import.meta.glob('../../data/game/**/*.json', { eager: true, import: 'default' });
 const grouped = Object.values(raw).reduce((acc, d) => {
-  acc[d.default.type] = acc[d.default.type] || {};
-  acc[d.default.type] = { [d.default.id]: d.default, ...acc[d.default.type] };
+  acc[d.type] = acc[d.type] || {};
+  acc[d.type] = { [d.id]: d, ...acc[d.type] };
   return acc;
 }, {});
 

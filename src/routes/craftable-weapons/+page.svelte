@@ -8,7 +8,7 @@
   import Icon from '$lib/components/Icon.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
 
-  let showFaq = false;
+  let showFaq = $state(false);
 
   // Initialize craftable weapon data
   if ($localData['billets']) {

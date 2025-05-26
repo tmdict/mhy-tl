@@ -121,57 +121,6 @@
       description: '原神角色攻略、探索解谜、入坑指南。'
     }
   ];
-
-  const hsr = [
-    {
-      name: 'Prydwen.gg',
-      lang: ['English'],
-      url: 'https://www.prydwen.gg/star-rail/',
-      description: 'Guides, character reviews, tier list and more.'
-    },
-    {
-      name: '崩铁|全角色参考面板',
-      lang: ['中文'],
-      url: 'https://bbs.nga.cn/read.php?tid=36580156',
-      description: '全角色收益曲线、圣遗物思路推荐、参考面板属性。'
-    },
-    {
-      name: 'edisonsmathsclub HSR Resource Compilation',
-      lang: ['English'],
-      url: 'https://docs.google.com/spreadsheets/d/1SEcgt5EKCwNgLYlc6dMGVjX3puBRAIABlOKDtSajzE8/edit',
-      description: 'Links to various HSR guides.'
-    },
-    {
-      name: 'Fribbels Honkai Star Rail Optimizer',
-      lang: ['English'],
-      url: 'https://fribbels.github.io/hsr-optimizer',
-      description: 'Builds, relic and character recommendation and optmization tool.'
-    },
-    {
-      name: 'HSR Damage Calculation Simulator',
-      lang: ['English', '日本語'],
-      url: 'https://honkai.asagi-game.com/',
-      description: 'Team damage simulator.'
-    },
-    {
-      name: 'Project Yatta',
-      lang: ['Multi-lingual · 多语言'],
-      url: 'https://hsr.yatta.top/',
-      description: 'HSR database.'
-    },
-    {
-      name: 'Star Rail Station',
-      lang: ['Multi-lingual · 多语言'],
-      url: 'https://starrailstation.com/',
-      description: 'HSR database website with a wish history tracker, achievement tracker, and more.'
-    },
-    {
-      name: 'StarDB.gg',
-      lang: ['Multi-lingual · 多语言'],
-      url: 'https://stardb.gg/',
-      description: 'HSR achievement tracker.'
-    }
-  ];
 </script>
 
 <svelte:head>

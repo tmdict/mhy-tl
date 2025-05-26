@@ -8,8 +8,9 @@
   import ManageData from '$lib/components/ManageData.svelte';
   import { highlight } from '$lib/util/highlight';
 
-  const achievementData = import.meta.glob('@data/achievements/*.yml', { eager: true });
-  const achievements = Object.values(achievementData).map((d) => d.default);
+  const achievements = Object.values(
+    import.meta.glob('@data/achievements/*.yml', { eager: true, import: 'default' })
+  );
 
   let searchTerm = '';
   let filters = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'fontaine', 'natlan'];

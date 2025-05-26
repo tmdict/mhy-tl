@@ -10,7 +10,7 @@ export const IMAGES = import.meta.glob(
 );
 
 function createLocalData() {
-  const importedAchievements = import.meta.glob('@data/achievements/*.yml', { eager: true });
+  const importedAchievements = import.meta.glob('@data/achievements/*.yml', { eager: true, import: 'default' });
 
   const defaultData = {
     builds: [],
@@ -18,7 +18,7 @@ function createLocalData() {
       // Defaults all achievement commissions to false
       return {
         ...acc,
-        [d.default.achievement]: new Array(d.default.checklist).fill(false)
+        [d.achievement]: new Array(d.checklist).fill(false)
       };
     }, {}),
     billets: {}
@@ -31,10 +31,10 @@ function createLocalData() {
       local = JSON.parse(localStorage.getItem('tmdict.genshin.data'));
       // Check if any new achievements have been added
       Object.values(importedAchievements).forEach((d) => {
-        if (!(d.default.achievement in local['achievements'])) {
+        if (!(d.achievement in local['achievements'])) {
           local['achievements'] = {
             ...local['achievements'],
-            [d.default.achievement]: new Array(d.default.checklist).fill(false)
+            [d.achievement]: new Array(d.checklist).fill(false)
           };
         }
       });

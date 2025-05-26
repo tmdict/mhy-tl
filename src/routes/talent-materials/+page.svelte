@@ -32,7 +32,7 @@
 </script>
 
 <svelte:head>
-  <title>Upgrade Material</title>
+  <title>Upgrade Materials</title>
 </svelte:head>
 
 <h1>Weekly Material Rotation</h1>
@@ -48,7 +48,10 @@
     <div class="content-row">
       {#each Object.entries(regionByDay) as [weekday, material]}
         <div class="content-col medium-col" class:alt={parseInt(weekday) % 2 === 0}>
-          <div class="content-col days-small-col"><h2>{weekdays[parseInt(weekday) - 1]}</h2></div>
+          <div class="content-col days-small-col">
+            <h2>{weekdays[parseInt(weekday) - 1]}</h2>
+          </div>
+
           <div class="content-row divider">
             {#each weaponMaterials[region][weekday] as weaponMat}
               <Icon
@@ -59,7 +62,9 @@
               />
             {/each}
           </div>
+
           <h3>{material.id}</h3>
+
           <div class="content-row divider">
             {#each material.group as book}
               <Icon
@@ -69,6 +74,7 @@
               />
             {/each}
           </div>
+
           <div class="content-row">
             {#each material.characters as character}
               <Icon

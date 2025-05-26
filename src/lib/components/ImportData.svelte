@@ -38,7 +38,7 @@
     id="file-import"
     accept="application/json"
     required
-    on:input={onFile(getFilesFromInputEvent)}
+    oninput={onFile(getFilesFromInputEvent)}
   />
 </span>
 

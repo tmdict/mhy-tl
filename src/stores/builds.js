@@ -27,12 +27,10 @@ function parseBuilds(buildsData, charactersData) {
 }
 
 // Build Data
-
 const buildData = import.meta.glob('../../data/builds/*.yml', { eager: true });
 export const BUILDS = parseBuilds(buildData, CHARACTERS_DATA);
 
 // Build Filters
-
 const filters = Object.values(BUILDS).reduce((acc, b) => {
   b['type'].forEach(t => acc.type.filter.add(t)); // Build type
   acc['vision'].filter.add(b.attr.vision); // Vision
