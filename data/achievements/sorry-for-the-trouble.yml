@@ -4,25 +4,13 @@ version: "2.0"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 2
-en:
-  name: "“Sorry for the Trouble!”"
-  description: "Receive the complaint that Konda Densuke lodges in “Post-Sale Service.”"
-  commission:
-  - "Inazuma Sales Specialist"
-  - "Post-Sale Service"
-  notes: | 
-    Messing up the fertilizer order in “Inazuma Sales Specialist” will unlock the follow-up quest “Post-Sale Service”, collected all 10 mushrooms in the quest to receive the achievement。
-  checklist:
-    1: "Inazuma Sales Specialist"
-    2: "Post-Sale Service"
-zh:
-  name: "「给您添蘑菇了！」"
-  description: "在「售后服务」中收到顾客绀田传助的抱怨。"
-  commission:
-  - "稻妻销售员"
-  - "售后服务"
-  notes: | 
-    完成世界任务「在他乡」后，概率刷新每日任务「稻妻销售员」，选择错误的肥料使用办法会在后续概率刷出委托任务「售后服务」，将地里的蘑菇全部摘完（一共十个）就能获取。
-  checklist:
-    1: "稻妻销售员"
-    2: "售后服务"
+name: "“Sorry for the Trouble!”"
+description: "Receive the complaint that Konda Densuke lodges in “Post-Sale Service.”"
+commission:
+- "Inazuma Sales Specialist"
+- "Post-Sale Service"
+notes: | 
+  Messing up the fertilizer order in “Inazuma Sales Specialist” will unlock the follow-up quest “Post-Sale Service”, collected all 10 mushrooms in the quest to receive the achievement。
+checklistItem:
+  1: "Inazuma Sales Specialist"
+  2: "Post-Sale Service"

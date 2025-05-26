@@ -4,25 +4,13 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 2
-en:
-  name: "Poet Vs. Paycheck"
-  commission:
-  - "One Ship, Two Ships, Three Ships…"
-  - "So-Called Work"
-  description: "Complete “So-called Work” and receive Linling’s poetry anthology."
-  notes: |
-    Incorrectly reporting the ship numbers to Linling in the “One Ship, Two Ships, Three Ships…” commission triggers the “So-Called Work” commission the next day, completing it grants the achievement.
-  checklist:
-    1: "One Ship, Two Ships, Three Ships…"
-    2: "So-Called Work"
-zh:
-  name: "梦想与工作，诗与面包"
-  commission:
-  - "港口驶过几艘船，二四六七八"
-  - "所谓「工作」"
-  description: "完成「所谓『工作』」，并获得霖铃的诗集。"
-  notes: |
-    在每日任务「港口驶过几艘船，二四六七八」中选择错误，并在第二天完成『所谓「工作」』的委托。
-  checklist:
-    1: "港口驶过几艘船，二四六七八"
-    2: "所谓「工作」"
+name: "Poet Vs. Paycheck"
+commission:
+- "One Ship, Two Ships, Three Ships…"
+- "So-Called Work"
+description: "Complete “So-called Work” and receive Linling’s poetry anthology."
+notes: |
+  Incorrectly reporting the ship numbers to Linling in the “One Ship, Two Ships, Three Ships…” commission triggers the “So-Called Work” commission the next day, completing it grants the achievement.
+checklistItem:
+  1: "One Ship, Two Ships, Three Ships…"
+  2: "So-Called Work"

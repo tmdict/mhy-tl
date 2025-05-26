@@ -4,25 +4,13 @@ version: "4.0"
 achievementType: "wonders-of-the-world"
 region: fontaine
 checklist: 3
-en:
-  name: "Not Your Average Joe"
-  description: "Brew a special blend of coffee."
-  commission:
-  - "Get a Drink at Least!"
-  notes: | 
-    Successfully brew the coffee in “Get a Drink at Least!” twice (any version) to trigger the Special Blend version of the quest, completing it (choice of special ingredient is irrelevant) grants the achievement.
-  checklist:
-    1: "Get a Drink at Least! x1"
-    2: "Get a Drink at Least! x2"
-    3: "Get a Drink at Least! Special Blend"
-zh:
-  name: "优选风味"
-  description: "调制出一杯特别的咖啡。"
-  commission:
-  - "总得喝一杯"
-  notes: | 
-    “总得喝一杯”里成功调2次咖啡（不需要是不一样的，可以重复）后，第3次收到委托会让你调特调咖啡，完成（3种材料随便选都可以）即可得到成就。
-  checklist:
-    1: "总得喝一杯x1"
-    2: "总得喝一杯x2"
-    3: "总得喝一杯特调咖啡"
+name: "Not Your Average Joe"
+description: "Brew a special blend of coffee."
+commission:
+- "Get a Drink at Least!"
+notes: | 
+  Successfully brew the coffee in “Get a Drink at Least!” twice (any version) to trigger the Special Blend version of the quest, completing it (choice of special ingredient is irrelevant) grants the achievement.
+checklistItem:
+  1: "Get a Drink at Least! x1"
+  2: "Get a Drink at Least! x2"
+  3: "Get a Drink at Least! Special Blend"

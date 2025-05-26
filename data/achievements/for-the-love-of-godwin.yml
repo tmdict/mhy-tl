@@ -4,33 +4,17 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: mondstadt
 checklist: 5
-en:
-  name: "For the Love of Godwin"
-  commission:
-  - "Whispers in the Wind"
-  description: "Finish “Whispers in the Wind” 5 times."
-  notes: |
-    The bug below has been fixed since 3.0 and giving Dandelion Seeds directly from the inventory now progresses the achievement.
-    
-    ~~Giving Dandelion Seeds directly from the inventory (instead of collecting new ones) does not counts towards the achievement. To get credit for the achievement, teleport to the Temple of the Falcon (domain Northwest of Windrise), climb above it and collect the seeds.~~
-  checklist:
-    1: "1"
-    2: "2"
-    3: "3"
-    4: "4"
-    5: "5"
-zh:
-  name: "过量的思念"
-  commission:
-  - "愿风带走思念"
-  description: "完成五次「愿风带走思念」。"
-  notes: |
-    以下的bug以被修复，3.0版本后背包里的种子已可以用来完成成就。
-    
-    ~~已有的（而不是新摘的）种子不算。为获得成就，可以传送到西风之鹰神殿，爬到它上放收集种子。~~
-  checklist:
-    1: "1"
-    2: "2"
-    3: "3"
-    4: "4"
-    5: "5"
+name: "For the Love of Godwin"
+commission:
+- "Whispers in the Wind"
+description: "Finish “Whispers in the Wind” 5 times."
+notes: |
+  The bug below has been fixed since 3.0 and giving Dandelion Seeds directly from the inventory now progresses the achievement.
+  
+  ~~Giving Dandelion Seeds directly from the inventory (instead of collecting new ones) does not counts towards the achievement. To get credit for the achievement, teleport to the Temple of the Falcon (domain Northwest of Windrise), climb above it and collect the seeds.~~
+checklistItem:
+  1: "1"
+  2: "2"
+  3: "3"
+  4: "4"
+  5: "5"

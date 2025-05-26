@@ -4,33 +4,19 @@ version: "3.1"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 2
-en:
-  name: "Don’t Blame the Mora!"
-  description: "Witness the Gourmet Supremos’ adventures in Sumeru…"
-  commission:
-  - "The Gourmet Supremos: Foodie Quiz"
-  - "The Gourmet Supremos: Cook-Off"
-  - "The Gourmet Supremos: Extreme Cookery"
-  - "The Gourmet Supremos: Where’d the Ingredients Go?"
-  notes: | 
-    Finish all achievements related to the Gourmet Supremos daily commissions in Inazuma (A Question of Diet, Meal For Two, Samurice).
-    
-    Afterwards, get and complete the daily commission “The Gourmet Supremos: Where’d the Ingredients Go?” in Inazuma.
-    
-    Finally, go to Port Ormos and complete the new world quest “Gourmet Supremos: Within Our Duties” to receive the achievement (completing this also removes all Gourmet Supremos commissions from Inazuma).
-  checklist:
-    1: "Complete previous Inazuma Gourmet Supremos achievements (A Question of Diet, Meal For Two, Samurice)"
-    2: "The Gourmet Supremos: Where’d the Ingredients Go?"
-zh:
-  name: "摩拉无罪"
-  description: "见证全能美食队在须弥的故事。"
-  commission:
-  - "全能美食队·美食小问答"
-  - "全能美食队·烹饪对决"
-  - "全能美食队·厨道的极意"
-  - "全能美食队·食材在哪里"
-  notes: | 
-    首先需要完成稻妻的全能美食队系列任务和成就（饮食问题，双人餐行，武士饭）。之后在稻妻刷到每日委托「全能美食队·食材在哪里」，之后去须弥完成世界任务「全能美食队·职责之内」即可获得成就。
-  checklist:
-    1: "完成稻妻全能美食队系列任务和成就（饮食问题，双人餐行，武士饭）"
-    2: "全能美食队·食材在哪里"
+name: "Don’t Blame the Mora!"
+description: "Witness the Gourmet Supremos’ adventures in Sumeru…"
+commission:
+- "The Gourmet Supremos: Foodie Quiz"
+- "The Gourmet Supremos: Cook-Off"
+- "The Gourmet Supremos: Extreme Cookery"
+- "The Gourmet Supremos: Where’d the Ingredients Go?"
+notes: | 
+  Finish all achievements related to the Gourmet Supremos daily commissions in Inazuma (A Question of Diet, Meal For Two, Samurice).
+  
+  Afterwards, get and complete the daily commission “The Gourmet Supremos: Where’d the Ingredients Go?” in Inazuma.
+  
+  Finally, go to Port Ormos and complete the new world quest “Gourmet Supremos: Within Our Duties” to receive the achievement (completing this also removes all Gourmet Supremos commissions from Inazuma).
+checklistItem:
+  1: "Complete previous Inazuma Gourmet Supremos achievements (A Question of Diet, Meal For Two, Samurice)"
+  2: "The Gourmet Supremos: Where’d the Ingredients Go?"

@@ -4,34 +4,22 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 4
-en:
-  name: "Open to Interpretation"
-  commission:
-  - "Good Sign"
-  description: "Ruin 4 signs of an imminent romance."
-  notes: |
-    There are 5 signs but each commission will only give you two at random. Four have two possible outcomes, so at minimum you need to do this commission 5 times to unlock both achievements.
+name: "Open to Interpretation"
+commission:
+- "Good Sign"
+description: "Ruin 4 signs of an imminent romance."
+notes: |
+  There are 5 signs but each commission will only give you two at random. Four have two possible outcomes, so at minimum you need to do this commission 5 times to unlock both achievements.
 
-    Ruining 4 “signs of an imminent romance” grants the hidden achievement “Open to Interpretation”:
-    1. Killing the pigeons
-    2. Scaring the dogs away
-    3. Harvesting or killing the fish or the cat
-    4. Burning or blowing away the leaves
+  Ruining 4 “signs of an imminent romance” grants the hidden achievement “Open to Interpretation”:
+  1. Killing the pigeons
+  2. Scaring the dogs away
+  3. Harvesting or killing the fish or the cat
+  4. Burning or blowing away the leaves
 
-    (Finding all 5 “signs of an imminent romance” grants the achievement “Love is All Around”)
-  checklist:
-    1: "Killing the pigeons"
-    2: "Scaring the dogs away"
-    3: "Harvesting or killing the fish or the cat"
-    4: "Burning or blowing away the leaves"
-zh:
-  name: "「…而尽人事。」"
-  commission:
-  - "好兆头"
-  description: "破坏了四种爱情运来临的征兆。"
-  notes: "破坏四个爱情运来临的征兆。完成这个成需要多次刷新到「好兆头」任务，5个征兆每次随机刷2个："
-  checklist:
-    1: "把鸽子打下来"
-    2: "把在玩耍的狗赶跑"
-    3: "把鱼抓走"
-    4: "落叶烧了或吹走"
+  (Finding all 5 “signs of an imminent romance” grants the achievement “Love is All Around”)
+checklistItem:
+  1: "Killing the pigeons"
+  2: "Scaring the dogs away"
+  3: "Harvesting or killing the fish or the cat"
+  4: "Burning or blowing away the leaves"

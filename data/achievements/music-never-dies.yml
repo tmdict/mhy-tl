@@ -4,23 +4,12 @@ version: "5.0"
 achievementType: "wonders-of-the-world"
 region: natlan
 checklist: 2
-en:
-  name: "Music Never Dies!"
-  description: "Hand over the intact record to Milu Nui."
-  commission:
-  - "Prophets of Pop"
-  notes: | 
-    During the second version of the commission where you need to retrieve the record, defeat all enemies without breaking the crate holding the record and record player grants the achievement. Lure the enemies away from the crate to make things easier.
-  checklist:
-    1: "Version 1 complete"
-    2: "Version 2 complete"
-zh:
-  name: "音乐不灭！"
-  description: "将唱片完整地交给米卢·努伊。"
-  commission:
-  - "流行音乐，谁先知"
-  notes: | 
-    接到第二个“要求拿回唱片”的支线，需提交不被破坏的完整唱片，完成任务后获得成就。吸引一下怪物，把它们拉到远离营地的地方击败即可。
-  checklist:
-    1: "第一支线完成"
-    2: "第二支线完成"
+name: "Music Never Dies!"
+description: "Hand over the intact record to Milu Nui."
+commission:
+- "Prophets of Pop"
+notes: | 
+  During the second version of the commission where you need to retrieve the record, defeat all enemies without breaking the crate holding the record and record player grants the achievement. Lure the enemies away from the crate to make things easier.
+checklistItem:
+  1: "Version 1 complete"
+  2: "Version 2 complete"

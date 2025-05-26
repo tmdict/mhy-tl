@@ -4,29 +4,15 @@ version: "1.0"
 achievementType: "olah-series-i"
 region: mondstadt
 checklist: 1
-en:
-  name: "Yo dala?"
-  description: "Successfully conduct cultural exchange with the hilichurls in “Poetry Exchange.”"
-  commission:
-  - "Poetry Exchange"
-  notes: |
-    The commission requires completing “Language Exchange”. To successfully complete the commission without a battle, select the following three options (in any order):
-    
-    - Celi dada, Mimi nunu
-    - Muhe ye
-    - Ye dada!
-  checklist:
-    1: "Poetry Exchange"
-zh:
-  name: "Yo dala？"
-  description: "在「诗歌交流」中与丘丘人交流成功。"
-  commission:
-  - "诗歌交流"
-  notes: |
-    完成每日委托「语言交流」后可以触发这个任务。获得这个成就需要通过跟丘丘人完美对话，通话时选择以下三个选项选择（顺序无所谓）：
-
-    - Celi dada, Mimi nunu
-    - Muhe ye
-    - Ye dada!
-  checklist:
-    1: "诗歌交流"
+name: "Yo dala?"
+description: "Successfully conduct cultural exchange with the hilichurls in “Poetry Exchange.”"
+commission:
+- "Poetry Exchange"
+notes: |
+  The commission requires completing “Language Exchange”. To successfully complete the commission without a battle, select the following three options (in any order):
+  
+  - Celi dada, Mimi nunu
+  - Muhe ye
+  - Ye dada!
+checklistItem:
+  1: "Poetry Exchange"

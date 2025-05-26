@@ -4,21 +4,11 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 1
-en:
-  name: "“It’s My Job.”"
-  description: "Help Hanbei pick more mushrooms."
-  commission:
-  - "Attaché in Another Land"
-  notes: | 
-    Pick more than 5 mushrooms to receive the achievement.
-  checklist:
-    1: "“It’s My Job.”"
-zh:
-  name: "「为了工作。」"
-  description: "为范兵卫采到更多的蘑菇。"
-  commission:
-  - "御用在他乡"
-  notes: | 
-    完成「御用在他乡」时采集超过任务需求量（5）的蘑菇，完成委托时自动获得。
-  checklist:
-    1: "「为了工作。」"
+name: "“It’s My Job.”"
+description: "Help Hanbei pick more mushrooms."
+commission:
+- "Attaché in Another Land"
+notes: | 
+  Pick more than 5 mushrooms to receive the achievement.
+checklistItem:
+  1: "“It’s My Job.”"

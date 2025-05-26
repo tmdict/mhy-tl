@@ -4,21 +4,11 @@ version: "3.1"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 1
-en:
-  name: "One Step Too Far"
-  description: "Slip up in a race against Hilmi…"
-  commission:
-  - "Run, Hilmi, Run!"
-  notes: | 
-    Losing the race against Hilmi will grant the achievement.
-  checklist:
-    1: "Lose the race"
-zh:
-  name: "一步之遥"
-  description: "在与希尔米的赛跑中大意落败…"
-  commission:
-  - "跑，希尔米，跑"
-  notes: | 
-    在与希尔米的比赛中故意输掉即可获得成就。
-  checklist:
-    1: "输掉比赛"
+name: "One Step Too Far"
+description: "Slip up in a race against Hilmi…"
+commission:
+- "Run, Hilmi, Run!"
+notes: | 
+  Losing the race against Hilmi will grant the achievement.
+checklistItem:
+  1: "Lose the race"

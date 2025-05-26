@@ -4,21 +4,11 @@ version: "2.0"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 1
-en:
-  name: "Samurai Gourmet"
-  description: "Witness Kamei Munehisa's induction into the Gourmet Supremos."
-  commission:
-  - "The Gourmet Supremos: Breakthrough Thinking"
-  notes: | 
-    Complete “The Gourmet Supremos” World Quests to unlock daily commission “The Gourmet Supremos: Breakthrough Thinking”. Completing it will unlock “The Gourmet Supremos: The Importance of Eating Well”, which grants you the achievement.
-  checklist:
-    1: "The Gourmet Supremos: Breakthrough Thinking"
-zh:
-  name: "饮食武士"
-  description: "见证龟井宗久加入全能美食队。"
-  commission:
-  - "全能美食队·突破性思维"
-  notes: | 
-    完成「全能美食队」系列世界任务后刷到每日委托「全能美食队·突破性思维」，完成后解锁「全能美食队·吃饱的重要性」，做完后获得成就。
-  checklist:
-    1: "全能美食队·突破性思维"
+name: "Samurai Gourmet"
+description: "Witness Kamei Munehisa's induction into the Gourmet Supremos."
+commission:
+- "The Gourmet Supremos: Breakthrough Thinking"
+notes: | 
+  Complete “The Gourmet Supremos” World Quests to unlock daily commission “The Gourmet Supremos: Breakthrough Thinking”. Completing it will unlock “The Gourmet Supremos: The Importance of Eating Well”, which grants you the achievement.
+checklistItem:
+  1: "The Gourmet Supremos: Breakthrough Thinking"

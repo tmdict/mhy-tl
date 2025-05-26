@@ -4,33 +4,18 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: mondstadt
 checklist: 4
-en:
-  name: "In the Name of Favonius"
-  description: "Witness Jilliana's tale."
-  commission:
-  - "A Surprise Gift"
-  notes: | 
-    Completing Vile's version grants the achievement “In the Name of Favonius”.
+name: "In the Name of Favonius"
+description: "Witness Jilliana's tale."
+commission:
+- "A Surprise Gift"
+notes: | 
+  Completing Vile's version grants the achievement “In the Name of Favonius”.
 
-    The first time you get “A Surprise Gift”, you are locked into Marjorie’s version. The second time, an option for Quinn is unlocked. The third time, Sara’s version is unlocked, and Vile’s is unlocked last.
-    
-    You do not need to choose the new option to unlock the next option. For example, Vile’s option will be unlocked even if you played only Marjorie's version for the previous three times.
-  checklist:
-    1: "Marjorie"
-    2: "Quinn"
-    3: "Sara"
-    4: "Vile"
-zh:
-  name: "西风佑我"
-  description: "见证吉丽安娜的故事。"
-  commission:
-  - "任务惊喜大礼"
-  notes: | 
-    该成就需要完成日常「任务惊喜大礼」至少四次。
-    
-    帮鲁道夫准备礼物时分别要去找水果老板，猎鹿人老板莎拉，荣光之风老板帮忙准备礼物。最后第四次任务去鲁道夫那会出现第四个选项，然后就是隐藏剧情了，做完了就会有成就。
-  checklist:
-    1: "纪念品商店老板玛乔丽"
-    2: "水果店老板昆恩"
-    3: "猎鹿人老板莎拉"
-    4: "薇尔"
+  The first time you get “A Surprise Gift”, you are locked into Marjorie’s version. The second time, an option for Quinn is unlocked. The third time, Sara’s version is unlocked, and Vile’s is unlocked last.
+  
+  You do not need to choose the new option to unlock the next option. For example, Vile’s option will be unlocked even if you played only Marjorie's version for the previous three times.
+checklistItem:
+  1: "Marjorie"
+  2: "Quinn"
+  3: "Sara"
+  4: "Vile"

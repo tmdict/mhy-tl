@@ -4,25 +4,13 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 3
-en:
-  name: "Aha! What's on the Hook?"
-  description: "Fish some strange things up with Kayvan…"
-  commission:
-  - "Supreme Hookshot?"
-  notes: | 
-    Completing this commission three times (any version) unlocks the World Quest “Cost-Effective Hook” the following day, completing it grants the achievement.
-  checklist:
-    1: "Special Mushroom Version"
-    2: "Special Bird Eggs Version"
-    3: "Zaytun Peach Version"
-zh:
-  name: "啊哈…什么上钩了？"
-  description: "与凯万一起钓起奇怪的东西…"
-  commission:
-  - "鱼钩上的绝景?"
-  notes: | 
-    累计完成三次（不需要每种材料都刷到，哪怕一种材料刷三次也可以触发后续任务）每日任务「鱼钩上的绝景?」后，第二天接取世界任务「鱼钩的物尽其用」，完成后获得成就。
-  checklist:
-    1: "新鲜的蘑菇"
-    2: "新鲜的鸟蛋"
-    3: "新鲜的墩墩桃"
+name: "Aha! What's on the Hook?"
+description: "Fish some strange things up with Kayvan…"
+commission:
+- "Supreme Hookshot?"
+notes: | 
+  Completing this commission three times (any version) unlocks the World Quest “Cost-Effective Hook” the following day, completing it grants the achievement.
+checklistItem:
+  1: "Special Mushroom Version"
+  2: "Special Bird Eggs Version"
+  3: "Zaytun Peach Version"

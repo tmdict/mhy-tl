@@ -4,25 +4,13 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 3
-en:
-  name: "The Sky is Vast; The Earth…"
-  commission:
-  - "To Measure the World!"
-  description: "Help Farghani perform measurements."
-  notes: | 
-    Complete all versions of “To Measure the World!”.
-  checklist:
-    1: "Defeating monsters"
-    2: "Setting up beacons"
-    3: "Retrieving up beacons"
-zh:
-  name: "天有多高，地有多…"
-  commission:
-  - "衡量世界之人！"
-  description: "协助法伽尼进行测量工作。"
-  notes: | 
-    完成所有“衡量世界之人”的任务之后得到。
-  checklist:
-    1: "打怪"
-    2: "放置信标"
-    3: "回收信标"
+name: "The Sky is Vast; The Earth…"
+commission:
+- "To Measure the World!"
+description: "Help Farghani perform measurements."
+notes: | 
+  Complete all versions of “To Measure the World!”.
+checklistItem:
+  1: "Defeating monsters"
+  2: "Setting up beacons"
+  3: "Retrieving up beacons"

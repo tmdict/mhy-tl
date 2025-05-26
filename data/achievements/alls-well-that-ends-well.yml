@@ -4,19 +4,10 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 1
-en:
-  name: "All’s Well That Ends Well"
-  commission:
-  - "For Old Time’s Sake"
-  description: "Complete the quest “For Old Time's Sake.”"
-  notes: ""
-  checklist:
-    1: "For Old Time’s Sake"
-zh:
-  name: "故人久未归"
-  commission:
-  - "久久望故人"
-  description: "完成「久久望故人」任务。"
-  notes: ""
-  checklist:
-    1: "久久望故人"
+name: "All’s Well That Ends Well"
+commission:
+- "For Old Time’s Sake"
+description: "Complete the quest “For Old Time's Sake.”"
+notes: ""
+checklistItem:
+  1: "For Old Time’s Sake"

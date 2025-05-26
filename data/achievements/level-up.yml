@@ -4,23 +4,12 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 2
-en:
-  name: "Level Up"
-  commission:
-  - "Stairway to Wangshu"
-  description: "Help Huai’an repair Wangshu Inn’s broken bridge."
-  notes: |
-    Completing both parts of this quest will award the achievement “Level Up”.
-  checklist:
-    1: "1"
-    2: "2"
-zh:
-  name: "更上一层楼"
-  commission:
-  - "望舒须筑阶"
-  description: "帮助淮安修复望舒客栈的断桥。"
-  notes: |
-    该成就分为两个每日委托，会在解锁望舒客栈后刷新，完成两个委托后会获得该成就。
-  checklist:
-    1: "1"
-    2: "2"
+name: "Level Up"
+commission:
+- "Stairway to Wangshu"
+description: "Help Huai’an repair Wangshu Inn’s broken bridge."
+notes: |
+  Completing both parts of this quest will award the achievement “Level Up”.
+checklistItem:
+  1: "1"
+  2: "2"

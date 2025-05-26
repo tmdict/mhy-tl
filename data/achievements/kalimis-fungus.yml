@@ -4,29 +4,15 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 1
-en:
-  name: "Kalimi’s Fungus"
-  description: "Watch Hatim make a killing on the exchange!"
-  commission:
-  - "Gold Devouring and Mora Gathering"
-  notes: | 
-    After getting the initial commission “Gold Devouring and Mora Gathering”, you will receive this achievement if the follow-up commission is the one where Hatim makes a fortune.
-    
-    Getting the “Bargain-Hunting” version will lead to the “When Wealth Comes A-Knockin’” achievement. Other follow-ups yield no achievements.
+name: "Kalimi’s Fungus"
+description: "Watch Hatim make a killing on the exchange!"
+commission:
+- "Gold Devouring and Mora Gathering"
+notes: | 
+  After getting the initial commission “Gold Devouring and Mora Gathering”, you will receive this achievement if the follow-up commission is the one where Hatim makes a fortune.
+  
+  Getting the “Bargain-Hunting” version will lead to the “When Wealth Comes A-Knockin’” achievement. Other follow-ups yield no achievements.
 
-    Follow-up commission seems to be completely random and not affected by the type and quality of food used.
-  checklist:
-    1: "Fortune Version"
-zh:
-  name: "卡里米之蕈兽"
-  description: "见证哈特姆在「期货交易」大赚一笔！"
-  commission:
-  - "吞金和蓄财"
-  notes: | 
-    首先接到每日任务「吞金和蓄财」，三种吞金料理任选其一提交后可能出现三种后续，若为大赚，则获得成就。
-
-    若后续为大亏，给他一份苹果酿后获得成就「当财运来敲门」。其它后续无成就。
-
-    后续的概率完全随机，与交付料理种类和品质没有关系。
-  checklist:
-    1: "大赚一笔"
+  Follow-up commission seems to be completely random and not affected by the type and quality of food used.
+checklistItem:
+  1: "Fortune Version"

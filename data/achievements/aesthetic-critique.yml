@@ -4,31 +4,16 @@ version: "4.0"
 achievementType: "wonders-of-the-world"
 region: fontaine
 checklist: 4
-en:
-  name: "Aesthetic Critique"
-  description: "Listen to Depierris’ theories regarding “aesthetics.”"
-  commission:
-  - "Aesthetic Critique: Principles of Aesthetics"
-  - "Aesthetic Critique: Practice of Aesthetics"
-  - "Aesthetic Critique: Self-Critique"
-  notes: | 
-    Complete “Aesthetic Critique: Principles of Aesthetics” twice to trigger follow-up daily commission “Aesthetic Critique: Practice of Aesthetics”. Completing this commission once unlocks the daily commission “Aesthetic Critique: Self-Critique” which grants the achievement.
-  checklist:
-    1: "Aesthetic Critique: Principles of Aesthetics x1"
-    2: "Aesthetic Critique: Principles of Aesthetics x2"
-    3: "Aesthetic Critique: Practice of Aesthetics"
-    4: "Aesthetic Critique: Self-Critique"
-zh:
-  name: "审美力批判"
-  description: "聆听德皮耶里的「美学」理论。"
-  commission:
-  - "审美力批判·美学原理批判"
-  - "审美力批判·实践创作批判"
-  - "审美力批判·自我批判"
-  notes: | 
-    完成日委托“审美力批判·美学原理批判”两次后有会刷到每日委托“审美力批判·实践创作批判”，做完后再接到“审美力批判·自我批判”完成即可得到成就。
-  checklist:
-    1: "审美力批判·美学原理批判x1"
-    2: "审美力批判·美学原理批判x2"
-    3: "审美力批判·实践创作批判"
-    4: "审美力批判·自我批判"
+name: "Aesthetic Critique"
+description: "Listen to Depierris’ theories regarding “aesthetics.”"
+commission:
+- "Aesthetic Critique: Principles of Aesthetics"
+- "Aesthetic Critique: Practice of Aesthetics"
+- "Aesthetic Critique: Self-Critique"
+notes: | 
+  Complete “Aesthetic Critique: Principles of Aesthetics” twice to trigger follow-up daily commission “Aesthetic Critique: Practice of Aesthetics”. Completing this commission once unlocks the daily commission “Aesthetic Critique: Self-Critique” which grants the achievement.
+checklistItem:
+  1: "Aesthetic Critique: Principles of Aesthetics x1"
+  2: "Aesthetic Critique: Principles of Aesthetics x2"
+  3: "Aesthetic Critique: Practice of Aesthetics"
+  4: "Aesthetic Critique: Self-Critique"

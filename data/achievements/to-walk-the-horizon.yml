@@ -4,41 +4,21 @@ version: "3.3"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 8
-en:
-  name: "To Walk The Horizon…?"
-  description: "Witness Sun Yu’s tale."
-  commission:
-  - "The Sparrow Studies the Blade"
-  - "The Day the Sword Departs"
-  notes: | 
-    After completing “The Sparrow Studies the Blade”, finish “The Day the Sword Departs” series of commissions to receive the achievment.
-    
-    Because this is a new achievement, previous completions of “The Sparrow Studies the Blade” do not count and you need to complete it once after version 3.3.
-  checklist:
-    1: "The Sparrow Studies the Blade"
-    2: "The Day the Sword Departs - Encounter"
-    3: "The Day the Sword Departs - Training 1"
-    4: "The Day the Sword Departs - Training 2"
-    5: "The Day the Sword Departs - Monster fighting"
-    6: "The Day the Sword Departs - Cross-country training"
-    7: "The Day the Sword Departs - Departure (collect soil)"
-    8: "The Day the Sword Departs - Departure (take photo)"
-zh:
-  name: "行万里路…？"
-  description: "见证孙宇的故事。"
-  commission:
-  - "飞雀扰剑意"
-  - "剑去之日"
-  notes: | 
-    完成「飞雀扰剑意」后，完成「剑去之日」一系列任务（一共四次）即可拿到成就。
-    
-    因为是新增委托的缘故，之前完成的「飞雀扰剑意」不作数，得在3.3版本更新后重新再做一遍。
-  checklist:
-    1: "试问，藏锋何处？"
-    2: "剑去之日 - 与孙宇对话"
-    3: "剑去之日 - 锻炼1"
-    4: "剑去之日 - 锻炼2"
-    5: "剑去之日 - 对抗敌人"
-    6: "剑去之日 - 越野训练"
-    7: "剑去之日 - 离开（取土）"
-    8: "剑去之日 - 离开（拍照）"
+name: "To Walk The Horizon…?"
+description: "Witness Sun Yu’s tale."
+commission:
+- "The Sparrow Studies the Blade"
+- "The Day the Sword Departs"
+notes: | 
+  After completing “The Sparrow Studies the Blade”, finish “The Day the Sword Departs” series of commissions to receive the achievment.
+  
+  Because this is a new achievement, previous completions of “The Sparrow Studies the Blade” do not count and you need to complete it once after version 3.3.
+checklistItem:
+  1: "The Sparrow Studies the Blade"
+  2: "The Day the Sword Departs - Encounter"
+  3: "The Day the Sword Departs - Training 1"
+  4: "The Day the Sword Departs - Training 2"
+  5: "The Day the Sword Departs - Monster fighting"
+  6: "The Day the Sword Departs - Cross-country training"
+  7: "The Day the Sword Departs - Departure (collect soil)"
+  8: "The Day the Sword Departs - Departure (take photo)"

@@ -4,21 +4,11 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 1
-en:
-  name: "This Novel Is Amazing!"
-  commission:
-  - "This Novel Is Amazing!"
-  description: "Steal a peek at Chang the Ninth’s draft manuscript."
-  notes: |
-    Choosing to peek at the book grants the achievement “This Novel Is Amazing!”
-  checklist:
-    1: "This Novel Is Amazing!"
-zh:
-  name: "这本小说真厉害！"
-  commission:
-  - "这本小说真厉害"
-  description: "偷看常九爷的书稿。"
-  notes: |
-    此成就需要完成日常委托「这本小说真厉害」并在派蒙询问时选择偷看才可完成。
-  checklist:
-    1: "这本小说真厉害"
+name: "This Novel Is Amazing!"
+commission:
+- "This Novel Is Amazing!"
+description: "Steal a peek at Chang the Ninth’s draft manuscript."
+notes: |
+  Choosing to peek at the book grants the achievement “This Novel Is Amazing!”
+checklistItem:
+  1: "This Novel Is Amazing!"

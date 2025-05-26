@@ -4,25 +4,13 @@ version: "5.0"
 achievementType: "wonders-of-the-world"
 region: natlan
 checklist: 3
-en:
-  name: "Saurian’s Cradle"
-  description: "Become friends with a little Yumkasaur."
-  commission:
-  - "How to Make Friends"
-  notes: | 
-    Complete the quest three times, each time choosing the option to comfort the Yumkasaurus, grants the grants the achievement.
-  checklist:
-    1: "Comfort the Yumkasaurus x1"
-    2: "Comfort the Yumkasaurus x2"
-    3: "Comfort the Yumkasaurus x3"
-zh:
-  name: "龙的摇篮"
-  description: "与一只小匿叶龙成为了朋友。"
-  commission:
-  - "交友之法"
-  notes: | 
-    刷三次并选择安慰小匿叶龙即可获得成就。
-  checklist:
-    1: "安慰小匿叶龙 x1"
-    2: "安慰小匿叶龙 x2"
-    3: "安慰小匿叶龙 x3"
+name: "Saurian’s Cradle"
+description: "Become friends with a little Yumkasaur."
+commission:
+- "How to Make Friends"
+notes: | 
+  Complete the quest three times, each time choosing the option to comfort the Yumkasaurus, grants the grants the achievement.
+checklistItem:
+  1: "Comfort the Yumkasaurus x1"
+  2: "Comfort the Yumkasaurus x2"
+  3: "Comfort the Yumkasaurus x3"

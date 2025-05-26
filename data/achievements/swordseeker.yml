@@ -4,21 +4,11 @@ version: "3.3"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 1
-en:
-  name: "Swordseeker"
-  description: "Witness the tale of Lan and the “Unseen Razor.”"
-  commission:
-  - "Where Is the Unseen Razor?"
-  notes: | 
-    Completing the Stonehide Lawachurl (sword hilt) version of the daily commission “Where Is the Unseen Razor?” grants the achievement (The appearance of this version of the commission is random).
-  checklist:
-    1: "Where Is the Unseen Razor?"
-zh:
-  name: "四方求剑"
-  description: "见证岚姐与「藏锋」的故事。"
-  commission:
-  - "试问，藏锋何处？"
-  notes: | 
-    完成丘丘岩盔王（剑柄）版本的委托任务「试问，藏锋何处？」后即可获得成就（这个任务每次刷新的地点是随机的）。
-  checklist:
-    1: "试问，藏锋何处？"
+name: "Swordseeker"
+description: "Witness the tale of Lan and the “Unseen Razor.”"
+commission:
+- "Where Is the Unseen Razor?"
+notes: | 
+  Completing the Stonehide Lawachurl (sword hilt) version of the daily commission “Where Is the Unseen Razor?” grants the achievement (The appearance of this version of the commission is random).
+checklistItem:
+  1: "Where Is the Unseen Razor?"

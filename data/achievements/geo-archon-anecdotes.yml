@@ -4,37 +4,19 @@ version: "1.0"
 achievementType: "stone-harbors-nostalgia-series-i"
 region: liyue
 checklist: 4
-en:
-  name: "Geo Archon Anecdotes"
-  description: "Collect all the stories about Rex Lapis in the “Geo Travel Diary.”"
-  commission:
-  - "Geo Travel Diary"
-  notes: |
-    Collecting all 4 stories grants the achievement:
+name: "Geo Archon Anecdotes"
+description: "Collect all the stories about Rex Lapis in the “Geo Travel Diary.”"
+commission:
+- "Geo Travel Diary"
+notes: |
+  Collecting all 4 stories grants the achievement:
 
-    - The Groundbreaker (Plants and Ingredients): Apple, Berry, Bird Egg, Carrot, Flaming Flower Stamen, Horsetail, Jueyun Chili, Lotus Head, Matsutake, Mint, Mist Flower Corolla, Mushroom, Pinecone, Qingxin, Radish, Silk Flower, Snapdragon, Sunsettia, Sweet Flower, Violetgrass
-    - God of the Stove (Ores): Cor Lapis, Crystal Chunk, Electro Crystal, Iron Chunk, Noctilucous Jade, White Iron Chunk
-    - God of History (Dishes): Almond Tofu, Black-Back Perch Stew, Jade Parcels, Jewelry Soup, Jueyun Chili Chicken, Matsutake Meat Rolls, Mora Meat, Squirrel Fish, Stir-Fried Filet, Zhongyuan Chop Suey
-    - God of Wealth: Glaze Lily
-  checklist:
-    1: "Branch 1: (Plants and Ingredients) - The Groundbreaker"
-    2: "Branch 2: (Ores) - God of the Stove"
-    3: "Branch 3: (Dishes) - God of History"
-    4: "Branch 4: (Glaze Lily) - God of Wealth"
-zh:
-  name: "帝君故事"
-  description: "搜集到「岩游记」中所有有关岩王帝君的故事。"
-  commission:
-  - "且听下回分解"
-  notes: |
-    收集到4个不同的故事后可以获得成就：
-
-    - 岩神传说：开拓之神：霓裳花，琉璃袋，绝云椒椒，清心，鸟蛋，树莓 
-    - 岩神传说：炉灶之神：夜泊石，铁块，石珀 
-    - 岩神传说：历史之神：松茸酿肉卷，翡玉什锦袋，万民堂水煮鱼，摩拉肉 
-    - 岩神传说：财神：琉璃百合 
-  checklist:
-    1: "岩神传说：开拓之神"
-    2: "岩神传说：炉灶之神"
-    3: "岩神传说：历史之神"
-    4: "岩神传说：财神"
+  - The Groundbreaker (Plants and Ingredients): Apple, Berry, Bird Egg, Carrot, Flaming Flower Stamen, Horsetail, Jueyun Chili, Lotus Head, Matsutake, Mint, Mist Flower Corolla, Mushroom, Pinecone, Qingxin, Radish, Silk Flower, Snapdragon, Sunsettia, Sweet Flower, Violetgrass
+  - God of the Stove (Ores): Cor Lapis, Crystal Chunk, Electro Crystal, Iron Chunk, Noctilucous Jade, White Iron Chunk
+  - God of History (Dishes): Almond Tofu, Black-Back Perch Stew, Jade Parcels, Jewelry Soup, Jueyun Chili Chicken, Matsutake Meat Rolls, Mora Meat, Squirrel Fish, Stir-Fried Filet, Zhongyuan Chop Suey
+  - God of Wealth: Glaze Lily
+checklistItem:
+  1: "Branch 1: (Plants and Ingredients) - The Groundbreaker"
+  2: "Branch 2: (Ores) - God of the Stove"
+  3: "Branch 3: (Dishes) - God of History"
+  4: "Branch 4: (Glaze Lily) - God of Wealth"

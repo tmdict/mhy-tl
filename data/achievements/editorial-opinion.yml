@@ -4,35 +4,18 @@ version: "2.0"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 4
-en:
-  name: "Editorial Opinion"
-  description: "Help Shigeru and Junkichi return to the right artist path."
-  commission:
-  - "Is This Novel Amazing?"
-  - "This Novel Seems… Problematic?"
-  - "This Novel… Seems Familiar?"
-  notes: | 
-    During “Is This Novel Amazing?”, siding with Junkichi will unlock the chance to receive “This Novel Seems… Problematic?” while siding with Shigeru will unlock a chance to receive “This Novel… Seems Familiar?”, completing both commissions grants the achievement.
+name: "Editorial Opinion"
+description: "Help Shigeru and Junkichi return to the right artist path."
+commission:
+- "Is This Novel Amazing?"
+- "This Novel Seems… Problematic?"
+- "This Novel… Seems Familiar?"
+notes: | 
+  During “Is This Novel Amazing?”, siding with Junkichi will unlock the chance to receive “This Novel Seems… Problematic?” while siding with Shigeru will unlock a chance to receive “This Novel… Seems Familiar?”, completing both commissions grants the achievement.
 
-    Submitting the book “Literature Club” first unlocks the “Storytelling Method” World Quest, which grants the “Well, At Least It Ended” achievement.
-  checklist:
-    1: "Is This Novel Amazing? - Side with Junkichi"
-    2: "Is This Novel Amazing? - Side with Shigeru"
-    3: "This Novel Seems… Problematic?"
-    4: "This Novel… Seems Familiar? - Literature Club"
-zh:
-  name: "编辑部的一己之见"
-  description: "帮助阿茂和顺吉回到正确的创作轨道。"
-  commission:
-  - "这本小说…厉害吗？"
-  - "这本小说…有问题?"
-  - "这本小说…好像看过？"
-  notes: | 
-    在「这本小说…厉害吗？」里支持顺吉后就能够在日后刷出委托「这本小说…有问题？」，支持阿茂的话就有机会刷出和「这本小说…好像看过？」，把两个委托都完成即可。（在「这本小说…好像看过？」里，根据指引找到3本书，只交付《文学团》即可）。
-
-    之后可以解锁「故事构思法」，完成后获得成就「至少有了个结局」。
-  checklist:
-    1: "这本小说…厉害吗？ - 其实顺吉的想法还不错…"
-    2: "这本小说…厉害吗？ - 其实阿茂的看法更合理…"
-    3: "这本小说…有问题"
-    4: "这本小说…好像看过？ - 文学团"
+  Submitting the book “Literature Club” first unlocks the “Storytelling Method” World Quest, which grants the “Well, At Least It Ended” achievement.
+checklistItem:
+  1: "Is This Novel Amazing? - Side with Junkichi"
+  2: "Is This Novel Amazing? - Side with Shigeru"
+  3: "This Novel Seems… Problematic?"
+  4: "This Novel… Seems Familiar? - Literature Club"

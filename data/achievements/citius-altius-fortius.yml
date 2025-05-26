@@ -4,21 +4,11 @@ version: "5.0"
 achievementType: "wonders-of-the-world"
 region: natlan
 checklist: 1
-en:
-  name: "Citius, Altius, Fortius!"
-  description: "Give a perfect training demonstration to Alem."
-  commission:
-  - "Grow Up Quickly, Littl’Un"
-  notes: | 
-    In either version, completing the dig without being in the radius of an explosion or completing the endurance training perfectly‍ grants the achievement.
-  checklist:
-    1: "Grow Up Quickly, Littl'Un"
-zh:
-  name: "更高，更快，更强！"
-  description: "为阿蕾梅做出完美的锻炼示范。"
-  commission:
-  - "小小人儿，快长大"
-  notes: | 
-    委托训练二选一，完成一次（需要避开爆炸陷阱并迅速抵达终点）即可获得成就。
-  checklist:
-    1: "小小人儿，快长大"
+name: "Citius, Altius, Fortius!"
+description: "Give a perfect training demonstration to Alem."
+commission:
+- "Grow Up Quickly, Littl’Un"
+notes: | 
+  In either version, completing the dig without being in the radius of an explosion or completing the endurance training perfectly‍ grants the achievement.
+checklistItem:
+  1: "Grow Up Quickly, Littl'Un"

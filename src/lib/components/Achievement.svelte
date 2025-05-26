@@ -5,7 +5,6 @@
   import { marked } from 'marked';
 
   export let achievement;
-  export let content;
   export let alt = false;
   let expand = false;
 
@@ -48,19 +47,19 @@
   on:keydown={() => (expand = !expand)}
 >
   <div class="content-row">
-    <h4 class:complete>{@html content.name}</h4>
+    <h4 class:complete>{@html achievement.name}</h4>
     <div class="label region">{achievement.region}</div>
     <div class="label version">v{achievement.version}</div>
-    {#each content.commission as commission}
+    {#each achievement.commission as commission}
       <span class="label commission">{@html commission}</span>
     {/each}
   </div>
   <div class="description" role="presentation" on:click|stopPropagation on:keydown|stopPropagation>
-    {@html content.description}
+    {@html achievement.description}
   </div>
   {#if expand}
     <div transition:slide class="notes-checklist">
-      <span class="notes" role="presentation" on:click|stopPropagation on:keydown|stopPropagation>{@html marked(content.notes)}</span>
+      <span class="notes" role="presentation" on:click|stopPropagation on:keydown|stopPropagation>{@html marked(achievement.notes)}</span>
       <h5>Checklist</h5>
       <ul>
         {#each [...Array(achievement.checklist).keys()] as todo}
@@ -71,10 +70,10 @@
               type="checkbox"
               id="{achievement.achievement}-{todo}"
               name="{achievement.achievement}-{todo}"
-              value={content.checklist[todo + 1]}
+              value={achievement.checklistItem[todo + 1]}
               checked={$localData['achievements'][achievement.achievement][todo]}
             />
-            <label role="presentation" on:click|stopPropagation on:keydown|stopPropagation for="{achievement.achievement}-{todo}">{content.checklist[todo + 1]}</label>
+            <label role="presentation" on:click|stopPropagation on:keydown|stopPropagation for="{achievement.achievement}-{todo}">{achievement.checklistItem[todo + 1]}</label>
           </li>
         {/each}
       </ul>

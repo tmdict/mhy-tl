@@ -4,21 +4,11 @@ version: "5.0"
 achievementType: "wonders-of-the-world"
 region: natlan
 checklist: 1
-en:
-  name: "Victory From the Flying Leaves"
-  description: "Reach the destination within the time limit."
-  commission:
-  - "Saurian Versus Mountain"
-  notes: | 
-    Reaching the goal within the time limit‍ of 15 seconds (not displayed in game) grants the achievement.
-  checklist:
-    1: "Saurian Versus Mountain"
-zh:
-  name: "飞叶捎来的胜利"
-  description: "在限定时间内到达了终点。"
-  commission:
-  - "龙与山"
-  notes: | 
-    在限定时间内达山顶即可获得成就。若时间超过15秒，完成挑战无法获得成就。
-  checklist:
-    1: "龙与山"
+name: "Victory From the Flying Leaves"
+description: "Reach the destination within the time limit."
+commission:
+- "Saurian Versus Mountain"
+notes: | 
+  Reaching the goal within the time limit‍ of 15 seconds (not displayed in game) grants the achievement.
+checklistItem:
+  1: "Saurian Versus Mountain"

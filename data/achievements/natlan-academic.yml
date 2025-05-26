@@ -4,51 +4,26 @@ version: "5.0"
 achievementType: "wonders-of-the-world"
 region: natlan
 checklist: 3
-en:
-  name: "Natlan Academic"
-  description: "Answer all the questions correctly during a round of Keita’s questioning."
-  commission:
-  - "Hmm? Natlan?"
-  notes: | 
-    Answering all three questions correctly grants the grants the achievement. If a question is missed, restart the game to reset the quest.
+name: "Natlan Academic"
+description: "Answer all the questions correctly during a round of Keita’s questioning."
+commission:
+- "Hmm? Natlan?"
+notes: | 
+  Answering all three questions correctly grants the grants the achievement. If a question is missed, restart the game to reset the quest.
 
-    - “Who are the companions of the Children of Echoes? What is their true name?”
-      - Tepetlisaurus
-    - “What is the name of the tribe where the Yumkasaurs live?”
-      - The Scions of the Canopy
-    - “Natlan has a certain thing. It can be used for forging, for the making of records […] What’s the name of that thing?”
-      - Phlogiston
-    - “Who are the companions of the People of the Springs? What is their true name?”
-      - Koholasaurus
-    - “In Natlan, there is a type of mushroom that contains phlogiston. What is its name?”
-      - Candlecap Mushroom
-    - “In Natlan, there is a type of flower that contains phlogiston. What is its name?”
-      - Embercore Flower
-  checklist:
-    1: "Correct answer x1"
-    2: "Correct answer x2"
-    3: "Correct answer x3"
-zh:
-  name: "纳塔博学者"
-  description: "在凯塔的一轮提问中，正确地回答了所有问题。"
-  commission:
-  - "咦？纳塔？"
-  notes: | 
-    正确回答三个问题即可即可获得成就。如果中间回答错了，可以重新启动游戏以重置任务。
-
-    - “「回声之子」的伙伴们是谁？真名为何？”
-      - 嵴锋龙
-    - “「匿叶龙」所在的部族之名,是什么？”
-      - 悬木人
-    - “这种事物的名字是什么？”
-      - 燃素
-    - “「流泉之众」的伙伴们是谁？真名为何？”
-      - 鳍游龙
-    - “在纳塔之中，有一种内部存在着燃素的蘑菇，这种蘑菇的名字是？”
-      - 烛伞蘑菇
-    - “在纳塔之中，有一种内部存在着燃素的花卉，这种花卉的名字是？”
-      - 烬芯花
-  checklist:
-    1: "回答正确 x1"
-    2: "回答正确 x2"
-    3: "回答正确 x3"
+  - “Who are the companions of the Children of Echoes? What is their true name?”
+    - Tepetlisaurus
+  - “What is the name of the tribe where the Yumkasaurs live?”
+    - The Scions of the Canopy
+  - “Natlan has a certain thing. It can be used for forging, for the making of records […] What’s the name of that thing?”
+    - Phlogiston
+  - “Who are the companions of the People of the Springs? What is their true name?”
+    - Koholasaurus
+  - “In Natlan, there is a type of mushroom that contains phlogiston. What is its name?”
+    - Candlecap Mushroom
+  - “In Natlan, there is a type of flower that contains phlogiston. What is its name?”
+    - Embercore Flower
+checklistItem:
+  1: "Correct answer x1"
+  2: "Correct answer x2"
+  3: "Correct answer x3"

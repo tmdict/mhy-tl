@@ -4,31 +4,16 @@ version: "4.0"
 achievementType: "wonders-of-the-world"
 region: fontaine
 checklist: 4
-en:
-  name: "Second Childhood"
-  description: "Play with the kids, and witness their story."
-  commission:
-  - "Their Childhood"
-  - "Their Childhood: Time Waits for No One"
-  - "Their Childhood: City Caper"
-  notes: | 
-    Complete “Their Childhood” twice to trigger follow-up daily commission “Their Childhood: Time Waits for No One”. Completing this commission once unlocks the daily commission “Their Childhood: City Caper” which grants the achievement.
-  checklist:
-    1: "Their Childhood x1"
-    2: "Their Childhood x2"
-    3: "Their Childhood: Time Waits for No One"
-    4: "Their Childhood: City Caper"
-zh:
-  name: "在童年"
-  description: "和孩子们一同玩耍，并且见证他们的故事。"
-  commission:
-  - "他们的童年"
-  - "他们的童年·时光不等人"
-  - "他们的童年·游城记"
-  notes: | 
-    完成日委托“他们的童年”两次后有会刷到每日委托“他们的童年·时光不等人”，做完后再接到“他们的童年·游城记”完成即可得到成就。
-  checklist:
-    1: "他们的童年x1"
-    2: "他们的童年x2"
-    3: "他们的童年·时光不等人"
-    4: "他们的童年·游城记"
+name: "Second Childhood"
+description: "Play with the kids, and witness their story."
+commission:
+- "Their Childhood"
+- "Their Childhood: Time Waits for No One"
+- "Their Childhood: City Caper"
+notes: | 
+  Complete “Their Childhood” twice to trigger follow-up daily commission “Their Childhood: Time Waits for No One”. Completing this commission once unlocks the daily commission “Their Childhood: City Caper” which grants the achievement.
+checklistItem:
+  1: "Their Childhood x1"
+  2: "Their Childhood x2"
+  3: "Their Childhood: Time Waits for No One"
+  4: "Their Childhood: City Caper"

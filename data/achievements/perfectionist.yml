@@ -4,33 +4,17 @@ version: "1.0"
 achievementType: "snezhnaya-does-not-believe-in-tears-series-i"
 region: mondstadt
 checklist: 3
-en:
-  name: "Perfectionist"
-  description: "Complete all of Tsarevich’s commissions flawlessly in “Reliable Helper.”"
-  commission:
-  - "Reliable Helper"
-  notes: |
-    Completing all of Tsarevich’s commission variants flawlessly grants the achievement:
+name: "Perfectionist"
+description: "Complete all of Tsarevich’s commissions flawlessly in “Reliable Helper.”"
+commission:
+- "Reliable Helper"
+notes: |
+  Completing all of Tsarevich’s commission variants flawlessly grants the achievement:
 
-    - Foot of the mountains: Defeat the enemies and come back within 1 minute for flawless completion. Defeat the Hilichurl Shooter that is on the elevated plane above Tsarevich to prevent it from getting aggravated when returning to Tsarevich.
-    - Mountainside: Do not destroy the crates for flawless completion. If the cargo is destroyed, Tsarevich will be displeased regardless of who or what destroyed the cargo. Lure the hilichurls away from the boxes before starting the fight.
-    - Mountaintop: Defeat the Blazing Axe Mitachurl first, followed by the Wooden Shieldwall Mitachurl, and finally the Samachurl for a flawless completion.
-  checklist:
-    1: "Foot of the mountains"
-    2: "Mountainside"
-    3: "Mountaintop"
-zh:
-  name: "追求极致"
-  description: "在「说到做到！」中完美完成查耶维奇的所有委托。"
-  commission:
-  - "说到做到！"
-  notes: |
-    在「说到做到！」中完美完成查耶维奇的所有委托。完美达成条件：
-
-    - 山底：1分钟内击杀所有怪物并提交任务。路上有射箭丘丘人阻碍你，可提前刷了。
-    - 山腰：不破坏任何货物的情况下击杀所有怪物。不破坏箱子，记得把丘丘人拉到一边，就不会误伤了。
-    - 山顶：依次击杀火斧丘丘人、木盾丘丘人、水丘丘萨满
-  checklist:
-    1: "山底"
-    2: "山腰"
-    3: "山顶"
+  - Foot of the mountains: Defeat the enemies and come back within 1 minute for flawless completion. Defeat the Hilichurl Shooter that is on the elevated plane above Tsarevich to prevent it from getting aggravated when returning to Tsarevich.
+  - Mountainside: Do not destroy the crates for flawless completion. If the cargo is destroyed, Tsarevich will be displeased regardless of who or what destroyed the cargo. Lure the hilichurls away from the boxes before starting the fight.
+  - Mountaintop: Defeat the Blazing Axe Mitachurl first, followed by the Wooden Shieldwall Mitachurl, and finally the Samachurl for a flawless completion.
+checklistItem:
+  1: "Foot of the mountains"
+  2: "Mountainside"
+  3: "Mountaintop"

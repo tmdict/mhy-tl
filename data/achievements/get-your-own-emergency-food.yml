@@ -4,21 +4,11 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: mondstadt
 checklist: 1
-en:
-  name: "Get Your Own Emergency Food!"
-  description: "Consume the food during “Food Delivery”…?"
-  commission:
-  - "Food Delivery"
-  notes: | 
-    Eating the food instead of delivering it during “Food Delivery” grants the achievement.
-  checklist:
-    1: "Food Delivery"
-zh:
-  name: "这不是应急食品"
-  description: "在「餐品订单」任务中吃掉了餐品…？"
-  commission:
-  - "餐品订单"
-  notes: | 
-    在每日任务在「餐品订单」中选择吃掉了餐品。
-  checklist:
-    1: "餐品订单"
+name: "Get Your Own Emergency Food!"
+description: "Consume the food during “Food Delivery”…?"
+commission:
+- "Food Delivery"
+notes: | 
+  Eating the food instead of delivering it during “Food Delivery” grants the achievement.
+checklistItem:
+  1: "Food Delivery"

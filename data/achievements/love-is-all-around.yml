@@ -4,44 +4,24 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 5
-en:
-  name: "Love Is All Around"
-  commission:
-  - "Good Sign"
-  description: "In “Good Sign,” help Zhihua find 5 signs that romance is coming his way."
-  notes: |
-    There are 5 signs but each commission will only give you two at random. Four have two possible outcomes, so at minimum you need to do this commission 5 times to unlock both achievements.
+name: "Love Is All Around"
+commission:
+- "Good Sign"
+description: "In “Good Sign,” help Zhihua find 5 signs that romance is coming his way."
+notes: |
+  There are 5 signs but each commission will only give you two at random. Four have two possible outcomes, so at minimum you need to do this commission 5 times to unlock both achievements.
 
-    Finding all 5 “signs of an imminent romance” grants the achievement “Love is All Around”:
-    1. Seeing that Granny Shan has good business
-    2. Leaving the pigeons alone
-    3. Leaving the dogs alone
-    4. Leaving the cat and fish alone
-    5. Leaving the leaves alone
+  Finding all 5 “signs of an imminent romance” grants the achievement “Love is All Around”:
+  1. Seeing that Granny Shan has good business
+  2. Leaving the pigeons alone
+  3. Leaving the dogs alone
+  4. Leaving the cat and fish alone
+  5. Leaving the leaves alone
 
-    (Ruining 4 “signs of an imminent romance” grants the hidden achievement “Open to Interpretation”)
-  checklist:
-    1: "Seeing that Granny Shan has good business"
-    2: "Leaving the pigeons alone"
-    3: "Leaving the dogs alone"
-    4: "Leaving the cat and fish alone"
-    5: "Leaving the leaves alone"
-zh:
-  name: "「知天命…」"
-  commission:
-  - "好兆头"
-  description: "在「好兆头」中，帮助志华找到五个爱情运来临的征兆。"
-  notes: |
-    帮助志华找到五个爱情运来临的征兆。完成这个成需要多次刷新到「好兆头」任务，5个征兆每次随机刷2个："
-
-    1. 店主生意兴隆
-    2. 有鸟成双对（别打鸟）
-    3. 围在一起的狗（别赶走）
-    4. 猫鱼成朋友（别捕鱼别杀鱼）
-    5. 落叶（别吹别烧）
-  checklist:
-    1: "店主生意兴隆"
-    2: "有鸟成双对"
-    3: "围在一起的狗"
-    4: "猫鱼成朋友"
-    5: "落叶"
+  (Ruining 4 “signs of an imminent romance” grants the hidden achievement “Open to Interpretation”)
+checklistItem:
+  1: "Seeing that Granny Shan has good business"
+  2: "Leaving the pigeons alone"
+  3: "Leaving the dogs alone"
+  4: "Leaving the cat and fish alone"
+  5: "Leaving the leaves alone"

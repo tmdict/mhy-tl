@@ -4,23 +4,12 @@ version: "2.0"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 2
-en:
-  name: "Samurice"
-  description: "Help Kamei Munehisa collect ingredients from the camps on either side."
-  commission:
-  - "The Gourmet Supremos: Extreme Cookery"
-  notes: | 
-    Completing both sides in “The Gourmet Supremos: Extreme Cookery” grants the achievement.
-  checklist:
-    1: "Left"
-    2: "Right"
-zh:
-  name: "武士饭"
-  description: "帮助龟井宗久搜集过全部两侧营地的食材。"
-  commission:
-  - "全能美食队·厨道的极意"
-  notes: | 
-    完成「全能美食队·厨道的极意」两次，左边右边两个选项都选过一遍后可获取成就。
-  checklist:
-    1: "左边"
-    2: "右边"
+name: "Samurice"
+description: "Help Kamei Munehisa collect ingredients from the camps on either side."
+commission:
+- "The Gourmet Supremos: Extreme Cookery"
+notes: | 
+  Completing both sides in “The Gourmet Supremos: Extreme Cookery” grants the achievement.
+checklistItem:
+  1: "Left"
+  2: "Right"

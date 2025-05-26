@@ -4,19 +4,10 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 1
-en:
-  name: "Beginner’s Luck"
-  commission:
-  - "Diamond in the Rough…"
-  description: "Select the highest-value jade on your first try."
-  notes: ""
-  checklist:
-    1: "Diamond in the Rough…"
-zh:
-  name: "时也运也"
-  commission:
-  - "点石成…什么"
-  description: "一次就选中了最高价值的璞石。"
-  notes: ""
-  checklist:
-    1: "点石成…什么"
+name: "Beginner’s Luck"
+commission:
+- "Diamond in the Rough…"
+description: "Select the highest-value jade on your first try."
+notes: ""
+checklistItem:
+  1: "Diamond in the Rough…"

@@ -4,21 +4,11 @@ version: "2.0"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 1
-en:
-  name: "Boom Shaka-Laka, More Boom-Shaka-Laka"
-  description: "Consult Xiangling regarding special cooking methods"
-  commission:
-  - "The Gourmet Supremos: Breakthrough Thinking"
-  notes: | 
-    To complete this achievement, during the commission “The Gourmet Supremos: Breakthrough Thinking” instead of giving the Jueyun Chili and Fowl to Chef Mao, talk to Xiangling who is near the waypoint southwest of Qingce Village.
-  checklist:
-    1: "The Gourmet Supremos: Breakthrough Thinking"
-zh:
-  name: "噼咔，为什么又是噼咔"
-  description: "向香菱请教到特别的烹饪手法。"
-  commission:
-  - "全能美食队·突破性思维"
-  notes: | 
-    完成美食小分队系列世界任务后，在稻妻有概率刷到每日任务「全能美食队·突破性思维」，不要将绝云椒椒和禽肉交给卯师傅，先去璃月-碧水原（轻策庄西南方海边竹林的传送点往北）与香菱对话。
-  checklist:
-    1: "全能美食队·突破性思维"
+name: "Boom Shaka-Laka, More Boom-Shaka-Laka"
+description: "Consult Xiangling regarding special cooking methods"
+commission:
+- "The Gourmet Supremos: Breakthrough Thinking"
+notes: | 
+  To complete this achievement, during the commission “The Gourmet Supremos: Breakthrough Thinking” instead of giving the Jueyun Chili and Fowl to Chef Mao, talk to Xiangling who is near the waypoint southwest of Qingce Village.
+checklistItem:
+  1: "The Gourmet Supremos: Breakthrough Thinking"

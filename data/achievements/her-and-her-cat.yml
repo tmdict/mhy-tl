@@ -4,43 +4,22 @@ version: "2.1"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 4
-en:
-  name: "Her and Her Cat"
-  description: "Follow Neko up Mt. Yougou to find “Hibiki”’s trail."
-  commission:
-  - "A Fishy Flavor"
-  - "Shrine Cleanup"
-  - "The Cat’s Trail"
-  notes: | 
-    Complete “Neko Is a Cat” World Quest series, and 4 total completions of any of the following daily commission:
+name: "Her and Her Cat"
+description: "Follow Neko up Mt. Yougou to find “Hibiki”’s trail."
+commission:
+- "A Fishy Flavor"
+- "Shrine Cleanup"
+- "The Cat’s Trail"
+notes: | 
+  Complete “Neko Is a Cat” World Quest series, and 4 total completions of any of the following daily commission:
 
-    - A Fishy Flavor
-    - Shrine Cleanup
-    - The Cat’s Trail
+  - A Fishy Flavor
+  - Shrine Cleanup
+  - The Cat’s Trail
 
-    This unlocks the World Quest “The Narukami Trail”, completing it grants the achievement.
-  checklist:
-    1: "1"
-    2: "2"
-    3: "3"
-    4: "4"
-zh:
-  name: "她和她的猫"
-  description: "陪寝子前往影向山，寻找「阿响」的痕迹。"
-  commission:
-  - "神社大扫除"
-  - "鱼之味?"
-  - "猫之迹"
-  notes: | 
-    完成世界任务「寝子是只猫」后，完成4次任何以下三个每日任务：
-    
-    - 神社大扫除
-    - 鱼之味
-    - 猫之迹
-
-    之后解锁世界任务「鸣神寻踪」，完成后取得成就。
-  checklist:
-    1: "1"
-    2: "2"
-    3: "3"
-    4: "4"
+  This unlocks the World Quest “The Narukami Trail”, completing it grants the achievement.
+checklistItem:
+  1: "1"
+  2: "2"
+  3: "3"
+  4: "4"

@@ -4,21 +4,11 @@ version: "3.1"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 1
-en:
-  name: "Doctor’s Handwriting"
-  description: "Help Maruf make out the prescription correctly."
-  commission:
-  - "Good Medicine Is Hard to Come By"
-  notes: | 
-    Giving the correct instructions to Maruf grants the achievement.
-  checklist:
-    1: "Correct instructions"
-zh:
-  name: "医用笔迹"
-  description: "帮助马鲁夫正确地解析药方。"
-  commission:
-  - "良药难求"
-  notes: | 
-    按照提示正确回答问题即可。
-  checklist:
-    1: "正确回答"
+name: "Doctor’s Handwriting"
+description: "Help Maruf make out the prescription correctly."
+commission:
+- "Good Medicine Is Hard to Come By"
+notes: | 
+  Giving the correct instructions to Maruf grants the achievement.
+checklistItem:
+  1: "Correct instructions"

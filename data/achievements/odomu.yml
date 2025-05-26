@@ -4,21 +4,11 @@ version: "1.0"
 achievementType: "olah-series-i"
 region: mondstadt
 checklist: 1
-en:
-  name: "…Odomu?"
-  description: "Successfully conduct cultural exchange with the hilichurls in “Language Exchange.”"
-  commission:
-  - "Language Exchange"
-  notes: |
-    You are granted the achievement upon first-time success.
-  checklist:
-    1: "Language Exchange"
-zh:
-  name: "…Odomu？"
-  description: "在「语言交流」中与丘丘人交流成功。"
-  commission:
-  - "语言交流"
-  notes: |
-    成就的需求是在语言交流中与丘丘人交谈成功，顺着任务流程走就能完成。
-  checklist:
-    1: "语言交流"
+name: "…Odomu?"
+description: "Successfully conduct cultural exchange with the hilichurls in “Language Exchange.”"
+commission:
+- "Language Exchange"
+notes: |
+  You are granted the achievement upon first-time success.
+checklistItem:
+  1: "Language Exchange"

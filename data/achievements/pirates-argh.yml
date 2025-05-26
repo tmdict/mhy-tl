@@ -4,25 +4,13 @@ version: "1.0"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 3
-en:
-  name: "Pirates! Argh!"
-  commission:
-  - "Pirate Invasion, in Liyue Harbor!"
-  description: "Play a game of pirates with Little Lulu, Little Fei, and Little Meng."
-  notes: |
-    Complete all three versions of the quest.
-  checklist:
-    1: "Little Meng"
-    2: "Little Lulu"
-    3: "Little Fei"
-zh:
-  name: "哎呀！海盗！"
-  commission:
-  - "璃月港，有海盗"
-  description: "陪璐璐、阿飞与小蒙各玩一次海盗游戏。"
-  notes: |
-    完成任务的三个版本，分别让阿飞、璐璐、小蒙做一次船长即可获得。
-  checklist:
-    1: "小蒙"
-    2: "璐璐"
-    3: 阿飞"
+name: "Pirates! Argh!"
+commission:
+- "Pirate Invasion, in Liyue Harbor!"
+description: "Play a game of pirates with Little Lulu, Little Fei, and Little Meng."
+notes: |
+  Complete all three versions of the quest.
+checklistItem:
+  1: "Little Meng"
+  2: "Little Lulu"
+  3: "Little Fei"

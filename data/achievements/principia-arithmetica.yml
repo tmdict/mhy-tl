@@ -4,61 +4,31 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 12
-en:
-  name: "Principia Arithmetica"
-  description: "Help Garcia perfect his machine."
-  commission:
-  - "Garcia’s Paean: Key Items"
-  - "Garcia’s Paean: Substitutes"
-  - "Garcia’s Paean: By Bearings"
-  - "Garcia’s Paean: Easy Peasy"
-  - "Garcia’s Paean: the Echo of Someone"
-  notes: | 
-    Complete the “Garcia’s Paean” chain of quests:
+name: "Principia Arithmetica"
+description: "Help Garcia perfect his machine."
+commission:
+- "Garcia’s Paean: Key Items"
+- "Garcia’s Paean: Substitutes"
+- "Garcia’s Paean: By Bearings"
+- "Garcia’s Paean: Easy Peasy"
+- "Garcia’s Paean: the Echo of Someone"
+notes: | 
+  Complete the “Garcia’s Paean” chain of quests:
 
-    1. Complete “Garcia’s Paean” world quest at Wangshu Inn to unlock the daily commission quest “Garcia’s Paean: Key Items”.
-    2. During this phase both “Garcia’s Paean: Substitutes” and “Garcia’s Paean: Key Items” can appear, repeat “Garcia’s Paean: Substitutes” 3 times to unlock “Garcia’s Paean: Easy Peasy”.
-    3. During “Garcia’s Paean: Easy Peasy”, convey the correct instruction from the blacksmith Ahangar to Garcia so he can make component for his computer: first is “add more fuel”, and then “hammer it in the middle and work your way out to the edges”. Complete this commission correctly 4 times to unlock the next phase.
-    4. During this phase both “Garcia’s Paean: the Echo of Someone” and “Garcia’s Paean: Key Items” can appear, finish “Garcia’s Paean: the Echo of Someone” 3 times to receive the achievement (this also unlocks the world quest “Garcia’s Paean: A Gift of Compatibility” the next day).
-  checklist:
-    1: "Garcia’s Paean: Key Items"
-    2: "Garcia’s Paean: Substitutes 1"
-    3: "Garcia’s Paean: Substitutes 2"
-    4: "Garcia’s Paean: Substitutes 3"
-    5: "Garcia’s Paean: By Bearings"
-    6: "Garcia’s Paean: Easy Peasy 1"
-    7: "Garcia’s Paean: Easy Peasy 2"
-    8: "Garcia’s Paean: Easy Peasy 3"
-    9: "Garcia’s Paean: Easy Peasy 4"
-    10: "Garcia’s Paean: the Echo of Someone 1"
-    11: "Garcia’s Paean: the Echo of Someone 2"
-    12: "Garcia’s Paean: the Echo of Someone 3"
-zh:
-  name: "推分算数原理"
-  description: "帮助加尔恰完善他的机器。"
-  commission:
-  - "加尔恰的赞歌·关键物品"
-  - "加尔恰的赞歌·替代物"
-  - "加尔恰的赞歌·轴承在上"
-  - "加尔恰的赞歌·举手之劳"
-  - "加尔恰的赞歌·某人的回响"
-  notes: | 
-    完成系列任务「加尔恰的赞歌」：
-
-    1. 首先需要先做完前置世界任务「加尔恰的赞歌」，该任务需要在璃月地区望舒客栈接取。做完该世界任务后才可以在须弥地区接取后续每日委托「加尔恰的赞歌·关键物品」。
-    2. 在这个阶段「加尔恰的赞歌·替代物」和「加尔恰的赞歌·关键物品」都有可能出现，完成「加尔恰的赞歌·替代物」三次。
-    3. 在「加尔恰的赞歌·举手之劳」里，记得选正确的选项：二次入炉的时候，燃料记得加多点，然后从内向外敲打。该任务需要完成四次。
-    4. 在这个阶段「加尔恰的赞歌·某人的回响」和「加尔恰的赞歌·关键物品」都有可能出现，做完「加尔恰的赞歌·某人的回响」三次后得到成就（之后现实世界第二天可以接取世界任务「加尔恰的赞歌·适配性赠礼」）。
-  checklist:
-    1: "加尔恰的赞歌·关键物品"
-    2: "加尔恰的赞歌·替代物1"
-    3: "加尔恰的赞歌·替代物2"
-    4: "加尔恰的赞歌·替代物3"
-    5: "加尔恰的赞歌·轴承在上"
-    6: "加尔恰的赞歌·举手之劳1"
-    7: "加尔恰的赞歌·举手之劳2"
-    8: "加尔恰的赞歌·举手之劳3"
-    9: "加尔恰的赞歌·举手之劳4"
-    10: "加尔恰的赞歌·某人的回响1"
-    11: "加尔恰的赞歌·某人的回响2"
-    12: "加尔恰的赞歌·某人的回响3"
+  1. Complete “Garcia’s Paean” world quest at Wangshu Inn to unlock the daily commission quest “Garcia’s Paean: Key Items”.
+  2. During this phase both “Garcia’s Paean: Substitutes” and “Garcia’s Paean: Key Items” can appear, repeat “Garcia’s Paean: Substitutes” 3 times to unlock “Garcia’s Paean: Easy Peasy”.
+  3. During “Garcia’s Paean: Easy Peasy”, convey the correct instruction from the blacksmith Ahangar to Garcia so he can make component for his computer: first is “add more fuel”, and then “hammer it in the middle and work your way out to the edges”. Complete this commission correctly 4 times to unlock the next phase.
+  4. During this phase both “Garcia’s Paean: the Echo of Someone” and “Garcia’s Paean: Key Items” can appear, finish “Garcia’s Paean: the Echo of Someone” 3 times to receive the achievement (this also unlocks the world quest “Garcia’s Paean: A Gift of Compatibility” the next day).
+checklistItem:
+  1: "Garcia’s Paean: Key Items"
+  2: "Garcia’s Paean: Substitutes 1"
+  3: "Garcia’s Paean: Substitutes 2"
+  4: "Garcia’s Paean: Substitutes 3"
+  5: "Garcia’s Paean: By Bearings"
+  6: "Garcia’s Paean: Easy Peasy 1"
+  7: "Garcia’s Paean: Easy Peasy 2"
+  8: "Garcia’s Paean: Easy Peasy 3"
+  9: "Garcia’s Paean: Easy Peasy 4"
+  10: "Garcia’s Paean: the Echo of Someone 1"
+  11: "Garcia’s Paean: the Echo of Someone 2"
+  12: "Garcia’s Paean: the Echo of Someone 3"

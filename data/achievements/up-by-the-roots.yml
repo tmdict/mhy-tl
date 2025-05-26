@@ -4,23 +4,12 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 1
-en:
-  name: "Up by the Roots"
-  description: "Find and defeat the fleeing Whopperflower."
-  commission:
-  - "The Flowers That Won’t Grow"
-  - "When Flowers Bloom"
-  notes: | 
-    This commission will appear after completing the daily commission “The Flowers That Won’t Grow”. There are two variants: Sumeru Rose (no achievement) and Whopperflower. In the Whopperflower variant, follow the Whopperflower and defeat it to receive the achievement.
-  checklist:
-    1: "Defeat Whopperflower"
-zh:
-  name: "斩花除根"
-  description: "找到并打倒逃走的骗骗花。"
-  commission:
-  - "开不出的花"
-  - "花开之时"
-  notes: | 
-    完成每日任务「开不出的花」后刷出每日任务「花开之时」，该任务有两种情况：须弥蔷薇自然开花（无成就），出现骗骗花，追上骗骗花并击败可获成就。
-  checklist:
-    1: "击败骗骗花"
+name: "Up by the Roots"
+description: "Find and defeat the fleeing Whopperflower."
+commission:
+- "The Flowers That Won’t Grow"
+- "When Flowers Bloom"
+notes: | 
+  This commission will appear after completing the daily commission “The Flowers That Won’t Grow”. There are two variants: Sumeru Rose (no achievement) and Whopperflower. In the Whopperflower variant, follow the Whopperflower and defeat it to receive the achievement.
+checklistItem:
+  1: "Defeat Whopperflower"

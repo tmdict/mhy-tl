@@ -4,35 +4,18 @@ version: "5.0"
 achievementType: "wonders-of-the-world"
 region: natlan
 checklist: 1
-en:
-  name: "Inspiration Walk"
-  description: "Help Zicheng gather inspiration for poetry…?"
-  commission:
-  - "Sharpshooter on Hand"
-  notes: | 
-    The commission has three different versions and each version has a side task. A notice stating “Camera has been adjusted to a suitable angle” will be shown if the player’s camera is correctly facing the side task’s target.
+name: "Inspiration Walk"
+description: "Help Zicheng gather inspiration for poetry…?"
+commission:
+- "Sharpshooter on Hand"
+notes: | 
+  The commission has three different versions and each version has a side task. A notice stating “Camera has been adjusted to a suitable angle” will be shown if the player’s camera is correctly facing the side task’s target.
 
-    Side task:
-    - Courier’s Longhouse (17:00 – 18:00): Take a photo of the Yumkasaurus mural located next to the teleport waypoint south of the Courier’s Longhouse.
-    - Stage Tepetl (11:00 – 13:00): Take a photo of Muhuru’s Gemporium, including its gems.
-    - Djembe Studios (06:00 – 08:00): Take two more photos of popular stores with unique signs (Xochicuicatl Records and Atlahua’s Net).
+  Side task:
+  - Courier’s Longhouse (17:00 – 18:00): Take a photo of the Yumkasaurus mural located next to the teleport waypoint south of the Courier’s Longhouse.
+  - Stage Tepetl (11:00 – 13:00): Take a photo of Muhuru’s Gemporium, including its gems.
+  - Djembe Studios (06:00 – 08:00): Take two more photos of popular stores with unique signs (Xochicuicatl Records and Atlahua’s Net).
 
-    Completing both the main task and the hidden side task of any location grants the achievement.
-  checklist:
-    1: "Sharpshooter on Hand"
-zh:
-  name: "妙手采风"
-  description: "帮助子澄寻找到作诗的灵感…？"
-  commission:
-  - "妙影在手"
-  notes: | 
-    委托要求拍摄对应画片，共有三个场景，每次随机刷新一个。
-
-    额外要求：
-    - 「讯使长屋」（17-18点）：「悬木人」有一个悬崖上画着超大壁画，把壁画拍下来
-    - 「特佩利」舞台（11-13点）：「回声之子」有一家很大的宝石铺，给宝石拍一张留念
-    - 「金贝乐棚」（6-8点）：「流泉之众」有两家很出名的店铺（花哥的唱片店和奥德华的渔网店），把它们的招牌拍下来
-
-    完成委托要求和额外要求一次后（都要完成，否则无法获得成就），回报获得成就。
-  checklist:
-    1: "妙影在手"
+  Completing both the main task and the hidden side task of any location grants the achievement.
+checklistItem:
+  1: "Sharpshooter on Hand"

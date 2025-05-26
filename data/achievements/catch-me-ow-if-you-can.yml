@@ -4,26 +4,13 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 3
-en:
-  name: "Catch Me-ow if You Can!"
-  description: "Help Sareh find all the little cats."
-  commission:
-  - "Meow… Meow meow? Meow! Meow."
-  notes: | 
-    Completing all three variants of the commission grants the achievement, each cat has their own cat-talk.
-  checklist:
-    1: "Lale: Meow, meow meow meow, meow—"
-    2: "Nargis: Meow! Meow meow, meow."
-    3: "Rozan: Meow meow meow, meow meow meow."
-zh:
-  name: "捉猫记"
-  description: "帮莎莉寻找过所有小猫。"
-  commission:
-  - "喵…喵喵?喵!喵。"
-  notes: | 
-    需要将全部的小猫都找回一次，不同的小猫有不同的猫语。
-
-  checklist:
-    1: "拉勒：喵，喵喵喵，喵——"
-    2: "纳尔吉斯：喵!喵喵，喵。"
-    3: "萝赞：喵喵喵，喵喵喵。"
+name: "Catch Me-ow if You Can!"
+description: "Help Sareh find all the little cats."
+commission:
+- "Meow… Meow meow? Meow! Meow."
+notes: | 
+  Completing all three variants of the commission grants the achievement, each cat has their own cat-talk.
+checklistItem:
+  1: "Lale: Meow, meow meow meow, meow—"
+  2: "Nargis: Meow! Meow meow, meow."
+  3: "Rozan: Meow meow meow, meow meow meow."

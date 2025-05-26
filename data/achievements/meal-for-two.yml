@@ -4,23 +4,12 @@ version: "2.0"
 achievementType: "wonders-of-the-world"
 region: inazuma
 checklist: 2
-en:
-  name: "Meal For Two"
-  description: "Help both Xudong and Kamei Munehisa make a dish once."
-  commission:
-  - "The Gourmet Supremos: Cook-Off"
-  notes: | 
-    Letting Xudong and Kamei Munehisa finish first once each during “The Gourmet Supremos: Cook-Off” grants the achievement.
-  checklist:
-    1: "Xudong"
-    2: "Kamei"
-zh:
-  name: "双人餐行"
-  description: "帮助旭东和龟井宗久各完成一次烹饪。"
-  commission:
-  - "全能美食队·烹饪对决"
-  notes: | 
-    完成「全能美食队·吃饱的重要」性后有概率触发「全能美食队·烹饪对决」，帮助旭东和龟井宗久各胜利一次，完成委托两次后可获取成就。
-  checklist:
-    1: "旭东"
-    2: "龟井宗久"
+name: "Meal For Two"
+description: "Help both Xudong and Kamei Munehisa make a dish once."
+commission:
+- "The Gourmet Supremos: Cook-Off"
+notes: | 
+  Letting Xudong and Kamei Munehisa finish first once each during “The Gourmet Supremos: Cook-Off” grants the achievement.
+checklistItem:
+  1: "Xudong"
+  2: "Kamei"

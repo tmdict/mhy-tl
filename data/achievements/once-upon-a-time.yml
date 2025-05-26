@@ -4,25 +4,13 @@ version: "1.0"
 achievementType: "stone-harbors-nostalgia-series-i"
 region: liyue
 checklist: 1
-en:
-  name: "Once Upon a Time…"
-  description: "Finish listening to the tale of The Wrath of Haishan in “Cliffhanger.”"
-  commission:
-  - "Cliffhanger"
-  notes: |
-    All three NPCs will appear during the commission (prior to version 3.5 only two random NPCs would appear). Each will give you a different story excerpt.
+name: "Once Upon a Time…"
+description: "Finish listening to the tale of The Wrath of Haishan in “Cliffhanger.”"
+commission:
+- "Cliffhanger"
+notes: |
+  All three NPCs will appear during the commission (prior to version 3.5 only two random NPCs would appear). Each will give you a different story excerpt.
 
-    Choosing Part I and Part II of Ring of Raining Blades will give you the “Friends, Travelers, Lend Me Your Ears…” achievement.
-  checklist:
-    1: "The Wrath of Haishan"
-zh:
-  name: "且听我一言。"
-  description: "在「且听下回分解」中听完《海山履云记》。"
-  commission:
-  - "且听下回分解"
-  notes: |
-    刘苏会要求玩家去询问其他NPC，一共有3位（3.5版本前只有两位随机NPC会出现），让玩家和三位NPC对话。
-
-    交付《裁雨声·上》与《裁雨声·中》的话可以获得成就「"旅者且留步…」。
-  checklist:
-    1: "海山履云记"
+  Choosing Part I and Part II of Ring of Raining Blades will give you the “Friends, Travelers, Lend Me Your Ears…” achievement.
+checklistItem:
+  1: "The Wrath of Haishan"

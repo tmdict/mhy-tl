@@ -4,59 +4,30 @@ version: "2.4"
 achievementType: "wonders-of-the-world"
 region: mondstadt
 checklist: 8
-en:
-  name: "Anna’s Adventures"
-  description: "Help Anna become an adventurer."
-  commission:
-  - "Miracle Medicine"
-  - "Recuperating From a Severe Illness"
-  - "Adventurer Exam: Battle Tactics"
-  - "Adventurer Exam: The Art of Adventure"
-  - "Adventurer Exam: Taking Flight"
-  - "Anna the Adventurer!"
-  notes: | 
-    Complete “Anna the Adventurer!” to receive the achievement. To unlock the quest you need to complete the following series of daily commissions:
+name: "Anna’s Adventures"
+description: "Help Anna become an adventurer."
+commission:
+- "Miracle Medicine"
+- "Recuperating From a Severe Illness"
+- "Adventurer Exam: Battle Tactics"
+- "Adventurer Exam: The Art of Adventure"
+- "Adventurer Exam: Taking Flight"
+- "Anna the Adventurer!"
+notes: | 
+  Complete “Anna the Adventurer!” to receive the achievement. To unlock the quest you need to complete the following series of daily commissions:
 
-    1. Miracle Medicine x3
-    2. Recuperating From a Severe Illness x3 (Receive “Marvelous Medicine” achievement on first completion)
-    3. Adventurer Exam: Battle Tactics
-    4. Adventurer Exam: The Art of Adventure
-    5. Adventurer Exam: Taking Flight (need to give right answers to receive next commission, select the first choice for all three questions: “One person per glider” “To select appropriate take-off points and to assume the correct take-off posture” and “Select an appropriate landing spot, and do not fold your wind glider in abruptly”)
-    6. Anna the Adventurer!
-  checklist:
-    1: "Miracle Medicine x3"
-    2: "Recuperating From a Severe Illness - Windmill"
-    3: "Recuperating From a Severe Illness - Archon Statue"
-    4: "Recuperating From a Severe Illness - Cathedral"
-    5: "Adventurer Exam: Battle Tactics"
-    6: "Adventurer Exam: The Art of Adventure"
-    7: "Adventurer Exam: Taking Flight"
-    8: "Anna the Adventurer!"
-zh:
-  name: "安娜冒险记"
-  description: "帮助安娜成为一名冒险家。"
-  commission:
-  - "奇药庐中来"
-  - "大病初愈"
-  - "冒险家测验·作战方式"
-  - "冒险家测验·冒险诀窍"
-  - "冒险家测验·起飞方式"
-  - "冒险家，安娜！"
-  notes: | 
-    完成每日委托「冒险家，安娜」后获得。解锁这个委托需要完成以下一系列每日委托：
-    
-    1. 奇药庐中来（三次）
-    2. 大病初愈（三次，第一次完成获得获得「妙手怪医」成就）
-    3. 冒险家测验·作战方式
-    4. 冒险家测验·冒险诀窍
-    5. 冒险家测验·起飞方式（三个问题都选择正确后才会收到下一个委托，每个问题的答案都选择第一项即可）
-    6. 冒险家，安娜！
-  checklist:
-    1: "奇药庐中来（三次）"
-    2: "大病初愈 - 风车"
-    3: "大病初愈 - 风神像"
-    4: "大病初愈 - 教堂"
-    5: "冒险家测验·作战方式"
-    6: "冒险家测验·冒险诀窍"
-    7: "冒险家测验·起飞方式"
-    8: "冒险家，安娜！"
+  1. Miracle Medicine x3
+  2. Recuperating From a Severe Illness x3 (Receive “Marvelous Medicine” achievement on first completion)
+  3. Adventurer Exam: Battle Tactics
+  4. Adventurer Exam: The Art of Adventure
+  5. Adventurer Exam: Taking Flight (need to give right answers to receive next commission, select the first choice for all three questions: “One person per glider” “To select appropriate take-off points and to assume the correct take-off posture” and “Select an appropriate landing spot, and do not fold your wind glider in abruptly”)
+  6. Anna the Adventurer!
+checklistItem:
+  1: "Miracle Medicine x3"
+  2: "Recuperating From a Severe Illness - Windmill"
+  3: "Recuperating From a Severe Illness - Archon Statue"
+  4: "Recuperating From a Severe Illness - Cathedral"
+  5: "Adventurer Exam: Battle Tactics"
+  6: "Adventurer Exam: The Art of Adventure"
+  7: "Adventurer Exam: Taking Flight"
+  8: "Anna the Adventurer!"

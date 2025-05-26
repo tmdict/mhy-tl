@@ -4,43 +4,22 @@ version: "2.4"
 achievementType: "wonders-of-the-world"
 region: liyue
 checklist: 4
-en:
-  name: "Prelude to the Journey"
-  commission:
-  - "Pirate Invasion, in Liyue Harbor!"
-  - "Ahoy! A Pirate's Growth for Ye!"
-  - "Troubles Traveling Through Tributaries"
-  - "The Little Pirate Goes Out to Sea"
-  description: "A young man is about to embark on a long journey…"
-  notes: |
-    Granted after completing the following series of daily commissions:
+name: "Prelude to the Journey"
+commission:
+- "Pirate Invasion, in Liyue Harbor!"
+- "Ahoy! A Pirate's Growth for Ye!"
+- "Troubles Traveling Through Tributaries"
+- "The Little Pirate Goes Out to Sea"
+description: "A young man is about to embark on a long journey…"
+notes: |
+  Granted after completing the following series of daily commissions:
 
-    1. Pirate Invasion, in Liyue Harbor! (Receive the “Pirates! Argh!” achievement)
-    2. Ahoy! A Pirate's Growth for Ye!
-    3. Troubles Traveling Through Tributaries
-    4. The Little Pirate Goes Out to Sea
-  checklist:
-    1: "Pirate Invasion, in Liyue Harbor!"
-    2: "Ahoy! A Pirate's Growth for Ye!"
-    3: "Troubles Traveling Through Tributaries"
-    4: "The Little Pirate Goes Out to Sea"
-zh:
-  name: "远大前程"
-  commission:
-  - "璃月港，有海盗"
-  - "哎呀，海盗想长大"
-  - "随水而来的烦恼"
-  - "小海盗，要出海"
-  description: "一位少年即将启程远行…"
-  notes: |
-    完成以下的每日委托：
-
-    1. 璃月港，有海盗（获得「哎呀！海盗！」成就）
-    2. 哎呀，海盗想长大
-    3. 随水而来的烦恼
-    4. 小海盗，要出海
-  checklist:
-    1: "璃月港，有海盗"
-    2: "哎呀，海盗想长大"
-    3: 随水而来的烦恼"
-    4: 小海盗，要出海"
+  1. Pirate Invasion, in Liyue Harbor! (Receive the “Pirates! Argh!” achievement)
+  2. Ahoy! A Pirate's Growth for Ye!
+  3. Troubles Traveling Through Tributaries
+  4. The Little Pirate Goes Out to Sea
+checklistItem:
+  1: "Pirate Invasion, in Liyue Harbor!"
+  2: "Ahoy! A Pirate's Growth for Ye!"
+  3: "Troubles Traveling Through Tributaries"
+  4: "The Little Pirate Goes Out to Sea"

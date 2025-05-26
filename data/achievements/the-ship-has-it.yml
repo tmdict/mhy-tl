@@ -4,25 +4,13 @@ version: "3.0"
 achievementType: "wonders-of-the-world"
 region: sumeru
 checklist: 1
-en:
-  name: "The Ship Has It"
-  description: "Help Rafiq test his ship's hull strength successfully."
-  commission:
-  - "Problem Conversion"
-  - "Problem Conversion: Theory Reliability"
-  - "Problem Conversion: Loading Capacity"
-  notes: | 
-    If only three planks were collected during the commission “Problem Conversion: Theory Reliability”, the player receives the Ship Failure version (“Problem Conversion: The Underpinning Factor”) of the commission. If five planks were collected, the player receives the Ship Success version instead. Completing the Ship Success version of the commission grants the achievement.
-  checklist:
-    1: "Collection 5 planks"
-zh:
-  name: "船说了算"
-  description: "与拉菲克成功地测试了船体强度。"
-  commission:
-  - "问题的转化"
-  - "问题的转化·理论强度"
-  - "问题的转化·负载问题"
-  notes: | 
-    在做「阶段二·理论强度」分支时总共有五块木板，拿三块的时候派蒙会说：已经有三块了，这样应该就足够了。此时如果拿满五块木板，之后完成「阶段三·负载问题」获得成就。
-  checklist:
-    1: "拿满五块木板"
+name: "The Ship Has It"
+description: "Help Rafiq test his ship's hull strength successfully."
+commission:
+- "Problem Conversion"
+- "Problem Conversion: Theory Reliability"
+- "Problem Conversion: Loading Capacity"
+notes: | 
+  If only three planks were collected during the commission “Problem Conversion: Theory Reliability”, the player receives the Ship Failure version (“Problem Conversion: The Underpinning Factor”) of the commission. If five planks were collected, the player receives the Ship Success version instead. Completing the Ship Success version of the commission grants the achievement.
+checklistItem:
+  1: "Collection 5 planks"

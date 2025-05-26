@@ -113,7 +113,6 @@
 {#each filteredList as achievement, i (achievement.achievement)}
   <Achievement
     {achievement}
-    content={achievement.en ? achievement.en : achievement.en}
     alt={i % 2 != 0}
   />
 {/each}
