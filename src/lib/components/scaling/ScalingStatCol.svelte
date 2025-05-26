@@ -1,7 +1,7 @@
 <script>
   import { filterlist } from "@store/filterlist.svelte.js"
-  import { characters, rarity } from '@store/gamedata';
-  import { images } from '@store/site';
+  import { CHARACTERS_DATA, RARITY } from '@store/gamedata';
+  import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
   let { data, baseKey, isRecommended = false, icon = false, fill = false } = $props();
@@ -26,14 +26,14 @@
   {#if baseKey === 'icon'}
     <Icon
       id={data.id}
-      title={$characters[data.id] ? $characters[data.id].data.name : data.id}
-      src={$images[`/src/lib/img/character/${data.id}.png`]}
-      rarity={$rarity[data.id]}
+      title={CHARACTERS_DATA[data.id] ? CHARACTERS_DATA[data.id].data.name : data.id}
+      src={IMAGES[`/src/lib/img/character/${data.id}.png`]}
+      rarity={RARITY[data.id]}
       size="50px"
       margin="0"
     />
   {:else if baseKey === 'name'}
-    <b>{$characters[data.id].data.name}</b>
+    <b>{CHARACTERS_DATA[data.id].data.name}</b>
   {:else}
     {#if (windowWidth < 960 && baseKey !== 'constellation') || (windowWidth < 960 && baseKey == 'constellation' && !data[baseKey].length)}<b
         >{baseKey}:</b

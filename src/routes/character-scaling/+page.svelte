@@ -1,7 +1,7 @@
 <script>
   import { slide, fade } from 'svelte/transition';
   import { filterlist } from "@store/filterlist.svelte.js"
-  import { characters, misc } from '@store/gamedata';
+  import { CHARACTERS_DATA, MISC_DATA } from '@store/gamedata';
   import ScalingFaq from '$lib/components/content/ScalingFaq.svelte';
   import ScalingFilter from '$lib/components/scaling/ScalingFilter.svelte';
   import ScalingStatCol from '$lib/components/scaling/ScalingStatCol.svelte';
@@ -33,9 +33,9 @@
   const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
   const baseFilter = ['base-stat', 'a', 'e', 'q', 'a1', 'a4', 'constellation', 'sand', 'goblet', 'circlet'];
 
-  const allScalings = Object.keys($misc.scaling.data)
-    .sort((a, b) => $characters[b].released.localeCompare($characters[a].released) || b.localeCompare(a))
-    .map((char) => ({ ...$misc.scaling.data[char], id: char }));
+  const allScalings = Object.keys(MISC_DATA.scaling.data)
+    .sort((a, b) => CHARACTERS_DATA[b].released.localeCompare(CHARACTERS_DATA[a].released) || b.localeCompare(a))
+    .map((char) => ({ ...MISC_DATA.scaling.data[char], id: char }));
 
   let showFilter = $state(true);
   let showFaq = $state(false);

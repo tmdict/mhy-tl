@@ -1,11 +1,11 @@
 <script>
-  import { artifacts as artifactsData, rarity } from '@store/gamedata';
-  import { images } from '@store/site';
+  import { ARTIFACTS_DATA, RARITY } from '@store/gamedata';
+  import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
   export let artifacts;
   const data = artifacts.reduce((acc, a) => {
-    const aSet = a.set.reduce((aAcc, aname) => ({ ...aAcc, [aname]: $artifactsData[aname] }), {});
+    const aSet = a.set.reduce((aAcc, aname) => ({ ...aAcc, [aname]: ARTIFACTS_DATA[aname] }), {});
     return { ...acc, ...aSet };
   }, {});
 </script>
@@ -18,8 +18,8 @@
         <Icon
           id={set}
           title={details ? details['name'] : set}
-          src={$images[`/src/lib/img/artifact/${set}.png`]}
-          rarity={$rarity[set]}
+          src={IMAGES[`/src/lib/img/artifact/${set}.png`]}
+          rarity={RARITY[set]}
           size="50px"
           margin="0 2px"
           hasTooltip={true}

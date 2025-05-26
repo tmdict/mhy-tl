@@ -1,9 +1,8 @@
 <script>
   import { slide } from 'svelte/transition';
   import { BUILDS, BUILD_FILTERS } from '@store/builds';
-  import { buildsFilters } from '@store/filterlist';
   import { filterlist } from "@store/filterlist.svelte.js"
-  import { localData } from '@store/localdata';
+  import { localData } from '@store/sitedata';
   import Build from '$lib/components/build/Build.svelte';
   import BuildFaq from '$lib/components/content/BuildFaq.svelte';
   import BuildFilter from '$lib/components/build/BuildFilter.svelte';
@@ -12,7 +11,6 @@
   let expandAllFilters = $state(true);
   let showFaq = $state(false);
 
-  buildsFilters.init(Object.keys(BUILD_FILTERS));
   filterlist.init(Object.keys(BUILD_FILTERS));
 
   let filteredBuilds = $derived(filterBuilds(BUILDS, Object.values(filterlist.all)));

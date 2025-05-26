@@ -1,9 +1,9 @@
 <script>
   import { browser } from '$app/environment';
   import { slide } from 'svelte/transition';
-  import { misc, rarity, weapons as weaponsData } from '@store/gamedata';
-  import { localData } from '@store/localdata';
-  import { images } from '@store/site';
+  import { MISC_DATA, RARITY, WEAPONS_DATA } from '@store/gamedata';
+  import { localData } from '@store/sitedata';
+  import { IMAGES } from '@store/sitedata';
   import CraftableWeaponsFaq from '$lib/components/content/CraftableWeaponsFaq.svelte';
   import Icon from '$lib/components/Icon.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
@@ -13,19 +13,19 @@
   // Initialize craftable weapon data
   if ($localData['billets']) {
     if (Object.keys($localData['billets']).length === 0) {
-      $localData = { ...$localData, billets: $misc['craftable-weapons'].data };
+      $localData = { ...$localData, billets: MISC_DATA['craftable-weapons'].data };
     } else {
-      Object.keys($misc['craftable-weapons'].data).forEach((billetType) => {
+      Object.keys(MISC_DATA['craftable-weapons'].data).forEach((billetType) => {
         // If new billet group
         if (!(billetType in $localData['billets'])) {
           $localData['billets'] = {
             ...$localData['billets'],
-            [billetType]: $misc['craftable-weapons'].data[billetType]
+            [billetType]: MISC_DATA['craftable-weapons'].data[billetType]
           };
         }
         // If new weapon
-        Object.keys($misc['craftable-weapons'].data[billetType]).forEach((weaponType) => {
-          Object.keys($misc['craftable-weapons'].data[billetType][weaponType]).forEach((weapon) => {
+        Object.keys(MISC_DATA['craftable-weapons'].data[billetType]).forEach((weaponType) => {
+          Object.keys(MISC_DATA['craftable-weapons'].data[billetType][weaponType]).forEach((weapon) => {
             if (!(weapon in $localData['billets'][billetType][weaponType])) {
               $localData['billets'][billetType][weaponType] = {
                 ...$localData['billets'][billetType][weaponType],
@@ -77,21 +77,21 @@
       {#each Object.entries(craftables) as [type, weapons]}
         <div class="content-col type">
           <div class="header">
-            <Icon id="{billet}-{type}" src={$images[`/src/lib/img/billet/${billet}-${type}.png`]} />
+            <Icon id="{billet}-{type}" src={IMAGES[`/src/lib/img/billet/${billet}-${type}.png`]} />
           </div>
           {#each Object.entries(weapons) as [weapon, count]}
-            {@const details = $weaponsData[weapon] ? $weaponsData[weapon].data : false}
+            {@const details = WEAPONS_DATA[weapon] ? WEAPONS_DATA[weapon].data : false}
             <div class="content-row weapon">
               <div class="weapon-icon" role="presentation">
                 <Icon
                   id={weapon}
-                  src={$images[`/src/lib/img/weapon-ascension/${weapon}.png`]}
-                  rarity={$rarity[weapon]}
+                  src={IMAGES[`/src/lib/img/weapon-ascension/${weapon}.png`]}
+                  rarity={RARITY[weapon]}
                   hasTooltip={true}
                   tooltipContent={`
                     <span class="heading">${details ? details['name'] : weapon}</span><br />
                     <span class="highlight">Sub Stat:</span> ${
-                      $weaponsData[weapon] ? $weaponsData[weapon].subStat : ''
+                      WEAPONS_DATA[weapon] ? WEAPONS_DATA[weapon].subStat : ''
                   }<br />
                     ${
                       details

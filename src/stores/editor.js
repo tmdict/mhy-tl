@@ -1,44 +1,42 @@
-import { derived, writable } from 'svelte/store';
-import { artifacts, characters, weapons } from '@store/gamedata';
+import { writable } from 'svelte/store';
+import { ARTIFACTS_DATA, CHARACTERS_DATA, WEAPONS_DATA } from '@store/gamedata';
 
 // Collection of inputs used to populate dropdown boxes in the editor
-export const availableInputs = derived([artifacts, characters, weapons], ([$artifacts, $characters, $weapons]) => {
-  return {
-    artifacts: Object.values($artifacts).reduce((acc, artifact) => {
-      // Return artifacts grouped byrarity
-      if (artifact['rarity'] in acc) {
-        acc[artifact['rarity']].push(artifact['id']);
-        acc[artifact['rarity']].sort();
+export const availableInputs = {
+  artifacts: Object.values(ARTIFACTS_DATA).reduce((acc, artifact) => {
+    // Return artifacts grouped byrarity
+    if (artifact['rarity'] in acc) {
+      acc[artifact['rarity']].push(artifact['id']);
+      acc[artifact['rarity']].sort();
+      return acc;
+    } else {
+      return { ...acc, [artifact['rarity']]: [artifact['id']] };
+    }
+  }, {}),
+  weapons: Object.values(WEAPONS_DATA).reduce((acc, weapon) => {
+    // Return weapons grouped by weapon type and rarity
+    const wtype = weapon['weaponType'];
+    if (wtype in acc) {
+      if (weapon['rarity'] in acc[wtype]) {
+        acc[wtype][weapon['rarity']].push(weapon['id']);
+        acc[wtype][weapon['rarity']].sort();
         return acc;
       } else {
-        return { ...acc, [artifact['rarity']]: [artifact['id']] };
+        return { ...acc, [wtype]: { ...acc[wtype], [weapon['rarity']]: [weapon['id']] } };
       }
-    }, {}),
-    weapons: Object.values($weapons).reduce((acc, weapon) => {
-      // Return weapons grouped by weapon type and rarity
-      const wtype = weapon['weaponType'];
-      if (wtype in acc) {
-        if (weapon['rarity'] in acc[wtype]) {
-          acc[wtype][weapon['rarity']].push(weapon['id']);
-          acc[wtype][weapon['rarity']].sort();
-          return acc;
-        } else {
-          return { ...acc, [wtype]: { ...acc[wtype], [weapon['rarity']]: [weapon['id']] } };
-        }
-      } else {
-        return { ...acc, [wtype]: { [weapon['rarity']]: [weapon['id']] } };
-      }
-    }, {}),
-    characters: ['-', ...Object.keys($characters).sort()],
-    sand: ['hp', 'atk', 'def', 'er', 'em'],
-    goblet: ['hp', 'atk', 'def', 'em', 'pyro', 'cryo', 'dendro', 'hydro', 'electro', 'geo', 'anemo', 'physical'],
-    circlet: ['hp', 'atk', 'def', 'crit', 'em', 'heal'],
-    stat: ['hp', 'atk', 'crit', 'def', 'er', 'em'],
-    talents: ['a', 'e', 'q'],
-    const: [...Array(7).keys()],
-    refinement: [...Array(6).keys()]
-  };
-});
+    } else {
+      return { ...acc, [wtype]: { [weapon['rarity']]: [weapon['id']] } };
+    }
+  }, {}),
+  characters: ['-', ...Object.keys(CHARACTERS_DATA).sort()],
+  sand: ['hp', 'atk', 'def', 'er', 'em'],
+  goblet: ['hp', 'atk', 'def', 'em', 'pyro', 'cryo', 'dendro', 'hydro', 'electro', 'geo', 'anemo', 'physical'],
+  circlet: ['hp', 'atk', 'def', 'crit', 'em', 'heal'],
+  stat: ['hp', 'atk', 'crit', 'def', 'er', 'em'],
+  talents: ['a', 'e', 'q'],
+  const: [...Array(7).keys()],
+  refinement: [...Array(6).keys()]
+};
 
 function createBuildEditor() {
   const { subscribe, set, update } = writable({});

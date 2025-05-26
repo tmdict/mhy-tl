@@ -1,11 +1,11 @@
 <script>
-  import { characters, materials, rarity } from '@store/gamedata';
-  import { images } from '@store/site';
+  import { CHARACTERS_DATA, MATERIALS_DATA, RARITY } from '@store/gamedata';
+  import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
   const weekdays = ['Mon · Thur', 'Tue · Fri', 'Wed · Sat'];
 
-  const weaponMaterials = Object.values($materials)
+  const weaponMaterials = Object.values(MATERIALS_DATA)
     .filter((material) => material.materialType === 'weapon-ascension')
     // Group materials by region, day and rarity
     .sort((m1, m2) => m1.region - m2.region || m1.day - m2.day || m1.rarity - m2.rarity)
@@ -16,7 +16,7 @@
       return weapons;
     }, {});
 
-  const talentMaterials = Object.values($materials)
+  const talentMaterials = Object.values(MATERIALS_DATA)
     .filter((material) => material.materialType === 'talent-book')
     .sort((m1, m2) => m1.region - m2.region || m1.day - m2.day)
     .reduce((talents, talent) => {
@@ -53,8 +53,8 @@
             {#each weaponMaterials[region][weekday] as weaponMat}
               <Icon
                 id={weaponMat}
-                src={$images[`/src/lib/img/material-weapon-ascension/${weaponMat}.png`]}
-                rarity={$rarity[weaponMat]}
+                src={IMAGES[`/src/lib/img/material-weapon-ascension/${weaponMat}.png`]}
+                rarity={RARITY[weaponMat]}
                 size="40px"
               />
             {/each}
@@ -64,7 +64,7 @@
             {#each material.group as book}
               <Icon
                 id="{book.id}-{material.id}"
-                src={$images[`/src/lib/img/material-talent-book/${book.id}-${material.id}.png`]}
+                src={IMAGES[`/src/lib/img/material-talent-book/${book.id}-${material.id}.png`]}
                 rarity={book.rarity}
               />
             {/each}
@@ -73,9 +73,9 @@
             {#each material.characters as character}
               <Icon
                 id={character}
-                title={$characters[character] ? $characters[character].data.name : character}
-                src={$images[`/src/lib/img/character/${character}.png`]}
-                rarity={$rarity[character]}
+                title={CHARACTERS_DATA[character] ? CHARACTERS_DATA[character].data.name : character}
+                src={IMAGES[`/src/lib/img/character/${character}.png`]}
+                rarity={RARITY[character]}
               />
             {/each}
           </div>

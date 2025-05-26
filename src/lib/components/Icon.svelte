@@ -27,13 +27,7 @@
   }}
 >
   {#if enhance}
-    <enhanced:img
-      class="icon-img"
-      src={src.default}
-      {title} alt={id}
-      style="--icon-size: {size}"
-      loading="lazy"
-    />
+    <enhanced:img class="icon-img" {src} {title} alt={id} style="--icon-size: {size}" loading="lazy"/>
   {:else}
     <img class="icon-img" {src} {title} alt={id} style="--icon-size: {size}" loading="lazy" />
   {/if}

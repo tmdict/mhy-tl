@@ -1,6 +1,14 @@
 import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
+export const IMAGES = import.meta.glob(
+  "$lib/img/**/*.png", {
+    eager: true,
+	  import: 'default',
+    query: { enhanced: true },
+  }
+);
+
 function createLocalData() {
   const importedAchievements = import.meta.glob('@data/achievements/*.yml', { eager: true });
 

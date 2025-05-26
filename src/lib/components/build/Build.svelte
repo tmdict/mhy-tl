@@ -1,6 +1,6 @@
 <script>
   import { slide } from 'svelte/transition';
-  import { characters } from '@store/gamedata';
+  import { CHARACTERS_DATA } from '@store/gamedata';
   import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
   import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
   import BuildMainStats from '$lib/components/build/BuildMainStats.svelte';
@@ -38,7 +38,7 @@
       />
       <div class="content-col names">
         <div class="character-name">
-          {$characters[build.character].data.name}
+          {CHARACTERS_DATA[build.character].data.name}
         </div>
         <div class="build-name">
           {build.name.en ? build.name.en : build.name.en}

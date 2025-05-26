@@ -1,5 +1,5 @@
 <script>
-  import { characters } from '@store/gamedata';
+  import { CHARACTERS_DATA } from '@store/gamedata';
   import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
   import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
   import BuildMainStats from './BuildMainStats.svelte';
@@ -20,7 +20,7 @@
 <div class="content-row header">
   <BuildCharacter character={build.character} constellation={build.constellation} size="80px" />
   <div class="content-row name">
-    <h1>{$characters[build.character].data.name} · {build.name.en ? build.name.en : build.name.en} <a href="./build#{link}">#</a></h1>
+    <h1>{CHARACTERS_DATA[build.character].data.name} · {build.name.en ? build.name.en : build.name.en} <a href="./build#{link}">#</a></h1>
   </div>
 </div>
 

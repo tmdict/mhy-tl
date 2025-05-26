@@ -1,10 +1,10 @@
 <script>
-  import { rarity, weapons as weaponsData } from '@store/gamedata';
-  import { images } from '@store/site';
+  import { RARITY, WEAPONS_DATA } from '@store/gamedata';
+  import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
   export let weapons;
-  const data = weapons.reduce((acc, w) => ({ ...acc, [w.name]: $weaponsData[w.name] }), {});
+  const data = weapons.reduce((acc, w) => ({ ...acc, [w.name]: WEAPONS_DATA[w.name] }), {});
   let isHover = '';
 </script>
 
@@ -21,8 +21,8 @@
       <Icon
         id={weapon.name}
         title={details ? details['name'] : weapon.name}
-        src={$images[`/src/lib/img/weapon${isHover === weapon.name ? '-ascension/' : '/'}${weapon.name}.png`]}
-        rarity={$rarity[weapon.name]}
+        src={IMAGES[`/src/lib/img/weapon${isHover === weapon.name ? '-ascension/' : '/'}${weapon.name}.png`]}
+        rarity={RARITY[weapon.name]}
         size="50px"
         margin="0 2px"
         hasTooltip={true}

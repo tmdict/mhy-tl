@@ -1,4 +1,4 @@
-import { characters2 } from '@store/gamedata';
+import { CHARACTERS_DATA } from '@store/gamedata';
 import { parser } from '$lib/util/parser';
 
 export const buildtypes = [
@@ -29,7 +29,7 @@ function parseBuilds(buildsData, charactersData) {
 // Build Data
 
 const buildData = import.meta.glob('../../data/builds/*.yml', { eager: true });
-export const BUILDS = parseBuilds(buildData, characters2);
+export const BUILDS = parseBuilds(buildData, CHARACTERS_DATA);
 
 // Build Filters
 

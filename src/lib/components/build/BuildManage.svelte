@@ -2,7 +2,7 @@
   import { toast } from '@store/toast';
   import lzstring from 'lz-string';
   import { browser } from '$app/environment';
-  import { localData } from '@store/localdata';
+  import { localData } from '@store/sitedata';
   import { compressBuild, encodeBuild } from '$lib/util/codec';
 
   export let build;

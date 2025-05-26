@@ -1,12 +1,12 @@
 <script>
   import { availableInputs, buildEditor } from '@store/editor';
-  import { artifacts } from '@store/gamedata';
+  import { ARTIFACTS_DATA } from '@store/gamedata';
   import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
 
   export let artifactKey;
   const keys = buildEditor.getKeys.artifact(artifactKey);
 
-  $: l10n = Object.values($artifacts).reduce((acc, a) => {
+  $: l10n = Object.values(ARTIFACTS_DATA).reduce((acc, a) => {
     const name = a['data'] ? a['data']['name'] : a.id;
     return { ...acc, [a.id]: name };
   }, {});

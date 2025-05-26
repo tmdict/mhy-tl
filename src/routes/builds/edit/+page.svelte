@@ -3,8 +3,8 @@
   import lzstring from 'lz-string';
   import { browser } from '$app/environment';
   import { availableInputs, buildEditor } from '@store/editor';
-  import { characters, weapons } from '@store/gamedata';
-  import { localData } from '@store/localdata';
+  import { CHARACTERS_DATA, WEAPONS_DATA } from '@store/gamedata';
+  import { localData } from '@store/sitedata';
   import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from '$lib/util/codec';
   import { parser } from '$lib/util/parser';
   import { validator } from '$lib/util/validator';
@@ -40,9 +40,9 @@
 
   $: {
     // Re-validate everytime an input chamges
-    validated = validator.validateEditorBuild($buildEditor, buildEditor.getKeys, $characters, $weapons);
+    validated = validator.validateEditorBuild($buildEditor, buildEditor.getKeys, CHARACTERS_DATA, WEAPONS_DATA);
     if (validated.result) {
-      parsed = parser.parse($buildEditor, buildEditor.getKeys, $characters, 'en');
+      parsed = parser.parse($buildEditor, buildEditor.getKeys, CHARACTERS_DATA, 'en');
       encoded = lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(parsed)));
     } else {
       parsed = {};
@@ -130,7 +130,7 @@
       id="character"
       label="Character"
       list={$availableInputs.characters}
-      l10n={Object.values($characters).reduce(
+      l10n={Object.values(CHARACTERS_DATA).reduce(
         (acc, c) => ({ ...acc, [c.id]: c.data ? c.data['name'] : c.id }),
         { '-': '-' }
       )}
@@ -156,7 +156,7 @@
         {#each Array($buildEditor['num'].weapons) as _, i}
           <EditorBuildWeapon
             weaponKey={i}
-            availableWeapons={$availableInputs.weapons[$characters[$buildEditor['character']].weapon]}
+            availableWeapons={$availableInputs.weapons[CHARACTERS_DATA[$buildEditor['character']].weapon]}
           />
         {/each}
         <div class="content-row add-remove">

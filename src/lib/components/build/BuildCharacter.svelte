@@ -1,19 +1,17 @@
 <script>
-  import { characters, rarity } from '@store/gamedata';
-  import { images } from '@store/site';
+  import { CHARACTERS_DATA, RARITY } from '@store/gamedata';
+  import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
-  export let character;
-  export let constellation;
-  export let size = '50px';
+  let { character, constellation, size = '50px' } = $props();
 </script>
 
 <div class="content-row character">
   <Icon
     id={character}
-    title={$characters[character] ? $characters[character].data.name : character}
-    src={$images[`/src/lib/img/character/${character}.png`]}
-    rarity={$rarity[character]}
+    title={CHARACTERS_DATA[character] ? CHARACTERS_DATA[character].data.name : character}
+    src={IMAGES[`/src/lib/img/character/${character}.png`]}
+    rarity={RARITY[character]}
     {size}
     margin="0"
   />

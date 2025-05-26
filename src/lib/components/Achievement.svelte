@@ -1,7 +1,7 @@
 <script>
   import { browser } from '$app/environment';
   import { slide } from 'svelte/transition';
-  import { localData } from '@store/localdata';
+  import { localData } from '@store/sitedata';
   import { marked } from 'marked';
 
   export let achievement;

@@ -1,5 +1,5 @@
 <script>
-  import { localData } from '@store/localdata';
+  import { localData } from '@store/sitedata';
 
   function download(content, filename, contentType = 'application/json;charset=utf-8') {
     // Generate date postfix for file name

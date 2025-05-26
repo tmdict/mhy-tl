@@ -1,7 +1,7 @@
 <script>
   import lzstring from 'lz-string';
   import { browser } from '$app/environment';
-  import { characters } from '@store/gamedata';
+  import { CHARACTERS_DATA } from '@store/gamedata';
   import BuildFullPage from '$lib/components/build/BuildFullPage.svelte';
   import { decodeBuild, extractBuild } from '$lib/util/codec';
   import { validator } from '$lib/util/validator';
@@ -23,7 +23,7 @@
 
 <svelte:head>
   {#if validator.validateBuild(build, 'en')}
-    <title>{$characters[build.character].data.name} · {build.name.en}</title>
+    <title>{CHARACTERS_DATA[build.character].data.name} · {build.name.en}</title>
   {/if}
 </svelte:head>
 

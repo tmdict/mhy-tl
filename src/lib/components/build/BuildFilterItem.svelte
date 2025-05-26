@@ -1,6 +1,6 @@
 <script>
   import { filterlist } from "@store/filterlist.svelte.js"
-  import { images } from '@store/site';
+  import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
   let { name, type, item } = $props();
@@ -21,14 +21,14 @@
     {#if type === 'icon' && name === 'artifact'}
       <Icon
         id={item}
-        src={$images[`/src/lib/img/artifact/${item}.png`]}
+        src={IMAGES[`/src/lib/img/artifact/${item}.png`]}
         size="45px"
         margin="0 5px 0 0"
       />
     {:else if type === 'icon' && name === 'weapon-type'}
       <Icon
         id={item}
-        src={$images[`/src/lib/img/weapon-type/${item}.png`]}
+        src={IMAGES[`/src/lib/img/weapon-type/${item}.png`]}
         size="25px"
         margin="0 5px 0 0"
       />

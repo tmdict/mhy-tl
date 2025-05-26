@@ -2,7 +2,7 @@
   import Fuse from 'fuse.js';
   import cloneDeep from 'lodash.clonedeep';
   import { slide } from 'svelte/transition';
-  import { localData } from '@store/localdata';
+  import { localData } from '@store/sitedata';
   import Achievement from '$lib/components/Achievement.svelte';
   import AchievementFaq from '$lib/components/content/AchievementFaq.svelte';
   import ManageData from '$lib/components/ManageData.svelte';

@@ -1,5 +1,5 @@
 <script>
-  import { images } from '@store/site';
+  import { IMAGES } from '@store/sitedata';
 
   export let type;
   export let stats;
@@ -7,7 +7,7 @@
 
 <div class="content-row mainstat">
   <div class="icon">
-    <enhanced:img class="piece-img" src={$images[`/src/lib/img/artifact-piece/${type}.png`].default} alt={type} />
+    <enhanced:img class="piece-img" src={IMAGES[`/src/lib/img/artifact-piece/${type}.png`]} alt={type} />
   </div>
   <div>
     {#each stats as stat, i}

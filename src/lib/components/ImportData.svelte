@@ -1,7 +1,7 @@
 <script>
   import { toast } from '@store/toast';
   import { browser } from '$app/environment';
-  import { localData } from '@store/localdata';
+  import { localData } from '@store/sitedata';
 
   // Support drag and drop in the future
   function getFilesFromInputEvent({ target }) {
