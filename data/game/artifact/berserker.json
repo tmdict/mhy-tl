@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 4,
   "data": {
-    "en": {
-      "name": "Berserker",
-      "2p": "CRIT Rate +12%",
-      "4p": "When HP is below 70%, CRIT Rate increases by an additional 24%."
-    },
-    "zh": {
-      "name": "战狂",
-      "2p": "暴击率提高12%。",
-      "4p": "生命值低于70%时，暴击率额外提升24%。"
-    }
+    "name": "Berserker",
+    "2p": "CRIT Rate +12%",
+    "4p": "When HP is below 70%, CRIT Rate increases by an additional 24%."
   }
 }

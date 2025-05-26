@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Retracing Bolide",
-      "2p": "Increases Shield Strength by 35%.",
-      "4p": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG."
-    },
-    "zh": {
-      "name": "逆飞的流星",
-      "2p": "护盾强效提高35%。",
-      "4p": "处于护盾庇护下时，额外获得40%普通攻击和重击伤害加成。"
-    }
+    "name": "Retracing Bolide",
+    "2p": "Increases Shield Strength by 35%.",
+    "4p": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG."
   }
 }

@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 4,
   "data": {
-    "en": {
-      "name": "Instructor",
-      "2p": "Increases Elemental Mastery by 80.",
-      "4p": "Upon triggering an Elemental Reaction, increases all party members’ Elemental Mastery by 120 for 8s."
-    },
-    "zh": {
-      "name": "教官",
-      "2p": "元素精通提高80点。",
-      "4p": "触发元素反应后，队伍中所有角色的元素精通提高120点，持续8秒。"
-    }
+    "name": "Instructor",
+    "2p": "Increases Elemental Mastery by 80.",
+    "4p": "Upon triggering an Elemental Reaction, increases all party members’ Elemental Mastery by 120 for 8s."
   }
 }

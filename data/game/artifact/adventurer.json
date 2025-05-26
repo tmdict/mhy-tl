@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 3,
   "data": {
-    "en": {
-      "name": "Adventurer",
-      "2p": "Max HP increased by 1,000.",
-      "4p": "Opening a chest regenerates 30% Max HP over 5s."
-    },
-    "zh": {
-      "name": "冒险家",
-      "2p": "生命值上限提升1000点。",
-      "4p": "开启各类宝箱后5秒内，持续恢复30%生命值。"
-    }
+    "name": "Adventurer",
+    "2p": "Max HP increased by 1,000.",
+    "4p": "Opening a chest regenerates 30% Max HP over 5s."
   }
 }

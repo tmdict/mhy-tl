@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 4,
   "data": {
-    "en": {
-      "name": "Resolution of Sojourner",
-      "2p": "ATK +18%.",
-      "4p": "Increases Charged Attack CRIT Rate by 30%."
-    },
-    "zh": {
-      "name": "行者之心",
-      "2p": "攻击力提高18%。",
-      "4p": "重击的暴击率提升30%。"
-    }
+    "name": "Resolution of Sojourner",
+    "2p": "ATK +18%.",
+    "4p": "Increases Charged Attack CRIT Rate by 30%."
   }
 }

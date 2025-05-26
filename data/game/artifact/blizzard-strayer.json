@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Blizzard Strayer",
-      "2p": "Cryo DMG Bonus +15%",
-      "4p": "When a character attacks an opponent affected by Cryo, their CRIT Rate is increased by 20%. If the opponent is Frozen, CRIT Rate is increased by an additional 20%."
-    },
-    "zh": {
-      "name": "冰风迷途的勇士",
-      "2p": "获得15%冰元素伤害加成",
-      "4p": "攻击处于冰元素影响下的敌人时，暴击率提高20%；若敌人处于冻结状态下，则暴击率额外提高20%。"
-    }
+    "name": "Blizzard Strayer",
+    "2p": "Cryo DMG Bonus +15%",
+    "4p": "When a character attacks an opponent affected by Cryo, their CRIT Rate is increased by 20%. If the opponent is Frozen, CRIT Rate is increased by an additional 20%."
   }
 }

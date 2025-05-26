@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Bloodstained Chivalry",
-      "2p": "Physical DMG +25%",
-      "4p": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s."
-    },
-    "zh": {
-      "name": "染血的骑士道",
-      "2p": "造成的物理伤害提高25%。",
-      "4p": "击败敌人后的10秒内，施放重击时不消耗体力，且重击造成的伤害提升50%。"
-    }
+    "name": "Bloodstained Chivalry",
+    "2p": "Physical DMG +25%",
+    "4p": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s."
   }
 }

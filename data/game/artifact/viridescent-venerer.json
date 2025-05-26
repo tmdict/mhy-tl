@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Viridescent Venerer",
-      "2p": "Anemo DMG Bonus +15%",
-      "4p": "Increases Swirl DMG by 60%. Decreases opponent’s Elemental RES to the element infused in the Swirl by 40% for 10s."
-    },
-    "zh": {
-      "name": "翠绿之影",
-      "2p": "获得15%风元素伤害加成。",
-      "4p": "扩散反应造成的伤害提升60%。根据扩散的元素类型，降低受到影响的敌人40%的对应元素抗性，持续10秒。"
-    }
+    "name": "Viridescent Venerer",
+    "2p": "Anemo DMG Bonus +15%",
+    "4p": "Increases Swirl DMG by 60%. Decreases opponent’s Elemental RES to the element infused in the Swirl by 40% for 10s."
   }
 }

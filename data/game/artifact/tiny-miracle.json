@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 4,
   "data": {
-    "en": {
-      "name": "Tiny Miracle",
-      "2p": "All Elemental RES increased by 20%.",
-      "4p": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s."
-    },
-    "zh": {
-      "name": "奇迹",
-      "2p": "所有元素抗性提高20%。",
-      "4p": "受到某个元素类型的伤害后，相应的抗性提升30%，持续10秒。该效果每10秒只能触发一次。"
-    }
+    "name": "Tiny Miracle",
+    "2p": "All Elemental RES increased by 20%.",
+    "4p": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s."
   }
 }

@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Marechaussee Hunter",
-      "2p": "Normal and Charged Attack DMG +15%.",
-      "4p": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks."
-    },
-    "zh": {
-      "name": "逐影猎人",
-      "2p": "普通攻击与重击造成的伤害提高15%。",
-      "4p": "当前生命值提升或降低时，暴击率提升12%，该效果持续5秒，至多叠加3次。"
-    }
+    "name": "Marechaussee Hunter",
+    "2p": "Normal and Charged Attack DMG +15%.",
+    "4p": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks."
   }
 }

@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Desert Pavilion Chronicle",
-      "2p": "Anemo DMG Bonus +15%",
-      "4p": "When Charged Attacks hit opponents, the equipping character's Normal Attack SPD will increase by 10% while Normal, Charged, and Plunging Attack DMG will increase by 40% for 15s."
-    },
-    "zh": {
-      "name": "沙上楼阁史话",
-      "2p": "获得15%风元素伤害加成。",
-      "4p": "重击命中敌人后，该角色的普通攻击速度提升10%，普通攻击、重击与下落攻击造成的伤害提升40%，持续15秒。"
-    }
+    "name": "Desert Pavilion Chronicle",
+    "2p": "Anemo DMG Bonus +15%",
+    "4p": "When Charged Attacks hit opponents, the equipping character's Normal Attack SPD will increase by 10% while Normal, Charged, and Plunging Attack DMG will increase by 40% for 15s."
   }
 }

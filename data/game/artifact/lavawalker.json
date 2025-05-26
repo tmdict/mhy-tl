@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Lavawalker",
-      "2p": "Pyro RES increased by 40%.",
-      "4p": "Increases DMG against opponents affected by Pyro by 35%."
-    },
-    "zh": {
-      "name": "渡过烈火的贤人",
-      "2p": "火元素抗性提高40%。",
-      "4p": "对处于火元素影响下的敌人造成的伤害提升35%。"
-    }
+    "name": "Lavawalker",
+    "2p": "Pyro RES increased by 40%.",
+    "4p": "Increases DMG against opponents affected by Pyro by 35%."
   }
 }

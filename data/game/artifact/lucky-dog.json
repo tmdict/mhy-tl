@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 3,
   "data": {
-    "en": {
-      "name": "Lucky Dog",
-      "2p": "DEF increased by 100.",
-      "4p": "Picking up Mora restores 300 HP."
-    },
-    "zh": {
-      "name": "幸运儿",
-      "2p": "防御力提高100点。",
-      "4p": "拾取摩拉时，恢复300点生命值。"
-    }
+    "name": "Lucky Dog",
+    "2p": "DEF increased by 100.",
+    "4p": "Picking up Mora restores 300 HP."
   }
 }

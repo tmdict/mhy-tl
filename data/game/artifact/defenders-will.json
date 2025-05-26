@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 4,
   "data": {
-    "en": {
-      "name": "Defender’s Will",
-      "2p": "DEF +30%",
-      "4p": "For each different element present in your own party, the wearer’s Elemental RES to that corresponding element is increased by 30%."
-    },
-    "zh": {
-      "name": "守护之心",
-      "2p": "防御力提高30%。",
-      "4p": "队伍里每有不同一种元素类型的自己的角色，自身获得30%相应的元素抗性。"
-    }
+    "name": "Defender’s Will",
+    "2p": "DEF +30%",
+    "4p": "For each different element present in your own party, the wearer’s Elemental RES to that corresponding element is increased by 30%."
   }
 }

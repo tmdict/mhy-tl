@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Noblesse Oblige",
-      "2p": "Elemental Burst DMG +20%",
-      "4p": "Using an Elemental Burst increases all party members’ ATK by 20% for 12s. This effect cannot stack."
-    },
-    "zh": {
-      "name": "昔日宗室之仪",
-      "2p": "元素爆发造成的伤害提升20%。",
-      "4p": "施放元素爆发后，队伍中所有角色攻击力提升20%，持续12秒。该效果不可叠加。"
-    }
+    "name": "Noblesse Oblige",
+    "2p": "Elemental Burst DMG +20%",
+    "4p": "Using an Elemental Burst increases all party members’ ATK by 20% for 12s. This effect cannot stack."
   }
 }

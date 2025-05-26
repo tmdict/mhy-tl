@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Wanderer’s Troupe",
-      "2p": "Increases Elemental Mastery by 80.",
-      "4p": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow."
-    },
-    "zh": {
-      "name": "流浪大地的乐团",
-      "2p": "元素精通提高80点。",
-      "4p": "装备该圣遗物套装的角色为法器、弓箭角色时，角色重击造成的伤害提高35%。"
-    }
+    "name": "Wanderer’s Troupe",
+    "2p": "Increases Elemental Mastery by 80.",
+    "4p": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow."
   }
 }

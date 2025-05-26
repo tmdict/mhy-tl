@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 4,
   "data": {
-    "en": {
-      "name": "Gambler",
-      "2p": "Increases Elemental Skill DMG by 20%.",
-      "4p": "Defeating an opponent has a 100% chance to remove Elemental Skill CD. Can only occur once every 15s."
-    },
-    "zh": {
-      "name": "赌徒",
-      "2p": "元素战技造成的伤害提升20%。",
-      "4p": "击败敌人时，有100%概率清除元素战技的冷却时间。该效果每15秒至多触发一次。"
-    }
+    "name": "Gambler",
+    "2p": "Increases Elemental Skill DMG by 20%.",
+    "4p": "Defeating an opponent has a 100% chance to remove Elemental Skill CD. Can only occur once every 15s."
   }
 }

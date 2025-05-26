@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Long Night’s Oath",
-      "2p": "Plunging Attack DMG increased by 25%.",
-      "4p": "After the equipping character’s Plunging Attack/Charged Attack/Elemental Skill hits an opponent, they will gain 1/2/2 stack(s) of “Radiance Everlasting.” Plunging Attacks, Charged Attacks or Elemental Skills can each trigger this effect once every 1s. Radiance Everlasting: Plunging Attacks deal 15%. increased DMG for 6s. Max 5 stacks. Each stack’s duration is counted independently."
-    },
-    "zh": {
-      "name": "长夜之誓",
-      "2p": "下落攻击造成的伤害提升25%。",
-      "4p": "装备者的下落攻击/重击/元素战技命中敌人后，获得1/2/2层「永照的流辉」，由下落攻击、重击或元素战技产生的该效果分别每1秒至多触发一次。永照的流辉：下落攻击造成的伤害提升15%，持续6秒，至多叠加5层，每层持续时间独立计算。"
-    }
+    "name": "Long Night’s Oath",
+    "2p": "Plunging Attack DMG increased by 25%.",
+    "4p": "After the equipping character’s Plunging Attack/Charged Attack/Elemental Skill hits an opponent, they will gain 1/2/2 stack(s) of “Radiance Everlasting.” Plunging Attacks, Charged Attacks or Elemental Skills can each trigger this effect once every 1s. Radiance Everlasting: Plunging Attacks deal 15%. increased DMG for 6s. Max 5 stacks. Each stack’s duration is counted independently."
   }
 }

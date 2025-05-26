@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Golden Troupe",
-      "2p": "Increases Elemental Skill DMG by 20%.",
-      "4p": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
-    },
-    "zh": {
-      "name": "黄金剧团",
-      "2p": "元素战技造成的伤害提升20%。",
-      "4p": "元素战技造成的伤害提升25%；此外，处于队伍后台时，元素战技造成的伤害还将进一步提升25%，该效果将在登场后2秒移除。"
-    }
+    "name": "Golden Troupe",
+    "2p": "Increases Elemental Skill DMG by 20%.",
+    "4p": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
   }
 }

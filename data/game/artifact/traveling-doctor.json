@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 3,
   "data": {
-    "en": {
-      "name": "Traveling Doctor",
-      "2p": "Increases incoming healing by 20%.",
-      "4p": "Using Elemental Burst restores 20% HP."
-    },
-    "zh": {
-      "name": "游医",
-      "2p": "角色受到的治疗效果提高20%。",
-      "4p": "施放元素爆发时，恢复20%生命值。"
-    }
+    "name": "Traveling Doctor",
+    "2p": "Increases incoming healing by 20%.",
+    "4p": "Using Elemental Burst restores 20% HP."
   }
 }

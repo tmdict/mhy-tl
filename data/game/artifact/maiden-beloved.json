@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Maiden Beloved",
-      "2p": "Character Healing Effectiveness +15%",
-      "4p": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s."
-    },
-    "zh": {
-      "name": "被怜爱的少女",
-      "2p": "角色造成的治疗效果提升15%。",
-      "4p": "施放元素战技或元素爆发后的10秒内，队伍中所有角色受治疗效果加成提高20%。"
-    }
+    "name": "Maiden Beloved",
+    "2p": "Character Healing Effectiveness +15%",
+    "4p": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s."
   }
 }

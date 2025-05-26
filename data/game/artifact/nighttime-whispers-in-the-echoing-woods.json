@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Nighttime Whispers in the Echoing Woods",
-      "2p": "ATK +18%",
-      "4p": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. While under a shield granted by the Crystallize reaction, the above effect will be increased by 150%, and this additional increase disappears 1s after that shield is lost."
-    },
-    "zh": {
-      "name": "回声之林夜话",
-      "2p": "攻击力提高18%。",
-      "4p": "施放元素战技后的10秒内，岩元素伤害加成提升20%；若处于结晶反应的护盾庇护下，上述效果提高150%，进一步提高的效果将在失去结晶护盾庇护的1秒后解除。"
-    }
+    "name": "Nighttime Whispers in the Echoing Woods",
+    "2p": "ATK +18%",
+    "4p": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. While under a shield granted by the Crystallize reaction, the above effect will be increased by 150%, and this additional increase disappears 1s after that shield is lost."
   }
 }

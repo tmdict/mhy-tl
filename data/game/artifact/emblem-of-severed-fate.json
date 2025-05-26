@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Emblem of Severed Fate",
-      "2p": "Energy Recharge +20%",
-      "4p": "Increases Elemental Burst DMG by 25% of Energy Recharge. A maximum of 75% bonus DMG can be obtained in this way."
-    },
-    "zh": {
-      "name": "绝缘之旗印",
-      "2p": "元素充能效率提高20%。",
-      "4p": "基于元素充能效率的25%，提高元素爆发造成的伤害。至多通过这种方式获得75%提升。"
-    }
+    "name": "Emblem of Severed Fate",
+    "2p": "Energy Recharge +20%",
+    "4p": "Increases Elemental Burst DMG by 25% of Energy Recharge. A maximum of 75% bonus DMG can be obtained in this way."
   }
 }

@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Gladiator’s Finale",
-      "2p": "ATK +18%.",
-      "4p": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%."
-    },
-    "zh": {
-      "name": "角斗士的终幕礼",
-      "2p": "攻击力提高18%。",
-      "4p": "装备该圣遗物套装的角色为单手剑、双手剑、长柄武器角色时，角色普通攻击造成的伤害提高35%。"
-    }
+    "name": "Gladiator’s Finale",
+    "2p": "ATK +18%.",
+    "4p": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%."
   }
 }

@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Heart of Depth",
-      "2p": "Hydro DMG Bonus +15%",
-      "4p": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s."
-    },
-    "zh": {
-      "name": "沉沦之心",
-      "2p": "获得15%水元素伤害加成。",
-      "4p": "施放元素战技后的15秒内，普通攻击与重击造成的伤害提高30%。"
-    }
+    "name": "Heart of Depth",
+    "2p": "Hydro DMG Bonus +15%",
+    "4p": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s."
   }
 }

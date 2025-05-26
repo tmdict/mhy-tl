@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Flower of Paradise Lost",
-      "2p": "Increases Elemental Mastery by 80.",
-      "4p": "The equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%. Additionally, after the equipping character triggers Bloom, Hyperbloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field."
-    },
-    "zh": {
-      "name": "乐园遗落之花",
-      "2p": "元素精通提高80点。",
-      "4p": "装备者绽放、超绽放、烈绽放反应造成的伤害提升40%。此外，装备者触发绽放、超绽放、烈绽放后，上述效果带来的加成提升25%，该效果持续10秒，至多叠加4次，每1秒至多触发一次。装备者处于队伍后台时依然能触发该效果。"
-    }
+    "name": "Flower of Paradise Lost",
+    "2p": "Increases Elemental Mastery by 80.",
+    "4p": "The equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%. Additionally, after the equipping character triggers Bloom, Hyperbloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field."
   }
 }

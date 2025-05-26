@@ -13,7 +13,7 @@
 {#each artifacts as artifact, i}
   <div class="content-row" class:divider={i !== 0}>
     {#each artifact.set as set}
-      {@const details = data[set] ? data[set].data.en : false}
+      {@const details = data[set] ? data[set].data : false}
       <div class="artifact" role="button" tabindex="0" on:click|stopPropagation on:keydown|stopPropagation>
         <Icon
           id={set}

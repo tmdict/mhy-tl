@@ -7,7 +7,7 @@
   const keys = buildEditor.getKeys.artifact(artifactKey);
 
   $: l10n = Object.values($artifacts).reduce((acc, a) => {
-    const name = a['data'] && a['data'].en ? a['data'].en['name'] : a.id;
+    const name = a['data'] ? a['data']['name'] : a.id;
     return { ...acc, [a.id]: name };
   }, {});
 </script>

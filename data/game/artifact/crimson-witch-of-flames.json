@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Crimson Witch of Flames",
-      "2p": "Pyro DMG Bonus +15%",
-      "4p": "Increases Overloaded and Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks."
-    },
-    "zh": {
-      "name": "炽烈的炎之魔女",
-      "2p": "获得15%火元素伤害加成。",
-      "4p": "超载、燃烧、烈绽放反应造成的伤害提升40%，蒸发、融化反应的加成系数提高15%。施放元素战技后的10秒内，2件套的效果提高50%，该效果最多叠加3次。"
-    }
+    "name": "Crimson Witch of Flames",
+    "2p": "Pyro DMG Bonus +15%",
+    "4p": "Increases Overloaded and Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks."
   }
 }

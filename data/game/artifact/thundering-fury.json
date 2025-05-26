@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 5,
   "data": {
-    "en": {
-      "name": "Thundering Fury",
-      "2p": "Electro DMG Bonus +15%",
-      "4p": "Increases DMG caused by Overloaded, Electro-Charged, Superconduct, and Hyperbloom by 40%, and the DMG Bonus conferred by Aggravate is increased by 20%. When Quicken or the aforementioned Elemental Reactions are triggered, Elemental Skill CD is decreased by 1s. Can only occur once every 0.8s."
-    },
-    "zh": {
-      "name": "如雷的盛怒",
-      "2p": "获得15%雷元素伤害加成。",
-      "4p": "超载、感电、超导、超绽放反应造成的伤害提升40%，超激化反应带来的伤害提升提高20%。触发上述元素反应或原激化反应时，元素战技冷却时间减少1秒。该效果每0.8秒最多触发一次。"
-    }
+    "name": "Thundering Fury",
+    "2p": "Electro DMG Bonus +15%",
+    "4p": "Increases DMG caused by Overloaded, Electro-Charged, Superconduct, and Hyperbloom by 40%, and the DMG Bonus conferred by Aggravate is increased by 20%. When Quicken or the aforementioned Elemental Reactions are triggered, Elemental Skill CD is decreased by 1s. Can only occur once every 0.8s."
   }
 }

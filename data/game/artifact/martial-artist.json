@@ -3,15 +3,8 @@
   "type": "artifact",
   "rarity": 4,
   "data": {
-    "en": {
-      "name": "Martial Artist",
-      "2p": "Increases Normal Attack and Charged Attack DMG by 15%.",
-      "4p": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s."
-    },
-    "zh": {
-      "name": "武人",
-      "2p": "普通攻击与重击造成的伤害提高15%；",
-      "4p": "施放元素战技后的8秒内，普通攻击和重击造成的伤害提升25%。"
-    }
+    "name": "Martial Artist",
+    "2p": "Increases Normal Attack and Charged Attack DMG by 15%.",
+    "4p": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s."
   }
 }
