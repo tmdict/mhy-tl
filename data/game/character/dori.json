@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "3.0.1",
   "data": {
-    "en": {
-      "name": "Dori"
-    },
-    "zh": {
-      "name": "多莉"
-    }
+    "name": "Dori"
   }
 }

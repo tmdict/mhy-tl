@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "1.5.0",
   "data": {
-    "en": {
-      "name": "Yanfei"
-    },
-    "zh": {
-      "name": "烟绯"
-    }
+    "name": "Yanfei"
   }
 }

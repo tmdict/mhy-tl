@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "4.0.1",
   "data": {
-    "en": {
-      "name": "Freminet"
-    },
-    "zh": {
-      "name": "菲米尼"
-    }
+    "name": "Freminet"
   }
 }

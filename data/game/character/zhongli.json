@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "1.1.1",
   "data": {
-    "en": {
-      "name": "Zhongli"
-    },
-    "zh": {
-      "name": "钟离"
-    }
+    "name": "Zhongli"
   }
 }

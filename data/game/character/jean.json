@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Jean"
-    },
-    "zh": {
-      "name": "琴"
-    }
+    "name": "Jean"
   }
 }

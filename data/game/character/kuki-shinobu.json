@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "2.7.1",
   "data": {
-    "en": {
-      "name": "Kuki Shinobu"
-    },
-    "zh": {
-      "name": "久岐忍"
-    }
+    "name": "Kuki Shinobu"
   }
 }

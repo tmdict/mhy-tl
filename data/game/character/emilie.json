@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "4.8.1",
   "data": {
-    "en": {
-      "name": "Emilie"
-    },
-    "zh": {
-      "name": "艾梅莉埃"
-    }
+    "name": "Emilie"
   }
 }

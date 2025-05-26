@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "3.5.0",
   "data": {
-    "en": {
-      "name": "Dehya"
-    },
-    "zh": {
-      "name": "迪希雅"
-    }
+    "name": "Dehya"
   }
 }

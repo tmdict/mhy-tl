@@ -131,7 +131,7 @@
       label="Character"
       list={$availableInputs.characters}
       l10n={Object.values($characters).reduce(
-        (acc, c) => ({ ...acc, [c.id]: c.data && c.data.en ? c.data.en['name'] : c.id }),
+        (acc, c) => ({ ...acc, [c.id]: c.data ? c.data['name'] : c.id }),
         { '-': '-' }
       )}
       bind:selected={$buildEditor['character']}

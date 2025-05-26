@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "4.6.0",
   "data": {
-    "en": {
-      "name": "Arlecchino"
-    },
-    "zh": {
-      "name": "阿蕾奇诺"
-    }
+    "name": "Arlecchino"
   }
 }

@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "3.4.0",
   "data": {
-    "en": {
-      "name": "Yaoyao"
-    },
-    "zh": {
-      "name": "瑶瑶"
-    }
+    "name": "Yaoyao"
   }
 }

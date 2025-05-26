@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "5.1.0",
   "data": {
-    "en": {
-      "name": "Xilonen"
-    },
-    "zh": {
-      "name": "希诺宁"
-    }
+    "name": "Xilonen"
   }
 }

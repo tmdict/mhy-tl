@@ -23,7 +23,7 @@
 
 <svelte:head>
   {#if validator.validateBuild(build, 'en')}
-    <title>{$characters[build.character].data.en.name} · {build.name.en}</title>
+    <title>{$characters[build.character].data.name} · {build.name.en}</title>
   {/if}
 </svelte:head>
 

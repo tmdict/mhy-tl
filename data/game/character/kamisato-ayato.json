@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "2.6.0",
   "data": {
-    "en": {
-      "name": "Kamisato Ayato"
-    },
-    "zh": {
-      "name": "神里綾人"
-    }
+    "name": "Kamisato Ayato"
   }
 }

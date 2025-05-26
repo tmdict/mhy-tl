@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "1.1.1",
   "data": {
-    "en": {
-      "name": "Xinyan"
-    },
-    "zh": {
-      "name": "辛焱"
-    }
+    "name": "Xinyan"
   }
 }

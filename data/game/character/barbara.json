@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Barbara"
-    },
-    "zh": {
-      "name": "芭芭拉"
-    }
+    "name": "Barbara"
   }
 }

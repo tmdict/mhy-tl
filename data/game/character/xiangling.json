@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Xiangling"
-    },
-    "zh": {
-      "name": "香菱"
-    }
+    "name": "Xiangling"
   }
 }

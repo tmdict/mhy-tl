@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Kaeya"
-    },
-    "zh": {
-      "name": "凯亚"
-    }
+    "name": "Kaeya"
   }
 }

@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "1.2.1",
   "data": {
-    "en": {
-      "name": "Ganyu"
-    },
-    "zh": {
-      "name": "甘雨"
-    }
+    "name": "Ganyu"
   }
 }

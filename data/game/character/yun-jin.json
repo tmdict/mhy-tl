@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "2.4.0",
   "data": {
-    "en": {
-      "name": "Yun Jin"
-    },
-    "zh": {
-      "name": "云堇"
-    }
+    "name": "Yun Jin"
   }
 }

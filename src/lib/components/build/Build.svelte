@@ -38,7 +38,7 @@
       />
       <div class="content-col names">
         <div class="character-name">
-          {$characters[build.character].data.en.name}
+          {$characters[build.character].data.name}
         </div>
         <div class="build-name">
           {build.name.en ? build.name.en : build.name.en}

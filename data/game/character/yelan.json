@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "2.7.0",
   "data": {
-    "en": {
-      "name": "Yelan"
-    },
-    "zh": {
-      "name": "夜兰"
-    }
+    "name": "Yelan"
   }
 }

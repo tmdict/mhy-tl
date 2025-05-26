@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.2.0",
   "data": {
-    "en": {
-      "name": "Albedo"
-    },
-    "zh": {
-      "name": "阿贝多"
-    }
+    "name": "Albedo"
   }
 }

@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "2.1.1",
   "data": {
-    "en": {
-      "name": "Sangonomiya Kokomi"
-    },
-    "zh": {
-      "name": "珊瑚宫心海"
-    }
+    "name": "Sangonomiya Kokomi"
   }
 }

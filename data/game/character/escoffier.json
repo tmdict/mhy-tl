@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "5.6.0",
   "data": {
-    "en": {
-      "name": "Escoffier"
-    },
-    "zh": {
-      "name": "爱可菲"
-    }
+    "name": "Escoffier"
   }
 }

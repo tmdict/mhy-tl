@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "2.0.1",
   "data": {
-    "en": {
-      "name": "Sayu"
-    },
-    "zh": {
-      "name": "早柚"
-    }
+    "name": "Sayu"
   }
 }

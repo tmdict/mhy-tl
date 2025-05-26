@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "1.5.1",
   "data": {
-    "en": {
-      "name": "Eula"
-    },
-    "zh": {
-      "name": "优菈"
-    }
+    "name": "Eula"
   }
 }

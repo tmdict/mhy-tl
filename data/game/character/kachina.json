@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "5.0.0",
   "data": {
-    "en": {
-      "name": "Kachina"
-    },
-    "zh": {
-      "name": "卡齐娜"
-    }
+    "name": "Kachina"
   }
 }

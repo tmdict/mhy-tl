@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "4.4.0",
   "data": {
-    "en": {
-      "name": "Gaming"
-    },
-    "zh": {
-      "name": "嘉明"
-    }
+    "name": "Gaming"
   }
 }

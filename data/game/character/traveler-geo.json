@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Traveler (Geo)"
-    },
-    "zh": {
-      "name": "旅行者（岩）"
-    }
+    "name": "Traveler (Geo)"
   }
 }

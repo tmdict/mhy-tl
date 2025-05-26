@@ -11,7 +11,7 @@
 <div class="content-row character">
   <Icon
     id={character}
-    title={$characters[character] ? $characters[character].data.en.name : character}
+    title={$characters[character] ? $characters[character].data.name : character}
     src={$images[`/src/lib/img/character/${character}.png`]}
     rarity={$rarity[character]}
     {size}

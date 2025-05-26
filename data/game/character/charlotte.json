@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "4.2.0",
   "data": {
-    "en": {
-      "name": "Charlotte"
-    },
-    "zh": {
-      "name": "夏洛蒂"
-    }
+    "name": "Charlotte"
   }
 }

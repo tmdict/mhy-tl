@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Amber"
-    },
-    "zh": {
-      "name": "安柏"
-    }
+    "name": "Amber"
   }
 }

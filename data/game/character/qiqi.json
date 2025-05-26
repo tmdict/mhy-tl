@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Qiqi"
-    },
-    "zh": {
-      "name": "七七"
-    }
+    "name": "Qiqi"
   }
 }

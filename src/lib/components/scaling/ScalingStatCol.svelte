@@ -30,14 +30,14 @@
   {#if baseKey === 'icon'}
     <Icon
       id={data.id}
-      title={$characters[data.id] ? $characters[data.id].data.en.name : data.id}
+      title={$characters[data.id] ? $characters[data.id].data.name : data.id}
       src={$images[`/src/lib/img/character/${data.id}.png`]}
       rarity={$rarity[data.id]}
       size="50px"
       margin="0"
     />
   {:else if baseKey === 'name'}
-    <b>{$characters[data.id].data.en.name}</b>
+    <b>{$characters[data.id].data.name}</b>
   {:else}
     {#if (windowWidth < 960 && baseKey !== 'constellation') || (windowWidth < 960 && baseKey == 'constellation' && !data[baseKey].length)}<b
         >{baseKey}:</b

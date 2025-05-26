@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "4.4.0",
   "data": {
-    "en": {
-      "name": "Xianyun"
-    },
-    "zh": {
-      "name": "闲云"
-    }
+    "name": "Xianyun"
   }
 }

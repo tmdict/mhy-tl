@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "5.3.1",
   "data": {
-    "en": {
-      "name": "Lan Yan"
-    },
-    "zh": {
-      "name": "蓝砚"
-    }
+    "name": "Lan Yan"
   }
 }

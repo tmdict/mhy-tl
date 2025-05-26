@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "2.0.0",
   "data": {
-    "en": {
-      "name": "Kamisato Ayaka"
-    },
-    "zh": {
-      "name": "神里绫华"
-    }
+    "name": "Kamisato Ayaka"
   }
 }

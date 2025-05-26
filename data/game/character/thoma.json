@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "2.2.1",
   "data": {
-    "en": {
-      "name": "Thoma"
-    },
-    "zh": {
-      "name": "托马"
-    }
+    "name": "Thoma"
   }
 }

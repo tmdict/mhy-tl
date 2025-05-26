@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "3.7.0",
   "data": {
-    "en": {
-      "name": "Kirara"
-    },
-    "zh": {
-      "name": "绮良良"
-    }
+    "name": "Kirara"
   }
 }

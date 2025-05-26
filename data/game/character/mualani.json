@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "5.0.0",
   "data": {
-    "en": {
-      "name": "Mualani"
-    },
-    "zh": {
-      "name": "玛拉妮"
-    }
+    "name": "Mualani"
   }
 }

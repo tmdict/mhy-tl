@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "3.2.1",
   "data": {
-    "en": {
-      "name": "Layla"
-    },
-    "zh": {
-      "name": "莱依拉"
-    }
+    "name": "Layla"
   }
 }

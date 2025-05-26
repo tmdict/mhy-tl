@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "5.3.0",
   "data": {
-    "en": {
-      "name": "Traveler (Pyro)"
-    },
-    "zh": {
-      "name": "旅行者（火）"
-    }
+    "name": "Traveler (Pyro)"
   }
 }

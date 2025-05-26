@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "4.3.0",
   "data": {
-    "en": {
-      "name": "Navia"
-    },
-    "zh": {
-      "name": "娜维娅"
-    }
+    "name": "Navia"
   }
 }

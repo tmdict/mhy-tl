@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "4.7.0",
   "data": {
-    "en": {
-      "name": "Clorinde"
-    },
-    "zh": {
-      "name": "克洛琳德"
-    }
+    "name": "Clorinde"
   }
 }

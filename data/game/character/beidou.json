@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Beidou"
-    },
-    "zh": {
-      "name": "北斗"
-    }
+    "name": "Beidou"
   }
 }

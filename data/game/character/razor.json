@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Razor"
-    },
-    "zh": {
-      "name": "雷泽"
-    }
+    "name": "Razor"
   }
 }

@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "3.5.1",
   "data": {
-    "en": {
-      "name": "Mika"
-    },
-    "zh": {
-      "name": "米卡"
-    }
+    "name": "Mika"
   }
 }

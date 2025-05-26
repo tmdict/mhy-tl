@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.6.1",
   "data": {
-    "en": {
-      "name": "Kaedehara Kazuha"
-    },
-    "zh": {
-      "name": "枫原万叶"
-    }
+    "name": "Kaedehara Kazuha"
   }
 }

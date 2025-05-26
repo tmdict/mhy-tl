@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "2.0.1",
   "data": {
-    "en": {
-      "name": "Yoimiya"
-    },
-    "zh": {
-      "name": "宵宫"
-    }
+    "name": "Yoimiya"
   }
 }

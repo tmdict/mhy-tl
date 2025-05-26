@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Sucrose"
-    },
-    "zh": {
-      "name": "砂糖"
-    }
+    "name": "Sucrose"
   }
 }

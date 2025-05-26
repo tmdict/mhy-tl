@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "4.0.0",
   "data": {
-    "en": {
-      "name": "Lyney"
-    },
-    "zh": {
-      "name": "林尼"
-    }
+    "name": "Lyney"
   }
 }

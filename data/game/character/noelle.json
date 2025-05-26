@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Noelle"
-    },
-    "zh": {
-      "name": "诺艾尔"
-    }
+    "name": "Noelle"
   }
 }

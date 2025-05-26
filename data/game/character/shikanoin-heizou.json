@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "2.8.0",
   "data": {
-    "en": {
-      "name": "Shikanoin Heizou"
-    },
-    "zh": {
-      "name": "鹿野院平藏"
-    }
+    "name": "Shikanoin Heizou"
   }
 }

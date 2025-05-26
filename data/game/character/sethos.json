@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "4.7.0",
   "data": {
-    "en": {
-      "name": "Sethos"
-    },
-    "zh": {
-      "name": "赛索斯"
-    }
+    "name": "Sethos"
   }
 }

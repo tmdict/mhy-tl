@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Bennett"
-    },
-    "zh": {
-      "name": "班尼特"
-    }
+    "name": "Bennett"
   }
 }

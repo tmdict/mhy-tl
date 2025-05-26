@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "5.2.0",
   "data": {
-    "en": {
-      "name": "Chasca"
-    },
-    "zh": {
-      "name": "恰斯卡"
-    }
+    "name": "Chasca"
   }
 }

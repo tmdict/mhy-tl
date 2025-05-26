@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Diluc"
-    },
-    "zh": {
-      "name": "迪卢克"
-    }
+    "name": "Diluc"
   }
 }

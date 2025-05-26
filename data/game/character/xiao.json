@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "1.3.0",
   "data": {
-    "en": {
-      "name": "Xiao"
-    },
-    "zh": {
-      "name": "魈"
-    }
+    "name": "Xiao"
   }
 }

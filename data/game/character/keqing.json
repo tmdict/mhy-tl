@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Keqing"
-    },
-    "zh": {
-      "name": "刻晴"
-    }
+    "name": "Keqing"
   }
 }

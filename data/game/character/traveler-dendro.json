@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "3.0.0",
   "data": {
-    "en": {
-      "name": "Traveler (Dendro)"
-    },
-    "zh": {
-      "name": "旅行者（草）"
-    }
+    "name": "Traveler (Dendro)"
   }
 }

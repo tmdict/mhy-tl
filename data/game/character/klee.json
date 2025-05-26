@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "1.0.1",
   "data": {
-    "en": {
-      "name": "Klee"
-    },
-    "zh": {
-      "name": "可莉"
-    }
+    "name": "Klee"
   }
 }

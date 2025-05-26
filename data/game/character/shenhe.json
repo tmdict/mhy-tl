@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "2.4.0",
   "data": {
-    "en": {
-      "name": "Shenhe"
-    },
-    "zh": {
-      "name": "申鹤"
-    }
+    "name": "Shenhe"
   }
 }

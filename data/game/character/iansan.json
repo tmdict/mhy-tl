@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "5.5.0",
   "data": {
-    "en": {
-      "name": "Iansan"
-    },
-    "zh": {
-      "name": "伊安珊"
-    }
+    "name": "Iansan"
   }
 }

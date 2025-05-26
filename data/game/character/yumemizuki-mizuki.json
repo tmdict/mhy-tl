@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "5.4.0",
   "data": {
-    "en": {
-      "name": "Yumemizuki Mizuki"
-    },
-    "zh": {
-      "name": "梦见月瑞希"
-    }
+    "name": "Yumemizuki Mizuki"
   }
 }

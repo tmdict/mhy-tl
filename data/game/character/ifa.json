@@ -6,11 +6,6 @@
   "weapon": "catalyst",
   "released": "5.6.0",
   "data": {
-    "en": {
-      "name": "Ifa"
-    },
-    "zh": {
-      "name": "伊法"
-    }
+    "name": "Ifa"
   }
 }

@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "5.3.0",
   "data": {
-    "en": {
-      "name": "Mavuika"
-    },
-    "zh": {
-      "name": "玛薇卡"
-    }
+    "name": "Mavuika"
   }
 }

@@ -6,11 +6,6 @@
   "weapon": "sword",
   "released": "3.4.0",
   "data": {
-    "en": {
-      "name": "Alhaitham"
-    },
-    "zh": {
-      "name": "艾尔海森"
-    }
+    "name": "Alhaitham"
   }
 }

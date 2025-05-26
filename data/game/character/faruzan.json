@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "3.3.0",
   "data": {
-    "en": {
-      "name": "Faruzan"
-    },
-    "zh": {
-      "name": "珐露珊"
-    }
+    "name": "Faruzan"
   }
 }

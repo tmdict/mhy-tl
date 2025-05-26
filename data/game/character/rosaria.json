@@ -6,11 +6,6 @@
   "weapon": "polearm",
   "released": "1.4.1",
   "data": {
-    "en": {
-      "name": "Rosaria"
-    },
-    "zh": {
-      "name": "罗莎莉亚"
-    }
+    "name": "Rosaria"
   }
 }

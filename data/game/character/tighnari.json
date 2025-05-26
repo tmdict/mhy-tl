@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "3.0.0",
   "data": {
-    "en": {
-      "name": "Tighnari"
-    },
-    "zh": {
-      "name": "提纳里"
-    }
+    "name": "Tighnari"
   }
 }

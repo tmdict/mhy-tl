@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "2.3.1",
   "data": {
-    "en": {
-      "name": "Arataki Itto"
-    },
-    "zh": {
-      "name": "荒泷一斗"
-    }
+    "name": "Arataki Itto"
   }
 }

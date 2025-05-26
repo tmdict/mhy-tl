@@ -6,11 +6,6 @@
   "weapon": "claymore",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Chongyun"
-    },
-    "zh": {
-      "name": "重云"
-    }
+    "name": "Chongyun"
   }
 }

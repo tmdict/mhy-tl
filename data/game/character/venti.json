@@ -6,11 +6,6 @@
   "weapon": "bow",
   "released": "1.0.0",
   "data": {
-    "en": {
-      "name": "Venti"
-    },
-    "zh": {
-      "name": "温迪"
-    }
+    "name": "Venti"
   }
 }
