@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "The Stringless",
-      "passiveDescription": "Increases Elemental Skill and Elemental Burst DMG by {{24//30//36//42//48%}}."
-    },
-    "zh": {
-      "name": "绝弦",
-      "passiveDescription": "元素战技与元素爆发的伤害提高{{24//30//36//42//48%}}。"
-    }
+    "name": "The Stringless",
+    "passiveDescription": "Increases Elemental Skill and Elemental Burst DMG by {{24//30//36//42//48%}}."
   }
 }

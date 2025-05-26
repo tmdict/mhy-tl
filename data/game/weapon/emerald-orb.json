@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "Emerald Orb",
-      "passiveDescription": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, or a Hydro-infused Swirl reaction, increases ATK by {{20//25//30//35//40%}} for 12s."
-    },
-    "zh": {
-      "name": "翡玉法球",
-      "passiveDescription": "触发蒸发、感电、冰冻、绽放或水元素扩散后的12秒内，攻击力提高{{20//25//30//35//40%}}。"
-    }
+    "name": "Emerald Orb",
+    "passiveDescription": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, or a Hydro-infused Swirl reaction, increases ATK by {{20//25//30//35//40%}} for 12s."
   }
 }

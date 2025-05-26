@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Finale of the Deep",
-      "passiveDescription": "When using an Elemental Skill, ATK will be increased by {{12//15//18//21//24%}} for 15s, and a Bond of Life worth 25% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, a maximum of {{150//187.5//225//262.5//300}} ATK will be gained based on {{2.4//3//3.6//4.2//4.8%}} of the total amount of the Life Bond cleared, lasting for 15s."
-    },
-    "zh": {
-      "name": "海渊终曲",
-      "passiveDescription": "施放元素战技时，攻击力提升{{12//15//18//21//24%}}，持续15秒，并赋予生命值上限25%的生命之契，该效果每10秒至多触发一次。生命之契清除时，基于清除值的{{2.4//3//3.6//4.2//4.8%}}提升至多{{150//187.5//225//262.5//300}}点攻击力，持续15秒。"
-    }
+    "name": "Finale of the Deep",
+    "passiveDescription": "When using an Elemental Skill, ATK will be increased by {{12//15//18//21//24%}} for 15s, and a Bond of Life worth 25% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, a maximum of {{150//187.5//225//262.5//300}} ATK will be gained based on {{2.4//3//3.6//4.2//4.8%}} of the total amount of the Life Bond cleared, lasting for 15s."
   }
 }

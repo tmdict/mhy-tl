@@ -5,11 +5,6 @@
   "weaponType": "sword",
   "subStat": "_na",
   "data": {
-    "en": {
-      "name": "Dull Blade"
-    },
-    "zh": {
-      "name": "无锋剑"
-    }
+    "name": "Dull Blade"
   }
 }

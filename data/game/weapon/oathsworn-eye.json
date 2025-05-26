@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Oathsworn Eye",
-      "passiveDescription": "Increases Energy Recharge by {{24//30//36//42//48%}} for 10s after using an Elemental Skill."
-    },
-    "zh": {
-      "name": "证誓之明瞳",
-      "passiveDescription": "施放元素战技后，元素充能效率提升{{24//30//36//42//48%}}，持续10秒。"
-    }
+    "name": "Oathsworn Eye",
+    "passiveDescription": "Increases Energy Recharge by {{24//30//36//42//48%}} for 10s after using an Elemental Skill."
   }
 }

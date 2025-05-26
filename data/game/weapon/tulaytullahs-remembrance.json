@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Tulaytullah’s Remembrance",
-      "passiveDescription": "Normal Attack SPD is increased by {{10//12.5//15//17.5//20%}}. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by {{4.8//6//7.2//8.4//9.6%}} every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by {{9.6//12//14.4//16.8//19.2%}}. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is {{48//60//72//84//96%}}. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs."
-    },
-    "zh": {
-      "name": "图莱杜拉的回忆",
-      "passiveDescription": "普通攻击速度提升{{10//12.5//15//17.5//20%}}；施放元素战技后的14秒内：普通攻击造成的伤害每1秒提升{{4.8//6//7.2//8.4//9.6%}}；普通攻击命中敌人后，普通攻击造成的伤害提升{{9.6//12//14.4//16.8//19.2%}}，该效果每0.3秒至多触发1次。持续期间内，普通攻击造成的伤害至多通过上述效果提升至{{48//60//72//84//96%}}。角色退场时将移除效果，再次施放元素战技时会先移除原有的效果。"
-    }
+    "name": "Tulaytullah’s Remembrance",
+    "passiveDescription": "Normal Attack SPD is increased by {{10//12.5//15//17.5//20%}}. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by {{4.8//6//7.2//8.4//9.6%}} every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by {{9.6//12//14.4//16.8//19.2%}}. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is {{48//60//72//84//96%}}. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs."
   }
 }

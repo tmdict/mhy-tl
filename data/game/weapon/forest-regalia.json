@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Forest Regalia",
-      "passiveDescription": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character {{60//75//90//105//120}} Elemental Mastery for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field. The Leaf of Consciousness’ effect cannot stack."
-    },
-    "zh": {
-      "name": "森林王器",
-      "passiveDescription": "触发燃烧、原激化、超激化、蔓激化、绽放、超绽放或烈绽放后，将在角色周围产生至多存在10秒的「种识之叶」。拾取种识之叶的角色元素精通提升{{60//75//90//105//120}}点，持续12秒。每20秒至多通过这种方式产生一枚种识之叶。角色处于队伍后台时也能触发。种识之叶的效果无法叠加。"
-    }
+    "name": "Forest Regalia",
+    "passiveDescription": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character {{60//75//90//105//120}} Elemental Mastery for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field. The Leaf of Consciousness’ effect cannot stack."
   }
 }

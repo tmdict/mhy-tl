@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "hp",
   "data": {
-    "en": {
-      "name": "Thrilling Tales of Dragon Slayers",
-      "passiveDescription": "When switching characters, the new character taking the field has their ATK increased by {{24//30//36//42//48%}} for 10s. This effect can only occur once every 20s."
-    },
-    "zh": {
-      "name": "讨龙英杰谭",
-      "passiveDescription": "主动切换角色时，新登场的角色攻击力提升{{24//30//36//42//48%}}，持续10秒。该效果每20秒只能触发一次。"
-    }
+    "name": "Thrilling Tales of Dragon Slayers",
+    "passiveDescription": "When switching characters, the new character taking the field has their ATK increased by {{24//30//36//42//48%}} for 10s. This effect can only occur once every 20s."
   }
 }

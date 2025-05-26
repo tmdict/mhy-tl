@@ -5,11 +5,6 @@
   "weaponType": "claymore",
   "subStat": "_na",
   "data": {
-    "en": {
-      "name": "Old Merc’s Pal"
-    },
-    "zh": {
-      "name": "佣兵重剑"
-    }
+    "name": "Old Merc’s Pal"
   }
 }

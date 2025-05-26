@@ -5,11 +5,6 @@
   "weaponType": "claymore",
   "subStat": "_na",
   "data": {
-    "en": {
-      "name": "Waster Greatsword"
-    },
-    "zh": {
-      "name": "训练大剑"
-    }
+    "name": "Waster Greatsword"
   }
 }

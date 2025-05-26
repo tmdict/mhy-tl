@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "White Tassel",
-      "passiveDescription": "Increases Normal Attack DMG by {{24//30//36//42//48%}}."
-    },
-    "zh": {
-      "name": "白缨枪",
-      "passiveDescription": "普通攻击造成的伤害提升{{24//30//36//42//48%}}。"
-    }
+    "name": "White Tassel",
+    "passiveDescription": "Increases Normal Attack DMG by {{24//30//36//42//48%}}."
   }
 }

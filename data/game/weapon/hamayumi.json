@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Hamayumi",
-      "passiveDescription": "Increases Normal Attack DMG by {{16//20//24//28//32%}} and Charged Attack DMG by {{12//15//18//21//24%}}. When the equipping character’s Energy reaches 100%, this effect is increased by 100%."
-    },
-    "zh": {
-      "name": "破魔之弓",
-      "passiveDescription": "普通攻击造成的伤害提升{{16//20//24//28//32%}}，重击造成的伤害提升{{12//15//18//21//24%}}。当装备该武器的角色元素能量等于100%时，这个效果提升100%。"
-    }
+    "name": "Hamayumi",
+    "passiveDescription": "Increases Normal Attack DMG by {{16//20//24//28//32%}} and Charged Attack DMG by {{12//15//18//21//24%}}. When the equipping character’s Energy reaches 100%, this effect is increased by 100%."
   }
 }

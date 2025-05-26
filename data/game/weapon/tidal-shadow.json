@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Tidal Shadow",
-      "passiveDescription": "After the wielder is healed, ATK will be increased by {{24//30//36//42//48%}} for 8s. This can be triggered even when the character is not on the field."
-    },
-    "zh": {
-      "name": "浪影阔剑",
-      "passiveDescription": "受到治疗后，攻击力提升{{24//30//36//42//48%}}，持续8秒。角色处于队伍后台也能触发。"
-    }
+    "name": "Tidal Shadow",
+    "passiveDescription": "After the wielder is healed, ATK will be increased by {{24//30//36//42//48%}} for 8s. This can be triggered even when the character is not on the field."
   }
 }

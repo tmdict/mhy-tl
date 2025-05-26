@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Beacon of the Reed Sea",
-      "passiveDescription": "After the character’s Elemental Skill hits an opponent, their ATK will be increased by {{20//25//30//35//40%}} for 8s. After the character takes DMG, their ATK will be increased by {{20//25//30//35//40%}} for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character’s Max HP will be increased by {{32//40//48//56//64%}}."
-    },
-    "zh": {
-      "name": "苇海信标",
-      "passiveDescription": "元素战技命中敌人后，攻击力提升{{20//25//30//35//40%}}，持续8秒；受到伤害后，攻击力提升{{20//25//30//35//40%}}，持续8秒。上述2种效果角色处于队伍后台时也能触发。此外，不处于护盾庇护下时，生命值上限提高{{32//40//48//56//64%}}。"
-    }
+    "name": "Beacon of the Reed Sea",
+    "passiveDescription": "After the character’s Elemental Skill hits an opponent, their ATK will be increased by {{20//25//30//35//40%}} for 8s. After the character takes DMG, their ATK will be increased by {{20//25//30//35//40%}} for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character’s Max HP will be increased by {{32//40//48//56//64%}}."
   }
 }

@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Otherworldly Story",
-      "passiveDescription": "Picking up an Elemental Energy Orb//Particle recovers {{1//1.25//1.5//1.75//2%}} HP."
-    },
-    "zh": {
-      "name": "异世界行记",
-      "passiveDescription": "获得元素微粒或元素晶球时，恢复{{1//1.25//1.5//1.75//2%}}生命值。"
-    }
+    "name": "Otherworldly Story",
+    "passiveDescription": "Picking up an Elemental Energy Orb//Particle recovers {{1//1.25//1.5//1.75//2%}} HP."
   }
 }

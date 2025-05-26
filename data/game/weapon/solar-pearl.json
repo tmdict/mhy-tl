@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Solar Pearl",
-      "passiveDescription": "Normal Attack hits increase Elemental Skill and Elemental Burst DMG by {{20//25//30//35//40%}} for 6s. Likewise, Elemental Skill or Elemental Burst hits increase Normal Attack DMG by {{20//25//30//35//40%}} for 6s."
-    },
-    "zh": {
-      "name": "匣里日月",
-      "passiveDescription": "普通攻击命中后的6秒内，元素战技与元素爆发的伤害提高{{20//25//30//35//40%}}；元素战技与元素爆发命中后的6秒内，普通攻击的伤害提高{{20//25//30//35//40%}}。"
-    }
+    "name": "Solar Pearl",
+    "passiveDescription": "Normal Attack hits increase Elemental Skill and Elemental Burst DMG by {{20//25//30//35//40%}} for 6s. Likewise, Elemental Skill or Elemental Burst hits increase Normal Attack DMG by {{20//25//30//35//40%}} for 6s."
   }
 }

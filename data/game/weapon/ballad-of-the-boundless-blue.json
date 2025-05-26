@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Ballad of the Boundless Blue",
-      "passiveDescription": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by {{8//10//12//14//16%}} and Charged Attack DMG will be increased by {{6//7.5//9//10.5//12%}}. Max 3 stacks. This effect can be triggered once every 0.3s."
-    },
-    "zh": {
-      "name": "无垠蔚蓝之歌",
-      "passiveDescription": "普通攻击或重击命中敌人后的6秒内，普通攻击造成的伤害提升{{8//10//12//14//16%}}，重击造成的伤害提升{{6//7.5//9//10.5//12%}}。该效果至多叠加3次，每0.3秒至多触发一次。"
-    }
+    "name": "Ballad of the Boundless Blue",
+    "passiveDescription": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by {{8//10//12//14//16%}} and Charged Attack DMG will be increased by {{6//7.5//9//10.5//12%}}. Max 3 stacks. This effect can be triggered once every 0.3s."
   }
 }

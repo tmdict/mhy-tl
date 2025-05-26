@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Ibis Piercer",
-      "passiveDescription": "The character’s Elemental Mastery will increase by {{40//50//60//70//80}} within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s."
-    },
-    "zh": {
-      "name": "鹮穿之喙",
-      "passiveDescription": "重击命中敌人后的6秒内，角色元素精通提升{{40//50//60//70//80}}点。该效果至多叠加2层，每0.5秒至多触发一次。"
-    }
+    "name": "Ibis Piercer",
+    "passiveDescription": "The character’s Elemental Mastery will increase by {{40//50//60//70//80}} within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s."
   }
 }

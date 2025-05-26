@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "Sunny Morning Sleep-In",
-      "passiveDescription": "Elemental Mastery increases by {{120//150//180//210//240}} for 6s after triggering Swirl. Elemental Mastery increases by {{96//120//144//168//192}} for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by {{32//40//48//56//64}} for 30s after the wielder's Elemental Burst hits an opponent."
-    },
-    "zh": {
-      "name": "寝正月初晴",
-      "passiveDescription": "触发扩散反应后的6秒内，元素精通提升{{120//150//180//210//240}}点；元素战技命中敌人后的9秒内，元素精通提升{{96//120//144//168//192}}点；元素爆发命中敌人后的30秒内，元素精通提升{{32//40//48//56//64}}点。"
-    }
+    "name": "Sunny Morning Sleep-In",
+    "passiveDescription": "Elemental Mastery increases by {{120//150//180//210//240}} for 6s after triggering Swirl. Elemental Mastery increases by {{96//120//144//168//192}} for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by {{32//40//48//56//64}} for 30s after the wielder's Elemental Burst hits an opponent."
   }
 }

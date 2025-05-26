@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Fleuve Cendre Ferryman",
-      "passiveDescription": "Increases Elemental Skill CRIT Rate by {{8//10//12//14//16%}}. Additionally, increases Energy Recharge by {{16//20//24//28//32%}} for 5s after using an Elemental Skill."
-    },
-    "zh": {
-      "name": "灰河渡手",
-      "passiveDescription": "元素战技暴击率提升{{8//10//12//14//16%}}；此外，施放元素战技后的5秒内，元素充能效率提升{{16//20//24//28//32%}}。"
-    }
+    "name": "Fleuve Cendre Ferryman",
+    "passiveDescription": "Increases Elemental Skill CRIT Rate by {{8//10//12//14//16%}}. Additionally, increases Energy Recharge by {{16//20//24//28//32%}} for 5s after using an Elemental Skill."
   }
 }

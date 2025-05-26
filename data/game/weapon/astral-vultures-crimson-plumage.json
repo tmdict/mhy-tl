@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Astral Vulture’s Crimson Plumage",
-      "passiveDescription": "For 12s after triggering a Swirl reaction, ATK increases by {{24//30//36//42//48%}}. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character’s Charged Attacks is increased by {{20%/48%//25%/60%//30%/72%//35%/84%//40%/96%}} and Elemental Burst DMG dealt is increased by {{10%/24%//12.5%/30%//15%/36%//17.5%/42%//20%/48%}}."
-    },
-    "zh": {
-      "name": "星鹫赤羽",
-      "passiveDescription": "触发扩散反应后的12秒内，攻击力提高{{24//30//36//42//48%}}。此外，队伍中存在至少1/2名与装备者元素类型不同的角色时，装备者重击造成的伤害提高{{20%/48%//25%/60%//30%/72%//35%/84%//40%/96%}}，元素爆发造成的伤害提高{{10%/24%//12.5%/30%//15%/36%//17.5%/42%//20%/48%}}。"
-    }
+    "name": "Astral Vulture’s Crimson Plumage",
+    "passiveDescription": "For 12s after triggering a Swirl reaction, ATK increases by {{24//30//36//42//48%}}. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character’s Charged Attacks is increased by {{20%/48%//25%/60%//30%/72%//35%/84%//40%/96%}} and Elemental Burst DMG dealt is increased by {{10%/24%//12.5%/30%//15%/36%//17.5%/42%//20%/48%}}."
   }
 }

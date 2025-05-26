@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "def",
   "data": {
-    "en": {
-      "name": "White Iron Greatsword",
-      "passiveDescription": "Defeating an opponent restores {{8//10//12//14//16%}} HP."
-    },
-    "zh": {
-      "name": "白铁大剑",
-      "passiveDescription": "击败敌人时，恢复{{8//10//12//14//16%}}生命值。"
-    }
+    "name": "White Iron Greatsword",
+    "passiveDescription": "Defeating an opponent restores {{8//10//12//14//16%}} HP."
   }
 }

@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "Silvershower Heartstrings",
-      "passiveDescription": "The equipping character can gain the Remedy effect. When they possess 1/2/3 Remedy stacks, Max HP will increase by {{(12/24/40%)//(15/30/50%)//(18/36/60%)//(21/42/70%)//(24/48/80%)}}. 1 stack may be gained when the following conditions are met: 1 stack for 25s when using an Elemental Skill; 1 stack for 25s when the value of a Bond of Life value increases; 1 stack for 20s for performing healing. Stacks can still be triggered when the equipping character is not on the field. Each stack’s duration is counted independently. In addition, when 3 stacks are active, Elemental Burst CRIT Rate will be increased by {{28//35//42//49//56}}. This effect will be canceled 4s after falling under 3 stacks."
-    },
-    "zh": {
-      "name": "白雨心弦",
-      "passiveDescription": "装备者能获得「疗护」效果，持有1/2/3层疗护时，生命值上限提升{{(12/24/40%)//(15/30/50%)//(18/36/60%)//(21/42/70%)//(24/48/80%)}}。在下列情况下，装备者将各获得1层疗护：施放元素战技时，持续25秒；生命之契的数值增加时，持续25秒；进行治疗时，持续20秒，装备者处于队伍后台时依然能触发。每层疗护的持续时间独立计算。此外，处于3层疗护状态下时，元素爆发的暴击率提升{{28//35//42//49//56}}，该效果将在疗护不足3层4秒后移除。"
-    }
+    "name": "Silvershower Heartstrings",
+    "passiveDescription": "The equipping character can gain the Remedy effect. When they possess 1/2/3 Remedy stacks, Max HP will increase by {{(12/24/40%)//(15/30/50%)//(18/36/60%)//(21/42/70%)//(24/48/80%)}}. 1 stack may be gained when the following conditions are met: 1 stack for 25s when using an Elemental Skill; 1 stack for 25s when the value of a Bond of Life value increases; 1 stack for 20s for performing healing. Stacks can still be triggered when the equipping character is not on the field. Each stack’s duration is counted independently. In addition, when 3 stacks are active, Elemental Burst CRIT Rate will be increased by {{28//35//42//49//56}}. This effect will be canceled 4s after falling under 3 stacks."
   }
 }

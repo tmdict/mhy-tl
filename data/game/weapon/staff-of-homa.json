@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Staff of Homa",
-      "passiveDescription": "HP increased by {{20//25//30//35//40%}}. Additionally, provides an ATK Bonus based on {{0.8//1//1.2//1.4//1.6%}} of the wielder’s Max HP. When the wielder’s HP is less than 50%, this ATK Bonus is increased by an additional {{1//1.2//1.4//1.6//1.8%}} of Max HP."
-    },
-    "zh": {
-      "name": "护摩之杖",
-      "passiveDescription": "生命值提升{{20//25//30//35//40%}}。此外，基于装备该武器的角色生命值上限的{{0.8//1//1.2//1.4//1.6%}}，获得攻击力加成。当装备该武器的角色生命值低于50%时，进一步获得{{1//1.2//1.4//1.6//1.8%}}基于生命值上限的攻击力提升。"
-    }
+    "name": "Staff of Homa",
+    "passiveDescription": "HP increased by {{20//25//30//35//40%}}. Additionally, provides an ATK Bonus based on {{0.8//1//1.2//1.4//1.6%}} of the wielder’s Max HP. When the wielder’s HP is less than 50%, this ATK Bonus is increased by an additional {{1//1.2//1.4//1.6//1.8%}} of Max HP."
   }
 }

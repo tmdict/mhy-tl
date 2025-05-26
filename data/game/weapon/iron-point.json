@@ -5,11 +5,6 @@
   "weaponType": "polearm",
   "subStat": "_na",
   "data": {
-    "en": {
-      "name": "Iron Point"
-    },
-    "zh": {
-      "name": "铁尖枪"
-    }
+    "name": "Iron Point"
   }
 }

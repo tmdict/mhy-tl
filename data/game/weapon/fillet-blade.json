@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Fillet Blade",
-      "passiveDescription": "On hit, has a 50% chance to deal {{240//280//320//360//400%}} ATK DMG to a single opponent. Can only occur once every {{15//14//13//12//11}}s."
-    },
-    "zh": {
-      "name": "吃虎鱼刀",
-      "passiveDescription": "攻击命中时，有50%的概率对单个敌人造成{{240//280//320//360//400%}}攻击力的伤害。该效果每{{15//14//13//12//11}}秒只能触发一次。"
-    }
+    "name": "Fillet Blade",
+    "passiveDescription": "On hit, has a 50% chance to deal {{240//280//320//360//400%}} ATK DMG to a single opponent. Can only occur once every {{15//14//13//12//11}}s."
   }
 }

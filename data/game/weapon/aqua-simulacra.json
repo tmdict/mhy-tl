@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Aqua Simulacra",
-      "passiveDescription": "HP is increased by {{16//20//24//28//32%}}. When there are opponents nearby, the DMG dealt by the wielder of this weapon is increased by {{20//25//30//35//40%}}. This will take effect whether the character is on-field or not."
-    },
-    "zh": {
-      "name": "若水",
-      "passiveDescription": "生命值提升{{16//20//24//28//32%}}。周围存在敌人时，装备该武器的角色造成的伤害都会提升{{20//25//30//35//40%}}，不论该角色处于场上或是处于队伍后台。"
-    }
+    "name": "Aqua Simulacra",
+    "passiveDescription": "HP is increased by {{16//20//24//28//32%}}. When there are opponents nearby, the DMG dealt by the wielder of this weapon is increased by {{20//25//30//35//40%}}. This will take effect whether the character is on-field or not."
   }
 }

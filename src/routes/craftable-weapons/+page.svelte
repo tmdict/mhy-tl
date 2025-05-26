@@ -82,7 +82,7 @@
             <Icon id="{billet}-{type}" src={$images[`/src/lib/img/billet/${billet}-${type}.png`]} />
           </div>
           {#each Object.entries(weapons) as [weapon, count]}
-            {@const details = $weaponsData[weapon] ? $weaponsData[weapon].data.en : false}
+            {@const details = $weaponsData[weapon] ? $weaponsData[weapon].data : false}
             <div class="content-row weapon">
               <div class="weapon-icon" role="presentation">
                 <Icon

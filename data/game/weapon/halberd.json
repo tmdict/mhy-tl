@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Halberd",
-      "passiveDescription": "Normal Attacks deal an additional {{160//200//240//280//320%}} ATK as DMG. Can only occur once every 10s."
-    },
-    "zh": {
-      "name": "钺矛",
-      "passiveDescription": "对普通攻击命中的敌人造成{{160//200//240//280//320%}}攻击力的额外伤害。该效果每10秒只能触发一次。"
-    }
+    "name": "Halberd",
+    "passiveDescription": "Normal Attacks deal an additional {{160//200//240//280//320%}} ATK as DMG. Can only occur once every 10s."
   }
 }

@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Prototype Starglitter",
-      "passiveDescription": "After using an Elemental Skill, increases Normal and Charged Attack DMG by {{8//10//12//14//16%}} for 12s. Max 2 stacks."
-    },
-    "zh": {
-      "name": "试作星镰",
-      "passiveDescription": "施放元素战技后，普通攻击和重击造成的伤害提高{{8//10//12//14//16%}}。该效果持续12秒，最多叠加2层。"
-    }
+    "name": "Prototype Starglitter",
+    "passiveDescription": "After using an Elemental Skill, increases Normal and Charged Attack DMG by {{8//10//12//14//16%}} for 12s. Max 2 stacks."
   }
 }

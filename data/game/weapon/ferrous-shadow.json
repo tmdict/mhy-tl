@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "hp",
   "data": {
-    "en": {
-      "name": "Ferrous Shadow",
-      "passiveDescription": "When HP falls below {{70//75//80//85//90%}}, increases Charged Attack DMG by {{30//35//40//45//50%}} and Charged Attacks become harder to interrupt."
-    },
-    "zh": {
-      "name": "铁影阔剑",
-      "passiveDescription": "生命值低于{{70//75//80//85//90%}}时，重击不会轻易被打断，并提高{{30//35//40//45//50%}}重击伤害。"
-    }
+    "name": "Ferrous Shadow",
+    "passiveDescription": "When HP falls below {{70//75//80//85//90%}}, increases Charged Attack DMG by {{30//35//40//45//50%}} and Charged Attacks become harder to interrupt."
   }
 }

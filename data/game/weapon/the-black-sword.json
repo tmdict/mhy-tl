@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "The Black Sword",
-      "passiveDescription": "Increases DMG dealt by Normal and Charged Attacks by {{20//25//30//35//40%}}. Additionally, regenerates {{60//70//80//90//100%}} of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s."
-    },
-    "zh": {
-      "name": "黑剑",
-      "passiveDescription": "普通攻击与重击的造成的伤害提升{{20//25//30//35//40%}}；此外，普通攻击与重击暴击时，回复等同于攻击力{{60//70//80//90//100%}}的生命值。该效果每5秒至多发动一次。"
-    }
+    "name": "The Black Sword",
+    "passiveDescription": "Increases DMG dealt by Normal and Charged Attacks by {{20//25//30//35//40%}}. Additionally, regenerates {{60//70//80//90//100%}} of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s."
   }
 }

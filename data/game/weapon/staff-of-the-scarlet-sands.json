@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Staff of the Scarlet Sands",
-      "passiveDescription": "The equipping character gains {{52//65//78//91//104%}} of their Elemental Mastery as bonus ATK. When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be gained for 10s: The equipping character will gain {{28//35//42//49//56%}} of their Elemental Mastery as bonus ATK. Max 3 stacks."
-    },
-    "zh": {
-      "name": "赤沙之杖",
-      "passiveDescription": "基于装备者元素精通的{{52//65//78//91//104%}}，获得攻击力加成。元素战技命中敌人时，将产生持续10秒的「赤沙之梦」效果：基于装备者元素精通的{{28//35//42//49//56%}}，获得攻击力加成，该效果至多叠加3层。"
-    }
+    "name": "Staff of the Scarlet Sands",
+    "passiveDescription": "The equipping character gains {{52//65//78//91//104%}} of their Elemental Mastery as bonus ATK. When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be gained for 10s: The equipping character will gain {{28//35//42//49//56%}} of their Elemental Mastery as bonus ATK. Max 3 stacks."
   }
 }

@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "def",
   "data": {
-    "en": {
-      "name": "Flute of Ezpitzal",
-      "passiveDescription": "Using an Elemental Skill increases DEF by {{16//20//24//28//32%}} for 15s."
-    },
-    "zh": {
-      "name": "息燧之笛",
-      "passiveDescription": "施放元素战技时，防御力提升{{16//20//24//28//32%}}，持续15秒。"
-    }
+    "name": "Flute of Ezpitzal",
+    "passiveDescription": "Using an Elemental Skill increases DEF by {{16//20//24//28//32%}} for 15s."
   }
 }

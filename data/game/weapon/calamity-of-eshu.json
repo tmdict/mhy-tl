@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Calamity of Eshu",
-      "passiveDescription": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by {{20//25//30//35//40%}}, and Normal and Charged Attack CRIT Rate is increased by {{8//10//12//14//16%}}."
-    },
-    "zh": {
-      "name": "厄水之祸",
-      "passiveDescription": "角色处于护盾庇护下时，普通攻击和重击造成的伤害提升{{20//25//30//35//40%}}，普通攻击和重击的暴击率提升{{8//10//12//14//16%}}。"
-    }
+    "name": "Calamity of Eshu",
+    "passiveDescription": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by {{20//25//30//35//40%}}, and Normal and Charged Attack CRIT Rate is increased by {{8//10//12//14//16%}}."
   }
 }

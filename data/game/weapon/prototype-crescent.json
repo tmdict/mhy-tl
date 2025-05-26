@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Prototype Crescent",
-      "passiveDescription": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by {{36//45//54//63//72%}} for 10s."
-    },
-    "zh": {
-      "name": "试作澹月",
-      "passiveDescription": "重击若命中要害，则提升10%移动速度与{{36//45//54//63//72%}}攻击力，持续10秒。"
-    }
+    "name": "Prototype Crescent",
+    "passiveDescription": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by {{36//45//54//63//72%}} for 10s."
   }
 }

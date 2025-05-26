@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Alley Hunter",
-      "passiveDescription": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by {{2//2.5//3//3.5//4%}} every second up to a max of {{20//25//30//35//40%}}. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by {{4//5//6//7//8%}} per second until it reaches 0%."
-    },
-    "zh": {
-      "name": "暗巷猎手",
-      "passiveDescription": "装备该武器的角色处于队伍后台时，每1秒角色造成的伤害提升{{2//2.5//3//3.5//4%}}，最多通过这种方式获得{{20//25//30//35//40%}}的伤害提升；在场上超过4秒后，上述伤害提升效果每1秒会流失{{4//5//6//7//8%}}，直到降低至0%。"
-    }
+    "name": "Alley Hunter",
+    "passiveDescription": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by {{2//2.5//3//3.5//4%}} every second up to a max of {{20//25//30//35//40%}}. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by {{4//5//6//7//8%}} per second until it reaches 0%."
   }
 }

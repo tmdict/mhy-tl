@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Flower-Wreathed Feathers",
-      "passiveDescription": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by {{6//7.5//9//10.5//12%}} every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode."
-    },
-    "zh": {
-      "name": "缀花之翎",
-      "passiveDescription": "滑翔消耗的体力降低15%。进行瞄准射击时，每0.5秒提升重击造成的伤害{{6//7.5//9//10.5//12%}}，该效果最多叠加6层，并将在不处于瞄准状态下10秒后移除。"
-    }
+    "name": "Flower-Wreathed Feathers",
+    "passiveDescription": "Decreases Gliding Stamina consumption by 15%. When using Aimed Shots, the DMG dealt by Charged Attacks increases by {{6//7.5//9//10.5//12%}} every 0.5s. This effect can stack up to 6 times and will be removed 10s after leaving Aiming Mode."
   }
 }

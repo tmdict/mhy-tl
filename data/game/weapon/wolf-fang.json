@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Wolf-Fang",
-      "passiveDescription": "DMG dealt by Elemental Skill and Elemental Burst is increased by {{16//20//24//28//32%}}. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by {{2//2.5//3//3.5//4%}}. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by {{2//2.5//3//3.5//4%}}. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s."
-    },
-    "zh": {
-      "name": "狼牙",
-      "passiveDescription": "元素战技与元素爆发造成的伤害提升{{16//20//24//28//32%}}。元素战技命中敌人时，元素战技的暴击率提升{{2//2.5//3//3.5//4%}}；元素爆发命中敌人时，元素爆发的暴击率提升{{2//2.5//3//3.5//4%}}。上述两种效果各自持续10秒，至多叠加4次，每0.1秒至多触发一次。"
-    }
+    "name": "Wolf-Fang",
+    "passiveDescription": "DMG dealt by Elemental Skill and Elemental Burst is increased by {{16//20//24//28//32%}}. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by {{2//2.5//3//3.5//4%}}. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by {{2//2.5//3//3.5//4%}}. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s."
   }
 }

@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "Dark Iron Sword",
-      "passiveDescription": "Upon causing an Overloaded, Superconduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, or Electro-infused Swirl reaction, ATK is increased by {{20//25//30//35//40%}} for 12s."
-    },
-    "zh": {
-      "name": "暗铁剑",
-      "passiveDescription": "触发超载、超导、感电、原激化、超激化、超绽放或雷元素扩散反应后的12秒内，攻击力提高{{20//25//30//35//40%}}。"
-    }
+    "name": "Dark Iron Sword",
+    "passiveDescription": "Upon causing an Overloaded, Superconduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, or Electro-infused Swirl reaction, ATK is increased by {{20//25//30//35//40%}} for 12s."
   }
 }

@@ -5,11 +5,6 @@
   "weaponType": "sword",
   "subStat": "_na",
   "data": {
-    "en": {
-      "name": "Silver Sword"
-    },
-    "zh": {
-      "name": "银剑"
-    }
+    "name": "Silver Sword"
   }
 }

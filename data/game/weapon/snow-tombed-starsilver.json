@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "physical",
   "data": {
-    "en": {
-      "name": "Snow-Tombed Starsilver",
-      "passiveDescription": "Hitting an opponent with Normal and Charged Attacks has a {{60//70//80//90//100%}} chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to {{80//95//110//125//140%}} of ATK. Opponents affected by Cryo are instead dealt DMG equal to {{200//240//280//320//360%}} of ATK. Can only occur once every 10s."
-    },
-    "zh": {
-      "name": "雪葬的星银",
-      "passiveDescription": "普通攻击与重击命中敌人时，有{{60//70//80//90//100%}}概率在敌人上方生成恒冰晶核并坠落，造成{{80//95//110//125//140%}}攻击力的范围伤害。若敌人处于冰元素影响下，则造成{{200//240//280//320//360%}}攻击力的伤害。该效果每10秒至多触发一次。"
-    }
+    "name": "Snow-Tombed Starsilver",
+    "passiveDescription": "Hitting an opponent with Normal and Charged Attacks has a {{60//70//80//90//100%}} chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to {{80//95//110//125//140%}} of ATK. Opponents affected by Cryo are instead dealt DMG equal to {{200//240//280//320//360%}} of ATK. Can only occur once every 10s."
   }
 }

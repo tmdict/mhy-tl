@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Kagotsurube Isshin",
-      "passiveDescription": "When a Normal, Charged, or Plunging Attack hits an opponent, it will whip up a Hewing Gale, dealing AoE DMG equal to 180% of ATK and increasing ATK by 15% for 8s. This effect can be triggered once every 8s."
-    },
-    "zh": {
-      "name": "笼钓瓶一心",
-      "passiveDescription": "普通攻击、重击或下落攻击命中敌人时，将卷起切落风，造成180%攻击力的范围伤害，并且使攻击力提升15%，持续8秒。该效果每8秒至多触发一次。"
-    }
+    "name": "Kagotsurube Isshin",
+    "passiveDescription": "When a Normal, Charged, or Plunging Attack hits an opponent, it will whip up a Hewing Gale, dealing AoE DMG equal to 180% of ATK and increasing ATK by 15% for 8s. This effect can be triggered once every 8s."
   }
 }

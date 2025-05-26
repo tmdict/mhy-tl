@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Absolution",
-      "passiveDescription": "CRIT DMG increased by {{20//25//30//35//40%}}. Increasing the value of a Bond of Life increases the DMG the equipping character deals by {{16//20//24//28//32%}} for 6s. Max 3 stacks."
-    },
-    "zh": {
-      "name": "赦罪",
-      "passiveDescription": "暴击伤害提升{{20//25//30//35//40%}}；生命之契的数值增加时，装备者造成的伤害提升{{16//20//24//28//32%}}。该效果持续6秒，至多叠加3次。"
-    }
+    "name": "Absolution",
+    "passiveDescription": "CRIT DMG increased by {{20//25//30//35//40%}}. Increasing the value of a Bond of Life increases the DMG the equipping character deals by {{16//20//24//28//32%}} for 6s. Max 3 stacks."
   }
 }

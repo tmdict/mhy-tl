@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Cool Steel",
-      "passiveDescription": "Increases DMG against opponents affected by Hydro or Cryo by {{12//15//18//21//24%}}."
-    },
-    "zh": {
-      "name": "冷刃",
-      "passiveDescription": "对处于水元素或冰元素影响下的敌人，造成的伤害提高{{12//15//18//21//24%}}。"
-    }
+    "name": "Cool Steel",
+    "passiveDescription": "Increases DMG against opponents affected by Hydro or Cryo by {{12//15//18//21//24%}}."
   }
 }

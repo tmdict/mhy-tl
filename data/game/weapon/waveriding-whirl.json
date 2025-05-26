@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Waveriding Whirl",
-      "passiveDescription": "Decreases Swimming Stamina consumption by 15%. In addition, for 10s after using an Elemental Skill, Max HP is increased by {{20//25//30//35//40%}}. For every Hydro Elemental Type character in the party, Max HP is increased by another {{12//15//18//21//24%}}, and the maximum increase that can be achieved in this way is {{24//30//36//42//48%}}. Can be triggered once every 15s."
-    },
-    "zh": {
-      "name": "乘浪的回旋",
-      "passiveDescription": "游泳消耗的体力降低15%。此外，施放元素战技后的10秒内，生命值上限提升{{20//25//30//35//40%}}，队伍中每存在一位水元素类型的角色，生命值上限将进一步提升{{12//15//18//21//24%}}，至多通过这种方式提升{{24//30//36//42//48%}}，该效果每15秒至多触发一次。"
-    }
+    "name": "Waveriding Whirl",
+    "passiveDescription": "Decreases Swimming Stamina consumption by 15%. In addition, for 10s after using an Elemental Skill, Max HP is increased by {{20//25//30//35//40%}}. For every Hydro Elemental Type character in the party, Max HP is increased by another {{12//15//18//21//24%}}, and the maximum increase that can be achieved in this way is {{24//30//36//42//48%}}. Can be triggered once every 15s."
   }
 }

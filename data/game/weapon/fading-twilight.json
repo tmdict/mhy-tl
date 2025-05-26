@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Radiance of the Deeps",
-      "passiveDescription": "Has three states, Evengleam, Afterglow, and Dawnblaze, which increase DMG dealt by {{6%/10%/14//7.5%/12.5%/17.5//9%/15%/21//10.5%/17.5%/24.5//12%/20%/28%}} respectively. When attacks hit opponents, this weapon will switch to the next state. This weapon can change states once every 7s. The character equipping this weapon can still trigger the state switch while not on the field."
-    },
-    "zh": {
-      "name": "落霞",
-      "passiveDescription": "具有夕暮、流霞、朝晖三种状态，分别能使造成的伤害提升{{6%/10%/14//7.5%/12.5%/17.5//9%/15%/21//10.5%/17.5%/24.5//12%/20%/28%}}。攻击命中敌人后，将转换为下一种状态，每7秒至多转换一次状态。装备该武器的角色处于队伍后台时该效果依旧能触发转换。"
-    }
+    "name": "Radiance of the Deeps",
+    "passiveDescription": "Has three states, Evengleam, Afterglow, and Dawnblaze, which increase DMG dealt by {{6%/10%/14//7.5%/12.5%/17.5//9%/15%/21//10.5%/17.5%/24.5//12%/20%/28%}} respectively. When attacks hit opponents, this weapon will switch to the next state. This weapon can change states once every 7s. The character equipping this weapon can still trigger the state switch while not on the field."
   }
 }

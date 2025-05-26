@@ -5,11 +5,6 @@
   "weaponType": "bow",
   "subStat": "_na",
   "data": {
-    "en": {
-      "name": "Hunter’s Bow"
-    },
-    "zh": {
-      "name": "猎弓"
-    }
+    "name": "Hunter’s Bow"
   }
 }

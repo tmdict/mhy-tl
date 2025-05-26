@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Vivid Notions",
-      "passiveDescription": "ATK is increased by {{28//35//42//49//56%}}. When you use a Plunging Attack, you will gain the “Dawn’s First Hue” effect: Plunging Attack CRIT DMG is increased by {{28//35//42//49//56%}}. When you use an Elemental Skill or Burst, you will gain the “Twilight’s Splendor’ effect: Plunging Attack CRIT DMG is increased by {{40//50//60//70//80%}}. The two effects above each last for 15s, and will be canceled 0.1s after the ground impact hits a target."
-    },
-    "zh": {
-      "name": "溢彩心念",
-      "passiveDescription": "攻击力提升{{28//35//42//49//56%}}；进行下落攻击时，获得「初霞之彩」效果：下落攻击造成的暴击伤害提升{{28//35//42//49//56%}}；施放元素战技或元素爆发时，获得「苍暮之辉」效果：下落攻击造成的暴击伤害提升{{40//50//60//70//80%}}；上述两种效果各自持续15秒，并将在坠地冲击命中后的0.1秒后解除。"
-    }
+    "name": "Vivid Notions",
+    "passiveDescription": "ATK is increased by {{28//35//42//49//56%}}. When you use a Plunging Attack, you will gain the “Dawn’s First Hue” effect: Plunging Attack CRIT DMG is increased by {{28//35//42//49//56%}}. When you use an Elemental Skill or Burst, you will gain the “Twilight’s Splendor’ effect: Plunging Attack CRIT DMG is increased by {{40//50//60//70//80%}}. The two effects above each last for 15s, and will be canceled 0.1s after the ground impact hits a target."
   }
 }

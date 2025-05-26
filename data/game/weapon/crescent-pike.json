@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "physical",
   "data": {
-    "en": {
-      "name": "Crescent Pike",
-      "passiveDescription": "After picking up an Elemental Orb//Particle, Normal and Charged Attacks deal additional DMG equal to {{20//25//30//35//40%}} of ATK for 5s."
-    },
-    "zh": {
-      "name": "流月针",
-      "passiveDescription": "获得元素微粒或元素晶球后的5秒内，普通攻击和重击额外造成{{20//25//30//35//40}}%攻击力伤害。"
-    }
+    "name": "Crescent Pike",
+    "passiveDescription": "After picking up an Elemental Orb//Particle, Normal and Charged Attacks deal additional DMG equal to {{20//25//30//35//40%}} of ATK for 5s."
   }
 }

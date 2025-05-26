@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "Rainslasher",
-      "passiveDescription": "Increases DMG against opponents affected by Hydro or Electro by {{20//24//28//32//36%}}."
-    },
-    "zh": {
-      "name": "雨裁",
-      "passiveDescription": "对处于水元素或雷元素影响下的敌人，造成的伤害提高{{20//24//28//32//36%}}。"
-    }
+    "name": "Rainslasher",
+    "passiveDescription": "Increases DMG against opponents affected by Hydro or Electro by {{20//24//28//32//36%}}."
   }
 }

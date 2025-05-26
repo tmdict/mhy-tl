@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "physical",
   "data": {
-    "en": {
-      "name": "Mitternachts Waltz",
-      "passiveDescription": "Normal Attack hits on opponents increase Elemental Skill DMG by {{20//25//30//35//40%}} for 5s. Elemental Skill hits on opponents increase Normal Attack DMG by {{20//25//30//35//40%}} for 5s."
-    },
-    "zh": {
-      "name": "幽夜华尔兹",
-      "passiveDescription": "普通攻击命中敌人后的5秒内，元素战技造成的伤害提升{{20//25//30//35//40%}}；元素战技命中敌人后的5秒内，普通攻击造成的伤害提升{{20//25//30//35//40%}}。"
-    }
+    "name": "Mitternachts Waltz",
+    "passiveDescription": "Normal Attack hits on opponents increase Elemental Skill DMG by {{20//25//30//35//40%}} for 5s. Elemental Skill hits on opponents increase Normal Attack DMG by {{20//25//30//35//40%}} for 5s."
   }
 }

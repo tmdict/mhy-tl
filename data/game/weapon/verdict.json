@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Verdict",
-      "passiveDescription": "Increases ATK by {{20//25//30//35//40%}}. When party members obtain Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal, increasing Elemental Skill DMG by {{18//22.5//27//31.5//36%}}. The Seal lasts for 15s, and the equipper may have up to 2 Seals at once. All of the equipper’s Seals will disappear 0.2s after their Elemental Skill deals DMG."
-    },
-    "zh": {
-      "name": "裁断",
-      "passiveDescription": "攻击力提升{{20//25//30//35//40%}}；队伍中的角色获取结晶反应产生的晶片时，会为装备者赋予1枚「约印」，使元素战技造成的伤害提升{{18//22.5//27//31.5//36%}}，约印持续15秒，至多同时持有2枚。所有约印将在装备者的元素战技造成伤害后的0.2秒后移除。"
-    }
+    "name": "Verdict",
+    "passiveDescription": "Increases ATK by {{20//25//30//35//40%}}. When party members obtain Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal, increasing Elemental Skill DMG by {{18//22.5//27//31.5//36%}}. The Seal lasts for 15s, and the equipper may have up to 2 Seals at once. All of the equipper’s Seals will disappear 0.2s after their Elemental Skill deals DMG."
   }
 }

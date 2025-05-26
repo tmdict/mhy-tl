@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Crimson Moon’s Semblance",
-      "passiveDescription": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a {{12//16//20//24//28%}} DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional {{24//32//40//48//56%}} DMG Bonus."
-    },
-    "zh": {
-      "name": "赤月之形",
-      "passiveDescription": "重击命中敌人时，赋予生命值上限25%的生命之契，该效果每14秒至多触发一次。此外，装备者具有生命之契时，造成的伤害提升{{12//16//20//24//28%}}；若生命之契的数值大于等于生命值上限的30%，造成的伤害将进一步提升{{24//32//40//48//56%}}。"
-    }
+    "name": "Crimson Moon’s Semblance",
+    "passiveDescription": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a {{12//16//20//24//28%}} DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional {{24//32//40//48//56%}} DMG Bonus."
   }
 }

@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Primordial Jade Cutter",
-      "passiveDescription": "HP increased by {{20//25//30//35//40%}}. Additionally, provides an ATK Bonus based on {{1.2//1.5//1.8//2.1//2.4%}} of the wielder’s Max HP."
-    },
-    "zh": {
-      "name": "磐岩结绿",
-      "passiveDescription": "生命值提升{{20//25//30//35//40%}}。此外，基于装备该武器的角色生命值上限的{{1.2//1.5//1.8//2.1//2.4%}}，获得攻击力加成。"
-    }
+    "name": "Primordial Jade Cutter",
+    "passiveDescription": "HP increased by {{20//25//30//35//40%}}. Additionally, provides an ATK Bonus based on {{1.2//1.5//1.8//2.1//2.4%}} of the wielder’s Max HP."
   }
 }

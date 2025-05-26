@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Harbinger of Dawn",
-      "passiveDescription": "When HP is above 90%, increases CRIT Rate by {{14//17.5//21//24.5//28%}}."
-    },
-    "zh": {
-      "name": "黎明神剑",
-      "passiveDescription": "生命值高于90%时，暴击率提升{{14//17.5//21//24.5//28%}}。"
-    }
+    "name": "Harbinger of Dawn",
+    "passiveDescription": "When HP is above 90%, increases CRIT Rate by {{14//17.5//21//24.5//28%}}."
   }
 }

@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Serpent Spine",
-      "passiveDescription": "Every 4s a character is on the field, they will deal {{6//7//8//9//10%}} more DMG and take {{3//2.7//2.4//2.2//2%}} more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG."
-    },
-    "zh": {
-      "name": "螭骨剑",
-      "passiveDescription": "角色在场上时，每4秒提升{{6//7//8//9//10%}}造成的伤害，{{3//2.7//2.4//2.2//2%}}受到的伤害。该效果最多叠加5层，不随角色退场重置，受到伤害后会减少1层效果。"
-    }
+    "name": "Serpent Spine",
+    "passiveDescription": "Every 4s a character is on the field, they will deal {{6//7//8//9//10%}} more DMG and take {{3//2.7//2.4//2.2//2%}} more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG."
   }
 }

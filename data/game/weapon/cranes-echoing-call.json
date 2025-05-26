@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Crane’s Echoing Call",
-      "passiveDescription": "After the equipping character hits an opponent with a Plunging Attack, all nearby party members’ Plunging Attacks will deal {{28//41//54//67//80%}} increased DMG for 20s. When nearby party members hit opponents with Plunging Attacks, they will restore {{2.5//2.75//3//3.25//3.5}} Energy to the equipping character. Energy can be restored this way every 0.7s. This energy regain effect can be triggered even if the equipping character is not on the field."
-    },
-    "zh": {
-      "name": "鹤鸣余音",
-      "passiveDescription": "装备者下落攻击命中敌人后，队伍中附近的所有角色下落攻击造成的伤害提高{{28//41//54//67//80%}}，持续20秒；队伍中附近的角色的下落攻击命中敌人时，为装备者恢复{{2.5//2.75//3//3.25//3.5}}点元素能量，每0.7秒至多通过这种方式恢复一次元素能量，装备者处于队伍后台时依然能通过这种方式恢复元素能量。"
-    }
+    "name": "Crane’s Echoing Call",
+    "passiveDescription": "After the equipping character hits an opponent with a Plunging Attack, all nearby party members’ Plunging Attacks will deal {{28//41//54//67//80%}} increased DMG for 20s. When nearby party members hit opponents with Plunging Attacks, they will restore {{2.5//2.75//3//3.25//3.5}} Energy to the equipping character. Energy can be restored this way every 0.7s. This energy regain effect can be triggered even if the equipping character is not on the field."
   }
 }

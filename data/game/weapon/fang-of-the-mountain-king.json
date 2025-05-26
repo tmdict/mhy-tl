@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Fang of the Mountain King",
-      "passiveDescription": "Gain 1 stack of Canopy’s Favor after hitting an opponent with an Elemental Skill. This can be triggered once every 0.5s. After a nearby party member triggers a Burning or Burgeon reaction, the equipping character will gain 3 stacks. This effect can be triggered once every 2s and can be triggered even when the triggering party member is off-field. Canopy’s Favor: Elemental Skill and Burst DMG is increased by {{10//12.5//15//17.5//20%}} for 6s. Max 6 stacks. Each stack is counted independently."
-    },
-    "zh": {
-      "name": "山王长牙",
-      "passiveDescription": "元素战技命中敌人后，会获得1层「悬木祝赐」，该效果每0.5秒至多触发1次；队伍中附近的角色触发了燃烧或烈绽放反应后，装备者会获得3层悬木祝赐，该效果每2秒至多触发1次，队伍中的角色处于队伍后台时也能触发。悬木祝赐：元素战技伤害和元素爆发伤害提升{{10//12.5//15//17.5//20%}}，持续6秒，至多叠加6层，每层持续时间独立计算。"
-    }
+    "name": "Fang of the Mountain King",
+    "passiveDescription": "Gain 1 stack of Canopy’s Favor after hitting an opponent with an Elemental Skill. This can be triggered once every 0.5s. After a nearby party member triggers a Burning or Burgeon reaction, the equipping character will gain 3 stacks. This effect can be triggered once every 2s and can be triggered even when the triggering party member is off-field. Canopy’s Favor: Elemental Skill and Burst DMG is increased by {{10//12.5//15//17.5//20%}} for 6s. Max 6 stacks. Each stack is counted independently."
   }
 }

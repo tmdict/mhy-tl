@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "hp",
   "data": {
-    "en": {
-      "name": "Prototype Amber",
-      "passiveDescription": "Using an Elemental Burst regenerates {{4//4.5//5//5.5//6}} Energy every 2s for 6s. All party members will regenerate {{4//4.5//5//5.5//6%}} HP every 2s for this duration."
-    },
-    "zh": {
-      "name": "试作金珀",
-      "passiveDescription": "施放元素爆发后6秒内，每2秒恢复{{4//4.5//5//5.5//6}}点元素能量，队伍中的所有角色每2秒恢复{{4//4.5//5//5.5//6%}}生命值。"
-    }
+    "name": "Prototype Amber",
+    "passiveDescription": "Using an Elemental Burst regenerates {{4//4.5//5//5.5//6}} Energy every 2s for 6s. All party members will regenerate {{4//4.5//5//5.5//6%}} HP every 2s for this duration."
   }
 }

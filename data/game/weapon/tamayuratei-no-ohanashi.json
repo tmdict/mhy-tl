@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Tamayuratei no Ohanashi",
-      "passiveDescription": "Increase ATK by {{20//25//30//35//40%}} and Movement SPD by 10% for 10s when using an Elemental Skill."
-    },
-    "zh": {
-      "name": "且住亭御咄",
-      "passiveDescription": "施放元素战技时，提高{{20//25//30//35//40%}}攻击力和10%移动速度，持续10秒。"
-    }
+    "name": "Tamayuratei no Ohanashi",
+    "passiveDescription": "Increase ATK by {{20//25//30//35//40%}} and Movement SPD by 10% for 10s when using an Elemental Skill."
   }
 }

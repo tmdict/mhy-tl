@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Wolf’s Gravestone",
-      "passiveDescription": "Increases ATK by {{20//25//30//35//40%}}. On hit, attacks against opponents with less than 30% HP increase all party members’ ATK by {{40//50//60//70//80%}} for 12s. Can only occur once every 30s."
-    },
-    "zh": {
-      "name": "狼的末路",
-      "passiveDescription": "攻击力提高{{20//25//30//35//40%}}；攻击命中生命值低于30%的敌人时，队伍中所有成员的攻击力提高{{40//50//60//70//80%}}，持续12秒。该效果30秒只能触发一次。"
-    }
+    "name": "Wolf’s Gravestone",
+    "passiveDescription": "Increases ATK by {{20//25//30//35//40%}}. On hit, attacks against opponents with less than 30% HP increase all party members’ ATK by {{40//50//60//70//80%}} for 12s. Can only occur once every 30s."
   }
 }

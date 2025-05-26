@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Kagura’s Verity",
-      "passiveDescription": "Gains the Kagura Dance effect when using an Elemental Skill, causing the Elemental Skill DMG of the character wielding this weapon to increase by {{12//15//18//21//24%}} for 16s. Max 3 stacks. This character will gain {{12//15//18//21//24%}} All Elemental DMG Bonus when they possess 3 stacks."
-    },
-    "zh": {
-      "name": "神乐之真意",
-      "passiveDescription": "施放元素战技时，将获得「神乐舞」的效果，使装备该武器的角色的元素战技造成的伤害提高{{12//15//18//21//24%}}，该效果持续16秒，至多叠加3层。持有3层时，该角色获得{{12//15//18//21//24%}}所有元素伤害加成。"
-    }
+    "name": "Kagura’s Verity",
+    "passiveDescription": "Gains the Kagura Dance effect when using an Elemental Skill, causing the Elemental Skill DMG of the character wielding this weapon to increase by {{12//15//18//21//24%}} for 16s. Max 3 stacks. This character will gain {{12//15//18//21//24%}} All Elemental DMG Bonus when they possess 3 stacks."
   }
 }

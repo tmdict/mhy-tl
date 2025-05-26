@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "Windblume Ode",
-      "passiveDescription": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by {{16//20//24//28//32%}} for 6s."
-    },
-    "zh": {
-      "name": "风花之颂",
-      "passiveDescription": "施放元素战技时，获得风之花的悠古愿望加持，攻击力提升{{16//20//24//28//32%}}，持续6秒。"
-    }
+    "name": "Windblume Ode",
+    "passiveDescription": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by {{16//20//24//28//32%}} for 6s."
   }
 }

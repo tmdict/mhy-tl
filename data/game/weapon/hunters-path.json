@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Hunter’s Path",
-      "passiveDescription": "Gain {{12//15//18//21//24%}} All Elemental DMG Bonus. Obtain the Tireless Hunt effect after hitting an opponent with a Charged Attack. This effect increases Charged Attack DMG by {{160//200//240//280//320%}} of Elemental Mastery. This effect will be removed after 12 Charged Attacks or 10s. Only 1 instance of Tireless Hunt can be gained every 12s."
-    },
-    "zh": {
-      "name": "猎人之径",
-      "passiveDescription": "获得{{12//15//18//21//24%}}所有元素伤害加成。重击命中敌人后，将获得「无休止的狩猎」：重击造成的伤害值提高，提高值相当于元素精通数值的{{160//200//240//280//320%}}。该效果将在生效12次或10秒后消失，每12秒至多获得一次无休止的狩猎。"
-    }
+    "name": "Hunter’s Path",
+    "passiveDescription": "Gain {{12//15//18//21//24%}} All Elemental DMG Bonus. Obtain the Tireless Hunt effect after hitting an opponent with a Charged Attack. This effect increases Charged Attack DMG by {{160//200//240//280//320%}} of Elemental Mastery. This effect will be removed after 12 Charged Attacks or 10s. Only 1 instance of Tireless Hunt can be gained every 12s."
   }
 }

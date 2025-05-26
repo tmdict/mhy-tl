@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Festering Desire",
-      "passiveDescription": "Increases Elemental Skill DMG by {{16//20//24//28//32%}} and Elemental Skill CRIT Rate by {{6//7.5//9//10.5//12%}}."
-    },
-    "zh": {
-      "name": "腐殖之剑",
-      "passiveDescription": "元素战技造成的伤害增加{{16//20//24//28//32%}}，元素战技的暴击率提升{{6//7.5//9//10.5//12%}}。"
-    }
+    "name": "Festering Desire",
+    "passiveDescription": "Increases Elemental Skill DMG by {{16//20//24//28//32%}} and Elemental Skill CRIT Rate by {{6//7.5//9//10.5//12%}}."
   }
 }

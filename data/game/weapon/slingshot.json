@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Slingshot",
-      "passiveDescription": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by {{36//42//48//54//60%}}. Otherwise, decreases DMG by 10%."
-    },
-    "zh": {
-      "name": "弹弓",
-      "passiveDescription": "普通攻击与重击的箭矢若在发射后的0.3秒内击中敌人，则造成的伤害增加{{36//42//48//54//60%}}；否则，造成的伤害下降10%。"
-    }
+    "name": "Slingshot",
+    "passiveDescription": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by {{36//42//48//54//60%}}. Otherwise, decreases DMG by 10%."
   }
 }

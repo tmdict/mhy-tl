@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Lion’s Roar",
-      "passiveDescription": "Increases DMG against opponents affected by Pyro or Electro by {{20//24//28//32//36%}}."
-    },
-    "zh": {
-      "name": "匣里龙吟",
-      "passiveDescription": "对处于火元素或雷元素影响下的敌人，造成的伤害提高{{20//24//28//32//36%}}。"
-    }
+    "name": "Lion’s Roar",
+    "passiveDescription": "Increases DMG against opponents affected by Pyro or Electro by {{20//24//28//32//36%}}."
   }
 }

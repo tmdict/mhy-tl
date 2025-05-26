@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "hp",
   "data": {
-    "en": {
-      "name": "Dialogues of the Desert Sages",
-      "passiveDescription": "When the wielder performs healing, restore {{8//10//12//14//16}} Energy. This effect can be triggered once every 10s and can occur even when the character is not on the field."
-    },
-    "zh": {
-      "name": "沙中伟贤的对答",
-      "passiveDescription": "进行治疗时，恢复{{8//10//12//14//16}}点能量，该效果每10秒至多触发一次，角色处于队伍后台时也能触发。"
-    }
+    "name": "Dialogues of the Desert Sages",
+    "passiveDescription": "When the wielder performs healing, restore {{8//10//12//14//16}} Energy. This effect can be triggered once every 10s and can occur even when the character is not on the field."
   }
 }

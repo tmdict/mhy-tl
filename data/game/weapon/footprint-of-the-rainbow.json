@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "def",
   "data": {
-    "en": {
-      "name": "Footprint of the Rainbow",
-      "passiveDescription": "Using an Elemental Skill increases DEF by {{16//20//24//28//32%}} for 15s."
-    },
-    "zh": {
-      "name": "虹的行迹",
-      "passiveDescription": "施放元素战技时，防御力提升{{16//20//24//28//32%}}，持续15秒。"
-    }
+    "name": "Footprint of the Rainbow",
+    "passiveDescription": "Using an Elemental Skill increases DEF by {{16//20//24//28//32%}} for 15s."
   }
 }

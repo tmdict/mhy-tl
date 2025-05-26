@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Debate Club",
-      "passiveDescription": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to {{60//75//90//105//120%}} of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s."
-    },
-    "zh": {
-      "name": "以理服人",
-      "passiveDescription": "施放元素战技后，普通攻击和重击命中时会在小范围内额外造成{{60//75//90//105//120%}}攻击力的伤害。该效果持续15秒，伤害每3秒只能触发一次。"
-    }
+    "name": "Debate Club",
+    "passiveDescription": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to {{60//75//90//105//120%}} of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s."
   }
 }

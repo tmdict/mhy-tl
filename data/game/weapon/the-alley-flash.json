@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "em",
   "data": {
-    "en": {
-      "name": "The Alley Flash",
-      "passiveDescription": "Increases DMG dealt by the character equipping this weapon by {{12//15//18//21//24%}}. Taking DMG disables this effect for 5s."
-    },
-    "zh": {
-      "name": "暗巷闪光",
-      "passiveDescription": "角色造成的伤害提升{{12//15//18//21//24%}}。受到伤害后，该伤害提升效果会失效5秒。"
-    }
+    "name": "The Alley Flash",
+    "passiveDescription": "Increases DMG dealt by the character equipping this weapon by {{12//15//18//21//24%}}. Taking DMG disables this effect for 5s."
   }
 }

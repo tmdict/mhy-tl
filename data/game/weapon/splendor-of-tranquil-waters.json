@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Splendor of Tranquil Waters",
-      "passiveDescription": "When the equipping character’s current HP increases or decreases, Elemental Skill DMG dealt will be increased by {{8//10//12//14//16%}} for 6s. Max 3 stacks. This effect can be triggered once every 0.2s. When other party members’ current HP increases or decreases, the equipping character’s Max HP will be increased by {{14//17.5//21//24.5//28%}} for 6s. Max 2 stacks. This effect can be triggered once every 0.2s. The aforementioned effects can be triggered even if the wielder is off-field."
-    },
-    "zh": {
-      "name": "静水流涌之辉",
-      "passiveDescription": "装备者的当前生命值提升或降低时，元素战技造成的伤害提升{{8//10//12//14//16%}}，该效果持续6秒，至多叠加3次，每0.2秒至多触发一次；队伍中其他角色的当前生命值提升或降低时，装备者的生命值上限提升{{14//17.5//21//24.5//28%}}，该效果持续6秒，至多叠加2次，每0.2秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。"
-    }
+    "name": "Splendor of Tranquil Waters",
+    "passiveDescription": "When the equipping character’s current HP increases or decreases, Elemental Skill DMG dealt will be increased by {{8//10//12//14//16%}} for 6s. Max 3 stacks. This effect can be triggered once every 0.2s. When other party members’ current HP increases or decreases, the equipping character’s Max HP will be increased by {{14//17.5//21//24.5//28%}} for 6s. Max 2 stacks. This effect can be triggered once every 0.2s. The aforementioned effects can be triggered even if the wielder is off-field."
   }
 }

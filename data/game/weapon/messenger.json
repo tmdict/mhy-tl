@@ -5,13 +5,7 @@
   "weaponType": "bow",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Messenger",
-      "passiveDescription": "Charged Attack hits on weak points deal an additional {{100//125//150//175//200%}} ATK DMG as CRIT DMG. Can only occur once every 10s."
-    },
-    "zh": {
-      "name": "信使",
-      "passiveDescription": "重击若命中要害，则额外造成{{100//125//150//175//200%}}攻击力的伤害，该伤害必定暴击。此效果每10秒只能触发一次。"
-    }
+    "name": "Messenger",
+    "passiveDescription": "Charged Attack hits on weak points deal an additional {{100//125//150//175//200%}} ATK DMG as CRIT DMG. Can only occur once every 10s."
   }
 }

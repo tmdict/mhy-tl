@@ -5,13 +5,7 @@
   "weaponType": "polearm",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Deathmatch",
-      "passiveDescription": "If there are at least 2 opponents nearby, ATK is increased by {{16//20//24//28//32%}} and DEF is increased by {{16//20//24//28//32%}}. If there are fewer than 2 opponents nearby, ATK is increased by {{24//30//36//42//48%}}."
-    },
-    "zh": {
-      "name": "决斗之枪",
-      "passiveDescription": "身边至少有2个敌人时，获得{{16//20//24//28//32%}}攻击力提升与{{16//20//24//28//32%}}防御力提升；身边的敌人少于2个时，获得{{24//30//36//42//48%}}攻击力提升。"
-    }
+    "name": "Deathmatch",
+    "passiveDescription": "If there are at least 2 opponents nearby, ATK is increased by {{16//20//24//28//32%}} and DEF is increased by {{16//20//24//28//32%}}. If there are fewer than 2 opponents nearby, ATK is increased by {{24//30//36//42//48%}}."
   }
 }

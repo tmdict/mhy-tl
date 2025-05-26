@@ -5,11 +5,6 @@
   "weaponType": "catalyst",
   "subStat": "_na",
   "data": {
-    "en": {
-      "name": "Apprentice’s Notes"
-    },
-    "zh": {
-      "name": "学徒笔记"
-    }
+    "name": "Apprentice’s Notes"
   }
 }

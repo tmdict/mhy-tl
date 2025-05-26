@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "atk",
   "data": {
-    "en": {
-      "name": "Eye of Perception",
-      "passiveDescription": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing {{240//270//300//330//360%}} ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every {{12//11//10//9//8}}s."
-    },
-    "zh": {
-      "name": "昭心",
-      "passiveDescription": "普通攻击与重击命中时，有50%几率发射一枚昭心法球，造成{{240//270//300//330//360%}}攻击力伤害，至多在敌人之间弹射4次。该效果每{{12//11//10//9//8}}秒至多触发一次。"
-    }
+    "name": "Eye of Perception",
+    "passiveDescription": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing {{240//270//300//330//360%}} ATK as DMG. This bolt can bounce between opponents a maximum of 4 times. This effect can occur once every {{12//11//10//9//8}}s."
   }
 }

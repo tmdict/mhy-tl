@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "cr",
   "data": {
-    "en": {
-      "name": "Sacrificial Jade",
-      "passiveDescription": "When not on the field for more than 5s, Max HP will be increased by {{32//40//48//56//64%}} and Elemental Mastery will be increased by {{40//50//60//70//80}}. These effects will be canceled after the wielder has been on the field for 10s."
-    },
-    "zh": {
-      "name": "遗祀玉珑",
-      "passiveDescription": "处于队伍后台超过5秒后，生命值上限提升{{32//40//48//56//64%}}，元素精通提升{{40//50//60//70//80}}点。装备者登场并留在场上10秒后，该效果将失效。"
-    }
+    "name": "Sacrificial Jade",
+    "passiveDescription": "When not on the field for more than 5s, Max HP will be increased by {{32//40//48//56//64%}} and Elemental Mastery will be increased by {{40//50//60//70//80}}. These effects will be canceled after the wielder has been on the field for 10s."
   }
 }

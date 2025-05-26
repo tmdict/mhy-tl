@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "The Widsith",
-      "passiveDescription": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by {{60//75//90//105//120%}}. Aria: Increases all Elemental DMG by {{48//60//72//84//96%}}. Interlude: Elemental Mastery is increased by {{240//300//360//420//480}}."
-    },
-    "zh": {
-      "name": "流浪乐章",
-      "passiveDescription": "角色登场时，随机获得一个主题曲，持续10秒。每30秒只能触发一次。宣叙调：攻击力提升{{60//75//90//105//120%}}；咏叹调：全元素伤害提升{{48//60//72//84//96%}};间奏曲：元素精通提升{{240//300//360//420//480}}。"
-    }
+    "name": "The Widsith",
+    "passiveDescription": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by {{60//75//90//105//120%}}. Aria: Increases all Elemental DMG by {{48//60//72//84//96%}}. Interlude: Elemental Mastery is increased by {{240//300//360//420//480}}."
   }
 }

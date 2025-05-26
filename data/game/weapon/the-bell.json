@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "hp",
   "data": {
-    "en": {
-      "name": "The Bell",
-      "passiveDescription": "Taking DMG generates a shield which absorbs DMG up to {{20//23//26//29//32%}} of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every {{45//45//45//45//45}}s. While protected by a shield, the character gains {{12//15//18//21//24%}} increased DMG."
-    },
-    "zh": {
-      "name": "钟剑",
-      "passiveDescription": "受到伤害时，生成一个伤害吸收量等同于生命值上限{{20//23//26//29//32%}}的护盾，持续10秒或直到护盾失效,每{{45//45//45//45//45}}秒只能触发一次。角色处于护盾庇护下时，造成的伤害提升{{12//15//18//21//24%}}。"
-    }
+    "name": "The Bell",
+    "passiveDescription": "Taking DMG generates a shield which absorbs DMG up to {{20//23//26//29//32%}} of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every {{45//45//45//45//45}}s. While protected by a shield, the character gains {{12//15//18//21//24%}} increased DMG."
   }
 }

@@ -10,7 +10,7 @@
 
 <div class="content-row align-center">
   {#each weapons as weapon}
-    {@const details = data[weapon.name] ? data[weapon.name].data.en : false}
+    {@const details = data[weapon.name] ? data[weapon.name].data : false}
     <div
       class="weapon"
       role="presentation"

@@ -5,13 +5,7 @@
   "weaponType": "claymore",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "“Ultimate Overlord’s Mega Magic Sword”",
-      "passiveDescription": "ATK increased by {{12//15//18//21//24%}}. That’s not all! The support from all Melusines you’ve helped in Merusea Village fills you with strength! Based on the number of them you’ve helped, your ATK is increased by up to an additional {{12//15//18//21//24%}}."
-    },
-    "zh": {
-      "name": "「究极霸王超级魔剑」",
-      "passiveDescription": "攻击力提升{{12//15//18//21//24%}}。不仅如此！海沫村中曾蒙你帮助的美露莘们的声援心意充满了力量，依照她们的数目，攻击力至多进一步提升{{12//15//18//21//24%}}。"
-    }
+    "name": "“Ultimate Overlord’s Mega Magic Sword”",
+    "passiveDescription": "ATK increased by {{12//15//18//21//24%}}. That’s not all! The support from all Melusines you’ve helped in Merusea Village fills you with strength! Based on the number of them you’ve helped, your ATK is increased by up to an additional {{12//15//18//21//24%}}."
   }
 }

@@ -10,7 +10,7 @@
   $: l10n = Object.values(availableWeapons).reduce((acc, w) => {
     const names = w.reduce((wacc, wname) => {
       const name =
-        $weapons[wname]['data'] && $weapons[wname]['data'].en ? $weapons[wname]['data'].en['name'] : wname;
+        $weapons[wname]['data'] && $weapons[wname]['data'] ? $weapons[wname]['data']['name'] : wname;
       return { ...wacc, [wname]: name };
     }, {});
     return { ...acc, ...names };

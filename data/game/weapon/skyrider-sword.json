@@ -5,13 +5,7 @@
   "weaponType": "sword",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Skyrider Sword",
-      "passiveDescription": "Using an Elemental Burst grants a {{12//15//18//21//24%}} increase in ATK and Movement SPD for 15s."
-    },
-    "zh": {
-      "name": "飞天御剑",
-      "passiveDescription": "施放元素爆发后，提高{{12//15//18//21//24%}}攻击力和移动速度，持续15秒。"
-    }
+    "name": "Skyrider Sword",
+    "passiveDescription": "Using an Elemental Burst grants a {{12//15//18//21//24%}} increase in ATK and Movement SPD for 15s."
   }
 }

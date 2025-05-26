@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "cdmg",
   "data": {
-    "en": {
-      "name": "Tome of the Eternal Flow",
-      "passiveDescription": "HP is increased by {{16//20//24//28//32%}}. When current HP increases or decreases, Charged Attack DMG will be increased by {{14//18//22//26//30%}} for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack’s duration refreshes, {{8//9//10//11//12}} Energy will be restored. This Energy restoration effect can be triggered once every 12s."
-    },
-    "zh": {
-      "name": "万世流涌大典",
-      "passiveDescription": "生命值提升{{16//20//24//28//32%}}。当前生命值提升或降低时，重击造成的伤害提升{{14//18//22//26//30%}}。该效果持续4秒，至多叠加3次，每0.3秒至多触发一次；叠加至3层或3层的持续时间刷新时，恢复{{8//9//10//11//12}}点元素能量，每12秒至多通过这种方式恢复一次元素能量。"
-    }
+    "name": "Tome of the Eternal Flow",
+    "passiveDescription": "HP is increased by {{16//20//24//28//32%}}. When current HP increases or decreases, Charged Attack DMG will be increased by {{14//18//22//26//30%}} for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the character has 3 stacks or a third stack’s duration refreshes, {{8//9//10//11//12}} Energy will be restored. This Energy restoration effect can be triggered once every 12s."
   }
 }

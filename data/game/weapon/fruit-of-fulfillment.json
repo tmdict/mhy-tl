@@ -5,13 +5,7 @@
   "weaponType": "catalyst",
   "subStat": "er",
   "data": {
-    "en": {
-      "name": "Fruit of Fulfillment",
-      "passiveDescription": "Obtain the “Wax and Wane” effect after an Elemental Reaction is triggered, gaining {{24//27//30//33//36}} Elemental Mastery while losing 5% ATK. For every 0.3s, 1 stack of Wax and Wane can be gained. Max 5 stacks. For every 6s that go by without an Elemental Reaction being triggered, 1 stack will be lost. This effect can be triggered even when the character is off-field."
-    },
-    "zh": {
-      "name": "盈满之实",
-      "passiveDescription": "触发元素反应后，获得「盈缺」效果：元素精通提升{{24//27//30//33//36}}点，攻击力降低5%。每0.3秒至多获得一层盈缺效果，至多叠加5层。未触发元素反应时将每6秒失去一层。角色处于队伍后台时也能触发效果。"
-    }
+    "name": "Fruit of Fulfillment",
+    "passiveDescription": "Obtain the “Wax and Wane” effect after an Elemental Reaction is triggered, gaining {{24//27//30//33//36}} Elemental Mastery while losing 5% ATK. For every 0.3s, 1 stack of Wax and Wane can be gained. Max 5 stacks. For every 6s that go by without an Elemental Reaction being triggered, 1 stack will be lost. This effect can be triggered even when the character is off-field."
   }
 }
