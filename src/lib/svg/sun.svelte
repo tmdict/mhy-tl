@@ -7,7 +7,7 @@
 
 <style lang="scss">
   svg {
-    fill: #aaa;
+    fill: #f7d87c;
 
     &:hover {
       fill: #eee;

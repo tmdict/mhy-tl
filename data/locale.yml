@@ -1,454 +1,151 @@
----
-_na:
-  en: '-'
-  zh: '-'
-4star:
-  en: '4 Star'
-  zh: '4星'
-5star:
-  en: '5 Star'
-  zh: '5星'
-a:
-  en: 'A'
-  zh: 'A'
-a1:
-  en: 'Ascend 1'
-  zh: '升级1'
-a4:
-  en: 'Ascend 4'
-  zh: '升级4'
-achievements:
-  en: 'Achievements'
-  zh: '成就'
-admonition:
-  en: 'Admonition'
-  zh: '诤言'
-all:
-  en: 'All'
-  zh: '全选'
-anemo:
-  en: 'Anemo'
-  zh: '风'
-artifact-mainstats:
-  en: 'Artifact Main Stats'
-  zh: '圣遗物主词条'
-artifact:
-  en: 'Artifact'
-  zh: '圣遗物'
-ascension:
-  en: 'Ascension'
-  zh: '突破'
-atk:
-  en: 'ATK'
-  zh: '攻'
-ballad:
-  en: 'Ballad'
-  zh: '诗文'
-basic-info:
-  en: 'Basic Info'
-  zh: '基础信息'
-base-atk:
-  en: 'Base ATK'
-  zh: '基础攻击力'
-base-stat:
-  en: 'Base Stat'
-  zh: '基础属性'
-boss-materials:
-  en: 'Boss Materials'
-  zh: 'BOSS素材'
-bow:
-  en: 'Bow'
-  zh: '弓'
-build-editor:
-  en: 'Build Editor'
-  zh: '配装编辑器'
-build-type:
-  en: 'Build Type'
-  zh: '种类'
-build-type-placeholder:
-  en: 'Press enter to submit'
-  zh: '按回车键提交'
-build:
-  en: 'Build'
-  zh: '配装参考'
-builds:
-  en: 'Builds'
-  zh: '参考面板'
-burst:
-  en: 'Burst'
-  zh: '爆发'
-catalyst:
-  en: 'Catalyst'
-  zh: '法器'
-cdmg:
-  en: 'CDmg%'
-  zh: '暴伤'
-character:
-  en: 'Character'
-  zh: '角色'
-character-ascension:
-  en: 'Character Ascension'
-  zh: '角色突破'
-character-builds:
-  en: 'Character Builds'
-  zh: '角色配装参考'
-character-scaling:
-  en: 'Character Scaling'
-  zh: '有效词条'
-character-stat-scaling:
-  en: 'Character Stat Scaling'
-  zh: '角色有效词条'
-checklist:
-  en: 'Checklist'
-  zh: '清单'
-circlet:
-  en: 'Circlet'
-  zh: '冠'
-claymore:
-  en: 'Claymore'
-  zh: '双手剑'
-clear:
-  en: 'Clear'
-  zh: '清空'
-clear-all:
-  en: 'Clear All'
-  zh: '清空全部'
-close-all:
-  en: 'Close All'
-  zh: '关闭全部'
-commission-achievements:
-  en: 'Daily Commission Achievements'
-  zh: '每日委托成就'
-completed:
-  en: 'Incomplete'
-  zh: '未完成'
-conflict:
-  en: 'Conflict'
-  zh: '纷争'
-constellation:
-  en: 'Const'
-  zh: '命座'
-contention:
-  en: 'Contention'
-  zh: '角逐'
-cr:
-  en: 'Crit%'
-  zh: '暴击'
-craftable-weapons:
-  en: 'Craftable Weapons'
-  zh: '锻造武器'
-create-builds:
-  en: 'Create Builds'
-  zh: '创建套装'
-crit:
-  en: 'Crit%/CDmg'
-  zh: '暴'
-crit-abbr:
-  en: 'Crit'
-  zh: '暴'
-cryo:
-  en: 'Cryo'
-  zh: '冰'
-day1:
-  en: 'Mon · Thur'
-  zh: '周一 · 周四'
-day2:
-  en: 'Tue · Fri'
-  zh: '周二 · 周五'
-day3:
-  en: 'Wed · Sat'
-  zh: '周三 · 周六'
-def:
-  en: 'DEF'
-  zh: '防'
-delete:
-  en: 'Delete'
-  zh: '删除'
-dendro:
-  en: 'Dendro'
-  zh: '草'
-diligence:
-  en: 'Diligence'
-  zh: '勤劳'
-dot:
-  en: 'DOT'
-  zh: '持续伤害'
-dps:
-  en: 'DPS'
-  zh: '主C'
-e:
-  en: 'E'
-  zh: 'E'
-edit:
-  en: 'Edit'
-  zh: '编辑'
-electro:
-  en: 'Electro'
-  zh: '雷'
-elegance:
-  en: 'Elegance'
-  zh: '风雅'
-elemental-skill:
-  en: 'Elemental Skill'
-  zh: '技能'
-elemental-burst:
-  en: 'Elemental Burst'
-  zh: '元素爆发'
-em:
-  en: 'EM'
-  zh: '精'
-equipments:
-  en: 'Equipments'
-  zh: '装备'
-equity:
-  en: 'Equity'
-  zh: '公平'
-er:
-  en: 'ER%'
-  zh: '充'
-expand-all:
-  en: 'Expand All'
-  zh: '展开全部'
-export-data:
-  en: 'Export Data'
-  zh: '下载数据库'
-faq:
-  en: 'FAQ'
-  zh: '介绍'
-filters:
-  en: 'Filters'
-  zh: '筛选'
-fontaine:
-  en: 'Fontaine'
-  zh: '枫丹'
-freedom:
-  en: 'Freedom'
-  zh: '自由'
-geo:
-  en: 'Geo'
-  zh: '岩'
-goblet:
-  en: 'Goblet'
-  zh: '杯'
-gold:
-  en: 'Gold'
-  zh: '黄金'
-guides:
-  en: 'Guides'
-  zh: '攻略'
-heal:
-  en: 'Heal'
-  zh: '治'
-healer:
-  en: 'Healer'
-  zh: '治疗'
-honkai-star-rail:
-  en: 'Honkai: Star Rail'
-  zh: '崩坏：星穹铁道'
-hp:
-  en: 'HP'
-  zh: '生'
-hydro:
-  en: 'Hydro'
-  zh: '水'
-import-data:
-  en: 'Import Data'
-  zh: '上传数据库'
-inazuma:
-  en: 'Inazuma'
-  zh: '稻妻'
-ingenuity:
-  en: 'Ingenuity'
-  zh: '巧思'
-justice:
-  en: 'Justice'
-  zh: '正义'
-kindling:
-  en: 'Kindling'
-  zh: '焚燔'
-level-up:
-  en: 'Level Up'
-  zh: '升级'
-leveling-cost:
-  en: 'Leveling Costs'
-  zh: '升级消耗'
-light:
-  en: 'Light'
-  zh: '天光'
-link:
-  en: 'Link'
-  zh: '链接'
-links:
-  en: 'Links'
-  zh: '链接'
-liyue:
-  en: 'Liyue'
-  zh: '璃月'
-mainstat:
-  en: 'Main Stats'
-  zh: '主词条'
-manage-data:
-  en: 'Manage Data'
-  zh: '数据管理'
-misc:
-  en: 'Misc'
-  zh: '其它'
-missing-req-field:
-  en: 'Missing Required Fields'
-  zh: '缺少必填字段'
-mondstadt:
-  en: 'Mondstadt'
-  zh: '蒙德'
-name:
-  en: 'Name'
-  zh: '名称'
-natlan:
-  en: 'Natlan'
-  zh: '纳塔'
-normal-attack:
-  en: 'Normal Attack'
-  zh: '普通攻击'
-notes:
-  en: 'Notes'
-  zh: '其它笔记'
-optional:
-  en: 'Optional'
-  zh: 'Optional'
-order:
-  en: 'Order'
-  zh: '秩序'
-polearm:
-  en: 'Polearm'
-  zh: '长柄武器'
-physical:
-  en: 'Physical'
-  zh: '物'
-praxis:
-  en: 'Praxis'
-  zh: '笃行'
-preview:
-  en: 'Preview'
-  zh: '预览'
-prosperity:
-  en: 'Prosperity'
-  zh: '繁荣'
-pyro:
-  en: 'Pyro'
-  zh: '火'
-q:
-  en: 'Q'
-  zh: 'Q'
-quickswap:
-  en: 'Quickswap'
-  zh: '速切'
-rarity:
-  en: 'Rarity'
-  zh: '稀有度'
-recommended-artifact-mainstats:
-  en: 'Recommended Main Stats'
-  zh: '推荐主词条'
-reference-stats:
-  en: 'Reference Stats'
-  zh: '参考面板'
-relic:
-  en: 'Relic'
-  zh: '遗器'
-resistance:
-  en: 'Resistance'
-  zh: '抗争'
-resources:
-  en: 'Resources'
-  zh: '资源'
-sand:
-  en: 'Sand'
-  zh: '沙'
-save:
-  en: 'Save'
-  zh: '保存'
-saved-builds:
-  en: 'Saved Builds'
-  zh: '保存套装'
-set-2p-bonus:
-  en: '2 Piece Bonus'
-  zh: '2件套效果'
-set-4p-bonus:
-  en: '4 Piece Bonus'
-  zh: '4件套效果'
-share:
-  en: 'Share'
-  zh: '分享'
-shield:
-  en: 'Shield'
-  zh: '盾'
-sources:
-  en: 'Sources'
-  zh: '参考来源'
-stats:
-  en: 'Stats'
-  zh: '属性数据'
-stats-priority:
-  en: 'Sub Stats Priority'
-  zh: '词条优先级'
-stats-reference:
-  en: 'Reference'
-  zh: '参考面板'
-sub-dps:
-  en: 'Sub DPS'
-  zh: '副C'
-sub-stat:
-  en: 'Sub Stat'
-  zh: '副属性'
-support:
-  en: 'Support'
-  zh: '辅助'
-sumeru:
-  en: 'Sumeru'
-  zh: '须弥'
-sword:
-  en: 'Sword'
-  zh: '单手剑'
-reaction:
-  en: 'Reaction'
-  zh: '元素反应'
-recommended-talent:
-  en: 'Recommended Talent'
-  zh: '推荐天赋'
-talent:
-  en: 'Talent'
-  zh: '天赋'
-talent-materials:
-  en: 'Talent Materials'
-  zh: '天赋升级材料'
-talent-priority:
-  en: 'Talent Priority'
-  zh: '优先天赋'
-total:
-  en: 'Total'
-  zh: '合计'
-transience:
-  en: 'Transience'
-  zh: '浮世'
-type:
-  en: 'Type'
-  zh: '分类'
-upgrade-material:
-  en: 'Upgrade Material'
-  zh: '升级材料'
-useful-links:
-  en: 'Useful Apps and Links'
-  zh: '其它用具和链接'
-vision:
-  en: 'Element'
-  zh: '元素'
-weapon:
-  en: 'Weapon'
-  zh: '武器'
-weapon-type:
-  en: 'Weapon Type'
-  zh: '武器种类'
-weekly-talent-mat:
-  en: 'Weekly Material Rotation'
-  zh: '天赋升级材料周常'
-weekly-boss-mat:
-  en: 'Weekly Boss Materials'
-  zh: '周常BOSS素材'
+{
+  "_na": "-",
+  "4star": "4 Star",
+  "5star": "5 Star",
+  "a": "A",
+  "a1": "Ascend 1",
+  "a4": "Ascend 4",
+  "achievements": "Achievements",
+  "admonition": "Admonition",
+  "all": "All",
+  "anemo": "Anemo",
+  "artifact-mainstats": "Artifact Main Stats",
+  "artifact": "Artifact",
+  "ascension": "Ascension",
+  "atk": "ATK",
+  "ballad": "Ballad",
+  "basic-info": "Basic Info",
+  "base-atk": "Base ATK",
+  "base-stat": "Base Stat",
+  "boss-materials": "Boss Materials",
+  "bow": "Bow",
+  "build-editor": "Build Editor",
+  "build-type": "Build Type",
+  "build-type-placeholder": "Press enter to submit",
+  "build": "Build",
+  "builds": "Builds",
+  "burst": "Burst",
+  "catalyst": "Catalyst",
+  "cdmg": "CDmg%",
+  "character": "Character",
+  "character-ascension": "Character Ascension",
+  "character-builds": "Character Builds",
+  "character-scaling": "Character Scaling",
+  "character-stat-scaling": "Character Stat Scaling",
+  "checklist": "Checklist",
+  "circlet": "Circlet",
+  "claymore": "Claymore",
+  "clear": "Clear",
+  "clear-all": "Clear All",
+  "close-all": "Close All",
+  "commission-achievements": "Daily Commission Achievements",
+  "completed": "Incomplete",
+  "conflict": "Conflict",
+  "constellation": "Const",
+  "contention": "Contention",
+  "cr": "Crit%",
+  "craftable-weapons": "Craftable Weapons",
+  "create-builds": "Create Builds",
+  "crit": "Crit%/CDmg",
+  "crit-abbr": "Crit",
+  "cryo": "Cryo",
+  "day1": "Mon · Thur",
+  "day2": "Tue · Fri",
+  "day3": "Wed · Sat",
+  "def": "DEF",
+  "delete": "Delete",
+  "dendro": "Dendro",
+  "diligence": "Diligence",
+  "dps": "DPS",
+  "e": "E",
+  "edit": "Edit",
+  "electro": "Electro",
+  "elegance": "Elegance",
+  "elemental-skill": "Elemental Skill",
+  "elemental-burst": "Elemental Burst",
+  "em": "EM",
+  "equipments": "Equipments",
+  "equity": "Equity",
+  "er": "ER%",
+  "expand-all": "Expand All",
+  "export-data": "Export Data",
+  "faq": "FAQ",
+  "filters": "Filters",
+  "fontaine": "Fontaine",
+  "freedom": "Freedom",
+  "geo": "Geo",
+  "goblet": "Goblet",
+  "gold": "Gold",
+  "guides": "Guides",
+  "heal": "Heal",
+  "healer": "Healer",
+  "honkai-star-rail": "Honkai: Star Rail",
+  "hp": "HP",
+  "hydro": "Hydro",
+  "import-data": "Import Data",
+  "inazuma": "Inazuma",
+  "ingenuity": "Ingenuity",
+  "justice": "Justice",
+  "kindling": "Kindling",
+  "level-up": "Level Up",
+  "light": "Light",
+  "link": "Link",
+  "links": "Links",
+  "liyue": "Liyue",
+  "mainstat": "Main Stats",
+  "manage-data": "Manage Data",
+  "misc": "Misc",
+  "missing-req-field": "Missing Required Fields",
+  "mondstadt": "Mondstadt",
+  "name": "Name",
+  "natlan": "Natlan",
+  "normal-attack": "Normal Attack",
+  "notes": "Notes",
+  "optional": "Optional",
+  "order": "Order",
+  "polearm": "Polearm",
+  "physical": "Physical",
+  "praxis": "Praxis",
+  "preview": "Preview",
+  "prosperity": "Prosperity",
+  "pyro": "Pyro",
+  "q": "Q",
+  "quickswap": "Quickswap",
+  "rarity": "Rarity",
+  "reaction": "Reaction",
+  "recommended-artifact-mainstats": "Recommended Main Stats",
+  "recommended-talent": "Recommended Talent",
+  "reference-stats": "Reference Stats",
+  "relic": "Relic",
+  "resistance": "Resistance",
+  "resources": "Resources",
+  "sand": "Sand",
+  "save": "Save",
+  "saved-builds": "Saved Builds",
+  "set-2p-bonus": "2 Piece Bonus",
+  "set-4p-bonus": "4 Piece Bonus",
+  "share": "Share",
+  "shield": "Shield",
+  "sources": "Sources",
+  "stats": "Stats",
+  "stats-priority": "Sub Stats Priority",
+  "stats-reference": "Reference",
+  "sub-dps": "Sub DPS",
+  "sub-stat": "Sub Stat",
+  "support": "Support",
+  "sumeru": "Sumeru",
+  "sword": "Sword",
+  "talent": "Talent",
+  "talent-materials": "Talent Materials",
+  "talent-priority": "Talent Priority",
+  "total": "Total",
+  "transience": "Transience",
+  "type": "Type",
+  "upgrade-material": "Upgrade Material",
+  "useful-links": "Useful Apps and Links",
+  "vision": "Element",
+  "weapon": "Weapon",
+  "weapon-type": "Weapon Type",
+  "weekly-talent-mat": "Weekly Material Rotation",
+  "weekly-boss-mat": "Weekly Boss Materials"
+}

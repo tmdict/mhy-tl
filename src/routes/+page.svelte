@@ -25,11 +25,6 @@
       updated: '2024-09-14'
     },
     {
-      name: 'Leveling Cost',
-      url: 'leveling-cost',
-      updated: '2022-12-02'
-    },
-    {
       new: true,
       name: 'Talent Materials',
       url: 'talent-materials',

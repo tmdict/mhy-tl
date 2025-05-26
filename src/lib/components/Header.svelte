@@ -76,8 +76,6 @@
         <span class="separator">·</span>
         <a href="/weekly-boss-materials">Boss Materials</a>
         <span class="separator">·</span>
-        <a href="/leveling-cost">Leveling Cost</a>
-        <span class="separator">·</span>
         <a href="/craftable-weapons">Craftable Weapons</a>
       </div>
       <div class="group">
@@ -141,7 +139,6 @@
         #svg-icons {
           display: flex;
           flex-direction: row;
-          margin-left: 5px;
 
           a:after {
             content: none;

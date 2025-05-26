@@ -1,6 +1,5 @@
 <script>
   import { slide } from 'svelte/transition';
-  import { lang } from '@store/site';
   import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
   import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
   import BuildMainStats from '$lib/components/build/BuildMainStats.svelte';
@@ -10,10 +9,10 @@
 
   const exampleBuild = {
     character: 'kaedehara-kazuha',
-    charname: { en: 'Kaedehara Kazuha', zh: '枫原万叶' },
+    charname: { en: 'Kaedehara Kazuha' },
     c: 6,
     type: ['dps'],
-    name: { en: 'DPS', zh: '主C' },
+    name: { en: 'DPS' },
     weapon: [
       { name: 'primordial-jade-cutter', r: 0 },
       { name: 'iron-sting', r: 5 }
@@ -25,7 +24,7 @@
     mainstat: { sand: ['em', 'atk'], goblet: ['anemo'], circlet: ['crit'] },
     stats: [{ crit: '70% / 150%' }, { em: '800' }, { atk: '2,000' }, { er: '140%' }],
     talent: 'E = A > Q',
-    notes: { en: 'Some notes.', zh: '一些笔记。' }
+    notes: { en: 'Some notes.' }
   };
 </script>
 
@@ -40,10 +39,10 @@
         <BuildCharacter character={exampleBuild.character} constellation={exampleBuild.c} />
         <div class="content-col names">
           <div class="character-name">
-            {exampleBuild.charname[$lang]}
+            {exampleBuild.charname.en}
           </div>
           <div class="build-name">
-            {exampleBuild.name[$lang]}
+            {exampleBuild.name.en}
           </div>
         </div>
       </div>
