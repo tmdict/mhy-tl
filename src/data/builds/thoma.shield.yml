@@ -1,12 +1,10 @@
 ---
 character: thoma
 c: 4
+name: 'Shield Support'
 type:
   - shield
   - support
-name:
-  en: 'Shield Support'
-  zh: '盾'
 
 weapon:
   - name: favonius-lance
@@ -38,9 +36,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'Full-stack shields'
-  zh: '满层护盾'
+notes: 'Full-stack shields'
 
 source:
   - ysmxt: default

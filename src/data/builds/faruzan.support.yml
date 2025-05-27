@@ -1,11 +1,9 @@
 ---
 character: faruzan
 c: 6
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: elegy-for-the-end
@@ -34,9 +32,7 @@ stats:
 
 talent: 'Q > E > A'
 
-notes:
-  en: 'E > CA/Q > Q/CA'
-  zh: 'E > CA/Q > Q/CA'
+notes: 'E > CA/Q > Q/CA'
 
 source:
   - ysmxt: default

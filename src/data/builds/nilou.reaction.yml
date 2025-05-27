@@ -1,12 +1,10 @@
 ---
 character: nilou
 c: 0
+name: 'Bloom Support'
 type:
   - reaction
   - support
-name:
-  en: 'Bloom Support'
-  zh: '绽放辅助'
 
 weapon:
   - name: key-of-khaj-nisut
@@ -36,9 +34,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'E > NAx3'
-  zh: 'E > NAx3'
+notes: 'E > NAx3'
 
 source:
   - ysmxt: default

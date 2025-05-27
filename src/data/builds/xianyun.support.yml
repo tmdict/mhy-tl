@@ -1,12 +1,10 @@
 ---
 character: xianyun
 c: 2
+name: 'Support'
 type:
   - healer
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: cranes-echoing-call

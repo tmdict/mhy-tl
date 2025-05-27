@@ -1,13 +1,11 @@
 ---
 character: kaeya
 c: 2
+name: 'Reverse-Melt'
 type:
   - burst
   - reaction
   - support
-name:
-  en: 'Reverse-Melt'
-  zh: '融化流'
 
 weapon:
   - name: favonius-sword

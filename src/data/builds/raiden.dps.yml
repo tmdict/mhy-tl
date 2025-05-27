@@ -1,12 +1,10 @@
 ---
 character: raiden-shogun
 c: 2
+name: 'Electro DPS'
 type:
   - dps
   - reaction
-name:
-  en: 'Electro DPS'
-  zh: '雷伤'
 
 weapon:
   - name: engulfing-lightning
@@ -38,9 +36,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q at full stack, E > Q > (while Q) NAx4 > CA > NAx4 > CA > NAx2 > NA) > Swap'
-  zh: 'Q满层拔刀, E > Q > (while Q) NAx4 > CA > NAx4 > CA > NAx2 > NA > Swap'
+notes: 'Q at full stack, E > Q > (while Q) NAx4 > CA > NAx4 > CA > NAx2 > NA) > Swap'
 
 source:
   - ysmxt: default

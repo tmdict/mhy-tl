@@ -9,10 +9,10 @@
 
   const exampleBuild = {
     character: 'kaedehara-kazuha',
-    charname: { en: 'Kaedehara Kazuha' },
+    charname: 'Kaedehara Kazuha',
     c: 6,
+    name: 'DPS',
     type: ['dps'],
-    name: { en: 'DPS' },
     weapon: [
       { name: 'primordial-jade-cutter', r: 0 },
       { name: 'iron-sting', r: 5 }
@@ -24,7 +24,7 @@
     mainstat: { sand: ['em', 'atk'], goblet: ['anemo'], circlet: ['crit'] },
     stats: [{ crit: '70% / 150%' }, { em: '800' }, { atk: '2,000' }, { er: '140%' }],
     talent: 'E = A > Q',
-    notes: { en: 'Some notes.' }
+    notes: 'Some notes.'
   };
 </script>
 
@@ -52,10 +52,10 @@
         <BuildCharacter character={exampleBuild.character} constellation={exampleBuild.c} />
         <div class="content-col names">
           <div class="character-name">
-            {exampleBuild.charname.en}
+            {exampleBuild.charname}
           </div>
           <div class="build-name">
-            {exampleBuild.name.en}
+            {exampleBuild.name}
           </div>
         </div>
       </div>

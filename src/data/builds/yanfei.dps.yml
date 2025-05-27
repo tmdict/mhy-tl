@@ -1,11 +1,9 @@
 ---
 character: yanfei
 c: 1
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: lost-prayer-to-the-sacred-winds
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A > Q > E'
 
-notes:
-  en: 'Nx3 > CA'
-  zh: '开Q重击蒸发'
+notes: 'Nx3 > CA'
 
 source:
   - ysmxt: default

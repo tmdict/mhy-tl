@@ -1,12 +1,10 @@
 ---
 character: traveler-anemo
 c: 6
+name: 'Anemo DPS'
 type:
   - dps
   - sub-dps
-name:
-  en: 'Anemo DPS'
-  zh: '风C'
 
 weapon:
   - name: favonius-sword
@@ -39,9 +37,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'E/Q > Swap'
-  zh: 'E/Q > Swap'
+notes: 'E/Q > Swap'
 
 source:
   - ysmxt: default

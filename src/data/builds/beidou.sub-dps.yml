@@ -1,11 +1,9 @@
 ---
 character: beidou
 c: 2
+name: 'Off-Field DPS'
 type:
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: wolfs-gravestone
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q > Swap'
-  zh: 'Q > Swap'
+notes: 'Q > Swap'
 
 source:
   - ysmxt: default

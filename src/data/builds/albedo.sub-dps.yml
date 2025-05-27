@@ -1,11 +1,9 @@
 ---
 character: albedo
 c: 0
+name: 'Off-Field DPS'
 type:
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: cinnabar-spindle
@@ -36,9 +34,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'E (flower) > (optional) Q'
-  zh: '刹那之花 > Q'
+notes: 'E (flower) > (optional) Q'
 
 source:
   - ysmxt: default

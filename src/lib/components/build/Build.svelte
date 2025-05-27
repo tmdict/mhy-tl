@@ -41,7 +41,7 @@
           {CHARACTERS_DATA[build.character].data.name}
         </div>
         <div class="build-name">
-          {build.name.en ? build.name.en : build.name.en}
+          {build.name}
         </div>
       </div>
     </div>

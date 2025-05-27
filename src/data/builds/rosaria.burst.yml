@@ -1,13 +1,11 @@
 ---
 character: rosaria
 c: 2
+name: 'Burst Support'
 type:
   - burst
   - reaction
   - support
-name:
-  en: 'Burst Support'
-  zh: '爆发'
 
 weapon:
   - name: favonius-lance
@@ -38,9 +36,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'E > Q'
-  zh: 'E > Q'
+notes: 'E > Q'
 
 source:
   - ysmxt: default

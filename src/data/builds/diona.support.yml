@@ -1,13 +1,11 @@
 ---
 character: diona
 c: 6
+name: 'Support'
 type:
   - healer
   - shield
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: sacrificial-bow
@@ -38,9 +36,7 @@ stats:
 
 talent: 'E = Q'
 
-notes:
-  en: 'Hold E'
-  zh: '长E盾'
+notes: 'Hold E'
 
 source:
   - ysmxt: default

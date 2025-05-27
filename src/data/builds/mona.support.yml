@@ -1,12 +1,10 @@
 ---
 character: mona
 c: 0
+name: 'Burst Support'
 type:
   - burst
   - support
-name:
-  en: 'Burst Support'
-  zh: '爆发辅助'
 
 weapon:
   - name: thrilling-tales-of-dragon-slayers

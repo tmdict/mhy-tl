@@ -1,11 +1,9 @@
 ---
 character: neuvillette
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: tome-of-the-eternal-flow
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A > Q = E'
 
-notes:
-  en: 'Q > Swap > CA > E > CA > Swap > CA > E'
-  zh: 'Q > Swap > CA > E > CA > Swap > CA > E'
+notes: 'Q > Swap > CA > E > CA > Swap > CA > E'
 
 source:
   - ysmxt: default

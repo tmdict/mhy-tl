@@ -1,12 +1,10 @@
 ---
 character: lan-yan
 c: 0
+name: 'Shield Support'
 type:
   - shield
   - support
-name:
-  en: 'Shield Support'
-  zh: '盾'
 
 weapon:
   - name: starcallers-watch

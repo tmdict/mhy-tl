@@ -1,11 +1,9 @@
 ---
 character: dehya
 c: 1
+name: 'Off-Field DPS'
 type:
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: beacon-of-the-reed-sea

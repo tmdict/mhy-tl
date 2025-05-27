@@ -1,11 +1,9 @@
 ---
 character: xinyan
 c: 2
+name: 'Physical DPS'
 type:
   - dps
-name:
-  en: 'Physical DPS'
-  zh: '物伤'
 
 weapon:
   - name: the-unforged
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A >= Q >= E'
 
-notes:
-  en: 'Nx2 > CA > Q > CA'
-  zh: 'Nx2 > CA > Q > CA'
+notes: 'Nx2 > CA > Q > CA'
 
 source:
   - ysmxt: default

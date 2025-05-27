@@ -1,11 +1,9 @@
 ---
 character: xiangling
 c: 4
+name: 'Off-Field DPS'
 type:
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: engulfing-lightning
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q > Swap'
-  zh: 'Q > Swap'
+notes: 'Q > Swap'
 
 source:
   - ysmxt: default

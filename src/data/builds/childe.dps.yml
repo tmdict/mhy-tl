@@ -1,11 +1,9 @@
 ---
 character: tartaglia
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: polar-star
@@ -35,9 +33,7 @@ stats:
 
 talent: 'E > Q > A'
 
-notes:
-  en: 'NAx2 (or 3) > CA'
-  zh: '近战Q蒸发, NAx2 (or 3) > CA'
+notes: 'NAx2 (or 3) > CA'
 
 source:
   - ysmxt: default

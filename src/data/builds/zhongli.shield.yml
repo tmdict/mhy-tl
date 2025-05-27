@@ -1,12 +1,10 @@
 ---
 character: zhongli
 c: 2
+name: 'Shield Support'
 type:
   - shield
   - support
-name:
-  en: 'Shield Support'
-  zh: '盾'
 
 weapon:
   - name: black-tassel
@@ -35,9 +33,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'E shield'
-  zh: 'E盾'
+notes: 'E shield'
 
 source:
   - ysmxt: default

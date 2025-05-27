@@ -1,12 +1,10 @@
 ---
 character: amber
 c: 4
+name: 'Melt DPS'
 type:
   - dps
   - reaction
-name:
-  en: 'Melt DPS'
-  zh: '蒸发C'
 
 weapon:
   - name: amos-bow

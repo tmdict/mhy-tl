@@ -1,11 +1,9 @@
 ---
 character: kamisato-ayato
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: haran-geppaku-futsu
@@ -35,9 +33,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'Q > E'
-  zh: 'Q > E'
+notes: 'Q > E'
 
 source:
   - ysmxt: default

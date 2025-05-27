@@ -1,12 +1,10 @@
 ---
 character: ningguang
 c: 2
+name: 'DPS'
 type:
   - burst
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: lost-prayer-to-the-sacred-winds

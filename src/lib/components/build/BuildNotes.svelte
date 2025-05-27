@@ -8,9 +8,9 @@
     {build.talent}
     <br />
   {/if}
-  {#if build.notes && build.notes.en}
+  {#if build.notes}
     <br />
     <div class="build-heading">Notes</div>
-    {build.notes.en}
+    {build.notes}
   {/if}
 </div>

@@ -1,11 +1,9 @@
 ---
 character: hu-tao
 c: 1
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: staff-of-homa
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A > E > Q'
 
-notes:
-  en: 'E > (while E) NAx2 > CA > Dash/Jump cancel, finish with Q'
-  zh: '重击蒸发'
+notes: 'E > (while E) NAx2 > CA > Dash/Jump cancel, finish with Q'
 
 source:
   - ysmxt: default

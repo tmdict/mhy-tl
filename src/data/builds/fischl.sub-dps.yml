@@ -1,12 +1,10 @@
 ---
 character: fischl
 c: 6
+name: 'Off-Field DPS'
 type:
   - reaction
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: the-stringless

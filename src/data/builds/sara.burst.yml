@@ -1,12 +1,10 @@
 ---
 character: kujou-sara
 c: 6
+name: 'Burst Support'
 type:
   - burst
   - support
-name:
-  en: 'Burst Support'
-  zh: '爆发'
 
 weapon:
   - name: skyward-harp

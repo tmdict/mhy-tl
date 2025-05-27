@@ -1,12 +1,10 @@
 ---
 character: ganyu
 c: 0
+name: 'Melt DPS'
 type:
   - reaction
   - sub-dps
-name:
-  en: 'Melt DPS'
-  zh: '融化流'
 
 weapon:
   - name: amos-bow

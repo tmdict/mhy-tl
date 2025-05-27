@@ -1,12 +1,10 @@
 ---
 character: ganyu
 c: 0
+name: 'Freeze DPS'
 type:
   - burst
   - dps
-name:
-  en: 'Freeze DPS'
-  zh: '永冻流'
 
 weapon:
   - name: amos-bow

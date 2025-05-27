@@ -1,11 +1,9 @@
 ---
 character: iansan
 c: 2
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: calamity-queller
@@ -34,9 +32,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'E > NAx1 > Q'
-  zh: 'E > NAx1 > Q'
+notes: 'E > NAx1 > Q'
 
 source:
   - ysytl: default

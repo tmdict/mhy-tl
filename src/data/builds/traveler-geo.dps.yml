@@ -1,12 +1,10 @@
 ---
 character: traveler-geo
 c: 6
+name: 'DPS'
 type:
   - burst
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: mistsplitter-reforged
@@ -35,9 +33,7 @@ stats:
 
 talent: 'E = Q'
 
-notes:
-  en: 'E/Q > Swap'
-  zh: 'E/Q > Swap'
+notes: 'E/Q > Swap'
 
 source:
   - ysmxt: default

@@ -1,13 +1,11 @@
 ---
 character: jean
 c: 4
+name: 'Burst Support'
 type:
   - burst
   - healer
   - support
-name:
-  en: 'Burst Support'
-  zh: '爆发'
 
 weapon:
   - name: amenoma-kageuchi
@@ -40,9 +38,7 @@ stats:
 
 talent: 'Q = E > A'
 
-notes:
-  en: 'Q heal'
-  zh: 'Q治疗'
+notes: 'Q heal'
 
 source:
   - ysmxt: default

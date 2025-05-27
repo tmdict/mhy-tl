@@ -1,12 +1,10 @@
 ---
 character: amber
 c: 0
+name: 'Burst'
 type:
   - burst
   - sub-dps
-name:
-  en: 'Burst'
-  zh: '爆发'
 
 weapon:
   - name: elegy-for-the-end

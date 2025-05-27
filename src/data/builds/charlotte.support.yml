@@ -1,12 +1,10 @@
 ---
 character: charlotte
 c: 0
+name: 'Healer'
 type:
   - healer
   - support
-name:
-  en: 'Healer'
-  zh: '治疗'
 
 weapon:
   - name: prototype-amber

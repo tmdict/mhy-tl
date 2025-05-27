@@ -1,12 +1,10 @@
 ---
 character: aloy
 c: 0
+name: 'Burst Support'
 type:
   - burst
   - dps
-name:
-  en: 'Burst Support'
-  zh: '爆发'
 
 weapon:
   - name: thundering-pulse
@@ -36,9 +34,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q'
-  zh: 'Q'
+notes: 'Q'
 
 source:
   - ysmxt: default

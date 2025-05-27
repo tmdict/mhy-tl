@@ -1,12 +1,10 @@
 ---
 character: lisa
 c: 4
+name: 'Off-Field DPS'
 type:
   - burst
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: the-widsith

@@ -1,12 +1,10 @@
 ---
 character: mika
 c: 6
+name: 'Healer'
 type:
   - healer
   - support
-name:
-  en: 'Healer'
-  zh: '治疗'
 
 weapon:
   - name: favonius-lance

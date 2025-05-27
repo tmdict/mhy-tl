@@ -1,11 +1,9 @@
 ---
 character: varesa
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: vivid-notions

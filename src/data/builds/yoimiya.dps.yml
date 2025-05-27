@@ -1,11 +1,9 @@
 ---
 character: yoimiya
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: thundering-pulse
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A > E > Q'
 
-notes:
-  en: 'E > (while E) A'
-  zh: '开E首箭'
+notes: 'E > (while E) A'
 
 source:
   - ysmxt: default

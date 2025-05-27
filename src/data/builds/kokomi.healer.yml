@@ -1,12 +1,10 @@
 ---
 character: sangonomiya-kokomi
 c: 0
+name: 'Support'
 type:
   - healer
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: thrilling-tales-of-dragon-slayers
@@ -37,9 +35,7 @@ stats:
 
 talent: 'E > Q > A'
 
-notes:
-  en: 'E > (before E duration ends) Q to refresh E'
-
+notes: 'E > (before E duration ends) Q to refresh E'
 source:
   - ysmxt: default
   - kqm: https://keqingmains.com/kokomi/

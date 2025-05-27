@@ -1,11 +1,9 @@
 ---
 character: arataki-itto
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: redhorn-stonethresher
@@ -35,9 +33,7 @@ stats:
 
 talent: 'A > Q > E'
 
-notes:
-  en: 'Q > CA'
-  zh: '开Q重击连斩 Q > CA'
+notes: 'Q > CA'
 
 source:
   - ysmxt: default

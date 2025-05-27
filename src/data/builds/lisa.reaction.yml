@@ -1,12 +1,10 @@
 ---
 character: lisa
 c: 4
+name: 'Aggravate DPS'
 type:
   - dps
   - reaction
-name:
-  en: 'Aggravate DPS'
-  zh: '超激化'
 
 weapon:
   - name: lost-prayer-to-the-sacred-winds
@@ -37,9 +35,7 @@ stats:
 
 talent: 'E > Q > A'
 
-notes:
-  en: 'E > E > NAx2 (2 stacks) > E > E hold'
-  zh: 'E > E > NAx2 (2 stacks) > E > E hold'
+notes: 'E > E > NAx2 (2 stacks) > E > E hold'
 
 source:
   - ysmxt: default

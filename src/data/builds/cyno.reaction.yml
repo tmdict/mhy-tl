@@ -1,12 +1,10 @@
 ---
 character: cyno
 c: 2
+name: 'Elemental Reaction'
 type:
   - dps
   - reaction
-name:
-  en: 'Elemental Reaction'
-  zh: '元素反应'
 
 weapon:
   - name: staff-of-the-scarlet-sands

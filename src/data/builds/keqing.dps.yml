@@ -1,12 +1,10 @@
 ---
 character: keqing
 c: 0
+name: 'Electro DPS'
 type:
   - dps
   - reaction
-name:
-  en: 'Electro DPS'
-  zh: '雷伤'
 
 weapon:
   - name: mistsplitter-reforged

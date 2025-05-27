@@ -1,12 +1,10 @@
 ---
 character: kaedehara-kazuha
 c: 0
+name: 'EM Support'
 type:
   - reaction
   - support
-name:
-  en: 'EM Support'
-  zh: '精通辅助'
 
 weapon:
   - name: freedom-sworn

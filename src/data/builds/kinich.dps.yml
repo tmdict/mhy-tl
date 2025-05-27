@@ -1,11 +1,9 @@
 ---
 character: kinich
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: fang-of-the-mountain-king

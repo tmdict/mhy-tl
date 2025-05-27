@@ -1,11 +1,9 @@
 ---
 character: shikanoin-heizou
 c: 4
+name: 'Anemo DPS'
 type:
   - dps
-name:
-  en: 'Anemo DPS'
-  zh: '风伤'
 
 weapon:
   - name: skyward-atlas
@@ -35,9 +33,7 @@ stats:
 
 talent: 'E > A > Q'
 
-notes:
-  en: 'NA > Q > E'
-  zh: 'NA > Q > E'
+notes: 'NA > Q > E'
 
 source:
   - ysmxt: default

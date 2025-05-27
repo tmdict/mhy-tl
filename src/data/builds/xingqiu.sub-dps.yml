@@ -1,12 +1,10 @@
 ---
 character: xingqiu
 c: 6
+name: 'Off-Field DPS'
 type:
   - burst
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: sacrificial-sword
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q off-field DPS'
-  zh: 'Q剑雨'
+notes: 'Q off-field DPS'
 
 source:
   - ysmxt: default

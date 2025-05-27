@@ -1,11 +1,9 @@
 ---
 character: yae-miko
 c: 6
+name: 'Off-Field DPS'
 type:
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: kaguras-verity
@@ -36,9 +34,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'E > E > E > Q > E > E > E'
-  zh: '杀生樱落雷 E > E > E > Q > E > E > E'
+notes: 'E > E > E > Q > E > E > E'
 
 source:
   - ysmxt: default

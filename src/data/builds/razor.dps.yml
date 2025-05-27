@@ -1,11 +1,9 @@
 ---
 character: razor
 c: 4
+name: 'Physical DPS'
 type:
   - dps
-name:
-  en: 'Physical DPS'
-  zh: '物伤'
 
 weapon:
   - name: wolfs-gravestone

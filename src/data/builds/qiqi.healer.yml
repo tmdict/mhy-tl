@@ -1,12 +1,10 @@
 ---
 character: qiqi
 c: 1
+name: 'Healer'
 type:
   - healer
   - support
-name:
-  en: 'Healer'
-  zh: '治疗'
 
 weapon:
   - name: sacrificial-sword

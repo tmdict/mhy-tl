@@ -1,11 +1,9 @@
 ---
 character: klee
 c: 2
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: lost-prayer-to-the-sacred-winds
@@ -35,9 +33,7 @@ stats:
 
 talent: 'A > Q > E'
 
-notes:
-  en: 'CA + Vaporize'
-  zh: '金花重击蒸发'
+notes: 'CA + Vaporize'
 
 source:
   - ysmxt: default

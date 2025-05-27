@@ -1,13 +1,11 @@
 ---
 character: mona
 c: 0
+name: 'Burst DPS'
 type:
   - burst
   - reaction
   - sub-dps
-name:
-  en: 'Burst DPS'
-  zh: '爆发C'
 
 weapon:
   - name: the-widsith
@@ -39,9 +37,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q > Vaporize'
-  zh: 'Q > 蒸发'
+notes: 'Q > Vaporize'
 
 source:
   - ysmxt: default

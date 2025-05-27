@@ -1,12 +1,10 @@
 ---
 character: bennett
 c: 1
+name: 'Healer'
 type:
   - healer
   - support
-name:
-  en: 'Healer'
-  zh: '治疗'
 
 weapon:
   - name: aquila-favonia
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q heal'
-  zh: 'Q治疗'
+notes: 'Q heal'
 
 source:
   - ysmxt: default

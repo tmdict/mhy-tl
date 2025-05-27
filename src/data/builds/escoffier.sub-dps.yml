@@ -1,11 +1,9 @@
 ---
 character: escoffier
 c: 0
+name: 'Off-Field DPS'
 type:
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: symphonist-of-scents

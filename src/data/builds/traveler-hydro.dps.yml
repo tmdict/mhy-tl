@@ -1,11 +1,9 @@
 ---
 character: traveler-hydro
 c: 6
+name: 'Hydro DPS'
 type:
   - dps
-name:
-  en: 'Hydro DPS'
-  zh: '水C'
 
 weapon:
   - name: primordial-jade-cutter

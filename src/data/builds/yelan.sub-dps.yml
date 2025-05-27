@@ -1,12 +1,10 @@
 ---
 character: yelan
 c: 2
+name: 'Off-Field DPS'
 type:
   - burst
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: aqua-simulacra
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E > A'
 
-notes:
-  en: 'Q > Ex2 > Q, Burt > Skill provides an extra wave of projectiles. Skill > Burst allows Yelan to collect more particles.'
-  zh: 'Q > Ex2 > Q'
+notes: 'Q > Ex2 > Q, Burt > Skill provides an extra wave of projectiles. Skill > Burst allows Yelan to collect more particles.'
 
 source:
   - ysmxt: default

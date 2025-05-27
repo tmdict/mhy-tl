@@ -1,12 +1,10 @@
 ---
 character: xinyan
 c: 2
+name: 'Shield Support'
 type:
   - shield
   - support
-name:
-  en: 'Shield Support'
-  zh: '盾'
 
 weapon:
   - name: sacrificial-greatsword

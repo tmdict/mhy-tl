@@ -1,12 +1,10 @@
 ---
 character: kaveh
 c: 0
+name: 'Bloom Support'
 type:
   - reaction
   - support
-name:
-  en: 'Bloom Support'
-  zh: '绽放辅助'
 
 weapon:
   - name: sacrificial-greatsword

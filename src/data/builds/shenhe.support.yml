@@ -1,11 +1,9 @@
 ---
 character: shenhe
 c: 2
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: calamity-queller
@@ -35,9 +33,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'Q > Swap'
-  zh: 'Q伤害'
+notes: 'Q > Swap'
 
 source:
   - ysmxt: default

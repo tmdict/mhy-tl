@@ -1,12 +1,10 @@
 ---
 character: chongyun
 c: 2
+name: 'Burst Support'
 type:
   - burst
   - dps
-name:
-  en: 'Burst Support'
-  zh: '爆发'
 
 weapon:
   - name: wolfs-gravestone

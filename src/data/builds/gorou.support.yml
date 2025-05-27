@@ -1,11 +1,9 @@
 ---
 character: gorou
 c: 2
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: favonius-warbow
@@ -37,9 +35,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'Q > Swap'
-  zh: 'Q > Swap'
+notes: 'Q > Swap'
 
 source:
   - ysmxt: default

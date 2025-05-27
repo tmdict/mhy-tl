@@ -1,12 +1,10 @@
 ---
 character: bennett
 c: 1
+name: 'Burst Support'
 type:
   - burst
   - support
-name:
-  en: 'Burst Support'
-  zh: '爆发辅助'
 
 weapon:
   - name: mistsplitter-reforged
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q > Vaporize'
-  zh: 'Q > 蒸发'
+notes: 'Q > Vaporize'
 
 source:
   - ysmxt: default

@@ -1,11 +1,9 @@
 ---
 character: eula
 c: 6
+name: 'Physical DPS'
 type:
   - dps
-name:
-  en: 'Physical DPS'
-  zh: '物伤'
 
 weapon:
   - name: song-of-broken-pines
@@ -34,9 +32,7 @@ stats:
 
 talent: 'Q = A > E'
 
-notes:
-  en: 'E > Q > NAx4 > E (hold) > NAx4; For more energy: E > Q > E > NAx4 > Dash cancel > NAx2 > E (hold) > NAx2'
-  zh: 'Q13层光剑, E > Q > NAx4 > E (hold) > NAx4; For more energy: E > Q > E > NAx4 > Dash cancel > NAx2 > E (hold) > NAx2'
+notes: 'E > Q > NAx4 > E (hold) > NAx4; For more energy: E > Q > E > NAx4 > Dash cancel > NAx2 > E (hold) > NAx2'
 
 source:
   - ysmxt: default

@@ -1,12 +1,10 @@
 ---
 character: layla
 c: 0
+name: 'EM Support'
 type:
   - shield
   - support
-name:
-  en: 'EM Support'
-  zh: '精通辅助'
 
 weapon:
   - name: favonius-sword

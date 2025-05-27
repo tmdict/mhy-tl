@@ -84,7 +84,7 @@
       <div class="header"></div>
       <div class="header"></div>
     {/if}
-    {#each filteredBuilds as build, i (build.character + build.name.en)}
+    {#each filteredBuilds as build, i (build.character + build.name)}
       <Build {build} alt={i % 2 === 1} />
     {/each}
   </div>

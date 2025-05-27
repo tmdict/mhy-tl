@@ -21,7 +21,7 @@
 <div class="content-row header">
   <BuildCharacter character={build.character} constellation={build.constellation} size="80px" />
   <div class="content-row name">
-    <h1>{CHARACTERS_DATA[build.character].data.name} · {build.name.en ? build.name.en : build.name.en} <a href="./build#{link}">#</a></h1>
+    <h1>{CHARACTERS_DATA[build.character].data.name} · {build.name} <a href="./build#{link}">#</a></h1>
   </div>
 </div>
 

@@ -1,12 +1,10 @@
 ---
 character: venti
 c: 0
+name: 'Off-Field DPS'
 type:
   - sub-dps
   - support
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: elegy-for-the-end

@@ -1,12 +1,10 @@
 ---
 character: zhongli
 c: 2
+name: 'Burst'
 type:
   - burst
   - support
-name:
-  en: 'Burst'
-  zh: '爆发'
 
 weapon:
   - name: staff-of-homa
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E'
 
-notes:
-  en: 'Q > E'
-  zh: 'Q > E'
+notes: 'Q > E'
 
 source:
   - ysmxt: default

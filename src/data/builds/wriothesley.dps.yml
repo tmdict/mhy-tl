@@ -1,12 +1,10 @@
 ---
 character: wriothesley
 c: 2
+name: 'Cryo DPS'
 type:
   - dps
   - reaction
-name:
-  en: 'Cryo DPS'
-  zh: '冰伤'
 
 weapon:
   - name: cashflow-supervision

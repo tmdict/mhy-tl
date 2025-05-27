@@ -1,11 +1,9 @@
 ---
 character: xiao
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: primordial-jade-winged-spear
@@ -35,9 +33,7 @@ stats:
 
 talent: 'A > Q > E'
 
-notes:
-  en: 'E > E > Q > Plunge combo'
-  zh: 'E > E > Q > Plunge combo'
+notes: 'E > E > Q > Plunge combo'
 
 source:
   - ysmxt: default

@@ -1,13 +1,11 @@
 ---
 character: nahida
 c: 2
+name: 'Off-Field DPS'
 type:
   - dps
   - reaction
   - support
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: a-thousand-floating-dreams

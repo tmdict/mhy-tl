@@ -1,11 +1,9 @@
 ---
 character: kamisato-ayaka
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: mistsplitter-reforged
@@ -36,9 +34,7 @@ stats:
 
 talent: 'Q > A > E'
 
-notes:
-  en: 'Dash > Q > E > Dash > 3 times NA/CA combo > Swap'
-
+notes: 'Dash > Q > E > Dash > 3 times NA/CA combo > Swap'
 source:
   - ysmxt: default
   - kqm: https://keqingmains.com/ayaka/

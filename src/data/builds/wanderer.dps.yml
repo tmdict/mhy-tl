@@ -1,11 +1,9 @@
 ---
 character: wanderer
 c: 0
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: tulaytullahs-remembrance
@@ -35,9 +33,7 @@ stats:
 
 talent: 'A > E > Q'
 
-notes:
-  en: 'Q > E > CA > NA3x6'
-  zh: 'Q > E > CA > NA3x6'
+notes: 'Q > E > CA > NA3x6'
 
 source:
   - ysmxt: default

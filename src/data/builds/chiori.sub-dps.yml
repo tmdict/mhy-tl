@@ -1,12 +1,10 @@
 ---
 character: chiori
 c: 2
+name: 'Off-Field DPS'
 type:
   - dps
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: uraku-misugiri
@@ -35,9 +33,7 @@ stats:
 
 talent: 'E > Q > A'
 
-notes:
-  en: 'E > NAx3 > Dash cancel'
-  zh: 'E > NAx3 > Dash cancel'
+notes: 'E > NAx3 > Dash cancel'
 
 source:
   - ysmxt: default

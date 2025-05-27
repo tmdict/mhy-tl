@@ -1,11 +1,9 @@
 ---
 character: sucrose
 c: 1
+name: 'EM Support'
 type:
   - support
-name:
-  en: 'EM Support'
-  zh: '精通辅助'
 
 weapon:
   - name: sacrificial-fragments
@@ -36,9 +34,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'E/Q swirl'
-  zh: 'E/Q扩散'
+notes: 'E/Q swirl'
 
 source:
   - ysmxt: default

@@ -1,12 +1,10 @@
 ---
 character: xilonen
 c: 0
+name: 'Support'
 type:
   - healer
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: peak-patrol-song

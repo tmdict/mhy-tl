@@ -1,11 +1,9 @@
 ---
 character: yun-jin
 c: 3
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: kitain-cross-spear

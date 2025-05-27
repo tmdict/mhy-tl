@@ -1,11 +1,9 @@
 ---
 character: collei
 c: 0
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: elegy-for-the-end
@@ -38,9 +36,7 @@ stats:
 
 talent: 'Q > E > A'
 
-notes:
-  en: 'E > Q > Swap'
-  zh: 'E > Q > Swap'
+notes: 'E > Q > Swap'
 
 source:
   - ysmxt: default

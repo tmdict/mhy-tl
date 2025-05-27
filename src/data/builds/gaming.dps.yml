@@ -1,11 +1,9 @@
 ---
 character: gaming
 c: 6
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: beacon-of-the-reed-sea

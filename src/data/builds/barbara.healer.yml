@@ -1,12 +1,10 @@
 ---
 character: barbara
 c: 6
+name: 'Healer'
 type:
   - healer
   - support
-name:
-  en: 'Healer'
-  zh: '治疗'
 
 weapon:
   - name: thrilling-tales-of-dragon-slayers
@@ -36,9 +34,7 @@ stats:
 
 talent: 'E > Q'
 
-notes:
-  en: 'E and/or Q > Swap'
-
+notes: 'E and/or Q > Swap'
 source:
   - ysmxt: default
   - kqm: https://keqingmains.com/barbara/

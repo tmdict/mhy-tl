@@ -31,7 +31,7 @@
       try {
         const importedBuild = decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)));
         console.log(importedBuild)
-        editor.build = parser.importToEditor(importedBuild, editor.getKeys, 'en');
+        editor.build = parser.importToEditor(importedBuild, editor.getKeys);
       } catch (err) {
         toast.error(`Cannot read build: ${err}`);
       }
@@ -41,7 +41,7 @@
   // Re-validate everytime an input changes
   let validated = $derived(validator.validateEditorBuild(editor.build, editor.getKeys, CHARACTERS_DATA, WEAPONS_DATA));
   let parsed = $derived.by(() => {
-    return validated.result ? parser.parse(editor.build, editor.getKeys, CHARACTERS_DATA, 'en') : {};
+    return validated.result ? parser.parse(editor.build, editor.getKeys, CHARACTERS_DATA) : {};
   })
   let encoded = $derived.by(() => {
     return validated.result ? lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(parsed))) : '';

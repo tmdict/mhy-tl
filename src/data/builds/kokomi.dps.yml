@@ -1,12 +1,10 @@
 ---
 character: sangonomiya-kokomi
 c: 0
+name: 'DPS'
 type:
   - dps
   - reaction
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: everlasting-moonglow
@@ -37,9 +35,7 @@ stats:
 
 talent: 'Q > E > A'
 
-notes:
-  en: 'Q > (while Q) NAx2 > Dash'
-  zh: 'Q > (while Q) NAx2 > Dash'
+notes: 'Q > (while Q) NAx2 > Dash'
 
 source:
   - ysmxt: default

@@ -1,11 +1,9 @@
 ---
 character: diluc
 c: 6
+name: 'DPS'
 type:
   - dps
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: wolfs-gravestone
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A > E > Q'
 
-notes:
-  en: 'Q Vaporize, E > NAx2'
-  zh: 'Q蒸发, E > NAx2'
+notes: 'Q Vaporize, E > NAx2'
 
 source:
   - ysmxt: default

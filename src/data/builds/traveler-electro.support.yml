@@ -1,11 +1,9 @@
 ---
 character: traveler-electro
 c: 6
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: favonius-sword

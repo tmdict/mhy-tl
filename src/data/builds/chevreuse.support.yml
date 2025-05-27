@@ -1,11 +1,9 @@
 ---
 character: chevreuse
 c: 0
+name: 'Support'
 type:
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: black-tassel

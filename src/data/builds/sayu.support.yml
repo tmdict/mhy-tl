@@ -1,12 +1,10 @@
 ---
 character: sayu
 c: 1
+name: 'Support'
 type:
   - healer
   - support
-name:
-  en: 'Support'
-  zh: '辅助'
 
 weapon:
   - name: wolfs-gravestone

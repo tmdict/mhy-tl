@@ -1,12 +1,10 @@
 ---
 character: noelle
 c: 6
+name: 'DPS'
 type:
   - dps
   - shield
-name:
-  en: 'DPS'
-  zh: '主C'
 
 weapon:
   - name: redhorn-stonethresher
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A > Q > E'
 
-notes:
-  en: 'E > Q > NAx4 > Dash'
-  zh: 'E > Q > NAx4 > Dash'
+notes: 'E > Q > NAx4 > Dash'
 
 source:
   - ysmxt: default

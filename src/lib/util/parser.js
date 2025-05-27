@@ -50,7 +50,7 @@ class Parser {
   }
 
   // Parse build editor input into a valid build
-  parse(build, getKeys, characters, lang) {
+  parse(build, getKeys, characters) {
     try {
       const parsedBuild = {
         attr: {
@@ -61,9 +61,7 @@ class Parser {
         character: build.character,
         type: build.type,
         c: parseInt(build.constellation),
-        name: {
-          [lang]: build.name
-        },
+        name: build.name,
         weapon: this.weapon(build, getKeys),
         artifact: this.artifact(build, getKeys),
         mainstat: {
@@ -75,7 +73,7 @@ class Parser {
         source: this.source(build),
         // Optional inputs
         ...(build['talent'] && { talent: build['talent'] }),
-        ...(build['notes'] && { notes: { [lang]: build['notes'] } })
+        ...(build['notes'] && { notes: build['notes'] })
       };
 
       return { ...parsedBuild, tags: this.tags(parsedBuild, characters) };
@@ -85,16 +83,16 @@ class Parser {
   }
 
   // Populate editor with imported build
-  importToEditor(build, getKeys, lang) {
+  importToEditor(build, getKeys) {
     // Basic info
     let extracted = {
       character: build.character,
       constellation: parseInt(build.c),
-      name: build.name[lang],
+      name: build.name,
       type: build.type,
       // Optional inputs
       ...(build.talent && { talent: build.talent }),
-      ...(build.notes && { notes: build.notes[lang] })
+      ...(build.notes && { notes: build.notes })
     };
     // Weapons
     build.weapon.forEach((weapon, i) => {

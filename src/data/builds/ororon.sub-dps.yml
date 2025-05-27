@@ -1,11 +1,9 @@
 ---
 character: ororon
 c: 0
+name: 'Off-Field DPS'
 type:
   - sub-dps
-name:
-  en: 'Off-Field DPS'
-  zh: '脱手副C'
 
 weapon:
   - name: elegy-for-the-end

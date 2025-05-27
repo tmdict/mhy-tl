@@ -1,11 +1,9 @@
 ---
 character: tighnari
 c: 0
+name: 'Quickswap DPS'
 type:
   - sub-dps
-name:
-  en: 'Quickswap DPS'
-  zh: '速切副C'
 
 weapon:
   - name: hunters-path
@@ -36,9 +34,7 @@ stats:
 
 talent: 'A > Q > E'
 
-notes:
-  en: 'E > CA > Q > CAx2'
-  zh: 'E > CA > Q > CAx2'
+notes: 'E > CA > Q > CAx2'
 
 source:
   - ysmxt: default
