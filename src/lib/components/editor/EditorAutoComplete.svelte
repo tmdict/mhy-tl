@@ -1,18 +1,20 @@
 <script>
   import { slide } from 'svelte/transition';
 
-  export let id;
-  export let name = id;
-  export let label = '';
-  export let options = [];
-  export let selectedValue = '';
-  export let placeholder = '';
-  export let l10n = {}; // For overriding display value
-  export let onSubmit = (value) => {};
+  let {
+    id,
+    name = id,
+    label = '',
+    options = [],
+    selectedValue = '',
+    placeholder = '',
+    l10n = {}, // For overriding display value
+    onSubmit = (value) => {}
+  } = $props();
 
-  let results = [...options];
-  let showAutocompleteResults = false;
-  let highlightIndex = 0;
+  let results = $state([...options]);
+  let showAutocompleteResults = $state(false);
+  let highlightIndex = $state(0);
 
   const showResults = () => {
     highlightIndex = 0;
@@ -73,7 +75,7 @@
     hideResults();
   };
 
-  $: matches = findMatches(results, selectedValue);
+  let matches = $derived(findMatches(results, selectedValue));
 </script>
 
 <div transition:slide class="input-field">
@@ -84,21 +86,21 @@
       {id}
       {name}
       bind:value={selectedValue}
-      on:keydown={handleKeyDown}
-      on:input={handleInput}
-      on:click={showResults}
+      onkeydown={handleKeyDown}
+      oninput={handleInput}
+      onclick={showResults}
       {placeholder}
       autocomplete="off"
     />
     <div class:showAutocompleteResults class="autocomplete-results-container" autocomplete="off">
-      <div class="click-catcher" role="button" tabindex="0" on:click={hideResults} on:keydown={hideResults}></div>
+      <div class="click-catcher" role="button" tabindex="0" onclick={hideResults} onkeydown={hideResults}></div>
       <ul class="results-list" class:border-none={!matches.length}>
         {#each matches as match, index (match)}
           <li
             class:highlight={index === highlightIndex}
             role="presentation"
-            on:click={() => handleSubmit(match)}
-            on:keydown={() => handleSubmit(match)}
+            onclick={() => handleSubmit(match)}
+            onkeydown={() => handleSubmit(match)}
           >
             {Object.keys(l10n).length === 0 ? match : l10n[match] ? l10n[match] : match}
           </li>
