@@ -10,12 +10,10 @@
   import BuildSubStats from '$lib/components/build/BuildSubStats.svelte';
   import BuildWeapons from '$lib/components/build/BuildWeapons.svelte';
 
-  export let build;
-  export let link;
   // Delete does not show in full page because build object is dynamically generated
   // from URL, and generated URL doesn't contain custom build ID; Build ID is
   // only available in local storage  builds
-  export let allowEdit = true;
+  let { build, link, allowEdit = true } = $props();
 </script>
 
 <div class="content-row header">

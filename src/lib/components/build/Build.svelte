@@ -10,9 +10,7 @@
   import BuildSubStats from '$lib/components/build/BuildSubStats.svelte';
   import BuildWeapons from '$lib/components/build/BuildWeapons.svelte';
 
-  export let build;
-  export let alt = false;
-  export let showDetail = false;
+  let { build, alt = false, showDetail = false } = $props();
 
   function toggleDetails() {
     showDetail = !showDetail;
@@ -24,8 +22,8 @@
   class:alt
   role="button"
   tabindex="0"
-  on:click={toggleDetails}
-  on:keydown={toggleDetails}
+  onclick={toggleDetails}
+  onkeydown={toggleDetails}
 >
   <div
     class="content-row build-info"
@@ -63,7 +61,13 @@
   </div>
   {#if showDetail}
     <div transition:slide={{ duration: 200 }} class="content-row build-details">
-      <div class="notes" role="button" tabindex="0" on:click|stopPropagation on:keydown|stopPropagation>
+      <div
+        class="notes"
+        role="button"
+        tabindex="0"
+        onclick={(e) => e.stopPropagation()}
+        onkeydown={(e) => e.stopPropagation()}
+      >
         <BuildNotes {build} />
       </div>
       <div class="sources">

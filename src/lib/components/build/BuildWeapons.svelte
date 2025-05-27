@@ -3,9 +3,10 @@
   import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
-  export let weapons;
+  let { weapons } = $props();
+  
   const data = weapons.reduce((acc, w) => ({ ...acc, [w.name]: WEAPONS_DATA[w.name] }), {});
-  let isHover = '';
+  let isHover = $state('');
 </script>
 
 <div class="content-row align-center">
@@ -14,9 +15,9 @@
     <div
       class="weapon"
       role="presentation"
-      on:click|stopPropagation
-      on:mouseenter={() => (isHover = weapon.name)}
-      on:mouseleave={() => (isHover = '')}
+      onclick={(e) => e.stopPropagation()}
+      onmouseenter={() => (isHover = weapon.name)}
+      onmouseleave={() => (isHover = '')}
     >
       <Icon
         id={weapon.name}

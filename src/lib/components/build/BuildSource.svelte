@@ -1,5 +1,5 @@
 <script>
-  export let references;
+  let { references } = $props();
   const sources = {
     ysmxt: { name: '原神冒险团', url: 'https://www.miyoushe.com/ys/collection/10772' },
     ysytl: { name: '原神角色一图流攻略', url: 'https://www.miyoushe.com/ys/collection/2558464' },
@@ -29,9 +29,13 @@
               {parseSource(source).src}
             {/if}
           {:else}
-            <a on:click|stopPropagation href={parseSource(source).src} alt={parseSource(source).id}
-              >{parseSource(source).name}</a
+            <a
+              onclick={(e) => e.stopPropagation()}
+              href={parseSource(source).src}
+              alt={parseSource(source).id}
             >
+              {parseSource(source).name}
+            </a>
           {/if}
         </li>
       {/each}

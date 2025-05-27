@@ -3,7 +3,7 @@
   import { IMAGES } from '@store/sitedata';
   import Icon from '$lib/components/Icon.svelte';
 
-  export let artifacts;
+  let { artifacts } = $props();
   const data = artifacts.reduce((acc, a) => {
     const aSet = a.set.reduce((aAcc, aname) => ({ ...aAcc, [aname]: ARTIFACTS_DATA[aname] }), {});
     return { ...acc, ...aSet };
@@ -14,7 +14,13 @@
   <div class="content-row" class:divider={i !== 0}>
     {#each artifact.set as set}
       {@const details = data[set] ? data[set].data : false}
-      <div class="artifact" role="button" tabindex="0" on:click|stopPropagation on:keydown|stopPropagation>
+      <div
+        class="artifact"
+        role="button"
+        tabindex="0"
+        onclick={(e) => e.stopPropagation()}
+        onkeydown={(e) => e.stopPropagation()}
+      >
         <Icon
           id={set}
           title={details ? details['name'] : set}
