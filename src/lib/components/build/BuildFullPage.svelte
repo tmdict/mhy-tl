@@ -1,5 +1,6 @@
 <script>
   import { CHARACTERS_DATA } from '@store/gamedata';
+  import ID from '$lib/util/alias.json';
   import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
   import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
   import BuildMainStats from './BuildMainStats.svelte';
@@ -28,7 +29,7 @@
   <div class="types">
     <span class="build-heading">Type:</span>
     {#each build.type as type, i}
-      {i !== 0 ? ' · ' : ''}{type}
+      {i !== 0 ? ' · ' : ''}{ID[type]}
     {/each}
   </div>
   <div

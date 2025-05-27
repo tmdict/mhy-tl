@@ -3,8 +3,8 @@
   import ImportData from '$lib/components/ImportData.svelte';
   import ManageData from '$lib/components/content/ManageData.svelte';
 
-  let show = $state(false);
   const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+  let show = $state(false);
 </script>
 
 <a href="/#" class="important" onclick={preventDefault(() => (show = !show))}>Manage Data</a>

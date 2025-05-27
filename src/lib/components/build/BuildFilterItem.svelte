@@ -1,5 +1,5 @@
 <script>
-  import { filterlist } from "@store/filterlist.svelte.js"
+  import { filterlist } from "@store/filterlist.svelte"
   import { IMAGES } from '@store/sitedata';
   import ID from '$lib/util/alias.json';
   import Icon from '$lib/components/Icon.svelte';

@@ -6,7 +6,7 @@
 
 <div class="content-col substats">
   <div class="build-heading" class:hidden={!showHeader}>
-    Stats Priority <span class="highlight">(Reference)</span>
+    Sub Stats Priority <span class="highlight">(Reference)</span>
   </div>
   <ol>
     {#each stats as stat}

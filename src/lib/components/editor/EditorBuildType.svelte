@@ -1,20 +1,21 @@
 <script>
   import { buildtypes } from '@store/builds';
-  import { buildEditor } from '@store/editor';
+  import { editor } from '@store/editor.svelte';
+  import ID from '$lib/util/alias.json';
   import EditorAutoComplete from '$lib/components/editor/EditorAutoComplete.svelte';
 
-  let selectedOptions = $buildEditor['type'] ? $buildEditor['type'] : [];
+  let selectedOptions = editor.build['type'] ? editor.build['type'] : [];
 
   const handleSubmit = (selectedValue) => {
     if (selectedOptions.indexOf(selectedValue) === -1) {
       selectedOptions = [...selectedOptions, selectedValue];
     }
-    $buildEditor['type'] = selectedOptions;
+    editor.set('type', selectedOptions);
   };
 
   const clearAll = () => {
     selectedOptions = [];
-    $buildEditor['type'] = [];
+    editor.set('type', []);
   };
 </script>
 
@@ -24,13 +25,13 @@
     label="Build Type"
     placeholder="Select build type"
     options={buildtypes}
-    l10n={buildtypes.reduce((acc, t) => ({ ...acc, [t]: t }), {})}
+    l10n={buildtypes.reduce((acc, t) => ({ ...acc, [t]: ID[t] }), {})}
     onSubmit={handleSubmit}
   />
 
   <div class="type-label content-row">
     {#each selectedOptions as option}
-      <span class="label">{option}</span>
+      <span class="label">{ID[option]}</span>
     {/each}
     {#if selectedOptions.length > 0}
       <a class="clear" on:click|preventDefault={clearAll} href="/#">Clear All</a>

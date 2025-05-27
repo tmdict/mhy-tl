@@ -1,14 +1,14 @@
 <script>
-  import { filterlist } from "@store/filterlist.svelte.js"
+  import { filterlist } from "@store/filterlist.svelte"
   import ID from '$lib/util/alias.json';
   import BuildFilterItem from '$lib/components/build/BuildFilterItem.svelte';
 
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
   let { filter, showFilter = false } = $props()
+
   if (['type', 'vision'].includes(filter.name)) {
     showFilter = true;
   }
-
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
 </script>
 
 <div class="filter">

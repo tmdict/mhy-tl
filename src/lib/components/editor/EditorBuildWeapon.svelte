@@ -1,11 +1,11 @@
 <script>
-  import { availableInputs, buildEditor } from '@store/editor';
+  import { availableInputs, editor } from '@store/editor.svelte';
   import { WEAPONS_DATA } from '@store/gamedata';
   import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
 
   export let weaponKey;
   export let availableWeapons; // Pass in from parent so there's no error when character is chanegd to '-'
-  const keys = buildEditor.getKeys.weapon(weaponKey);
+  const keys = editor.getKeys.weapon(weaponKey);
 
   $: l10n = Object.values(availableWeapons).reduce((acc, w) => {
     const names = w.reduce((wacc, wname) => {
@@ -24,13 +24,13 @@
     list={availableWeapons}
     {l10n}
     groups={Object.keys(availableWeapons).reverse()}
-    bind:selected={$buildEditor[keys.weapon]}
+    bind:selected={editor.build[keys.weapon]}
   />
   <EditorDropdownList
     id={keys.ref}
     label="Refinement"
-    list={$availableInputs.refinement}
+    list={availableInputs.refinement}
     inputWidth="60px"
-    bind:selected={$buildEditor[keys.ref]}
+    bind:selected={editor.build[keys.ref]}
   />
 </div>

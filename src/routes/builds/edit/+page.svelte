@@ -2,9 +2,10 @@
   import { toast } from '@store/toast';
   import lzstring from 'lz-string';
   import { browser } from '$app/environment';
-  import { availableInputs, buildEditor } from '@store/editor';
+  import { availableInputs, editor } from '@store/editor.svelte';
   import { CHARACTERS_DATA, WEAPONS_DATA } from '@store/gamedata';
   import { localData } from '@store/sitedata';
+  import ID from '$lib/util/alias.json';
   import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from '$lib/util/codec';
   import { parser } from '$lib/util/parser';
   import { validator } from '$lib/util/validator';
@@ -18,12 +19,10 @@
   import EditorTextArea from '$lib/components/editor/EditorTextArea.svelte';
   import EditorTextField from '$lib/components/editor/EditorTextField.svelte';
 
-  let parsed;
-  let encoded;
-  let validated;
-  let debugMode = false;
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+  const debugMode = false;
 
-  buildEditor.reset(); // Reset editor
+  editor.reset(); // Reset editor
 
   // If editing an existing build, parse data from URL
   if (browser) {
@@ -31,24 +30,22 @@
     if (link.length > 0) {
       try {
         const importedBuild = decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)));
-        $buildEditor = parser.importToEditor(importedBuild, buildEditor.getKeys, 'en');
+        console.log(importedBuild)
+        editor.build = parser.importToEditor(importedBuild, editor.getKeys, 'en');
       } catch (err) {
         toast.error(`Cannot read build: ${err}`);
       }
     }
   }
 
-  $: {
-    // Re-validate everytime an input chamges
-    validated = validator.validateEditorBuild($buildEditor, buildEditor.getKeys, CHARACTERS_DATA, WEAPONS_DATA);
-    if (validated.result) {
-      parsed = parser.parse($buildEditor, buildEditor.getKeys, CHARACTERS_DATA, 'en');
-      encoded = lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(parsed)));
-    } else {
-      parsed = {};
-      encoded = '';
-    }
-  }
+  // Re-validate everytime an input changes
+  let validated = $derived(validator.validateEditorBuild(editor.build, editor.getKeys, CHARACTERS_DATA, WEAPONS_DATA));
+  let parsed = $derived.by(() => {
+    return validated.result ? parser.parse(editor.build, editor.getKeys, CHARACTERS_DATA, 'en') : {};
+  })
+  let encoded = $derived.by(() => {
+    return validated.result ? lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(parsed))) : '';
+  })
 
   function copyToClipboard(link) {
     navigator.clipboard.writeText(window.location.hostname + link);
@@ -85,14 +82,14 @@
 <h1>Build Editor</h1>
 {#if debugMode}
   <div style="margin: 20px">
-    raw: {JSON.stringify($buildEditor, null, 2)}<br /><br />
+    raw: {JSON.stringify(editor.build, null, 2)}<br /><br />
     validate: {JSON.stringify(validated, null, 2)}<br /><br />
     parsed: {JSON.stringify(parsed, null, 2)}<br /><br />
-    num: {JSON.stringify($buildEditor['num'], null, 2)}<br /><br />
+    num: {JSON.stringify(editor.build['num'], null, 2)}<br /><br />
   </div>
 {/if}
 
-{#if validator.character($buildEditor)}
+{#if validator.character(editor.build)}
   <h4>Preview</h4>
   <div class="content-row">
     {#if !validated.result}
@@ -108,15 +105,15 @@
       <BuildFullPage build={parsed} link={encoded} allowEdit={false} />
 
       <div class="share">
-        <a href="/#" on:click|preventDefault={saveBuild}>Save</a> ·
+        <a href="/#" onclick={preventDefault(saveBuild)}>Save</a> ·
         <a href="/builds/build#{encoded}">Share</a> ·
         <span
           class="copy"
           title="Copy to clipboard"
           role="button"
           tabindex="0"
-          on:click={() => copyToClipboard(`/builds/build#${encoded}`)}
-          on:keydown={() => copyToClipboard(`/builds/build#${encoded}`)}><Copy /></span
+          onclick={() => copyToClipboard(`/builds/build#${encoded}`)}
+          onkeydown={() => copyToClipboard(`/builds/build#${encoded}`)}><Copy /></span
         >
       </div>
     {/if}
@@ -129,95 +126,95 @@
     <EditorDropdownList
       id="character"
       label="Character"
-      list={$availableInputs.characters}
+      list={availableInputs.characters}
       l10n={Object.values(CHARACTERS_DATA).reduce(
         (acc, c) => ({ ...acc, [c.id]: c.data ? c.data['name'] : c.id }),
         { '-': '-' }
       )}
-      bind:selected={$buildEditor['character']}
+      bind:selected={editor.build['character']}
     />
-    {#if validator.character($buildEditor)}
+    {#if validator.character(editor.build)}
       <EditorDropdownList
         id="character-const"
         label="Constellation"
-        list={$availableInputs.const}
+        list={availableInputs.const}
         inputWidth="60px"
-        bind:selected={$buildEditor['constellation']}
+        bind:selected={editor.build['constellation']}
       />
-      <EditorTextField id="build-name" label="Name" bind:value={$buildEditor['name']} />
+      <EditorTextField id="build-name" label="Name" bind:value={editor.build['name']} />
       <EditorBuildType />
     {/if}
   </div>
 
-  {#if validator.character($buildEditor)}
+  {#if validator.character(editor.build)}
     <h4>Equipments</h4>
     <div class="content-row edit-section">
       <div class="content-col ">
-        {#each Array($buildEditor['num'].weapons) as _, i}
+        {#each Array(editor.build['num'].weapons) as _, i}
           <EditorBuildWeapon
             weaponKey={i}
-            availableWeapons={$availableInputs.weapons[CHARACTERS_DATA[$buildEditor['character']].weapon]}
+            availableWeapons={availableInputs.weapons[CHARACTERS_DATA[editor.build['character']].weapon]}
           />
         {/each}
         <div class="content-row add-remove">
-          {#if $buildEditor['num'].weapons > 1}
+          {#if editor.build['num'].weapons > 1}
             <span
               class="remove-input"
               role="button"
               tabindex="0"
-              on:click={() =>
-                buildEditor.removeInput(
+              onclick={() =>
+                editor.build.removeInput(
                   'weapons',
-                  Object.values(buildEditor.getKeys.weapon($buildEditor['num']['weapons'] - 1))
+                  Object.values(editor.build.getKeys.weapon(editor.build['num']['weapons'] - 1))
                 )}
-              on:keydown={() =>
-                buildEditor.removeInput(
+              onkeydown={() =>
+                editor.build.removeInput(
                   'weapons',
-                  Object.values(buildEditor.getKeys.weapon($buildEditor['num']['weapons'] - 1))
+                  Object.values(editor.build.getKeys.weapon(editor.build['num']['weapons'] - 1))
                 )}>-</span
             >
           {/if}
-          {#if $buildEditor['num'].weapons < 2}
+          {#if editor.build['num'].weapons < 2}
             <span
               class="add-input"
               role="button"
               tabindex="0"
-              on:click={() => buildEditor.addInput('weapons', 2)}
-              on:keydown={() => buildEditor.addInput('weapons', 2)}>+</span
+              onclick={() => editor.build.addInput('weapons', 2)}
+              onkeydown={() => editor.build.addInput('weapons', 2)}>+</span
             >
           {/if}
         </div>
       </div>
 
       <div class="content-col">
-        {#each Array($buildEditor['num'].artifacts) as _, i}
+        {#each Array(editor.build['num'].artifacts) as _, i}
           <EditorBuildArtifact artifactKey={i} />
         {/each}
         <div class="content-row add-remove">
-          {#if $buildEditor['num'].artifacts > 1}
+          {#if editor.build['num'].artifacts > 1}
             <span
               class="remove-input"
               role="button"
               tabindex="0"
-              on:click={() =>
-                buildEditor.removeInput(
+              onclick={() =>
+                editor.removeInput(
                   'artifacts',
-                  Object.values(buildEditor.getKeys.artifact($buildEditor['num']['artifacts'] - 1))
+                  Object.values(editor.getKeys.artifact(editor.build['num']['artifacts'] - 1))
                 )}
-              on:keydown={() =>
-                buildEditor.removeInput(
+              onkeydown={() =>
+                editor.removeInput(
                   'artifacts',
-                  Object.values(buildEditor.getKeys.artifact($buildEditor['num']['artifacts'] - 1))
+                  Object.values(editor.getKeys.artifact(editor.build['num']['artifacts'] - 1))
                 )}>-</span
             >
           {/if}
-          {#if $buildEditor['num'].artifacts < 2}
+          {#if editor.build['num'].artifacts < 2}
             <span
               class="add-input"
               role="button"
               tabindex="0"
-              on:click={() => buildEditor.addInput('artifacts', 2)}
-              on:keydown={() => buildEditor.addInput('artifacts', 2)}>+</span
+              onclick={() => editor.addInput('artifacts', 2)}
+              onkeydown={() => editor.addInput('artifacts', 2)}>+</span
             >
           {/if}
         </div>
@@ -230,41 +227,41 @@
         {#each ['sand', 'goblet', 'circlet'] as piece}
           <div class="content-row">
             <div class="content-col">
-              {#each Array($buildEditor['num']['mainstat'][piece]) as _, i}
-                {@const mainstatKey = buildEditor.getKeys.mainstat(piece, i).mainstat}
+              {#each Array(editor.build['num']['mainstat'][piece]) as _, i}
+                {@const mainstatKey = editor.getKeys.mainstat(piece, i).mainstat}
                 <EditorDropdownList
                   id={mainstatKey}
-                  label={i === 0 ? `${piece} Main Stats` : ''}
-                  list={$availableInputs[piece]}
-                  l10n={$availableInputs[piece].reduce((acc, c) => ({ ...acc, [c]: c }), {})}
+                  label={i === 0 ? `${ID[piece]} Main Stats` : ''}
+                  list={availableInputs[piece]}
+                  l10n={availableInputs[piece].reduce((acc, c) => ({ ...acc, [c]: ID[c] }), {})}
                   width="200px"
-                  bind:selected={$buildEditor[mainstatKey]}
+                  bind:selected={editor.build[mainstatKey]}
                 />
               {/each}
             </div>
             <div class="content-row add-remove">
-              {#if $buildEditor['num']['mainstat'][piece] > 1}
+              {#if editor.build['num']['mainstat'][piece] > 1}
                 <span
                   class="remove-input"
                   role="button"
                   tabindex="0"
-                  on:click={() =>
-                    buildEditor.removeNestedInput('mainstat', piece, [
-                      buildEditor.getKeys.mainstat(piece, $buildEditor['num']['mainstat'][piece] - 1).mainstat
+                  onclick={() =>
+                    editor.removeNestedInput('mainstat', piece, [
+                      editor.getKeys.mainstat(piece, editor.build['num']['mainstat'][piece] - 1).mainstat
                     ])}
-                  on:keydown={() =>
-                    buildEditor.removeNestedInput('mainstat', piece, [
-                      buildEditor.getKeys.mainstat(piece, $buildEditor['num']['mainstat'][piece] - 1).mainstat
+                  onkeydown={() =>
+                    editor.removeNestedInput('mainstat', piece, [
+                      editor.getKeys.mainstat(piece, editor.build['num']['mainstat'][piece] - 1).mainstat
                     ])}>-</span
                 >
               {/if}
-              {#if $buildEditor['num']['mainstat'][piece] < 2}
+              {#if editor.build['num']['mainstat'][piece] < 2}
                 <span
                   class="add-input"
                   role="button"
                   tabindex="0"
-                  on:click={() => buildEditor.addNestedInput('mainstat', piece, 2)}
-                  on:keydown={() => buildEditor.addNestedInput('mainstat', piece, 2)}>+</span
+                  onclick={() => editor.addNestedInput('mainstat', piece, 2)}
+                  onkeydown={() => editor.addNestedInput('mainstat', piece, 2)}>+</span
                 >
               {/if}
             </div>
@@ -274,34 +271,34 @@
       </div>
 
       <div class="content-col">
-        {#each Array($buildEditor['num'].stats) as _, i}
+        {#each Array(editor.build['num'].stats) as _, i}
           <EditorBuildStat statKey={i} />
         {/each}
         <div class="content-row add-remove">
-          {#if $buildEditor['num'].stats > 1}
+          {#if editor.build['num'].stats > 1}
             <span
               class="remove-input"
               role="button"
               tabindex="0"
-              on:click={() =>
-                buildEditor.removeInput(
+              onclick={() =>
+                editor.removeInput(
                   'stats',
-                  Object.values(buildEditor.getKeys.stat($buildEditor['num']['stats'] - 1))
+                  Object.values(editor.getKeys.stat(editor.build['num']['stats'] - 1))
                 )}
-              on:keydown={() =>
-                buildEditor.removeInput(
+              onkeydown={() =>
+                editor.removeInput(
                   'stats',
-                  Object.values(buildEditor.getKeys.stat($buildEditor['num']['stats'] - 1))
+                  Object.values(editor.getKeys.stat(editor.build['num']['stats'] - 1))
                 )}>-</span
             >
           {/if}
-          {#if $buildEditor['num'].stats < 4}
+          {#if editor.build['num'].stats < 4}
             <span
               class="add-input"
               role="button"
               tabindex="0"
-              on:click={() => buildEditor.addInput('stats', 4)}
-              on:keydown={() => buildEditor.addInput('stats', 4)}>+</span
+              onclick={() => editor.addInput('stats', 4)}
+              onkeydown={() => editor.addInput('stats', 4)}>+</span
             >
           {/if}
         </div>
@@ -316,18 +313,18 @@
           label="Talent Priority"
           placeholder="A > E > Q"
           width="300px"
-          bind:value={$buildEditor['talent']}
+          bind:value={editor.build['talent']}
         />
         <EditorTextField
           id="source"
           label="Sources"
           placeholder="Optional"
           width="300px"
-          bind:value={$buildEditor['source']}
+          bind:value={editor.build['source']}
         />
       </div>
       <div class="content-col" style="flex: 1;">
-        <EditorTextArea id="notes" label="Notes" bind:value={$buildEditor['notes']} />
+        <EditorTextArea id="notes" label="Notes" bind:value={editor.build['notes']} />
       </div>
     </div>
   {/if}

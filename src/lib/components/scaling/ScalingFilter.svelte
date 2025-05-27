@@ -1,10 +1,10 @@
 <script>
-  import { filterlist } from "@store/filterlist.svelte.js"
+  import { filterlist } from "@store/filterlist.svelte"
   import ID from '$lib/util/alias.json';
 
-  let { filterHeader, filterKey, filter } = $props();
-
   const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+
+  let { filterHeader, filterKey, filter } = $props();
 
   function addAll(filters, type) {
     filterlist.resetByType(type);

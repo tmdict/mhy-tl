@@ -1,6 +1,6 @@
 <script>
   import { slide, fade } from 'svelte/transition';
-  import { filterlist } from "@store/filterlist.svelte.js"
+  import { filterlist } from "@store/filterlist.svelte"
   import { CHARACTERS_DATA, MISC_DATA } from '@store/gamedata';
   import ScalingFaq from '$lib/components/content/ScalingFaq.svelte';
   import ScalingFilter from '$lib/components/scaling/ScalingFilter.svelte';

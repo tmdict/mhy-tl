@@ -31,7 +31,7 @@ const buildData = import.meta.glob('@data/builds/*.yml', { eager: true, import: 
 export const BUILDS = parseBuilds(buildData, CHARACTERS_DATA);
 
 // Build Filters
-const filters = Object.values(BUILDS).reduce((acc, b) => {
+export const BUILD_FILTERS = Object.values(BUILDS).reduce((acc, b) => {
   b['type'].forEach(t => acc.type.filter.add(t)); // Build type
   acc['vision'].filter.add(b.attr.vision); // Vision
   acc['weapon-type'].filter.add(b.attr.weapon); // Weapon type
@@ -43,4 +43,3 @@ const filters = Object.values(BUILDS).reduce((acc, b) => {
   'weapon-type': { type: 'icon', filter: new Set() },
   'artifact': { type: 'icon', filter: new Set() }
 });
-export const BUILD_FILTERS = filters;
