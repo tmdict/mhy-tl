@@ -8,8 +8,8 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
-    "process:css": "node scripts/util.js css",
-    "process:enum": "node scripts/util.js enum",
+    "process:css": "node scripts/css.js",
+    "process:enum": "node scripts/enum.js",
     "clean": "rimraf bin dist"
   },
   "devDependencies": {

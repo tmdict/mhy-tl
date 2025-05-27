@@ -2,7 +2,6 @@ import fs from 'fs-extra';
 import { fdir } from 'fdir';
 import yaml from 'js-yaml';
 import path from 'path';
-import process from 'process';
 
 // Builds an ENUM map of id to game terms
 const buildIdMap = (src, dest, filename = 'enum.json', overwrite = false) => {
@@ -57,43 +56,4 @@ const buildIdMap = (src, dest, filename = 'enum.json', overwrite = false) => {
   );
 };
 
-// Compiles theme colors into importable styles
-const buildThemes = (config, src, dest) => {
-  for (const theme of config) {
-    let fileContent = fs.readFileSync(path.join(src, theme.src), 'utf8');
-    const regex = /\$(.*): (.*);\n/g;
-    fs.outputFile(
-      path.join(dest, theme.name) + '.json',
-      `{
-        "name": "${theme.name}",
-        "colors": {
-            ${fileContent.replace(regex, '    "$1": "$2",\n').replace(/,\s*$/, '')}
-        }
-      }\n`.replace(/ {6}/gm, '')
-    );
-  }
-};
-
-switch (process.argv[2]) {
-  case 'enum':
-    buildIdMap('./src/data/game', './src/lib/util');
-    break;
-  case 'css':
-    buildThemes(
-      [
-        {
-          name: 'dark',
-          src: 'theme_dark.scss'
-        },
-        {
-          name: 'light',
-          src: 'theme_light.scss'
-        }
-      ],
-      './src/lib/style/css',
-      './src/lib/style/themes'
-    );
-    break;
-  default:
-    console.log('test');
-}
+buildIdMap('./src/data/game', './src/lib/util');
