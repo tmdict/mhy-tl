@@ -1,8 +1,8 @@
 <script>
   import { IMAGES } from '@store/sitedata';
+  import ID from '$lib/util/alias.json';
 
-  export let type;
-  export let stats;
+  let { type, stats } = $props();
 </script>
 
 <div class="content-row mainstat">
@@ -11,7 +11,7 @@
   </div>
   <div>
     {#each stats as stat, i}
-      {i !== 0 ? ' · ' : ''}{stat}
+      {i !== 0 ? ' · ' : ''}{ID[stat]}
     {/each}
   </div>
 </div>

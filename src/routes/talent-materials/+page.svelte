@@ -1,6 +1,7 @@
 <script>
   import { CHARACTERS_DATA, MATERIALS_DATA, RARITY } from '@store/gamedata';
   import { IMAGES } from '@store/sitedata';
+  import ID from '$lib/util/alias.json';
   import Icon from '$lib/components/Icon.svelte';
 
   const weekdays = ['Mon · Thur', 'Tue · Fri', 'Wed · Sat'];
@@ -63,7 +64,7 @@
             {/each}
           </div>
 
-          <h3>{material.id}</h3>
+          <h3>{ID[material.id]}</h3>
 
           <div class="content-row divider">
             {#each material.group as book}

@@ -3,6 +3,7 @@
   import { slide } from 'svelte/transition';
   import { localData } from '@store/sitedata';
   import { marked } from 'marked';
+  import ID from '$lib/util/alias.json';
 
   export let achievement;
   export let alt = false;
@@ -48,7 +49,7 @@
 >
   <div class="content-row">
     <h4 class:complete>{@html achievement.name}</h4>
-    <div class="label region">{achievement.region}</div>
+    <div class="label region">{ID[achievement.region]}</div>
     <div class="label version">v{achievement.version}</div>
     {#each achievement.commission as commission}
       <span class="label commission">{@html commission}</span>

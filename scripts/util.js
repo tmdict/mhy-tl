@@ -76,7 +76,7 @@ const buildThemes = (config, src, dest) => {
 
 switch (process.argv[2]) {
   case 'enum':
-    buildIdMap('./data/game', './src/lib/util');
+    buildIdMap('./src/data/game', './src/lib/util');
     break;
   case 'css':
     buildThemes(

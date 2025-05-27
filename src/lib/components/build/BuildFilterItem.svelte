@@ -1,6 +1,7 @@
 <script>
   import { filterlist } from "@store/filterlist.svelte.js"
   import { IMAGES } from '@store/sitedata';
+  import ID from '$lib/util/alias.json';
   import Icon from '$lib/components/Icon.svelte';
 
   let { name, type, item } = $props();
@@ -18,36 +19,19 @@
     onclick={() => filterlist.updateQuickFilter(name, item)}
     onkeydown={() => filterlist.updateQuickFilter(name, item)}
   >
-    {#if type === 'icon' && name === 'artifact'}
+    {#if type === 'icon'}
       <Icon
+        enhance={['artifact', 'weapon-type'].includes(name)}
         id={item}
-        src={IMAGES[`/src/lib/img/artifact/${item}.png`]}
-        size="45px"
-        margin="0 5px 0 0"
-      />
-    {:else if type === 'icon' && name === 'weapon-type'}
-      <Icon
-        id={item}
-        src={IMAGES[`/src/lib/img/weapon-type/${item}.png`]}
-        size="25px"
+        src={name === 'vision' ? `/img/${name}/${item}.svg` : IMAGES[`/src/lib/img/${name}/${item}.png`]}
+        size={name === 'artifact' ? '40px' : '25px'}
         margin="0 5px 0 0"
       />
       {#if ['vision', 'weapon-type'].includes(name)}
-        {item}
-      {/if}
-    {:else if type === 'icon' && name === 'vision'}
-      <Icon
-        enhance={false}
-        id={item}
-        src="/img/{name}/{item}.svg"
-        size="25px"
-        margin="0 5px 0 0"
-      />
-      {#if ['vision', 'weapon-type'].includes(name)}
-        {item}
+        {ID[item]}
       {/if}
     {:else}
-      {item}
+      {ID[item]}
     {/if}
   </div>
   <div

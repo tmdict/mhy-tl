@@ -1,6 +1,7 @@
 <script>
-  export let stats;
-  export let showHeader = true;
+  import ID from '$lib/util/alias.json';
+
+  let { stats, showHeader = true } = $props();
 </script>
 
 <div class="content-col substats">
@@ -11,7 +12,7 @@
     {#each stats as stat}
       {@const [id, value] = Object.entries(stat).flat()}
       <li>
-        {id}{#if value !== ''}: <span class="highlight">{value}</span>{/if}
+        {ID[id]}{#if value !== ''}: <span class="highlight">{value}</span>{/if}
       </li>
     {/each}
   </ol>

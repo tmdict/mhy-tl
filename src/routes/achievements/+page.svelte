@@ -3,6 +3,7 @@
   import cloneDeep from 'lodash.clonedeep';
   import { slide } from 'svelte/transition';
   import { localData } from '@store/sitedata';
+  import ID from '$lib/util/alias.json';
   import Achievement from '$lib/components/Achievement.svelte';
   import AchievementFaq from '$lib/components/content/AchievementFaq.svelte';
   import ManageData from '$lib/components/ManageData.svelte';
@@ -12,9 +13,9 @@
     import.meta.glob('@data/achievements/*.yml', { eager: true, import: 'default' })
   );
 
-  let searchTerm = '';
-  let filters = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'fontaine', 'natlan'];
+  const filters = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'fontaine', 'natlan'];
 
+  let searchTerm = '';
   let filteredList = cloneDeep(achievements);
   let currentFilter = { field: '', value: '' };
   let sortByCompletion = false;
@@ -95,8 +96,8 @@
         <a
           class:active={filter === currentFilter.value}
           href="/#"
-          on:click|preventDefault={() => (currentFilter = { field: 'region', value: filter })}>{filter}</a>
-        >{' · '}
+          on:click|preventDefault={() => (currentFilter = { field: 'region', value: filter })}>{ID[filter]}</a>
+        {' · '}
       {/each}
       <a href="/#" on:click|preventDefault={() => (sortByCompletion = !sortByCompletion)}>Incomplete</a>
       <span class="menu-separator"></span>
@@ -112,10 +113,7 @@
 {/if}
 
 {#each filteredList as achievement, i (achievement.achievement)}
-  <Achievement
-    {achievement}
-    alt={i % 2 != 0}
-  />
+  <Achievement {achievement} alt={i % 2 != 0} />
 {/each}
 
 <style lang="scss">

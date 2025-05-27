@@ -1,5 +1,6 @@
 <script>
   import { filterlist } from "@store/filterlist.svelte.js"
+  import ID from '$lib/util/alias.json';
   import BuildFilterItem from '$lib/components/build/BuildFilterItem.svelte';
 
   let { filter, showFilter = false } = $props()
@@ -13,7 +14,7 @@
 <div class="filter">
   <h4>
     <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}>  
-      {filter.name}
+      {ID[filter.name]}
       <span class="show">{#if showFilter}-{:else}+{/if}</span>
     </a
   ></h4>

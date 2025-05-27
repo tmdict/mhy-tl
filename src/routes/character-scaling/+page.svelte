@@ -82,10 +82,9 @@
 <h1>Character Scaling</h1>
 
 <div class="menu">
-  <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}
-    >Filters
-    {#if showFilter}-{:else}+{/if}</a
-  >
+  <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}>
+    Filters{#if showFilter}-{:else}+{/if}
+  </a>
   <span class="menu-separator"></span>
   <a href="/#" onclick={preventDefault(() => (showFaq = !showFaq))}>FAQ</a>
 </div>
@@ -108,7 +107,7 @@
     <div class="content-row top">
       <div class="col empty separator"></div>
       <div class="col mainstat separator">Recommended Main Stats</div>
-      <div class="col charscaling">Character Stat Scaling</div>
+      <div class="col charscaling">Character Scaling</div>
     </div>
     <div class="content-row">
       <div class="col name">Name</div>

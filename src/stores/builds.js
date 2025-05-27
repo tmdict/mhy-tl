@@ -13,13 +13,13 @@ export const buildtypes = [
 
 function parseBuilds(buildsData, charactersData) {
   const parsed = Object.values(buildsData).map((d) => {
-    d.default.tags = parser.tags(d.default, charactersData);
-    d.default.attr = {
-      vision: charactersData[d.default.character].vision,
-      weapon: charactersData[d.default.character].weapon,
-      released: charactersData[d.default.character].released
+    d.tags = parser.tags(d, charactersData);
+    d.attr = {
+      vision: charactersData[d.character].vision,
+      weapon: charactersData[d.character].weapon,
+      released: charactersData[d.character].released
     };
-    return d.default;
+    return d;
   });
   return parsed.sort(
     (a, b) => b.attr.released.localeCompare(a.attr.released) || b.character.localeCompare(a.character)
@@ -27,7 +27,7 @@ function parseBuilds(buildsData, charactersData) {
 }
 
 // Build Data
-const buildData = import.meta.glob('../../data/builds/*.yml', { eager: true });
+const buildData = import.meta.glob('@data/builds/*.yml', { eager: true, import: 'default' });
 export const BUILDS = parseBuilds(buildData, CHARACTERS_DATA);
 
 // Build Filters

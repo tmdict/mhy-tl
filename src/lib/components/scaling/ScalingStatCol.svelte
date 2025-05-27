@@ -2,6 +2,7 @@
   import { filterlist } from "@store/filterlist.svelte.js"
   import { CHARACTERS_DATA, RARITY } from '@store/gamedata';
   import { IMAGES } from '@store/sitedata';
+  import ID from '$lib/util/alias.json';
   import Icon from '$lib/components/Icon.svelte';
 
   let { data, baseKey, isRecommended = false, icon = false, fill = false } = $props();
@@ -33,11 +34,10 @@
       margin="0"
     />
   {:else if baseKey === 'name'}
-    <b>{CHARACTERS_DATA[data.id].data.name}</b>
+    <strong>{CHARACTERS_DATA[data.id].data.name}</strong>
   {:else}
-    {#if (windowWidth < 960 && baseKey !== 'constellation') || (windowWidth < 960 && baseKey == 'constellation' && !data[baseKey].length)}<b
-        >{baseKey}:</b
-      >
+    {#if (windowWidth < 960 && baseKey !== 'constellation') || (windowWidth < 960 && baseKey == 'constellation' && !data[baseKey].length)}
+      <strong>{baseKey}:</strong>
       {#if windowWidth < 960 && !data[baseKey].length}-{/if}
     {/if}
 
@@ -45,14 +45,17 @@
       {#if baseKey === 'constellation'}
         {#each Object.entries(base) as [cname, cstats]}
           {#if i}<br />{/if}
-          <b>{cname}:</b>
+          <strong>{cname}:</strong>
           {#each cstats as cstat, j}
             {j > 0 ? ', ' : ''}
             <span
-              class:highlight={filterlist.get('stat').common.includes(cstat) &&
-                filterlist.get('base').common.includes(baseKey)}
-              class={colors[cstat]}>{cstat}</span
-            >
+              class:highlight={
+                filterlist.get('stat').common.includes(cstat)
+                && filterlist.get('base').common.includes(baseKey)
+              }
+              class={colors[cstat]}>
+              {ID[cstat]}
+            </span>
           {/each}
         {/each}
       {:else}
@@ -63,7 +66,7 @@
             filterlist.get('base').common.includes(baseKey)}
           class:recommended={isRecommended &&
             data['recommended-talent'] &&
-            data['recommended-talent'].includes(baseKey)}>{base}</span
+            data['recommended-talent'].includes(baseKey)}>{ID[base]}</span
         >
       {/if}
     {/each}

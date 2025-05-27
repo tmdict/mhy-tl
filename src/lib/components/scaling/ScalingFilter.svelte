@@ -1,5 +1,6 @@
 <script>
   import { filterlist } from "@store/filterlist.svelte.js"
+  import ID from '$lib/util/alias.json';
 
   let { filterHeader, filterKey, filter } = $props();
 
@@ -19,15 +20,13 @@
         <a
           class:active={filterlist.get(filterKey).common.includes(key)}
           href="/#"
-          onclick={preventDefault(() => filterlist.updateCommonFilter(filterKey, key))}>{key}</a
+          onclick={preventDefault(() => filterlist.updateCommonFilter(filterKey, key))}>{ID[key]}</a
         >
       </li>
     {/each}
     <li><a href="/#" onclick={preventDefault(() => addAll(filter, filterKey))}>All</a></li>
     <li>
-      <a href="/#" onclick={preventDefault(() => filterlist.resetByType(filterKey))}
-        >Clear All</a
-      >
+      <a href="/#" onclick={preventDefault(() => filterlist.resetByType(filterKey))}>Clear All</a>
     </li>
   </ul>
 </div>

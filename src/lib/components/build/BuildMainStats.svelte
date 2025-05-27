@@ -1,8 +1,7 @@
 <script>
   import BuildMainStat from '$lib/components/build/BuildMainStat.svelte';
 
-  export let mainstat;
-  export let showHeader = true;
+  let { mainstat, showHeader = true } = $props();
 </script>
 
 <div class="content-col mainstats">
