@@ -79,7 +79,7 @@
   <title>Character Scaling</title>
 </svelte:head>
 
-<h1>Character Scaling</h1>
+<h1>Character Stat Scaling</h1>
 
 <div class="menu">
   <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}>
