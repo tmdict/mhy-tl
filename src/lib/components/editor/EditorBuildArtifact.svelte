@@ -3,10 +3,10 @@
   import { ARTIFACTS_DATA } from '@store/gamedata';
   import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
 
-  export let artifactKey;
+  let { artifactKey } = $props();
   const keys = editor.getKeys.artifact(artifactKey);
 
-  $: l10n = Object.values(ARTIFACTS_DATA).reduce((acc, a) => {
+  let l10n = Object.values(ARTIFACTS_DATA).reduce((acc, a) => {
     const name = a['data'] ? a['data']['name'] : a.id;
     return { ...acc, [a.id]: name };
   }, {});
