@@ -22,11 +22,11 @@
 </script>
 
 <svelte:head>
-  {#if validator.validateBuild(build, 'en')}
+  {#if validator.validateBuild(build)}
     <title>{CHARACTERS_DATA[build.character].data.name} · {build.name}</title>
   {/if}
 </svelte:head>
 
-{#if validator.validateBuild(build, 'en')}
+{#if validator.validateBuild(build)}
   <BuildFullPage {build} {link} />
 {/if}

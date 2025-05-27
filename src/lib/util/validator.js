@@ -1,6 +1,6 @@
 class Validator {
-  name(build, lang) {
-    return build.name && build.name[lang] !== '';
+  name(build) {
+    return build.name !== '';
   }
 
   character(build) {
@@ -158,7 +158,7 @@ class Validator {
     }
   }
 
-  validateBuild(build, lang) {
+  validateBuild(build) {
     try {
       if (!build.character) {
         return false;
@@ -168,7 +168,7 @@ class Validator {
         build.id !== '' &&
         build.type.length > 0 &&
         build.name &&
-        build.name[lang] !== '' &&
+        build.name !== '' &&
         build.weapon &&
         build.weapon.length > 0 &&
         build.artifact &&
