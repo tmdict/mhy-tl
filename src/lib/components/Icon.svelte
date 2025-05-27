@@ -1,15 +1,17 @@
 <script>
   import { tooltip } from '$lib/util/tooltip';
 
-  export let enhance = true;
-  export let src;
-  export let id;
-  export let title = id;
-  export let rarity = -1;
-  export let size = '60px';
-  export let margin = '10px';
-  export let hasTooltip = false;
-  export let tooltipContent = '';
+  let {
+    enhance = true,
+    src,
+    id,
+    title = id,
+    rarity = -1,
+    size = '60px',
+    margin = '10px',
+    hasTooltip = false,
+    tooltipContent = ''
+  } = $props();
 </script>
 
 <div
