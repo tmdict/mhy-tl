@@ -5,8 +5,8 @@
   import { localData } from '@store/sitedata';
   import { compressBuild, encodeBuild } from '$lib/util/codec';
 
-  export let build;
-  let encoded = '';
+  let { build } = $props();
+  let encoded = $state('');
   try {
     encoded = lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(build)));
   } catch (err) {
@@ -26,12 +26,16 @@
 </script>
 
 <div class="menu manage">
-  <a on:click|stopPropagation href="/builds/build#{encoded}">Link</a>
+  <a href="/builds/build#{encoded}">Link</a>
   <span class="menu-separator"></span>
-  <a on:click|stopPropagation href="/builds/edit#{encoded}">Edit</a>
+  <a href="/builds/edit#{encoded}">Edit</a>
   {#if 'id' in build}
     <span class="menu-separator"></span>
-    <a href="/#" on:click|stopPropagation|preventDefault={deleteBuild}>Delete</a>
+    <a href="/#" onclick={(e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      deleteBuild();
+    }}>Delete</a>
   {/if}
 </div>
 
