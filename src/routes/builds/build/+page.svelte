@@ -7,9 +7,14 @@
   import { validator } from '$lib/util/validator';
 
   const link = browser ? window.location.hash.substring(1) : '';
-  const build = (link.length > 0)
-    ? decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)))
-    : {};
+  let build = $state({});
+  try {
+    build = (link.length > 0)
+      ? decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)))
+      : {};
+  } catch (err) {
+    console.log(`Failed to generate build link: ${err}`);
+  }
 </script>
 
 <svelte:head>
@@ -20,4 +25,6 @@
 
 {#if validator.validateBuild(build)}
   <BuildFullPage {build} {link} />
+{:else}
+  <h1>Cannot load build :-(</h1>
 {/if}
