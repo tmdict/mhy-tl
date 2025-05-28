@@ -30,7 +30,6 @@
     if (link.length > 0) {
       try {
         const importedBuild = decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)));
-        console.log(importedBuild)
         editor.build = parser.importToEditor(importedBuild, editor.getKeys);
       } catch (err) {
         toast.error(`Cannot read build: ${err}`);
