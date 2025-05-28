@@ -120,7 +120,7 @@
         }
       
         @media only screen and (max-width: 940px) {
-          width: 60px;
+          width: 70px;
         }
       }
     }
@@ -152,7 +152,7 @@
         padding: 5px 0;
       
         @media only screen and (max-width: 940px) {
-          width: 125px;
+          width: 135px;
         }
       }
 
@@ -167,7 +167,7 @@
     }
 
     .artifacts {
-      min-width: 240px;
+      min-width: 230px;
       height: 70px;
       margin-left: 10px;
       padding: 10px;
@@ -175,7 +175,7 @@
       @media only screen and (max-width: 940px) {
         width: 100%;
         border-top: 1px dotted var(--theme-border-light);
-        margin-left: 140px;
+        margin-left: 150px;
         padding: 10px 0;
       }
     }
