@@ -1,6 +1,5 @@
 import fs from 'fs-extra';
 import { fdir } from 'fdir';
-import yaml from 'js-yaml';
 import path from 'path';
 
 // Builds an ENUM map of id to game terms
@@ -23,7 +22,7 @@ const buildIdMap = (src, dest, filename = 'enum.json', overwrite = false) => {
     const api = new fdir().glob('./**/*.json').withFullPaths().crawl(`${src}/${dir}`);
     const files = api.sync();
     files.forEach((f) => {
-      const content = yaml.load(fs.readFileSync(f, 'utf8'));
+      const content = JSON.parse(fs.readFileSync(f, 'utf8'));
 
       if ((!overwrite && !(content.id in data.name2id)) || overwrite) {
         // Duplicate when writing new file
