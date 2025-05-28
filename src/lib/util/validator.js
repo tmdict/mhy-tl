@@ -8,39 +8,33 @@ class Validator {
   }
 
   type(build) {
-    let invalid = {};
+    let invalid = '';
     if (build.type && build.type.some((t) => t.length > 20)) {
-      invalid = { en: 'Build Type length too long', zh: '种类字数太长' };
+      invalid = 'Build Type length too long';
     }
     if (build.type && build.type.length > 10) {
-      invalid = { en: 'Too many Build Type', zh: '种类太多' };
+      invalid = 'Too many Build Type';
     }
     if (build.type && build.type.length === 0) {
-      invalid = { en: 'Build Type', zh: '种类' };
+      invalid = 'Build Type';
     }
     return invalid;
   }
 
   weapons(build, getKeys, characters, weapons) {
-    let invalid = {};
+    let invalid = '';
     let selected = [];
     [...Array(build.num.weapons).keys()].forEach((i) => {
       const keys = getKeys.weapon(i);
       if (characters[build['character']] && weapons[build[keys.weapon]]) {
         // Check if current selected weapon matches character's weapon type
         if (characters[build['character']].weapon !== weapons[build[keys.weapon]].weaponType) {
-          invalid = {
-            en: `Invalid weapon type`,
-            zh: `武器类型错误`
-          };
+          invalid = 'Invalid weapon type';
         }
       }
       // If selected weapon is already present in another input
       if (selected.includes(build[keys.weapon])) {
-        invalid = {
-          en: `Duplicate weapon selected in row ${i + 1}`,
-          zh: `第${i + 1}行武器重复`
-        };
+        invalid = `Duplicate weapon selected in row ${i + 1}`;
       }
       // Keep track of weapons
       selected.push(build[keys.weapon]);
@@ -49,59 +43,44 @@ class Validator {
   }
 
   artifacts(build, getKeys) {
-    let invalid = {};
+    let invalid = '';
     [...Array(build.num.artifacts).keys()].forEach((i) => {
       const keys = getKeys.artifact(i);
       // If artifact is not set (i.e. on instantiation)
       if (!build[keys.artifact1]) {
-        invalid = {
-          en: `No primary artifact selected in row ${i + 1}`,
-          zh: `第${i + 1}行圣遗物空缺`
-        };
+        invalid = `No primary artifact selected in row ${i + 1}`;
       }
       // If 2 sets and second set is not set
       if (build[keys.sets] === 2 && !build[keys.artifact2]) {
-        invalid = {
-          en: `No secondary artifact selected in row ${i + 1}`,
-          zh: `第${i + 1}行圣遗物空缺`
-        };
+        invalid = `No secondary artifact selected in row ${i + 1}`;
       }
       // If 2 sets and first and second sets are the same set
       if (build[keys.sets] === 2 && build[keys.artifact1] === build[keys.artifact2]) {
-        invalid = {
-          en: `Duplicate artifact selected in row ${i + 1}`,
-          zh: `第${i + 1}行有重复圣遗物`
-        };
+        invalid = `Duplicate artifact selected in row ${i + 1}`;
       }
     });
     return invalid;
   }
 
   mainstat(build, mainstat, keys) {
-    let invalid = {};
+    let invalid = '';
     const key1 = keys.mainstat(mainstat, 0).mainstat;
     const key2 = keys.mainstat(mainstat, 1).mainstat;
     // If both mainstats are the same
     if (build.num.mainstat[mainstat] > 1 && build[key1] === build[key2]) {
-      invalid = {
-        en: `Duplicate main stat for ${mainstat}`,
-        zh: `${mainstat}有重复词条`
-      };
+      invalid = `Duplicate main stat for ${mainstat}`;
     }
     return invalid;
   }
 
   stats(build, getKeys) {
-    let invalid = {};
+    let invalid = '';
     let selected = [];
     [...Array(build.num.stats).keys()].forEach((i) => {
       const keys = getKeys.stat(i);
       // If same stats are selected
       if (selected.includes(build[keys.statName])) {
-        invalid = {
-          en: `Duplicate stats: ${build[keys.statName]}`,
-          zh: `${build[keys.statName]}有重复优先词条`
-        };
+        invalid = `Duplicate stats: ${build[keys.statName]}`;
       }
       // Keep track of stats encountered so far
       selected.push(build[keys.statName]);
@@ -115,36 +94,36 @@ class Validator {
       let result = true;
       if (!validator.name(build)) {
         result = false;
-        missing.push({ en: 'Build Name', zh: '名称' });
+        missing.push('Build Name');
       }
       if (!validator.character(build)) {
         result = false;
-        missing.push({ en: 'Character', zh: '人物' });
+        missing.push('Character');
       }
       const typeResult = validator.type(build);
-      if (Object.keys(typeResult).length !== 0) {
+      if (typeResult !== '') {
         result = false;
         missing.push(typeResult);
       }
       const weaponResult = validator.weapons(build, keys, characters, weapons);
-      if (Object.keys(weaponResult).length !== 0) {
+      if (weaponResult !== '') {
         result = false;
         missing.push(weaponResult);
       }
       const artifactResult = validator.artifacts(build, keys);
-      if (Object.keys(artifactResult).length !== 0) {
+      if (artifactResult !== '') {
         result = false;
         missing.push(artifactResult);
       }
       ['sand', 'goblet', 'circlet'].forEach((mainstat) => {
         const mainstatResult = validator.mainstat(build, mainstat, keys);
-        if (Object.keys(mainstatResult).length !== 0) {
+        if (mainstatResult !== '') {
           result = false;
           missing.push(mainstatResult);
         }
       });
       const statsResult = validator.stats(build, keys);
-      if (Object.keys(statsResult).length !== 0) {
+      if (statsResult !== '') {
         result = false;
         missing.push(statsResult);
       }

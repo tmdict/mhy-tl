@@ -96,7 +96,7 @@
         <p>Missing Required Fields:</p>
         <ul>
           {#each validated.missing as missing}
-            <li>{missing.en}</li>
+            <li>{missing}</li>
           {/each}
         </ul>
       </div>
