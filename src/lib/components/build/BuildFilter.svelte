@@ -16,8 +16,8 @@
     <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}>  
       {ID[filter.name]}
       <span class="show">{#if showFilter}-{:else}+{/if}</span>
-    </a
-  ></h4>
+    </a>
+  </h4>
   {#if showFilter}
     <div class="content-row">
       {#each filter.filter as item}
