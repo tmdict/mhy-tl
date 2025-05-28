@@ -30,10 +30,7 @@
       {i !== 0 ? ' · ' : ''}{ID[type]}
     {/each}
   </div>
-  <div
-    class="content-row build-info align-center"
-    style="--text-size: 0.8rem"
-  >
+  <div class="content-row build-info align-center" style="--text-size: 0.8rem">
     <div class="content-row">
       <div class="content-row weapons">
         <BuildWeapons weapons={build.weapon} />
@@ -61,7 +58,6 @@
 </div>
 
 <style lang="scss">
-
   .build {
     @media only screen and (max-width: 960px) {
       width: 440px;

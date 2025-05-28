@@ -6,19 +6,10 @@
   import { decodeBuild, extractBuild } from '$lib/util/codec';
   import { validator } from '$lib/util/validator';
 
-  let build = {};
-  let link = '';
-
-  if (browser) {
-    link = window.location.hash.substring(1);
-    if (link.length > 0) {
-      try {
-        build = decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)));
-      } catch (err) {
-        console.log(`Decode failed: ${err}`);
-      }
-    }
-  }
+  const link = browser ? window.location.hash.substring(1) : '';
+  const build = (link.length > 0)
+    ? decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)))
+    : {};
 </script>
 
 <svelte:head>
