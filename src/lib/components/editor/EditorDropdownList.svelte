@@ -1,16 +1,22 @@
 <script>
   import { slide } from 'svelte/transition';
 
-  export let id;
-  export let name = id;
-  export let label = '';
-  export let list = [];
-  export let selected = list[0];
-  export let width = '200px';
-  export let inputWidth = 'auto';
-  export let exclude = [];
-  export let groups = [];
-  export let l10n = {}; // For overriding display value
+  let {
+    id,
+    name = id,
+    label = '',
+    list,
+    selected = $bindable(),
+    width = '200px',
+    inputWidth = 'auto',
+    exclude = [],
+    groups = [],
+    l10n = {} // For overriding display value
+  } = $props();
+
+  if (selected === undefined && list.length > 0) {
+    selected = list[0];
+  }
 </script>
 
 <div transition:slide class="input-field" style="--input-width: {width}">

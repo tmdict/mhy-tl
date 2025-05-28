@@ -162,14 +162,14 @@
               role="button"
               tabindex="0"
               onclick={() =>
-                editor.build.removeInput(
+                editor.removeInput(
                   'weapons',
-                  Object.values(editor.build.getKeys.weapon(editor.build['num']['weapons'] - 1))
+                  Object.values(editor.getKeys.weapon(editor.build['num']['weapons'] - 1))
                 )}
               onkeydown={() =>
-                editor.build.removeInput(
+                editor.removeInput(
                   'weapons',
-                  Object.values(editor.build.getKeys.weapon(editor.build['num']['weapons'] - 1))
+                  Object.values(editor.getKeys.weapon(editor.build['num']['weapons'] - 1))
                 )}>-</span
             >
           {/if}
@@ -178,8 +178,8 @@
               class="add-input"
               role="button"
               tabindex="0"
-              onclick={() => editor.build.addInput('weapons', 2)}
-              onkeydown={() => editor.build.addInput('weapons', 2)}>+</span
+              onclick={() => editor.addInput('weapons', 2)}
+              onkeydown={() => editor.addInput('weapons', 2)}>+</span
             >
           {/if}
         </div>
