@@ -22,4 +22,4 @@
   }
 </script>
 
-<a href="/#" onclick={preventDefault(() => download($localData, `genshin.tmdict.com`))}>Export Data</a>
+<a href="/#" onclick={preventDefault(() => download($localData, 'genshin.tmdict.com'))}>Export Data</a>
