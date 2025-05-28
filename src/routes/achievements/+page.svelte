@@ -9,19 +9,20 @@
   import ManageData from '$lib/components/ManageData.svelte';
   import { highlight } from '$lib/util/highlight';
 
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+  const filters = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'fontaine', 'natlan'];
   const achievements = Object.values(
     import.meta.glob('@data/achievements/*.yml', { eager: true, import: 'default' })
   );
 
-  const filters = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'fontaine', 'natlan'];
 
-  let searchTerm = '';
-  let filteredList = cloneDeep(achievements);
-  let currentFilter = { field: '', value: '' };
-  let sortByCompletion = false;
-  let showFaq = false;
+  let searchTerm = $state('');
+  let currentFilter = $state({ field: '', value: '' });
+  let sortByCompletion = $state(false);
+  let showFaq = $state(false);
 
-  $: {
+  let filteredList = $derived.by(() => {
+    let tempList = cloneDeep(achievements);
     // 1. filter by search
     if (searchTerm !== '') {
       // Update what language to search for
@@ -41,19 +42,22 @@
       if (results.length > 0) {
         // Highlight and return search results
         // Deep clone results so highlight doesn't modify original results
-        filteredList = highlight(cloneDeep(results));
+        tempList = highlight(cloneDeep(results));
       }
     } else {
-      filteredList = cloneDeep(achievements);
+      tempList = cloneDeep(achievements);
     }
     // 2. filter by static filters
-    filteredList =
+    tempList =
       currentFilter.field == ''
-        ? filteredList
-        : cloneDeep(filteredList.filter((achievement) => achievement[currentFilter.field] === currentFilter.value));
+        ? tempList
+        : cloneDeep(tempList.filter((achievement) => achievement[currentFilter.field] === currentFilter.value));
     // 3. Sort
-    filteredList = sortByCompletion ? sortBy(filteredList, 'achievements') : sortBy(filteredList, 'version');
-  }
+    tempList = sortByCompletion ? sortBy(tempList, 'achievements') : sortBy(tempList, 'version');
+
+    return tempList;
+  })
+
 
   function sortBy(list, sortField) {
     if (sortField === 'achievements') {
@@ -86,7 +90,7 @@
     <input class="search" bind:value={searchTerm} />
 
     <div class="menu">
-      <a href="/#" on:click|preventDefault={() => (showFaq = !showFaq)}>FAQ</a>
+      <a href="/#" onclick={preventDefault(() => (showFaq = !showFaq))}>FAQ</a>
       <span class="menu-separator"></span>
       <ManageData />
     </div>
@@ -96,12 +100,12 @@
         <a
           class:active={filter === currentFilter.value}
           href="/#"
-          on:click|preventDefault={() => (currentFilter = { field: 'region', value: filter })}>{ID[filter]}</a>
+          onclick={preventDefault(() => (currentFilter = { field: 'region', value: filter }))}>{ID[filter]}</a>
         {' · '}
       {/each}
-      <a href="/#" on:click|preventDefault={() => (sortByCompletion = !sortByCompletion)}>Incomplete</a>
+      <a href="/#" onclick={preventDefault(() => (sortByCompletion = !sortByCompletion))}>Incomplete</a>
       <span class="menu-separator"></span>
-      <a href="/#" on:click|preventDefault={clearAll}>Clear All</a>
+      <a href="/#" onclick={preventDefault(clearAll)}>Clear All</a>
     </div>
   </div>
 </div>
