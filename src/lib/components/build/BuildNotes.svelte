@@ -7,9 +7,9 @@
     <span class="build-heading">Talent Priority:</span>
     {build.talent}
     <br />
+    <br />
   {/if}
   {#if build.notes}
-    <br />
     <div class="build-heading">Notes</div>
     {build.notes}
   {/if}
