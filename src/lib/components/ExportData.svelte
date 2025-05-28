@@ -5,7 +5,7 @@
 
   function download(content, filename, contentType = 'application/json;charset=utf-8') {
     // Generate date postfix for file name
-    let date = new Date();
+    const date = new Date();
     const datetime = new Date(date.getTime() - date.getTimezoneOffset() * 60 * 1000)
       .toISOString()
       .split('T')[0]

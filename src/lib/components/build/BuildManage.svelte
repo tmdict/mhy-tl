@@ -26,9 +26,15 @@
 </script>
 
 <div class="menu manage">
-  <a href="/builds/build#{encoded}">Link</a>
+  <a href="/builds/build#{encoded}"
+    onclick={(e) => e.stopPropagation()}
+    onkeydown={(e) => e.stopPropagation()}
+  >Link</a>
   <span class="menu-separator"></span>
-  <a href="/builds/edit#{encoded}">Edit</a>
+  <a href="/builds/edit#{encoded}"
+    onclick={(e) => e.stopPropagation()}
+    onkeydown={(e) => e.stopPropagation()}
+  >Edit</a>
   {#if 'id' in build}
     <span class="menu-separator"></span>
     <a href="/#" onclick={(e) => {

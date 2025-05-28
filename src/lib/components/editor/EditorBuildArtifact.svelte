@@ -6,7 +6,7 @@
   let { artifactKey } = $props();
   const keys = editor.getKeys.artifact(artifactKey);
 
-  let l10n = Object.values(ARTIFACTS_DATA).reduce((acc, a) => {
+  const l10n = Object.values(ARTIFACTS_DATA).reduce((acc, a) => {
     const name = a['data'] ? a['data']['name'] : a.id;
     return { ...acc, [a.id]: name };
   }, {});
