@@ -118,6 +118,10 @@
         .build-name {
           color: var(--theme-site-secondary-main);
         }
+      
+        @media only screen and (max-width: 940px) {
+          width: 60px;
+        }
       }
     }
 
@@ -148,7 +152,7 @@
         padding: 5px 0;
       
         @media only screen and (max-width: 940px) {
-          padding: 5px 0;
+          width: 125px;
         }
       }
 
@@ -163,7 +167,7 @@
     }
 
     .artifacts {
-      min-width: 260px;
+      min-width: 240px;
       height: 70px;
       margin-left: 10px;
       padding: 10px;
@@ -171,7 +175,8 @@
       @media only screen and (max-width: 940px) {
         width: 100%;
         border-top: 1px dotted var(--theme-border-light);
-        margin-left: 150px;
+        margin-left: 140px;
+        padding: 10px 0;
       }
     }
   }

@@ -243,7 +243,7 @@
 
   @media only screen and (max-width: 960px) {
     .secondary .group {
-      width: 195px;
+      width: 130px;
     }
   }
 

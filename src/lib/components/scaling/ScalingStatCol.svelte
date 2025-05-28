@@ -81,6 +81,7 @@
 
     @media only screen and (max-width: 960px) {
       width: 130px;
+      margin-left: 10px;
     }
   }
 
