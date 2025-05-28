@@ -9,10 +9,6 @@
     placeholder = '',
     width = '200px'
   } = $props();
-
-  if (value === undefined) {
-    value = '';
-  }
 </script>
 
 <div transition:slide class="input-field" style="--input-width: {width}">

@@ -1,7 +1,6 @@
 <script>
   import { browser } from '$app/environment';
-  import { setContext, onMount } from 'svelte';
-  import { writable } from 'svelte/store';
+  import { onMount, setContext } from 'svelte';
   import dark from '$lib/style/themes/dark.json';
   import light from '$lib/style/themes/light.json';
 
@@ -10,16 +9,13 @@
   // Reference: https://dev.to/josef/theming-in-svelte-with-css-variables-53kd
   const availableThemes = { [dark.name]: dark, [light.name]: light };
   const defaultTheme = dark.name;
-  let currentTheme = browser ? localStorage.getItem('tmdict.mhy.theme') || defaultTheme : defaultTheme;
+  let currentTheme = $state(browser ? localStorage.getItem('tmdict.mhy.theme') || defaultTheme : defaultTheme);
+  let theme = $derived(availableThemes[currentTheme]);
 
-  // Set up theme store, holding current theme object
-  const theme = writable(availableThemes[currentTheme]);
   setContext('theme', {
-    // Expose theme store through context makes store readonly
-    theme: theme,
+    getTheme: () => theme,
     toggle: () => {
       currentTheme = currentTheme === dark.name ? light.name : dark.name;
-      theme.update((t) => ({ ...t, ...availableThemes[currentTheme] }));
       browser && localStorage.setItem('tmdict.mhy.theme', currentTheme);
       setRootColors(availableThemes[currentTheme]);
     }

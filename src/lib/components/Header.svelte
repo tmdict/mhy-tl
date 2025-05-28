@@ -9,11 +9,11 @@
   import TopLight from '$lib/img/top_l.png?enhanced';
   import TopLightAlt from '$lib/img/top_alt_l.png?enhanced';
 
-  const { theme, toggle } = getContext('theme');
+  const { getTheme, toggle } = getContext('theme');
   let spin = $state(false);
   let isHover = $state(false);
 
-  let isDark = $derived($theme.name === 'dark');
+  let isDark = $derived(getTheme().name === 'dark');
 
   function spinIcon(duration) {
     spin = true;
