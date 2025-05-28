@@ -48,7 +48,7 @@
   .filter-item {
     display: flex;
     font-size: 0.8em;
-    margin: 5px;
+    margin: 10px 5px 5px;
     align-items: stretch;
     border: 1px solid var(--theme-border-light);
 
