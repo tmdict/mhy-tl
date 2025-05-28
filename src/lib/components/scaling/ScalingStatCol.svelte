@@ -37,7 +37,7 @@
     <strong>{CHARACTERS_DATA[data.id].data.name}</strong>
   {:else}
     {#if (windowWidth < 960 && baseKey !== 'constellation') || (windowWidth < 960 && baseKey == 'constellation' && !data[baseKey].length)}
-      <strong>{baseKey}:</strong>
+      <strong>{ID[baseKey]}:</strong>
       {#if windowWidth < 960 && !data[baseKey].length}-{/if}
     {/if}
 

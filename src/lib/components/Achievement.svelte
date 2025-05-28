@@ -5,9 +5,7 @@
   import { marked } from 'marked';
   import ID from '$lib/util/alias.json';
 
-  export let achievement;
-  export let alt = false;
-  let expand = false;
+  let { achievement, alt = false, expand = false } = $props();
 
   // Update local storage
   function updateChecklist(achievementName, todo) {
@@ -36,7 +34,7 @@
   trueUpChecklist(achievement);
 
   // Go through checklist to determine achievement completion status
-  $: complete = Object.values($localData['achievements'][achievement.achievement]).every((c) => c === true);
+  let complete = $derived(Object.values($localData['achievements'][achievement.achievement]).every((c) => c === true));
 </script>
 
 <div
@@ -44,8 +42,8 @@
   class:alt
   role="button"
   tabindex="0"
-  on:click={() => (expand = !expand)}
-  on:keydown={() => (expand = !expand)}
+  onclick={() => (expand = !expand)}
+  onkeydown={() => (expand = !expand)}
 >
   <div class="content-row">
     <h4 class:complete>{@html achievement.name}</h4>
@@ -55,18 +53,33 @@
       <span class="label commission">{@html commission}</span>
     {/each}
   </div>
-  <div class="description" role="presentation" on:click|stopPropagation on:keydown|stopPropagation>
+  <div
+    class="description"
+    role="presentation"
+    onclick={(e) => e.stopPropagation()}
+    onkeydown={(e) => e.stopPropagation()}
+  >
     {@html achievement.description}
   </div>
   {#if expand}
     <div transition:slide class="notes-checklist">
-      <span class="notes" role="presentation" on:click|stopPropagation on:keydown|stopPropagation>{@html marked(achievement.notes)}</span>
+      <span
+        class="notes"
+        role="presentation"
+        onclick={(e) => e.stopPropagation()}
+        onkeydown={(e) => e.stopPropagation()}
+      >
+        {@html marked(achievement.notes)}
+      </span>
       <h5>Checklist</h5>
       <ul>
         {#each [...Array(achievement.checklist).keys()] as todo}
           <li>
             <input
-              on:click|stopPropagation={() => updateChecklist(achievement.achievement, todo)}
+              onclick={(e) => {
+                e.stopPropagation();
+                updateChecklist(achievement.achievement, todo);
+              }}
               class="checklist"
               type="checkbox"
               id="{achievement.achievement}-{todo}"
@@ -74,7 +87,14 @@
               value={achievement.checklistItem[todo + 1]}
               checked={$localData['achievements'][achievement.achievement][todo]}
             />
-            <label role="presentation" on:click|stopPropagation on:keydown|stopPropagation for="{achievement.achievement}-{todo}">{achievement.checklistItem[todo + 1]}</label>
+            <label
+              role="presentation"
+              onclick={(e) => e.stopPropagation()}
+              onkeydown={(e) => e.stopPropagation()}
+              for="{achievement.achievement}-{todo}"
+            >
+              {achievement.checklistItem[todo + 1]}
+            </label>
           </li>
         {/each}
       </ul>
