@@ -4,7 +4,8 @@
   import ID from '$lib/util/alias.json';
   import EditorAutoComplete from '$lib/components/editor/EditorAutoComplete.svelte';
 
-  let selectedOptions = editor.build['type'] ? editor.build['type'] : [];
+  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+  let selectedOptions = $state(editor.build['type'] ? editor.build['type'] : []);
 
   const handleSubmit = (selectedValue) => {
     if (selectedOptions.indexOf(selectedValue) === -1) {
@@ -34,7 +35,7 @@
       <span class="label">{ID[option]}</span>
     {/each}
     {#if selectedOptions.length > 0}
-      <a class="clear" on:click|preventDefault={clearAll} href="/#">Clear All</a>
+      <a class="clear" onclick={preventDefault(clearAll)} href="/#">Clear All</a>
     {/if}
   </div>
 </div>
