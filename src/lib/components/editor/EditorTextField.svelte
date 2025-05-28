@@ -1,17 +1,25 @@
 <script>
   import { slide } from 'svelte/transition';
 
-  export let id;
-  export let name = id;
-  export let label = '';
-  export let value = '';
-  export let placeholder = '';
-  export let width = '200px';
+  let {
+    id,
+    name = id,
+    label = '',
+    value = $bindable(),
+    placeholder = '',
+    width = '200px'
+  } = $props();
+
+  $effect(() => {
+    if (value === undefined) {
+      value = '';
+    }
+  });
 </script>
 
 <div transition:slide class="input-field" style="--input-width: {width}">
   <label for={id}>{label}</label>
-  <input class="input" type="text" {placeholder} {id} {name} bind:value />
+  <input class="input" type="text" {placeholder} {id} {name} bind:value={value} />
 </div>
 
 <style lang="scss">
