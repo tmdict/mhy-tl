@@ -3,18 +3,18 @@
   import { WEAPONS_DATA } from '@store/gamedata';
   import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
 
-  export let weaponKey;
-  export let availableWeapons; // Pass in from parent so there's no error when character is chanegd to '-'
+  // Pass in from parent so there's no error when character is changed to '-'
+  let { weaponKey, availableWeapons } = $props();
   const keys = editor.getKeys.weapon(weaponKey);
 
-  $: l10n = Object.values(availableWeapons).reduce((acc, w) => {
+  let l10n = $derived(Object.values(availableWeapons).reduce((acc, w) => {
     const names = w.reduce((wacc, wname) => {
       const name =
         WEAPONS_DATA[wname]['data'] && WEAPONS_DATA[wname]['data'] ? WEAPONS_DATA[wname]['data']['name'] : wname;
       return { ...wacc, [wname]: name };
     }, {});
     return { ...acc, ...names };
-  }, {});
+  }, {}));
 </script>
 
 <div class="content-row">
