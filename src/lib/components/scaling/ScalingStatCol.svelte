@@ -80,7 +80,7 @@
     overflow-wrap: break-word;
 
     @media only screen and (max-width: 960px) {
-      width: 100%;
+      width: 130px;
     }
   }
 

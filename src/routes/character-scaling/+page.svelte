@@ -126,28 +126,32 @@
 
   {#each filteredScalings as data, n (data.id)}
     <div class="content-row row" class:alt={n % 2 === 1} transition:fade>
-      <div class="content-row group basic separator">
-        <ScalingStatCol {data} baseKey="icon" icon={true} />
-        <ScalingStatCol {data} baseKey="name" />
-        <ScalingStatCol {data} baseKey="base-stat" />
+      <div class="primary">
+        <div class="content-row group basic separator">
+          <ScalingStatCol {data} baseKey="icon" icon={true} />
+          <ScalingStatCol {data} baseKey="name" />
+          <ScalingStatCol {data} baseKey="base-stat" />
+        </div>
       </div>
 
-      <div class="content-row group artifact separator">
-        <ScalingStatCol {data} baseKey="sand" />
-        <ScalingStatCol {data} baseKey="goblet" />
-        <ScalingStatCol {data} baseKey="circlet" />
-      </div>
+      <div class="secondary">
+        <div class="content-row group artifact separator">
+          <ScalingStatCol {data} baseKey="sand" />
+          <ScalingStatCol {data} baseKey="goblet" />
+          <ScalingStatCol {data} baseKey="circlet" />
+        </div>
 
-      <div class="content-row group talent">
-        <ScalingStatCol {data} baseKey="a" isRecommended={true} />
-        <ScalingStatCol {data} baseKey="e" isRecommended={true} />
-        <ScalingStatCol {data} baseKey="q" isRecommended={true} />
-      </div>
+        <div class="content-row group talent">
+          <ScalingStatCol {data} baseKey="a" isRecommended={true} />
+          <ScalingStatCol {data} baseKey="e" isRecommended={true} />
+          <ScalingStatCol {data} baseKey="q" isRecommended={true} />
+        </div>
 
-      <div class="content-row group ascension">
-        <ScalingStatCol {data} baseKey="a1" />
-        <ScalingStatCol {data} baseKey="a4" />
-        <ScalingStatCol {data} baseKey="constellation" fill={true} />
+        <div class="content-row group ascension">
+          <ScalingStatCol {data} baseKey="a1" />
+          <ScalingStatCol {data} baseKey="a4" />
+          <ScalingStatCol {data} baseKey="constellation" fill={true} />
+        </div>
       </div>
     </div>
   {/each}
@@ -224,14 +228,22 @@
     }
   }
 
-  .group {
+  .primary, .secondary {
     display: inline-flex;
-    align-items: center;
-    font-size: 0.96em;
+
+    .group {
+      align-items: center;
+    }
 
     @media only screen and (max-width: 960px) {
       width: 100%;
       border-bottom: 1px dotted var(--theme-border-light);
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    .secondary .group {
+      width: 195px;
     }
   }
 

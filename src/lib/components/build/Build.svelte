@@ -171,7 +171,7 @@
       @media only screen and (max-width: 940px) {
         width: 100%;
         border-top: 1px dotted var(--theme-border-light);
-        margin-left: 0;
+        margin-left: 150px;
       }
     }
   }
