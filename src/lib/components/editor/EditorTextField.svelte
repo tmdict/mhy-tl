@@ -10,11 +10,9 @@
     width = '200px'
   } = $props();
 
-  $effect(() => {
-    if (value === undefined) {
-      value = '';
-    }
-  });
+  if (value === undefined) {
+    value = '';
+  }
 </script>
 
 <div transition:slide class="input-field" style="--input-width: {width}">

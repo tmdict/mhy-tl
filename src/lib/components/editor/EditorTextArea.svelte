@@ -1,15 +1,21 @@
 <script>
-  export let id;
-  export let name = id;
-  export let label = '';
-  export let value = '';
-  export let width = '520px';
-  export let height = '200px';
+  let {
+    id,
+    name = id,
+    label = '',
+    value = $bindable(),
+    width = '520px',
+    height = '200px'
+  } = $props();
+
+  if (value === undefined) {
+    value = '';
+  }
 </script>
 
 <div class="input-field" style="--input-width: {width}; --input-height: {height}">
   <label for={id}>{label}</label>
-  <textarea class="input" type="textarea" {id} {name} bind:value></textarea>
+  <textarea class="input" type="textarea" {id} {name} bind:value={value}></textarea>
 </div>
 
 <style lang="scss">
