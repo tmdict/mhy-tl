@@ -31,6 +31,7 @@
       updated: '2025-06-22'
     },
     {
+      new: true,
       name: 'Links',
       url: 'links',
       updated: '2025-06-22'
