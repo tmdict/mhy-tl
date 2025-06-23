@@ -12,6 +12,24 @@
       url: 'https://www.miyoushe.com/ys/collection/10772',
       description: '全角色收益曲线、圣遗物思路推荐、参考面板属性。'
     },
+    {
+      name: '角色攻略（含一图流）',
+      lang: ['中文'],
+      url: 'https://www.miyoushe.com/ys/collection/613',
+      description: '角色攻略合集，侧重详细的养成、配队、机制介绍，以“图片+文字”结合。'
+    },
+    {
+      name: '原神角色一图流攻略',
+      lang: ['中文'],
+      url: 'https://www.miyoushe.com/ys/collection/10772',
+      description: '只讲重点，全角色的一图流攻略。'
+    },
+    {
+      name: '角色攻略合集',
+      lang: ['中文'],
+      url: 'https://www.miyoushe.com/ys/collection/15697',
+      description: '角色攻略合集。'
+    },
   ];
 
   const achievements = [

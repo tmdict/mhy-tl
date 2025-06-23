@@ -33,4 +33,5 @@ stats:
 talent: 'E = Q'
 
 source:
+  - ysjsgl: default
   - ysytl: default

@@ -35,4 +35,5 @@ stats:
 talent: 'Q'
 
 source:
+  - ysjsgl: default
   - ysytl: default

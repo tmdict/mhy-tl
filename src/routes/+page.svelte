@@ -6,13 +6,13 @@
       new: true,
       name: 'Character Builds',
       url: 'builds',
-      updated: '2025-05-22'
+      updated: '2025-06-22'
     },
     {
       new: true,
       name: 'Character Stat Scaling',
       url: 'character-scaling',
-      updated: '2025-05-22'
+      updated: '2025-06-22'
     },
     {
       name: 'Commission Achievements',
@@ -28,18 +28,18 @@
       new: true,
       name: 'Talent Materials',
       url: 'talent-materials',
-      updated: '2025-05-22'
+      updated: '2025-06-22'
     },
     {
       name: 'Links',
       url: 'links',
-      updated: '2024-02-11'
+      updated: '2025-06-22'
     },
     {
       new: true,
       name: 'Weekly Boss Materials',
       url: 'weekly-boss-materials',
-      updated: '2025-05-22'
+      updated: '2025-06-22'
     }
   ].sort((a, b) => b.updated.localeCompare(a.updated));
 </script>

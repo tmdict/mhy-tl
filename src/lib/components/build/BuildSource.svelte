@@ -2,7 +2,8 @@
   let { references } = $props();
   const sources = {
     ysmxt: { name: '原神冒险团', url: 'https://www.miyoushe.com/ys/collection/10772' },
-    ysytl: { name: '原神角色一图流攻略', url: 'https://www.miyoushe.com/ys/collection/2558464' },
+    ysjsgl: { name: 'Asgater: 角色攻略（含一图流）', url: 'https://www.miyoushe.com/ys/collection/613' },
+    ysytl: { name: '荧岁镇太辰: 原神角色一图流攻略', url: 'https://www.miyoushe.com/ys/collection/2558464' },
     kqm: { name: 'Keqing Mains', url: 'https://keqingmains.com/' }
   };
 

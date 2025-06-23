@@ -37,7 +37,7 @@
   </p>
 
   <p>
-    The reference build list is similar to infographics, providing summary-style information while offering some of the interactivity and accessibility of a proper guide. Build data are primarily aggregated and condensed from <a href="https://www.miyoushe.com/ys/collection/10772">原神冒险团</a> and <a href="https://www.miyoushe.com/ys/collection/2558464">原神角色一图流攻略</a>, supplemented by <a href="https://keqingmains.com/">KQM</a>.
+    The reference build list is similar to infographics, providing summary-style information while offering some of the interactivity and accessibility of a proper guide. Build data are primarily aggregated and condensed from guides from <a href="https://www.miyoushe.com/ys/home/43">米游社</a>, supplemented by <a href="https://keqingmains.com/">KQM</a>.
   </p>
 
   <p>
