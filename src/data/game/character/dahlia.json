@@ -1,0 +1,11 @@
+{
+  "id": "dahlia",
+  "type": "character",
+  "rarity": 4,
+  "vision": "hydro",
+  "weapon": "sword",
+  "released": "5.7.0",
+  "data": {
+    "name": "Dahlia"
+  }
+}

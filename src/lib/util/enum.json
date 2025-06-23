@@ -372,7 +372,10 @@
     "escoffier",
     "ifa",
     "sequence-of-solitude",
-    "symphonist-of-scents"
+    "symphonist-of-scents",
+    "dahlia",
+    "skirk",
+    "azurelight"
   ],
   "name2id": {
     "geo": 0,
@@ -747,6 +750,9 @@
     "escoffier": 369,
     "ifa": 370,
     "sequence-of-solitude": 371,
-    "symphonist-of-scents": 372
+    "symphonist-of-scents": 372,
+    "dahlia": 373,
+    "skirk": 374,
+    "azurelight": 375
   }
 }

@@ -298,6 +298,19 @@
       "circlet": ["crit-abbr"],
       "recommended-talent": ["q"]
     },
+    "dahlia": {
+      "base-stat": ["hp"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk", "hp"],
+      "a1": [],
+      "a4": ["hp"],
+      "constellation": [],
+      "sand": ["er", "hp"],
+      "goblet": ["hp"],
+      "circlet": ["hp"],
+      "recommended-talent": ["q"]
+    },
     "dehya": {
       "base-stat": ["hp"],
       "a": ["atk", "hp"],
@@ -1104,6 +1117,22 @@
       "goblet": ["hp"],
       "circlet": ["hp"],
       "recommended-talent": ["a"]
+    },
+    "skirk": {
+      "base-stat": ["cdmg"],
+      "a": ["atk"],
+      "e": [],
+      "q": [],
+      "a1": [],
+      "a4": [],
+      "constellation": [
+        { "C1": ["atk"] },
+        { "C6": ["atk"] }
+      ],
+      "sand": ["atk"],
+      "goblet": ["cryo", "atk"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["e", "q"]
     },
     "sucrose": {
       "base-stat": ["anemo"],

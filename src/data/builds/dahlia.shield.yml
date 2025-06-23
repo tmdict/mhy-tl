@@ -1,0 +1,38 @@
+---
+character: dahlia
+c: 0
+name: 'Shield Support'
+type:
+  - shield
+  - support
+
+weapon:
+  - name: favonius-sword
+    r: 0
+  - name: sacrificial-sword
+    r: 0
+
+artifact:
+  - set: [noblesse-oblige]
+    p: 4
+  - set: [emblem-of-severed-fate, tenacity-of-the-millelith]
+    p: 2
+
+mainstat:
+  sand:
+    - er
+    - hp
+  goblet:
+    - hp
+  circlet:
+    - hp
+
+stats:
+  - hp: '36,000-40,000'
+  - er: '190-220%'
+  - cr: '35%'
+
+talent: 'Q'
+
+source:
+  - ysytl: default

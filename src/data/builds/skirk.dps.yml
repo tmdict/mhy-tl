@@ -1,0 +1,36 @@
+---
+character: skirk
+c: 2
+name: 'DPS'
+type:
+  - dps
+
+weapon:
+  - name: azurelight
+    r: 0
+  - name: finale-of-the-deep
+    r: 0
+
+artifact:
+  - set: [finale-of-the-deep-galleries]
+    p: 4
+  - set: [marechaussee-hunter]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+  goblet:
+    - cryo
+    - atk
+  circlet:
+    - crit
+
+stats:
+  - crit: '70-80% / 150-190%'
+  - atk: '1,200'
+
+talent: 'E = Q'
+
+source:
+  - ysytl: default

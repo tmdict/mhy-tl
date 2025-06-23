@@ -4,5 +4,7 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "the-game-before-the-gate",
-  "characters": []
+  "characters": [
+    "skirk"
+  ]
 }

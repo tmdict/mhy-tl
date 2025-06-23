@@ -1,0 +1,11 @@
+{
+  "id": "skirk",
+  "type": "character",
+  "rarity": 5,
+  "vision": "cryo",
+  "weapon": "sword",
+  "released": "5.7.0",
+  "data": {
+    "name": "Skirk"
+  }
+}
