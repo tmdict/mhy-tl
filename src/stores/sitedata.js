@@ -1,13 +1,20 @@
 import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
-export const IMAGES = import.meta.glob(
+const rawImages = import.meta.glob(
   "$lib/img/**/*.png", {
     eager: true,
 	  import: 'default',
     query: { enhanced: true },
   }
 );
+
+export const IMAGES = {
+  ...rawImages,
+  ...Object.fromEntries(['anemo', 'geo', 'electro', 'dendro', 'hydro', 'pyro'].map(element =>
+    [`/src/lib/img/character/traveler-${element}.png`, rawImages['/src/lib/img/character/traveler.png']]
+  ))
+};
 
 function createLocalData() {
   const importedAchievements = import.meta.glob('@data/achievements/*.yml', { eager: true, import: 'default' });
