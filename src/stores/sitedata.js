@@ -4,7 +4,7 @@ import { writable } from 'svelte/store';
 const rawImages = import.meta.glob(
   "$lib/img/**/*.png", {
     eager: true,
-	  import: 'default',
+    import: 'default',
     query: { enhanced: true },
   }
 );
