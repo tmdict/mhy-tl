@@ -10,7 +10,7 @@
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
     "process:css": "node scripts/css.js",
     "process:enum": "node scripts/enum.js",
-    "clean": "rimraf bin dist"
+    "clean": "rimraf bin dist build"
   },
   "devDependencies": {
     "@modyfi/vite-plugin-yaml": "^1.0.4",
