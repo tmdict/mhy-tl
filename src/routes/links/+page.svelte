@@ -111,7 +111,7 @@
     {
       name: 'Ysin',
       lang: ['中文'],
-      url: 'https://yuanshen.xin/',
+      url: 'https://ufoda0304.github.io/',
       description: '角色练度评测。'
     },
     {
