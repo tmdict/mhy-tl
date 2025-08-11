@@ -545,6 +545,23 @@
       "circlet": ["atk"],
       "recommended-talent": ["q", "e"]
     },
+    "ineffa": {
+      "base-stat": ["cr"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": ["atk"],
+      "a4": ["atk"],
+      "constellation": [
+        { "C1": ["atk"] },
+        { "C2": ["atk"] },
+        { "C6": ["atk"] }
+      ],
+      "sand": ["atk", "em"],
+      "goblet": ["atk", "em"],
+      "circlet": ["cr"],
+      "recommended-talent": ["e", "q"]
+    },
     "ifa": {
       "base-stat": ["atk"],
       "a": ["atk"],

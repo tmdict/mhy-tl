@@ -375,7 +375,10 @@
     "symphonist-of-scents",
     "dahlia",
     "skirk",
-    "azurelight"
+    "azurelight",
+    "ineffa",
+    "flame-forged-insight",
+    "fractured-halo"
   ],
   "name2id": {
     "geo": 0,
@@ -753,6 +756,9 @@
     "symphonist-of-scents": 372,
     "dahlia": 373,
     "skirk": 374,
-    "azurelight": 375
+    "azurelight": 375,
+    "ineffa": 376,
+    "flame-forged-insight": 377,
+    "fractured-halo": 378
   }
 }

@@ -1,0 +1,11 @@
+{
+  "id": "ineffa",
+  "type": "character",
+  "rarity": 5,
+  "vision": "electro",
+  "weapon": "polearm",
+  "released": "5.8.0",
+  "data": {
+    "name": "Ineffa"
+  }
+}

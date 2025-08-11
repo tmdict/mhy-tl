@@ -1,0 +1,40 @@
+---
+character: ineffa
+c: 2
+name: 'Off-Field DPS'
+type:
+  - sub-dps
+
+weapon:
+  - name: fractured-halo
+    r: 0
+  - name: ballad-of-the-fjords
+    r: 0
+
+artifact:
+  - set: [gilded-dreams]
+    p: 4
+  - set: [thundering-fury]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+    - em
+  goblet:
+    - atk
+    - em
+  circlet:
+    - crit
+
+stats:
+  - crit: '70% / 140-170%'
+  - atk: '2,000'
+  - em: '200'
+  - er: ''
+
+talent: 'E > Q'
+
+source:
+  - ysjsgl: default
+  - ysytl: default

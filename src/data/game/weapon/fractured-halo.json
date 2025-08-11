@@ -1,0 +1,11 @@
+{
+  "id": "fractured-halo",
+  "type": "weapon",
+  "rarity": 5,
+  "weaponType": "polearm",
+  "subStat": "cdmg",
+  "data": {
+    "name": "Fractured Halo",
+    "passiveDescription": "After an Elemental Skill or Elemental Burst is used, ATK is increased by {{24//30//36//42//48%}} for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal {{40//50//60//70//80%}} more Lunar-Charged DMG."
+  }
+}
