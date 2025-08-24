@@ -1,7 +1,7 @@
 ---
 character: layla
 c: 0
-name: 'EM Support'
+name: "EM Support"
 type:
   - shield
   - support
@@ -30,12 +30,12 @@ mainstat:
     - crit
 
 stats:
-  - hp: '41,000'
-  - er: ''
-  - crit: ''
-  - atk: '1,100'
+  - hp: "41,000"
+  - er: ""
+  - crit: ""
+  - atk: "1,100"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

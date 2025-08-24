@@ -7,12 +7,12 @@ checklist: 11
 name: "Hidden in Plain Sight"
 description: "Help Sango and Ryuuji solve the case."
 commission:
-- "Bantan Sango Case File"
-- "Bantan Sango Case File: The Search"
-- "Bantan Sango Case File: Misdirection"
-- "Bantan Sango Case File: The Right Identity"
-- "Bantan Sango Case File: Case-Closing Time"
-notes: | 
+  - "Bantan Sango Case File"
+  - "Bantan Sango Case File: The Search"
+  - "Bantan Sango Case File: Misdirection"
+  - "Bantan Sango Case File: The Right Identity"
+  - "Bantan Sango Case File: Case-Closing Time"
+notes: |
   Complete Bantan Sango Case File series.
 checklistItem:
   1: "Bantan Sango Case File"

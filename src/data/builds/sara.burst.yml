@@ -1,7 +1,7 @@
 ---
 character: kujou-sara
 c: 6
-name: 'Burst Support'
+name: "Burst Support"
 type:
   - burst
   - support
@@ -29,9 +29,9 @@ mainstat:
     - crit
 
 stats:
-  - er: '190-220%'
-  - crit: '80% / 145%'
-  - atk: '1,600'
+  - er: "190-220%"
+  - crit: "80% / 145%"
+  - atk: "1,600"
 
 talent: E > Q
 

@@ -7,8 +7,8 @@ checklist: 3
 name: "Not Your Average Joe"
 description: "Brew a special blend of coffee."
 commission:
-- "Get a Drink at Least!"
-notes: | 
+  - "Get a Drink at Least!"
+notes: |
   Successfully brew the coffee in “Get a Drink at Least!” twice (any version) to trigger the Special Blend version of the quest, completing it (choice of special ingredient is irrelevant) grants the achievement.
 checklistItem:
   1: "Get a Drink at Least! x1"

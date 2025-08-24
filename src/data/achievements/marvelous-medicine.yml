@@ -6,8 +6,8 @@ region: mondstadt
 checklist: 4
 name: "Marvelous Medicine"
 commission:
-- "Miracle Medicine"
-- "Recuperating From a Severe Illness"
+  - "Miracle Medicine"
+  - "Recuperating From a Severe Illness"
 description: "Cure Anna’s illness."
 notes: |
   Can be completed three times, after which you can receive the achievement “Marvelous Medicine” by completing “Recuperating From a Severe Illness”.

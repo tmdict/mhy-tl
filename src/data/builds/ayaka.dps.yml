@@ -1,7 +1,7 @@
 ---
 character: kamisato-ayaka
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,14 +27,14 @@ mainstat:
     - atk
 
 stats:
-  - cdmg: '255%'
-  - atk: '2,100'
-  - er: ''
-  - cr: '35-50%'
+  - cdmg: "255%"
+  - atk: "2,100"
+  - er: ""
+  - cr: "35-50%"
 
-talent: 'Q > A > E'
+talent: "Q > A > E"
 
-notes: 'Dash > Q > E > Dash > 3 times NA/CA combo > Swap'
+notes: "Dash > Q > E > Dash > 3 times NA/CA combo > Swap"
 source:
   - ysmxt: default
   - kqm: https://keqingmains.com/ayaka/

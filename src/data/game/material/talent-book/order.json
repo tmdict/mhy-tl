@@ -9,11 +9,5 @@
   ],
   "day": 3,
   "region": 5,
-  "characters": [
-    "lynette",
-    "wriothesley",
-    "chevreuse",
-    "arlecchino",
-    "emilie"
-  ]
+  "characters": ["lynette", "wriothesley", "chevreuse", "arlecchino", "emilie"]
 }

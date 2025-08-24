@@ -7,8 +7,8 @@ checklist: 6
 name: "Scholarly in Sumeru"
 description: "Answer 6 different questions correctly."
 commission:
-- "Akademiya Q&A"
-notes: | 
+  - "Akademiya Q&A"
+notes: |
   Giving the correct answers to all six questions grants the achievement. The player will get three random questions, the correct answers are: Amurta, Spantamad, Wall of Samiel, Divine Tree, Sumpter Beast, and Fungi.
 
   While you can only gets 3 questions, you can quit the game after the first two then re-enter (caution: do not answer the 3rd question), repeat until all 6 questions have been answered, then quit and re-enter one final time, to receive the achievement in one go.

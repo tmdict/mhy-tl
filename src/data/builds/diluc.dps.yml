@@ -1,7 +1,7 @@
 ---
 character: diluc
 c: 6
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70-85% / 140-165%'
-  - atk: '2,200'
-  - em: '80-275'
-  - er: ''
+  - crit: "70-85% / 140-165%"
+  - atk: "2,200"
+  - em: "80-275"
+  - er: ""
 
-talent: 'A > E > Q'
+talent: "A > E > Q"
 
-notes: 'Q Vaporize, E > NAx2'
+notes: "Q Vaporize, E > NAx2"
 
 source:
   - ysmxt: default

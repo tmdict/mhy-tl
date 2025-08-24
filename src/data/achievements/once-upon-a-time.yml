@@ -7,7 +7,7 @@ checklist: 1
 name: "Once Upon a Time…"
 description: "Finish listening to the tale of The Wrath of Haishan in “Cliffhanger.”"
 commission:
-- "Cliffhanger"
+  - "Cliffhanger"
 notes: |
   All three NPCs will appear during the commission (prior to version 3.5 only two random NPCs would appear). Each will give you a different story excerpt.
 

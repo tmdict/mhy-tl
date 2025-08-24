@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "all-devouring-narwhal",
-  "characters": [
-    "furina",
-    "gaming",
-    "mualani"
-  ]
+  "characters": ["furina", "gaming", "mualani"]
 }

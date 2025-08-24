@@ -1,19 +1,19 @@
 <script>
-  import { getContext } from 'svelte';
-  import GitIcon from '$lib/svg/git.svelte';
-  import ToggleDark from '$lib/svg/moon.svelte';
-  import ToggleLight from '$lib/svg/sun.svelte';
+  import { getContext } from "svelte";
+  import GitIcon from "$lib/svg/git.svelte";
+  import ToggleDark from "$lib/svg/moon.svelte";
+  import ToggleLight from "$lib/svg/sun.svelte";
 
-  import Top from '$lib/img/top.png?enhanced';
-  import TopAlt from '$lib/img/top_alt.png?enhanced';
-  import TopLight from '$lib/img/top_l.png?enhanced';
-  import TopLightAlt from '$lib/img/top_alt_l.png?enhanced';
+  import Top from "$lib/img/top.png?enhanced";
+  import TopAlt from "$lib/img/top_alt.png?enhanced";
+  import TopLight from "$lib/img/top_l.png?enhanced";
+  import TopLightAlt from "$lib/img/top_alt_l.png?enhanced";
 
-  const { getTheme, toggle } = getContext('theme');
+  const { getTheme, toggle } = getContext("theme");
   let spin = $state(false);
   let isHover = $state(false);
 
-  let isDark = $derived(getTheme().name === 'dark');
+  let isDark = $derived(getTheme().name === "dark");
 
   function spinIcon(duration) {
     spin = true;
@@ -21,9 +21,7 @@
   }
 
   function getTopImg() {
-    return isDark 
-      ? (isHover ? TopAlt : Top)
-      : (isHover ? TopLightAlt : TopLight);
+    return isDark ? (isHover ? TopAlt : Top) : isHover ? TopLightAlt : TopLight;
   }
 
   function updateTheme() {

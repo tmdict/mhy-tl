@@ -1,24 +1,26 @@
 <script>
-  import { browser } from '$app/environment';
-  import { onMount, setContext } from 'svelte';
-  import dark from '$lib/style/themes/dark.json';
-  import light from '$lib/style/themes/light.json';
+  import { browser } from "$app/environment";
+  import { onMount, setContext } from "svelte";
+  import dark from "$lib/style/themes/dark.json";
+  import light from "$lib/style/themes/light.json";
 
   let { children } = $props();
 
   // Reference: https://dev.to/josef/theming-in-svelte-with-css-variables-53kd
   const availableThemes = { [dark.name]: dark, [light.name]: light };
   const defaultTheme = dark.name;
-  let currentTheme = $state(browser ? localStorage.getItem('tmdict.mhy.theme') || defaultTheme : defaultTheme);
+  let currentTheme = $state(
+    browser ? localStorage.getItem("tmdict.mhy.theme") || defaultTheme : defaultTheme,
+  );
   let theme = $derived(availableThemes[currentTheme]);
 
-  setContext('theme', {
+  setContext("theme", {
     getTheme: () => theme,
     toggle: () => {
       currentTheme = currentTheme === dark.name ? light.name : dark.name;
-      browser && localStorage.setItem('tmdict.mhy.theme', currentTheme);
+      browser && localStorage.setItem("tmdict.mhy.theme", currentTheme);
       setRootColors(availableThemes[currentTheme]);
-    }
+    },
   });
 
   // Set CSS vars on mount

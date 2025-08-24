@@ -7,8 +7,8 @@ checklist: 3
 name: "Office on the Avenue"
 description: "Witness various miscellaneous matters in the Court of Fontaine."
 commission:
-- "Tales From the Court"
-notes: | 
+  - "Tales From the Court"
+notes: |
   Complete all three versions of the quest.
 checklistItem:
   1: "Livre"

@@ -1,7 +1,7 @@
 ---
 character: yelan
 c: 2
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - burst
   - sub-dps
@@ -28,14 +28,14 @@ mainstat:
     - crit
 
 stats:
-  - er: '140-200%'
-  - hp: '28,000-35,000'
-  - crit: '80% / 205%'
-  - atk: '1,300'
+  - er: "140-200%"
+  - hp: "28,000-35,000"
+  - crit: "80% / 205%"
+  - atk: "1,300"
 
-talent: 'Q > E > A'
+talent: "Q > E > A"
 
-notes: 'Q > Ex2 > Q, Burt > Skill provides an extra wave of projectiles. Skill > Burst allows Yelan to collect more particles.'
+notes: "Q > Ex2 > Q, Burt > Skill provides an extra wave of projectiles. Skill > Burst allows Yelan to collect more particles."
 
 source:
   - ysmxt: default

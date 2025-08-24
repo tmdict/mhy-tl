@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "stormterror-dvalin",
-  "characters": [
-    "bennett",
-    "diluc",
-    "jean"
-  ]
+  "characters": ["bennett", "diluc", "jean"]
 }

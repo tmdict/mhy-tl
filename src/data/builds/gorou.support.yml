@@ -1,7 +1,7 @@
 ---
 character: gorou
 c: 2
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -28,14 +28,14 @@ mainstat:
     - def
 
 stats:
-  - er: '255%'
-  - def: '1,100'
-  - cr: '60%'
-  - atk: '1,100'
+  - er: "255%"
+  - def: "1,100"
+  - cr: "60%"
+  - atk: "1,100"
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'Q > Swap'
+notes: "Q > Swap"
 
 source:
   - ysmxt: default

@@ -1,7 +1,7 @@
 ---
 character: xiao
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,13 +27,13 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 165-195%'
-  - atk: '2,300-2,400'
-  - er: ''
+  - crit: "80% / 165-195%"
+  - atk: "2,300-2,400"
+  - er: ""
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
-notes: 'E > E > Q > Plunge combo'
+notes: "E > E > Q > Plunge combo"
 
 source:
   - ysmxt: default

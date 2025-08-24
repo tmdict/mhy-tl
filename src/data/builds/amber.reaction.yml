@@ -1,7 +1,7 @@
 ---
 character: amber
 c: 4
-name: 'Melt DPS'
+name: "Melt DPS"
 type:
   - dps
   - reaction
@@ -28,11 +28,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60% / 120%'
-  - atk: '2,400'
-  - em: '120'
+  - crit: "60% / 120%"
+  - atk: "2,400"
+  - em: "120"
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
 source:
   - ysmxt: default

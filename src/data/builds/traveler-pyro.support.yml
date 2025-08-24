@@ -1,7 +1,7 @@
 ---
 character: traveler-pyro
 c: 6
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -27,12 +27,12 @@ mainstat:
     - crit
 
 stats:
-  - er: '200%'
-  - crit: ''
-  - atk: ''
-  - def: ''
+  - er: "200%"
+  - crit: ""
+  - atk: ""
+  - def: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysytl: default

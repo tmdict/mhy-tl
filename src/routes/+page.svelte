@@ -1,46 +1,46 @@
 <script>
-  import Top from '$lib/components/content/Top.svelte';
+  import Top from "$lib/components/content/Top.svelte";
 
   const links = [
     {
       new: true,
-      name: 'Character Builds',
-      url: 'builds',
-      updated: '2025-08-10'
+      name: "Character Builds",
+      url: "builds",
+      updated: "2025-08-10",
     },
     {
       new: true,
-      name: 'Character Stat Scaling',
-      url: 'character-scaling',
-      updated: '2025-08-10'
+      name: "Character Stat Scaling",
+      url: "character-scaling",
+      updated: "2025-08-10",
     },
     {
-      name: 'Commission Achievements',
-      url: 'achievements',
-      updated: '2025-01-19'
+      name: "Commission Achievements",
+      url: "achievements",
+      updated: "2025-01-19",
     },
     {
-      name: 'Craftable Weapons',
-      url: 'craftable-weapons',
-      updated: '2024-09-14'
-    },
-    {
-      new: true,
-      name: 'Talent Materials',
-      url: 'talent-materials',
-      updated: '2025-08-10'
+      name: "Craftable Weapons",
+      url: "craftable-weapons",
+      updated: "2024-09-14",
     },
     {
       new: true,
-      name: 'Links',
-      url: 'links',
-      updated: '2025-06-22'
+      name: "Talent Materials",
+      url: "talent-materials",
+      updated: "2025-08-10",
     },
     {
-      name: 'Weekly Boss Materials',
-      url: 'weekly-boss-materials',
-      updated: '2025-08-10'
-    }
+      new: true,
+      name: "Links",
+      url: "links",
+      updated: "2025-06-22",
+    },
+    {
+      name: "Weekly Boss Materials",
+      url: "weekly-boss-materials",
+      updated: "2025-08-10",
+    },
   ].sort((a, b) => b.updated.localeCompare(a.updated));
 </script>
 
@@ -65,7 +65,7 @@
 <style lang="scss">
   a {
     color: var(--theme-text-normal);
-      
+
     &:hover {
       text-decoration: none;
     }

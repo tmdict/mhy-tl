@@ -4,8 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "warden-of-the-last-oasis",
-  "characters": [
-    "baizhu",
-    "freminet"
-  ]
+  "characters": ["baizhu", "freminet"]
 }

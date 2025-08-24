@@ -1,7 +1,7 @@
 ---
 character: bennett
 c: 1
-name: 'Burst Support'
+name: "Burst Support"
 type:
   - burst
   - support
@@ -28,14 +28,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60% / 120%'
-  - atk: '1,600'
-  - er: '200-255%'
-  - em: '80'
+  - crit: "60% / 120%"
+  - atk: "1,600"
+  - er: "200-255%"
+  - em: "80"
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'Q > Vaporize'
+notes: "Q > Vaporize"
 
 source:
   - ysmxt: default

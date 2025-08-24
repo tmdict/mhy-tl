@@ -1,7 +1,7 @@
 ---
 character: razor
 c: 4
-name: 'Physical DPS'
+name: "Physical DPS"
 type:
   - dps
 
@@ -26,12 +26,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60-75% / 120-150%'
-  - atk: '2,500'
-  - er: ''
-  - em: ''
+  - crit: "60-75% / 120-150%"
+  - atk: "2,500"
+  - er: ""
+  - em: ""
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
 source:
   - ysmxt: default

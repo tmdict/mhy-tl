@@ -1,42 +1,44 @@
 <script>
-  import { browser } from '$app/environment';
-  import { slide } from 'svelte/transition';
-  import { MISC_DATA, RARITY, WEAPONS_DATA } from '@store/gamedata';
-  import { localData } from '@store/sitedata';
-  import { IMAGES } from '@store/sitedata';
-  import CraftableWeaponsFaq from '$lib/components/content/CraftableWeaponsFaq.svelte';
-  import Icon from '$lib/components/Icon.svelte';
-  import ManageData from '$lib/components/ManageData.svelte';
+  import { browser } from "$app/environment";
+  import { slide } from "svelte/transition";
+  import { MISC_DATA, RARITY, WEAPONS_DATA } from "@store/gamedata";
+  import { localData } from "@store/sitedata";
+  import { IMAGES } from "@store/sitedata";
+  import CraftableWeaponsFaq from "$lib/components/content/CraftableWeaponsFaq.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import ManageData from "$lib/components/ManageData.svelte";
 
   let showFaq = $state(false);
 
   // Initialize craftable weapon data
-  if ($localData['billets']) {
-    if (Object.keys($localData['billets']).length === 0) {
-      $localData = { ...$localData, billets: MISC_DATA['craftable-weapons'].data };
+  if ($localData["billets"]) {
+    if (Object.keys($localData["billets"]).length === 0) {
+      $localData = { ...$localData, billets: MISC_DATA["craftable-weapons"].data };
     } else {
-      Object.keys(MISC_DATA['craftable-weapons'].data).forEach((billetType) => {
+      Object.keys(MISC_DATA["craftable-weapons"].data).forEach((billetType) => {
         // If new billet group
-        if (!(billetType in $localData['billets'])) {
-          $localData['billets'] = {
-            ...$localData['billets'],
-            [billetType]: MISC_DATA['craftable-weapons'].data[billetType]
+        if (!(billetType in $localData["billets"])) {
+          $localData["billets"] = {
+            ...$localData["billets"],
+            [billetType]: MISC_DATA["craftable-weapons"].data[billetType],
           };
         }
         // If new weapon
-        Object.keys(MISC_DATA['craftable-weapons'].data[billetType]).forEach((weaponType) => {
-          Object.keys(MISC_DATA['craftable-weapons'].data[billetType][weaponType]).forEach((weapon) => {
-            if (!(weapon in $localData['billets'][billetType][weaponType])) {
-              $localData['billets'][billetType][weaponType] = {
-                ...$localData['billets'][billetType][weaponType],
-                [weapon]: 0
-              };
-            }
-          });
+        Object.keys(MISC_DATA["craftable-weapons"].data[billetType]).forEach((weaponType) => {
+          Object.keys(MISC_DATA["craftable-weapons"].data[billetType][weaponType]).forEach(
+            (weapon) => {
+              if (!(weapon in $localData["billets"][billetType][weaponType])) {
+                $localData["billets"][billetType][weaponType] = {
+                  ...$localData["billets"][billetType][weaponType],
+                  [weapon]: 0,
+                };
+              }
+            },
+          );
         });
       });
     }
-    browser && localStorage.setItem('tmdict.genshin.data', JSON.stringify($localData));
+    browser && localStorage.setItem("tmdict.genshin.data", JSON.stringify($localData));
   }
 
   function preventDefault(fn) {
@@ -47,9 +49,9 @@
   }
 
   function updateCount(billet, type, name, count) {
-    const updated = $localData['billets'][billet][type][name] + count;
-    $localData['billets'][billet][type][name] = (updated < 0) ? 0 : ((updated > 5) ? 5 : updated);
-    browser && localStorage.setItem('tmdict.genshin.data', JSON.stringify($localData));
+    const updated = $localData["billets"][billet][type][name] + count;
+    $localData["billets"][billet][type][name] = updated < 0 ? 0 : updated > 5 ? 5 : updated;
+    browser && localStorage.setItem("tmdict.genshin.data", JSON.stringify($localData));
   }
 </script>
 
@@ -72,7 +74,7 @@
 {/if}
 
 <div id="content">
-  {#each Object.entries($localData['billets']) as [billet, craftables]}
+  {#each Object.entries($localData["billets"]) as [billet, craftables]}
     <div class="content-row billet">
       {#each Object.entries(craftables) as [type, weapons]}
         <div class="content-col type">
@@ -89,23 +91,26 @@
                   rarity={RARITY[weapon]}
                   hasTooltip={true}
                   tooltipContent={`
-                    <span class="heading">${details ? details['name'] : weapon}</span><br />
+                    <span class="heading">${details ? details["name"] : weapon}</span><br />
                     <span class="highlight">Sub Stat:</span> ${
-                      WEAPONS_DATA[weapon] ? WEAPONS_DATA[weapon].subStat : ''
-                  }<br />
+                      WEAPONS_DATA[weapon] ? WEAPONS_DATA[weapon].subStat : ""
+                    }<br />
                     ${
                       details
-                        ? details['passiveDescription']
+                        ? details["passiveDescription"]
                             .replace(/{{/g, '<span style="color:var(--theme-site-secondary-main)">')
-                            .replace(/}}/g, '</span>')
-                            .replace(/\/{2}/g, '</span>/<span style="color:var(--theme-site-secondary-main)">')
-                        : ''
+                            .replace(/}}/g, "</span>")
+                            .replace(
+                              /\/{2}/g,
+                              '</span>/<span style="color:var(--theme-site-secondary-main)">',
+                            )
+                        : ""
                     }
                   `}
                 />
               </div>
               <div class="content-col info">
-                <div class="name">{details ? details['name'] : weapon}</div>
+                <div class="name">{details ? details["name"] : weapon}</div>
 
                 <div class="content-row">
                   <span

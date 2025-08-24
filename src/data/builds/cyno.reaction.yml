@@ -1,7 +1,7 @@
 ---
 character: cyno
 c: 2
-name: 'Elemental Reaction'
+name: "Elemental Reaction"
 type:
   - dps
   - reaction
@@ -27,12 +27,12 @@ mainstat:
     - crit
 
 stats:
-  - er: '120%'
-  - crit: '80% / 205%'
-  - atk: '1,300-1,800'
-  - em: '265-345'
+  - er: "120%"
+  - crit: "80% / 205%"
+  - atk: "1,300-1,800"
+  - em: "265-345"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

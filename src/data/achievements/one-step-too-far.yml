@@ -7,8 +7,8 @@ checklist: 1
 name: "One Step Too Far"
 description: "Slip up in a race against Hilmi…"
 commission:
-- "Run, Hilmi, Run!"
-notes: | 
+  - "Run, Hilmi, Run!"
+notes: |
   Losing the race against Hilmi will grant the achievement.
 checklistItem:
   1: "Lose the race"

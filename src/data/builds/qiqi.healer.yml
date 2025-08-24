@@ -1,7 +1,7 @@
 ---
 character: qiqi
 c: 1
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -29,11 +29,11 @@ mainstat:
     - atk
 
 stats:
-  - atk: '2,000-2,600'
-  - er: ''
-  - heal: '75%'
+  - atk: "2,000-2,600"
+  - er: ""
+  - heal: "75%"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

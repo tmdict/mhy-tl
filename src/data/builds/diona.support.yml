@@ -1,7 +1,7 @@
 ---
 character: diona
 c: 6
-name: 'Support'
+name: "Support"
 type:
   - healer
   - shield
@@ -30,13 +30,13 @@ mainstat:
     - heal
 
 stats:
-  - er: ''
-  - hp: '33,000'
-  - atk: '1,200'
+  - er: ""
+  - hp: "33,000"
+  - atk: "1,200"
 
-talent: 'E = Q'
+talent: "E = Q"
 
-notes: 'Hold E'
+notes: "Hold E"
 
 source:
   - ysmxt: default

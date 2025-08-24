@@ -1,7 +1,7 @@
 ---
 character: yoimiya
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 185%'
-  - atk: '2,300'
-  - em: ''
-  - er: ''
+  - crit: "80% / 185%"
+  - atk: "2,300"
+  - em: ""
+  - er: ""
 
-talent: 'A > E > Q'
+talent: "A > E > Q"
 
-notes: 'E > (while E) A'
+notes: "E > (while E) A"
 
 source:
   - ysmxt: default

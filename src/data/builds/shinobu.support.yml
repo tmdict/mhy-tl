@@ -1,7 +1,7 @@
 ---
 character: kuki-shinobu
 c: 0
-name: 'Support'
+name: "Support"
 type:
   - healer
   - support
@@ -30,11 +30,11 @@ mainstat:
     - hp
 
 stats:
-  - hp: '27,000'
-  - em: '780'
-  - atk: '1,100'
+  - hp: "27,000"
+  - em: "780"
+  - atk: "1,100"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

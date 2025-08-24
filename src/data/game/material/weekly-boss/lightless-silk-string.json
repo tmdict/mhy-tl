@@ -4,10 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "all-devouring-narwhal",
-  "characters": [
-    "charlotte",
-    "navia",
-    "chiori",
-    "ororon"
-  ]
+  "characters": ["charlotte", "navia", "chiori", "ororon"]
 }

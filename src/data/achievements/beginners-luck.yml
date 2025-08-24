@@ -6,7 +6,7 @@ region: liyue
 checklist: 1
 name: "Beginner’s Luck"
 commission:
-- "Diamond in the Rough…"
+  - "Diamond in the Rough…"
 description: "Select the highest-value jade on your first try."
 notes: ""
 checklistItem:

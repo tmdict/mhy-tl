@@ -6,8 +6,8 @@ region: mondstadt
 checklist: 2
 name: "“Dear Daddy…”"
 commission:
-- "Pigeons Go AWOL"
-- "A Boy’s Letter"
+  - "Pigeons Go AWOL"
+  - "A Boy’s Letter"
 description: "Hear Timmie’s story."
 notes: |
   Finding Draff’s Letter during the Hilichurl version of “Pigeons Go AWOL” unlocks the commission “A Boy’s Letter” (it is not guaranteed the next day), which will lead to this achievement.

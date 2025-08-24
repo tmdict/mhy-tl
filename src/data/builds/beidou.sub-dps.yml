@@ -1,7 +1,7 @@
 ---
 character: beidou
 c: 2
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -28,14 +28,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60-75% / 120-150%'
-  - atk: '2,000'
-  - er: '190%'
-  - em: ''
+  - crit: "60-75% / 120-150%"
+  - atk: "2,000"
+  - er: "190%"
+  - em: ""
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'Q > Swap'
+notes: "Q > Swap"
 
 source:
   - ysmxt: default

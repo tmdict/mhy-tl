@@ -1,70 +1,85 @@
 <script>
-  import { slide, fade } from 'svelte/transition';
-  import { filterlist } from "@store/filterlist.svelte"
-  import { CHARACTERS_DATA, MISC_DATA } from '@store/gamedata';
-  import ScalingFaq from '$lib/components/content/ScalingFaq.svelte';
-  import ScalingFilter from '$lib/components/scaling/ScalingFilter.svelte';
-  import ScalingStatCol from '$lib/components/scaling/ScalingStatCol.svelte';
+  import { slide, fade } from "svelte/transition";
+  import { filterlist } from "@store/filterlist.svelte";
+  import { CHARACTERS_DATA, MISC_DATA } from "@store/gamedata";
+  import ScalingFaq from "$lib/components/content/ScalingFaq.svelte";
+  import ScalingFilter from "$lib/components/scaling/ScalingFilter.svelte";
+  import ScalingStatCol from "$lib/components/scaling/ScalingStatCol.svelte";
 
   const statFilter = [
-    'hp',
-    'atk',
-    'def',
-    'em',
-    'crit-abbr',
-    'cr',
-    'cdmg',
-    'er',
-    'pyro',
-    'cryo',
-    'hydro',
-    'electro',
-    'geo',
-    'anemo',
-    'dendro',
-    'physical',
-    'heal',
-    'base-atk',
-    'normal-attack',
-    'elemental-skill',
-    'elemental-burst'
+    "hp",
+    "atk",
+    "def",
+    "em",
+    "crit-abbr",
+    "cr",
+    "cdmg",
+    "er",
+    "pyro",
+    "cryo",
+    "hydro",
+    "electro",
+    "geo",
+    "anemo",
+    "dendro",
+    "physical",
+    "heal",
+    "base-atk",
+    "normal-attack",
+    "elemental-skill",
+    "elemental-burst",
   ];
 
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
-  const baseFilter = ['base-stat', 'a', 'e', 'q', 'a1', 'a4', 'constellation', 'sand', 'goblet', 'circlet'];
+  const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
+  const baseFilter = [
+    "base-stat",
+    "a",
+    "e",
+    "q",
+    "a1",
+    "a4",
+    "constellation",
+    "sand",
+    "goblet",
+    "circlet",
+  ];
 
   const allScalings = Object.keys(MISC_DATA.scaling.data)
-    .sort((a, b) => CHARACTERS_DATA[b].released.localeCompare(CHARACTERS_DATA[a].released) || b.localeCompare(a))
+    .sort(
+      (a, b) =>
+        CHARACTERS_DATA[b].released.localeCompare(CHARACTERS_DATA[a].released) ||
+        b.localeCompare(a),
+    )
     .map((char) => ({ ...MISC_DATA.scaling.data[char], id: char }));
 
   let showFilter = $state(true);
   let showFaq = $state(false);
 
-  filterlist.init(['stat', 'base']);
-  filterlist.updateCommonFilter('base', 'base-stat');
-  statFilter.forEach((stat) => filterlist.updateCommonFilter('stat', stat));
+  filterlist.init(["stat", "base"]);
+  filterlist.updateCommonFilter("base", "base-stat");
+  statFilter.forEach((stat) => filterlist.updateCommonFilter("stat", stat));
 
   let filteredScalings = $derived.by(() => {
     return allScalings.filter((item) => {
       for (const base of baseFilter) {
         // Go through each base filter and check if it is selected
-        if (!filterlist.get('base').common.includes(base)) {
+        if (!filterlist.get("base").common.includes(base)) {
           continue;
         }
-        if (base === 'constellation') {
+        if (base === "constellation") {
           // constellation is an array of Object
           for (const c of item[base]) {
             if (
               Object.values(c)
                 .flat()
-                .some((e) => filterlist.get('stat').common.includes(e))
+                .some((e) => filterlist.get("stat").common.includes(e))
             ) {
               return true;
             }
           }
         } else {
           // If at least one element in current scaling base is selected in stats filter
-          if (item[base].some((e) => filterlist.get('stat').common.includes(e))) {
+          if (item[base].some((e) => filterlist.get("stat").common.includes(e))) {
             return true;
           }
         }
@@ -97,8 +112,8 @@
 
 {#if showFilter}
   <div class="filters" transition:slide>
-    <ScalingFilter filterHeader={'keys'} filterKey={'base'} filter={baseFilter} />
-    <ScalingFilter filterHeader={'stats'} filterKey={'stat'} filter={statFilter} />
+    <ScalingFilter filterHeader={"keys"} filterKey={"base"} filter={baseFilter} />
+    <ScalingFilter filterHeader={"stats"} filterKey={"stat"} filter={statFilter} />
   </div>
 {/if}
 
@@ -228,7 +243,8 @@
     }
   }
 
-  .primary, .secondary {
+  .primary,
+  .secondary {
     display: inline-flex;
 
     .group {

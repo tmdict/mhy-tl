@@ -1,7 +1,7 @@
 ---
 character: gaming
 c: 6
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,12 +27,12 @@ mainstat:
     - crit
 
 stats:
-  - er: ''
-  - crit: '60% / 190%'
-  - em: '160'
-  - atk: '1,900-2,100'
+  - er: ""
+  - crit: "60% / 190%"
+  - em: "160"
+  - atk: "1,900-2,100"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

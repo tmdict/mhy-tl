@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "la-signora",
-  "characters": [
-    "sangonomiya-kokomi",
-    "thoma",
-    "shenhe"
-  ]
+  "characters": ["sangonomiya-kokomi", "thoma", "shenhe"]
 }

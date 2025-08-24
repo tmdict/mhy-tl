@@ -1,7 +1,7 @@
 ---
 character: nilou
 c: 0
-name: 'Bloom Support'
+name: "Bloom Support"
 type:
   - reaction
   - support
@@ -27,14 +27,14 @@ mainstat:
     - hp
 
 stats:
-  - hp: '70,000'
-  - er: '120-150%'
-  - em: '280-445'
-  - crit: ''
+  - hp: "70,000"
+  - er: "120-150%"
+  - em: "280-445"
+  - crit: ""
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'E > NAx3'
+notes: "E > NAx3"
 
 source:
   - ysmxt: default

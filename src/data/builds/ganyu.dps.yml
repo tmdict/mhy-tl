@@ -1,7 +1,7 @@
 ---
 character: ganyu
 c: 0
-name: 'Freeze DPS'
+name: "Freeze DPS"
 type:
   - burst
   - dps
@@ -27,11 +27,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '25% / 230%'
-  - atk: '2,400'
-  - er: ''
+  - crit: "25% / 230%"
+  - atk: "2,400"
+  - er: ""
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
 source:
   - ysmxt: default

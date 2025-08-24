@@ -1,7 +1,7 @@
 ---
 character: chasca
 c: 2
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,12 +26,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '40% / 200-230%'
-  - atk: '2,400'
-  - em: ''
-  - er: '120%'
+  - crit: "40% / 200-230%"
+  - atk: "2,400"
+  - em: ""
+  - er: "120%"
 
-talent: 'E >= Q'
+talent: "E >= Q"
 
 source:
   - ysytl: default

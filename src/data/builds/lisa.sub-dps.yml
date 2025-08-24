@@ -1,7 +1,7 @@
 ---
 character: lisa
 c: 4
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - burst
   - sub-dps
@@ -28,12 +28,12 @@ mainstat:
     - crit
 
 stats:
-  - er: ''
-  - crit: '75% / 150%'
-  - atk: '1,600'
-  - em: '175'
+  - er: ""
+  - crit: "75% / 150%"
+  - atk: "1,600"
+  - em: "175"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

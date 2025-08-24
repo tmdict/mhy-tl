@@ -1,7 +1,7 @@
 ---
 character: xiangling
 c: 4
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -28,14 +28,14 @@ mainstat:
     - crit
 
 stats:
-  - er: '190-245%'
-  - crit: '60-65% / 120-130%'
-  - atk: '1,900'
-  - em: '155-345'
+  - er: "190-245%"
+  - crit: "60-65% / 120-130%"
+  - atk: "1,900"
+  - em: "155-345"
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'Q > Swap'
+notes: "Q > Swap"
 
 source:
   - ysmxt: default

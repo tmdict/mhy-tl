@@ -9,13 +9,5 @@
   ],
   "day": 1,
   "region": 1,
-  "characters": [
-    "amber",
-    "barbara",
-    "sucrose",
-    "klee",
-    "tartaglia",
-    "diona",
-    "aloy"
-  ]
+  "characters": ["amber", "barbara", "sucrose", "klee", "tartaglia", "diona", "aloy"]
 }

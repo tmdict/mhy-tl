@@ -1,7 +1,7 @@
 ---
 character: bennett
 c: 1
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -29,13 +29,13 @@ mainstat:
     - hp
 
 stats:
-  - er: '200-255%'
-  - hp: '27,000'
-  - atk: '1,500'
+  - er: "200-255%"
+  - hp: "27,000"
+  - atk: "1,500"
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'Q heal'
+notes: "Q heal"
 
 source:
   - ysmxt: default

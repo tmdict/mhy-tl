@@ -1,7 +1,7 @@
 ---
 character: yun-jin
 c: 3
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -27,12 +27,12 @@ mainstat:
     - crit
 
 stats:
-  - def: '2,500'
-  - er: '195-215%'
-  - crit: '60%'
-  - atk: '1,200'
+  - def: "2,500"
+  - er: "195-215%"
+  - crit: "60%"
+  - atk: "1,200"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

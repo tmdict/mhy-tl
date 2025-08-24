@@ -4,10 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "magatsu-mitake-narukami-no-mikoto",
-  "characters": [
-    "kuki-shinobu",
-    "collei",
-    "candace",
-    "nilou"
-  ]
+  "characters": ["kuki-shinobu", "collei", "candace", "nilou"]
 }

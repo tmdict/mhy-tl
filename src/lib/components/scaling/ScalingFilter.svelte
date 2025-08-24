@@ -1,8 +1,8 @@
 <script>
-  import { filterlist } from "@store/filterlist.svelte"
-  import ID from '$lib/util/alias.json';
+  import { filterlist } from "@store/filterlist.svelte";
+  import ID from "$lib/util/alias.json";
 
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+  const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
 
   let { filterHeader, filterKey, filter } = $props();
 

@@ -1,7 +1,7 @@
 ---
 character: venti
 c: 0
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
   - support
@@ -30,12 +30,12 @@ mainstat:
     - crit
 
 stats:
-  - em: '780'
-  - er: '205-215%'
-  - atk: '1,400'
-  - crit: ''
+  - em: "780"
+  - er: "205-215%"
+  - atk: "1,400"
+  - crit: ""
 
-talent: 'Q = E'
+talent: "Q = E"
 
 source:
   - ysmxt: default

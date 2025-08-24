@@ -1,10 +1,10 @@
 <script>
-  import { CHARACTERS_DATA, ENEMIES_DATA, MATERIALS_DATA, RARITY } from '@store/gamedata';
-  import { IMAGES } from '@store/sitedata';
-  import Icon from '$lib/components/Icon.svelte';
+  import { CHARACTERS_DATA, ENEMIES_DATA, MATERIALS_DATA, RARITY } from "@store/gamedata";
+  import { IMAGES } from "@store/sitedata";
+  import Icon from "$lib/components/Icon.svelte";
 
   const bossMaterials = Object.values(ENEMIES_DATA)
-    .filter((enemy) => enemy.enemyType === 'weekly-boss')
+    .filter((enemy) => enemy.enemyType === "weekly-boss")
     .sort((b1, b2) => (b1.order > b2.order ? 1 : -1))
     .reduce(
       (enemies, boss) => ({
@@ -14,15 +14,15 @@
             // Add to list of drops
             [drop]: {
               rarity: MATERIALS_DATA[drop].rarity,
-              characters: MATERIALS_DATA[drop].characters
+              characters: MATERIALS_DATA[drop].characters,
             },
-            ...drops
+            ...drops,
           }),
-          {}
+          {},
         ),
-        ...enemies
+        ...enemies,
       }),
-      {}
+      {},
     );
 </script>
 
@@ -41,12 +41,18 @@
         <div class="content-col">
           {#each Object.entries(bossData) as [name, material]}
             <div class="content-row">
-              <Icon id={name} src={IMAGES[`/src/lib/img/material-weekly-boss/${name}.png`]} rarity={material.rarity} />
+              <Icon
+                id={name}
+                src={IMAGES[`/src/lib/img/material-weekly-boss/${name}.png`]}
+                rarity={material.rarity}
+              />
               {#if material.characters.length > 0}
                 {#each material.characters as character}
                   <Icon
                     id={character}
-                    title={CHARACTERS_DATA[character] ? CHARACTERS_DATA[character].data.name : character}
+                    title={CHARACTERS_DATA[character]
+                      ? CHARACTERS_DATA[character].data.name
+                      : character}
                     src={IMAGES[`/src/lib/img/character/${character}.png`]}
                     rarity={RARITY[character]}
                   />

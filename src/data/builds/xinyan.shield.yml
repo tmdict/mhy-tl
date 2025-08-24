@@ -1,7 +1,7 @@
 ---
 character: xinyan
 c: 2
-name: 'Shield Support'
+name: "Shield Support"
 type:
   - shield
   - support
@@ -28,11 +28,11 @@ mainstat:
     - def
 
 stats:
-  - er: ''
-  - atk: '1,700-1,900'
-  - def: '2,700-3,100'
+  - er: ""
+  - atk: "1,700-1,900"
+  - def: "2,700-3,100"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

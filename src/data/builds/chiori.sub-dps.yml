@@ -1,7 +1,7 @@
 ---
 character: chiori
 c: 2
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - dps
   - sub-dps
@@ -27,13 +27,13 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70-80% / 205-220%'
-  - def: '1,800-2,000'
-  - atk: '1,100-1,200'
+  - crit: "70-80% / 205-220%"
+  - def: "1,800-2,000"
+  - atk: "1,100-1,200"
 
-talent: 'E > Q > A'
+talent: "E > Q > A"
 
-notes: 'E > NAx3 > Dash cancel'
+notes: "E > NAx3 > Dash cancel"
 
 source:
   - ysmxt: default

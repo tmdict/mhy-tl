@@ -1,7 +1,7 @@
 ---
 character: traveler-electro
 c: 6
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -26,11 +26,11 @@ mainstat:
     - crit
 
 stats:
-  - er: '255%'
-  - atk: '1,300'
-  - crit: '60% / 120%'
+  - er: "255%"
+  - atk: "1,300"
+  - crit: "60% / 120%"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

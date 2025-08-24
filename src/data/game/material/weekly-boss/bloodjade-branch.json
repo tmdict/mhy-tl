@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "azhdaha",
-  "characters": [
-    "yanfei",
-    "kamisato-ayaka",
-    "dori"
-  ]
+  "characters": ["yanfei", "kamisato-ayaka", "dori"]
 }

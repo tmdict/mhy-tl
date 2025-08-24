@@ -1,7 +1,7 @@
 ---
 character: amber
 c: 0
-name: 'Burst'
+name: "Burst"
 type:
   - burst
   - sub-dps
@@ -28,12 +28,12 @@ mainstat:
     - crit
 
 stats:
-  - er: ''
-  - crit: '60% / 120%'
-  - atk: '2,300'
-  - em: '240'
+  - er: ""
+  - crit: "60% / 120%"
+  - atk: "2,300"
+  - em: "240"
 
-talent: 'Q > E > A'
+talent: "Q > E > A"
 
 source:
   - ysmxt: default

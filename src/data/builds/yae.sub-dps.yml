@@ -1,7 +1,7 @@
 ---
 character: yae-miko
 c: 6
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 185%'
-  - atk: '2,000-2,600'
-  - er: ''
-  - em: '80-160'
+  - crit: "80% / 185%"
+  - atk: "2,000-2,600"
+  - er: ""
+  - em: "80-160"
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'E > E > E > Q > E > E > E'
+notes: "E > E > E > Q > E > E > E"
 
 source:
   - ysmxt: default

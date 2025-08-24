@@ -7,10 +7,10 @@ checklist: 4
 name: "Editorial Opinion"
 description: "Help Shigeru and Junkichi return to the right artist path."
 commission:
-- "Is This Novel Amazing?"
-- "This Novel Seems… Problematic?"
-- "This Novel… Seems Familiar?"
-notes: | 
+  - "Is This Novel Amazing?"
+  - "This Novel Seems… Problematic?"
+  - "This Novel… Seems Familiar?"
+notes: |
   During “Is This Novel Amazing?”, siding with Junkichi will unlock the chance to receive “This Novel Seems… Problematic?” while siding with Shigeru will unlock a chance to receive “This Novel… Seems Familiar?”, completing both commissions grants the achievement.
 
   Submitting the book “Literature Club” first unlocks the “Storytelling Method” World Quest, which grants the “Well, At Least It Ended” achievement.

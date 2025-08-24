@@ -1,7 +1,7 @@
 ---
 character: albedo
 c: 0
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -27,14 +27,14 @@ mainstat:
     - def
 
 stats:
-  - crit: '60-80% / 120-190%'
-  - def: '2,600'
-  - atk: '1,200'
-  - er: ''
+  - crit: "60-80% / 120-190%"
+  - def: "2,600"
+  - atk: "1,200"
+  - er: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'E (flower) > (optional) Q'
+notes: "E (flower) > (optional) Q"
 
 source:
   - ysmxt: default

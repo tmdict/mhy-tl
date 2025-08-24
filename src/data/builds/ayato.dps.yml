@@ -1,7 +1,7 @@
 ---
 character: kamisato-ayato
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,14 +26,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 185-205%'
-  - atk: '2,100'
-  - er: ''
-  - hp: '21,000-24,000'
+  - crit: "80% / 185-205%"
+  - atk: "2,100"
+  - er: ""
+  - hp: "21,000-24,000"
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'Q > E'
+notes: "Q > E"
 
 source:
   - ysmxt: default

@@ -1,15 +1,15 @@
 <script>
-  import { slide } from 'svelte/transition';
+  import { slide } from "svelte/transition";
 
   let {
     id,
     name = id,
-    label = '',
+    label = "",
     options = [],
-    selectedValue = '',
-    placeholder = '',
+    selectedValue = "",
+    placeholder = "",
     l10n = {}, // For overriding display value
-    onSubmit = (value) => {}
+    onSubmit = (value) => {},
   } = $props();
 
   let results = $state([...options]);
@@ -33,17 +33,17 @@
 
   const handleKeyDown = ({ key }) => {
     switch (key) {
-      case 'Escape':
+      case "Escape":
         hideResults();
         break;
-      case 'ArrowUp':
+      case "ArrowUp":
         if (showAutocompleteResults && highlightIndex === 0) {
           highlightIndex = matches.length - 1;
         } else {
           highlightIndex -= 1;
         }
         break;
-      case 'ArrowDown':
+      case "ArrowDown":
         if (!selectedValue && !showAutocompleteResults) {
           showResults();
           break;
@@ -54,10 +54,10 @@
           highlightIndex += 1;
         }
         break;
-      case 'Tab':
+      case "Tab":
         hideResults();
         break;
-      case 'Enter':
+      case "Enter":
         const highlightedOption = matches[highlightIndex];
         const value = highlightedOption || selectedValue;
 
@@ -71,7 +71,7 @@
   const handleSubmit = (value) => {
     if (!value) return;
     onSubmit(value);
-    selectedValue = '';
+    selectedValue = "";
     hideResults();
   };
 
@@ -93,7 +93,13 @@
       autocomplete="off"
     />
     <div class:showAutocompleteResults class="autocomplete-results-container" autocomplete="off">
-      <div class="click-catcher" role="button" tabindex="0" onclick={hideResults} onkeydown={hideResults}></div>
+      <div
+        class="click-catcher"
+        role="button"
+        tabindex="0"
+        onclick={hideResults}
+        onkeydown={hideResults}
+      ></div>
       <ul class="results-list" class:border-none={!matches.length}>
         {#each matches as match, index (match)}
           <li

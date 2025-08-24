@@ -1,7 +1,7 @@
 ---
 character: hu-tao
 c: 1
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70-80% / 205%'
-  - em: '80-265'
-  - hp: '28,000-35,000'
-  - atk: '3,300-4,000'
+  - crit: "70-80% / 205%"
+  - em: "80-265"
+  - hp: "28,000-35,000"
+  - atk: "3,300-4,000"
 
-talent: 'A > E > Q'
+talent: "A > E > Q"
 
-notes: 'E > (while E) NAx2 > CA > Dash/Jump cancel, finish with Q'
+notes: "E > (while E) NAx2 > CA > Dash/Jump cancel, finish with Q"
 
 source:
   - ysmxt: default

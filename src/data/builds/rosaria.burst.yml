@@ -1,7 +1,7 @@
 ---
 character: rosaria
 c: 2
-name: 'Burst Support'
+name: "Burst Support"
 type:
   - burst
   - reaction
@@ -29,14 +29,14 @@ mainstat:
     - crit
 
 stats:
-  - cr: '70%'
-  - er: ''
-  - cdmg: '100%'
-  - atk: '1,900'
+  - cr: "70%"
+  - er: ""
+  - cdmg: "100%"
+  - atk: "1,900"
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'E > Q'
+notes: "E > Q"
 
 source:
   - ysmxt: default

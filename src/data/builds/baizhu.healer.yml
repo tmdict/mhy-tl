@@ -1,7 +1,7 @@
 ---
 character: baizhu
 c: 0
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -28,11 +28,11 @@ mainstat:
     - hp
 
 stats:
-  - er: '170%'
-  - hp: '40,000-46,000'
-  - atk: '1,100'
+  - er: "170%"
+  - hp: "40,000-46,000"
+  - atk: "1,100"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

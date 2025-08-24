@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "childe",
-  "characters": [
-    "hu-tao",
-    "tartaglia",
-    "diona"
-  ]
+  "characters": ["hu-tao", "tartaglia", "diona"]
 }

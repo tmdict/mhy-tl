@@ -9,13 +9,5 @@
   ],
   "day": 3,
   "region": 2,
-  "characters": [
-    "beidou",
-    "xingqiu",
-    "xinyan",
-    "zhongli",
-    "yanfei",
-    "baizhu",
-    "xianyun"
-  ]
+  "characters": ["beidou", "xingqiu", "xinyan", "zhongli", "yanfei", "baizhu", "xianyun"]
 }

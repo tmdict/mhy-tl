@@ -9,13 +9,5 @@
   ],
   "day": 2,
   "region": 2,
-  "characters": [
-    "xiangling",
-    "ganyu",
-    "hu-tao",
-    "kaedehara-kazuha",
-    "yun-jin",
-    "yaoyao",
-    "lan-yan"
-  ]
+  "characters": ["xiangling", "ganyu", "hu-tao", "kaedehara-kazuha", "yun-jin", "yaoyao", "lan-yan"]
 }

@@ -1,9 +1,9 @@
 <script>
-  import ExportData from '$lib/components/ExportData.svelte';
-  import ImportData from '$lib/components/ImportData.svelte';
-  import ManageData from '$lib/components/content/ManageData.svelte';
+  import ExportData from "$lib/components/ExportData.svelte";
+  import ImportData from "$lib/components/ImportData.svelte";
+  import ManageData from "$lib/components/content/ManageData.svelte";
 
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+  const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   let show = $state(false);
 </script>
 

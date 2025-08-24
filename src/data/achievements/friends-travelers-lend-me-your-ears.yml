@@ -7,7 +7,7 @@ checklist: 2
 name: "Friends, Travelers, Lend Me Your Ears…"
 description: "Finish listening to the tale of the Ring of Raining Blades in “Cliffhanger.”"
 commission:
-- "Cliffhanger"
+  - "Cliffhanger"
 notes: |
   All three NPCs will appear during the commission (prior to version 3.5 only two random NPCs would appear). Each will give you a different story excerpt.
 

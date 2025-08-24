@@ -1,7 +1,7 @@
 ---
 character: mona
 c: 0
-name: 'Burst Support'
+name: "Burst Support"
 type:
   - burst
   - support
@@ -27,11 +27,11 @@ mainstat:
     - crit
 
 stats:
-  - er: '215%'
-  - crit: '60% / 120%'
-  - atk: '1,500-1,700'
+  - er: "215%"
+  - crit: "60% / 120%"
+  - atk: "1,500-1,700"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

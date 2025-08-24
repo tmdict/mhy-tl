@@ -1,7 +1,7 @@
 ---
 character: mona
 c: 0
-name: 'Burst DPS'
+name: "Burst DPS"
 type:
   - burst
   - reaction
@@ -30,14 +30,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '75% / 150%'
-  - er: '180%'
-  - atk: '1,700'
-  - em: '80'
+  - crit: "75% / 150%"
+  - er: "180%"
+  - atk: "1,700"
+  - em: "80"
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'Q > Vaporize'
+notes: "Q > Vaporize"
 
 source:
   - ysmxt: default

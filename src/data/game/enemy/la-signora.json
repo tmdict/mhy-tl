@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 5,
-  "drop": [
-    "molten-moment",
-    "hellfire-butterfly",
-    "ashen-heart"
-  ]
+  "drop": ["molten-moment", "hellfire-butterfly", "ashen-heart"]
 }

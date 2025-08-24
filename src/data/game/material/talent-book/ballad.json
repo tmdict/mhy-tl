@@ -9,14 +9,5 @@
   ],
   "day": 3,
   "region": 1,
-  "characters": [
-    "fischl",
-    "kaeya",
-    "lisa",
-    "venti",
-    "albedo",
-    "rosaria",
-    "mika",
-    "dahlia"
-  ]
+  "characters": ["fischl", "kaeya", "lisa", "venti", "albedo", "rosaria", "mika", "dahlia"]
 }

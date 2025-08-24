@@ -1,19 +1,19 @@
 <script>
-  import { slide } from 'svelte/transition';
+  import { slide } from "svelte/transition";
 
   let {
     id,
     name = id,
-    label = '',
+    label = "",
     value = $bindable(),
-    placeholder = '',
-    width = '200px'
+    placeholder = "",
+    width = "200px",
   } = $props();
 </script>
 
 <div transition:slide class="input-field" style="--input-width: {width}">
   <label for={id}>{label}</label>
-  <input class="input" type="text" {placeholder} {id} {name} bind:value={value} />
+  <input class="input" type="text" {placeholder} {id} {name} bind:value />
 </div>
 
 <style lang="scss">

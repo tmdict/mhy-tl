@@ -1,7 +1,7 @@
 ---
 character: ororon
 c: 0
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -27,11 +27,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70% / 120-160%'
-  - atk: '1,600-1,800'
-  - er: '160%'
+  - crit: "70% / 120-160%"
+  - atk: "1,600-1,800"
+  - er: "160%"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysytl: default

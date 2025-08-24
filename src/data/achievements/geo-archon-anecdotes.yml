@@ -7,7 +7,7 @@ checklist: 4
 name: "Geo Archon Anecdotes"
 description: "Collect all the stories about Rex Lapis in the “Geo Travel Diary.”"
 commission:
-- "Geo Travel Diary"
+  - "Geo Travel Diary"
 notes: |
   Collecting all 4 stories grants the achievement:
 

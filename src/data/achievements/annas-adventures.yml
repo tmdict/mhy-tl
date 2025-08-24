@@ -7,13 +7,13 @@ checklist: 8
 name: "Anna’s Adventures"
 description: "Help Anna become an adventurer."
 commission:
-- "Miracle Medicine"
-- "Recuperating From a Severe Illness"
-- "Adventurer Exam: Battle Tactics"
-- "Adventurer Exam: The Art of Adventure"
-- "Adventurer Exam: Taking Flight"
-- "Anna the Adventurer!"
-notes: | 
+  - "Miracle Medicine"
+  - "Recuperating From a Severe Illness"
+  - "Adventurer Exam: Battle Tactics"
+  - "Adventurer Exam: The Art of Adventure"
+  - "Adventurer Exam: Taking Flight"
+  - "Anna the Adventurer!"
+notes: |
   Complete “Anna the Adventurer!” to receive the achievement. To unlock the quest you need to complete the following series of daily commissions:
 
   1. Miracle Medicine x3

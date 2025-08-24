@@ -1,7 +1,7 @@
 ---
 character: keqing
 c: 0
-name: 'Electro DPS'
+name: "Electro DPS"
 type:
   - dps
   - reaction
@@ -27,12 +27,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '75% / 165-215%'
-  - atk: '2,100'
-  - em: '80'
-  - er: ''
+  - crit: "75% / 165-215%"
+  - atk: "2,100"
+  - em: "80"
+  - er: ""
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
 source:
   - ysmxt: default

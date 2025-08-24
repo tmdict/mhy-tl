@@ -1,7 +1,7 @@
 ---
 character: lynette
 c: 0
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -27,11 +27,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70% / 150%'
-  - er: '170-180%'
-  - atk: '1,300-1,600'
+  - crit: "70% / 150%"
+  - er: "170-180%"
+  - atk: "1,300-1,600"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

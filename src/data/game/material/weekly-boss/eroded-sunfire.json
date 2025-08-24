@@ -4,8 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "lord-of-eroded-primal-fire",
-  "characters": [
-    "lan-yan",
-    "ineffa"
-  ]
+  "characters": ["lan-yan", "ineffa"]
 }

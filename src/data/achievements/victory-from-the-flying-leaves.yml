@@ -7,8 +7,8 @@ checklist: 1
 name: "Victory From the Flying Leaves"
 description: "Reach the destination within the time limit."
 commission:
-- "Saurian Versus Mountain"
-notes: | 
+  - "Saurian Versus Mountain"
+notes: |
   Reaching the goal within the time limit‍ of 15 seconds (not displayed in game) grants the achievement.
 checklistItem:
   1: "Saurian Versus Mountain"

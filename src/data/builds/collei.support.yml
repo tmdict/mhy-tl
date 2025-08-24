@@ -1,7 +1,7 @@
 ---
 character: collei
 c: 0
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -29,14 +29,14 @@ mainstat:
     - em
 
 stats:
-  - er: '170-175%'
-  - crit: '60% / 120%'
-  - atk: '1,900'
-  - em: '120'
+  - er: "170-175%"
+  - crit: "60% / 120%"
+  - atk: "1,900"
+  - em: "120"
 
-talent: 'Q > E > A'
+talent: "Q > E > A"
 
-notes: 'E > Q > Swap'
+notes: "E > Q > Swap"
 
 source:
   - ysmxt: default

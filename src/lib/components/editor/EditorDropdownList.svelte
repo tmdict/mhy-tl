@@ -1,17 +1,17 @@
 <script>
-  import { slide } from 'svelte/transition';
+  import { slide } from "svelte/transition";
 
   let {
     id,
     name = id,
-    label = '',
+    label = "",
     list,
     selected = $bindable(),
-    width = '200px',
-    inputWidth = 'auto',
+    width = "200px",
+    inputWidth = "auto",
     exclude = [],
     groups = [],
-    l10n = {} // For overriding display value
+    l10n = {}, // For overriding display value
   } = $props();
 
   if (selected === undefined && list.length > 0) {

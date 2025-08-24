@@ -3,7 +3,7 @@ class Parser {
     // Iterate based on number of weapons entered
     return [...Array(build.num.weapons).keys()].map((i) => ({
       name: build[getKeys.weapon(i).weapon],
-      r: build[getKeys.weapon(i).ref]
+      r: build[getKeys.weapon(i).ref],
     }));
   }
 
@@ -26,17 +26,19 @@ class Parser {
 
   mainstat(build, type, getKeys) {
     // Iterate based on number of stats entered for the given mainstat type
-    return [...Array(build.num.mainstat[type]).keys()].map((i) => build[getKeys.mainstat(type, i).mainstat]);
+    return [...Array(build.num.mainstat[type]).keys()].map(
+      (i) => build[getKeys.mainstat(type, i).mainstat],
+    );
   }
 
   stats(build, getKeys) {
     return [...Array(build.num.stats).keys()].map((i) => ({
-      [build[getKeys.stat(i).statName]]: build[getKeys.stat(i).statVal]
+      [build[getKeys.stat(i).statName]]: build[getKeys.stat(i).statVal],
     }));
   }
 
   source(build) {
-    return build.source ? [{ custom: build.source }] : [{ custom: 'Anonymous' }];
+    return build.source ? [{ custom: build.source }] : [{ custom: "Anonymous" }];
   }
 
   tags(build, characters) {
@@ -56,7 +58,7 @@ class Parser {
         attr: {
           vision: characters[build.character].vision,
           weapon: characters[build.character].weapon,
-          released: characters[build.character].released
+          released: characters[build.character].released,
         },
         character: build.character,
         type: build.type,
@@ -65,15 +67,15 @@ class Parser {
         weapon: this.weapon(build, getKeys),
         artifact: this.artifact(build, getKeys),
         mainstat: {
-          sand: this.mainstat(build, 'sand', getKeys),
-          goblet: this.mainstat(build, 'goblet', getKeys),
-          circlet: this.mainstat(build, 'circlet', getKeys)
+          sand: this.mainstat(build, "sand", getKeys),
+          goblet: this.mainstat(build, "goblet", getKeys),
+          circlet: this.mainstat(build, "circlet", getKeys),
         },
         stats: this.stats(build, getKeys),
         source: this.source(build),
         // Optional inputs
-        ...(build['talent'] && { talent: build['talent'] }),
-        ...(build['notes'] && { notes: build['notes'] })
+        ...(build["talent"] && { talent: build["talent"] }),
+        ...(build["notes"] && { notes: build["notes"] }),
       };
 
       return { ...parsedBuild, tags: this.tags(parsedBuild, characters) };
@@ -92,7 +94,7 @@ class Parser {
       type: build.type,
       // Optional inputs
       ...(build.talent && { talent: build.talent }),
-      ...(build.notes && { notes: build.notes })
+      ...(build.notes && { notes: build.notes }),
     };
     // Weapons
     build.weapon.forEach((weapon, i) => {
@@ -131,10 +133,10 @@ class Parser {
         mainstat: {
           sand: build.mainstat.sand.length,
           goblet: build.mainstat.goblet.length,
-          circlet: build.mainstat.circlet.length
+          circlet: build.mainstat.circlet.length,
         },
-        stats: build.stats.length
-      }
+        stats: build.stats.length,
+      },
     };
   }
 }

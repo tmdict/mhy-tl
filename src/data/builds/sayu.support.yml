@@ -1,7 +1,7 @@
 ---
 character: sayu
 c: 1
-name: 'Support'
+name: "Support"
 type:
   - healer
   - support
@@ -30,12 +30,12 @@ mainstat:
     - em
 
 stats:
-  - er: ''
-  - em: '445'
-  - atk: '2,400'
-  - heal: '35%'
+  - er: ""
+  - em: "445"
+  - atk: "2,400"
+  - heal: "35%"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

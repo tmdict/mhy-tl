@@ -1,7 +1,7 @@
 ---
 character: wriothesley
 c: 2
-name: 'Cryo DPS'
+name: "Cryo DPS"
 type:
   - dps
   - reaction
@@ -28,12 +28,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '65% / 205%'
-  - atk: '2,300'
-  - em: ''
-  - er: ''
+  - crit: "65% / 205%"
+  - atk: "2,300"
+  - em: ""
+  - er: ""
 
-talent: 'A > E > Q'
+talent: "A > E > Q"
 
 source:
   - ysmxt: default

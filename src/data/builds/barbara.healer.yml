@@ -1,7 +1,7 @@
 ---
 character: barbara
 c: 6
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -27,14 +27,14 @@ mainstat:
     - heal
 
 stats:
-  - hp: '36,000'
-  - er: ''
-  - heal: '60%'
-  - atk: '1,200'
+  - hp: "36,000"
+  - er: ""
+  - heal: "60%"
+  - atk: "1,200"
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'E and/or Q > Swap'
+notes: "E and/or Q > Swap"
 source:
   - ysmxt: default
   - kqm: https://keqingmains.com/barbara/

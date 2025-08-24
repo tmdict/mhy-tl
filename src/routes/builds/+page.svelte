@@ -1,30 +1,31 @@
 <script>
-  import { slide } from 'svelte/transition';
-  import { BUILDS, BUILD_FILTERS } from '@store/builds';
-  import { filterlist } from "@store/filterlist.svelte"
-  import { localData } from '@store/sitedata';
-  import Build from '$lib/components/build/Build.svelte';
-  import BuildFaq from '$lib/components/content/BuildFaq.svelte';
-  import BuildFilter from '$lib/components/build/BuildFilter.svelte';
-  import ManageData from '$lib/components/ManageData.svelte';
+  import { slide } from "svelte/transition";
+  import { BUILDS, BUILD_FILTERS } from "@store/builds";
+  import { filterlist } from "@store/filterlist.svelte";
+  import { localData } from "@store/sitedata";
+  import Build from "$lib/components/build/Build.svelte";
+  import BuildFaq from "$lib/components/content/BuildFaq.svelte";
+  import BuildFilter from "$lib/components/build/BuildFilter.svelte";
+  import ManageData from "$lib/components/ManageData.svelte";
 
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
-  
+  const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
+
   let expandAllFilters = $state(true);
   let showFaq = $state(false);
 
   filterlist.init(Object.keys(BUILD_FILTERS));
 
   let filteredBuilds = $derived(filterBuilds(BUILDS, Object.values(filterlist.all)));
-  let filteredSavedBuilds = $derived(filterBuilds($localData['builds'], Object.values(filterlist.all)));
-
+  let filteredSavedBuilds = $derived(
+    filterBuilds($localData["builds"], Object.values(filterlist.all)),
+  );
 
   function filterBuilds(list, filters) {
     return list.filter((b) => {
       // Check each filter type
       for (const f of filters) {
         // If at least one filter is set
-        if (f.quick !== '' || f.common.length !== 0) {
+        if (f.quick !== "" || f.common.length !== 0) {
           // If current entry has a tag that matches the filter
           if (b.tags.some((t) => f.quick === t || f.common.includes(t))) {
             continue; // Has a match for current filter, move on to next filter type
@@ -46,7 +47,11 @@
 <h1>Character Builds</h1>
 
 <div class="menu">
-  <a href="/#" class={expandAllFilters ? 'show' : 'collapse'} onclick={preventDefault(() => expandAllFilters = !expandAllFilters)}>
+  <a
+    href="/#"
+    class={expandAllFilters ? "show" : "collapse"}
+    onclick={preventDefault(() => (expandAllFilters = !expandAllFilters))}
+  >
     {#if !expandAllFilters}Expand All{:else}Close All{/if} Filters
   </a>
   <span class="menu-separator"></span>
@@ -94,12 +99,12 @@
   .menu a {
     &.show:after {
       color: var(--theme-site-primary-alt);
-      content: ' + ';
+      content: " + ";
     }
 
     &.collapse:after {
       color: var(--theme-site-primary-alt);
-      content: ' - ';
+      content: " - ";
     }
   }
 

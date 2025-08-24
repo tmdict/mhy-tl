@@ -1,7 +1,7 @@
 ---
 character: mualani
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -28,11 +28,11 @@ mainstat:
     - hp
 
 stats:
-  - crit: '40% / 180%'
-  - hp: '30,000'
-  - em: '150-200'
+  - crit: "40% / 180%"
+  - hp: "30,000"
+  - em: "150-200"
 
-talent: 'E = Q'
+talent: "E = Q"
 
 source:
   - ysytl: default

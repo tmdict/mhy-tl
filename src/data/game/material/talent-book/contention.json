@@ -9,10 +9,5 @@
   ],
   "day": 1,
   "region": 6,
-  "characters": [
-    "mualani",
-    "mavuika",
-    "iansan",
-    "skirk"
-  ]
+  "characters": ["mualani", "mavuika", "iansan", "skirk"]
 }

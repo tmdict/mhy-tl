@@ -1,7 +1,7 @@
 ---
 character: dori
 c: 0
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -28,12 +28,12 @@ mainstat:
     - heal
 
 stats:
-  - crit: ''
-  - er: '150-180%'
-  - hp: '39,000'
-  - atk: '1,100'
+  - crit: ""
+  - er: "150-180%"
+  - hp: "39,000"
+  - atk: "1,100"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

@@ -1,7 +1,7 @@
 ---
 character: kaedehara-kazuha
 c: 0
-name: 'EM Support'
+name: "EM Support"
 type:
   - reaction
   - support
@@ -28,12 +28,12 @@ mainstat:
     - em
 
 stats:
-  - er: '120-195%'
-  - em: '1,030'
-  - atk: '1,400'
-  - crit: ''
+  - er: "120-195%"
+  - em: "1,030"
+  - atk: "1,400"
+  - crit: ""
 
-talent: 'Q > A > E'
+talent: "Q > A > E"
 
 source:
   - ysmxt: default

@@ -1,7 +1,7 @@
 ---
 character: emilie
 c: 0
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -26,11 +26,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70-80% / 170-180%'
-  - atk: '2,400'
-  - er: ''
+  - crit: "70-80% / 170-180%"
+  - atk: "2,400"
+  - er: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysytl: default

@@ -9,13 +9,5 @@
   ],
   "day": 1,
   "region": 2,
-  "characters": [
-    "keqing",
-    "ningguang",
-    "qiqi",
-    "xiao",
-    "shenhe",
-    "yelan",
-    "gaming"
-  ]
+  "characters": ["keqing", "ningguang", "qiqi", "xiao", "shenhe", "yelan", "gaming"]
 }

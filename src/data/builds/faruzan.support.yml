@@ -1,7 +1,7 @@
 ---
 character: faruzan
 c: 6
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -26,13 +26,13 @@ mainstat:
     - crit
 
 stats:
-  - er: '225-235%'
-  - crit: '60% / 120%'
-  - atk: '1,500'
+  - er: "225-235%"
+  - crit: "60% / 120%"
+  - atk: "1,500"
 
-talent: 'Q > E > A'
+talent: "Q > E > A"
 
-notes: 'E > CA/Q > Q/CA'
+notes: "E > CA/Q > Q/CA"
 
 source:
   - ysmxt: default

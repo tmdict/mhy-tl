@@ -1,7 +1,7 @@
 ---
 character: eula
 c: 6
-name: 'Physical DPS'
+name: "Physical DPS"
 type:
   - dps
 
@@ -26,13 +26,13 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60-75% / 155-185%'
-  - er: ''
-  - atk: '2,400-2,700'
+  - crit: "60-75% / 155-185%"
+  - er: ""
+  - atk: "2,400-2,700"
 
-talent: 'Q = A > E'
+talent: "Q = A > E"
 
-notes: 'E > Q > NAx4 > E (hold) > NAx4; For more energy: E > Q > E > NAx4 > Dash cancel > NAx2 > E (hold) > NAx2'
+notes: "E > Q > NAx4 > E (hold) > NAx4; For more energy: E > Q > E > NAx4 > Dash cancel > NAx2 > E (hold) > NAx2"
 
 source:
   - ysmxt: default

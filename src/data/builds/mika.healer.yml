@@ -1,7 +1,7 @@
 ---
 character: mika
 c: 6
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -27,11 +27,11 @@ mainstat:
     - heal
 
 stats:
-  - er: '205%'
-  - hp: '31,000'
-  - atk: '1,000'
+  - er: "205%"
+  - hp: "31,000"
+  - atk: "1,000"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

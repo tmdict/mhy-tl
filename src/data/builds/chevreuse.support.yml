@@ -1,7 +1,7 @@
 ---
 character: chevreuse
 c: 0
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -27,11 +27,11 @@ mainstat:
     - hp
 
 stats:
-  - er: '120-150%'
-  - hp: '40,000'
-  - em: ''
+  - er: "120-150%"
+  - hp: "40,000"
+  - em: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

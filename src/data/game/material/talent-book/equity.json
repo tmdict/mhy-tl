@@ -9,10 +9,5 @@
   ],
   "day": 1,
   "region": 5,
-  "characters": [
-    "lyney",
-    "neuvillette",
-    "navia",
-    "sigewinne"
-  ]
+  "characters": ["lyney", "neuvillette", "navia", "sigewinne"]
 }

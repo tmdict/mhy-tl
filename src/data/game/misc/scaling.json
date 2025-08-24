@@ -9,9 +9,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C2": ["def"] }
-      ],
+      "constellation": [{ "C2": ["def"] }],
       "sand": ["def"],
       "goblet": ["geo"],
       "circlet": ["crit-abbr", "def"],
@@ -50,9 +48,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["normal-attack"] }
-      ],
+      "constellation": [{ "C1": ["normal-attack"] }],
       "sand": ["atk", "er"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -78,10 +74,7 @@
       "q": ["atk"],
       "a1": ["hp"],
       "a4": ["atk"],
-      "constellation": [
-        { "C2": ["atk"] },
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }, { "C6": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -94,9 +87,7 @@
       "q": ["hp", "atk"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C6": ["hp"] }],
       "sand": ["er"],
       "goblet": ["hp"],
       "circlet": ["heal", "hp"],
@@ -122,10 +113,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["hp"] },
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["hp"] }, { "C4": ["atk"] }],
       "sand": ["er", "atk"],
       "goblet": ["electro", "atk"],
       "circlet": ["crit-abbr"],
@@ -138,10 +126,7 @@
       "q": ["hp", "atk", "base-atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["atk"] },
-        { "C4": ["elemental-skill"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }, { "C4": ["elemental-skill"] }],
       "sand": ["er", "atk"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -154,9 +139,7 @@
       "q": ["hp", "atk"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C6": ["hp"] }],
       "sand": ["hp", "er"],
       "goblet": ["hp"],
       "circlet": ["crit-abbr", "hp"],
@@ -169,9 +152,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }],
       "sand": ["er"],
       "goblet": ["atk"],
       "circlet": ["heal"],
@@ -184,9 +165,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C2": ["atk"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["atk"],
       "circlet": ["crit-abbr"],
@@ -199,10 +178,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C2": ["atk"] },
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }, { "C6": ["hp"] }],
       "sand": ["hp"],
       "goblet": ["hp"],
       "circlet": ["heal", "hp"],
@@ -215,9 +191,7 @@
       "q": ["atk", "def"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C6": ["def"] }
-      ],
+      "constellation": [{ "C6": ["def"] }],
       "sand": ["def"],
       "goblet": ["geo"],
       "circlet": ["crit-abbr"],
@@ -230,9 +204,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["elemental-skill"],
-      "constellation": [
-        { "C1": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["cryo"],
       "circlet": ["crit-abbr"],
@@ -245,10 +217,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["em"],
-      "constellation": [
-        { "C1": ["em"] },
-        { "C4": ["em"] }
-      ],
+      "constellation": [{ "C1": ["em"] }, { "C4": ["em"] }],
       "sand": ["em", "er"],
       "goblet": ["em"],
       "circlet": ["em"],
@@ -261,9 +230,7 @@
       "q": ["atk", "hp"],
       "a1": ["atk"],
       "a4": [],
-      "constellation": [
-        { "C1": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }],
       "sand": ["atk", "em"],
       "goblet": ["electro"],
       "circlet": ["crit-abbr"],
@@ -276,10 +243,7 @@
       "q": ["atk"],
       "a1": ["atk"],
       "a4": [],
-      "constellation": [
-        { "C2": ["atk"] },
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }, { "C6": ["atk"] }],
       "sand": ["er", "atk"],
       "goblet": ["dendro", "em"],
       "circlet": ["crit-abbr", "em"],
@@ -344,9 +308,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C2": ["elemental-skill"] }
-      ],
+      "constellation": [{ "C2": ["elemental-skill"] }],
       "sand": ["hp", "er"],
       "goblet": ["hp"],
       "circlet": ["hp", "heal"],
@@ -359,10 +321,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": ["er"],
-      "constellation": [
-        { "C2": ["atk"] },
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }, { "C6": ["hp"] }],
       "sand": ["hp", "er"],
       "goblet": ["hp"],
       "circlet": ["heal"],
@@ -375,9 +334,7 @@
       "q": ["atk"],
       "a1": ["atk"],
       "a4": ["atk"],
-      "constellation": [
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C6": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["dendro"],
       "circlet": ["crit-abbr", "hp"],
@@ -390,10 +347,7 @@
       "q": ["atk"],
       "a1": ["atk"],
       "a4": [],
-      "constellation": [
-        { "C2": ["atk"] },
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }, { "C6": ["atk"] }],
       "sand": ["er", "atk"],
       "goblet": ["cryo"],
       "circlet": ["crit-abbr"],
@@ -463,9 +417,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C6": ["hp"] }],
       "sand": ["er", "hp"],
       "goblet": ["hp", "hydro"],
       "circlet": ["crit-abbr"],
@@ -478,9 +430,7 @@
       "q": [],
       "a1": ["hp"],
       "a4": [],
-      "constellation": [
-        { "C1": ["hp"] }
-      ],
+      "constellation": [{ "C1": ["hp"] }],
       "sand": ["atk", "em"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -506,9 +456,7 @@
       "q": ["def", "elemental-skill"],
       "a1": [],
       "a4": ["def"],
-      "constellation": [
-        { "C2": ["def"] }
-      ],
+      "constellation": [{ "C2": ["def"] }],
       "sand": ["er"],
       "goblet": ["geo", "def"],
       "circlet": ["crit-abbr", "def"],
@@ -521,9 +469,7 @@
       "q": ["hp", "atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C2": ["hp"] }
-      ],
+      "constellation": [{ "C2": ["hp"] }],
       "sand": ["hp", "em"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -536,10 +482,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["atk"],
-      "constellation": [
-        { "C1": ["atk"] },
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }, { "C4": ["atk"] }],
       "sand": ["er"],
       "goblet": ["atk"],
       "circlet": ["atk"],
@@ -552,11 +495,7 @@
       "q": ["atk"],
       "a1": ["atk"],
       "a4": ["atk"],
-      "constellation": [
-        { "C1": ["atk"] },
-        { "C2": ["atk"] },
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }, { "C2": ["atk"] }, { "C6": ["atk"] }],
       "sand": ["atk", "em"],
       "goblet": ["atk", "em"],
       "circlet": ["cr"],
@@ -569,9 +508,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C6": ["atk"] }],
       "sand": ["em", "er"],
       "goblet": ["em"],
       "circlet": ["cr"],
@@ -597,9 +534,7 @@
       "q": ["def"],
       "a1": [],
       "a4": ["def"],
-      "constellation": [
-        { "C6": ["def"] }
-      ],
+      "constellation": [{ "C6": ["def"] }],
       "sand": ["def", "er"],
       "goblet": ["geo"],
       "circlet": ["crit-abbr"],
@@ -612,9 +547,7 @@
       "q": ["atk"],
       "a1": ["atk"],
       "a4": ["em"],
-      "constellation": [
-        { "C6": ["em"] }
-      ],
+      "constellation": [{ "C6": ["em"] }],
       "sand": ["em", "er"],
       "goblet": ["em"],
       "circlet": ["em"],
@@ -627,9 +560,7 @@
       "q": ["atk"],
       "a1": ["atk"],
       "a4": [],
-      "constellation": [
-        { "C4": ["em"] }
-      ],
+      "constellation": [{ "C4": ["em"] }],
       "sand": ["er", "atk"],
       "goblet": ["cryo"],
       "circlet": ["crit-abbr"],
@@ -642,9 +573,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C2": ["elemental-burst"] }
-      ],
+      "constellation": [{ "C2": ["elemental-burst"] }],
       "sand": ["atk"],
       "goblet": ["cryo"],
       "circlet": ["crit-abbr", "atk"],
@@ -657,9 +586,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C6": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["hydro"],
       "circlet": ["crit-abbr"],
@@ -672,9 +599,7 @@
       "q": ["atk"],
       "a1": ["em"],
       "a4": [],
-      "constellation": [
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C6": ["atk"] }],
       "sand": ["er"],
       "goblet": ["em"],
       "circlet": ["em"],
@@ -687,9 +612,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["electro"],
       "circlet": ["crit-abbr"],
@@ -702,9 +625,7 @@
       "q": [],
       "a1": [],
       "a4": ["atk"],
-      "constellation": [
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C4": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["dendro"],
       "circlet": ["crit-abbr"],
@@ -717,9 +638,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C4": ["atk"] }],
       "sand": ["hp"],
       "goblet": ["hp"],
       "circlet": ["hp"],
@@ -732,10 +651,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["elemental-burst"] },
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["elemental-burst"] }, { "C4": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -748,9 +664,7 @@
       "q": ["atk", "elemental-skill"],
       "a1": [],
       "a4": ["er"],
-      "constellation": [
-        { "C2": ["elemental-skill"] }
-      ],
+      "constellation": [{ "C2": ["elemental-skill"] }],
       "sand": ["er", "atk"],
       "goblet": ["electro", "atk"],
       "circlet": ["crit-abbr"],
@@ -763,9 +677,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": ["em"],
-      "constellation": [
-        { "C4": ["hp"] }
-      ],
+      "constellation": [{ "C4": ["hp"] }],
       "sand": ["hp", "em"],
       "goblet": ["hp", "em"],
       "circlet": ["heal", "em"],
@@ -791,9 +703,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C4": ["hp"] }
-      ],
+      "constellation": [{ "C4": ["hp"] }],
       "sand": ["hp", "er"],
       "goblet": ["hp", "cryo"],
       "circlet": ["hp", "crit-abbr"],
@@ -832,9 +742,7 @@
       "q": ["atk"],
       "a1": ["atk"],
       "a4": [],
-      "constellation": [
-        { "C6": ["normal-attack"] }
-      ],
+      "constellation": [{ "C6": ["normal-attack"] }],
       "sand": ["atk"],
       "goblet": ["hydro"],
       "circlet": ["crit-abbr"],
@@ -847,9 +755,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C6": ["atk"] }],
       "sand": ["em", "atk"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -888,9 +794,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C1": ["hp"] }
-      ],
+      "constellation": [{ "C1": ["hp"] }],
       "sand": ["hp", "em"],
       "goblet": ["hydro"],
       "circlet": ["crit-abbr", "hp"],
@@ -903,9 +807,7 @@
       "q": [],
       "a1": ["em"],
       "a4": ["em"],
-      "constellation": [
-        { "C6": ["atk", "em"] }
-      ],
+      "constellation": [{ "C6": ["atk", "em"] }],
       "sand": ["em"],
       "goblet": ["em", "dendro"],
       "circlet": ["em", "crit-abbr"],
@@ -931,9 +833,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C6": ["hp"] }],
       "sand": ["atk", "hp"],
       "goblet": ["hydro", "hp"],
       "circlet": ["crit-abbr", "hp"],
@@ -946,9 +846,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C6": ["hp"] }],
       "sand": ["hp"],
       "goblet": ["hp"],
       "circlet": ["hp"],
@@ -974,10 +872,7 @@
       "q": ["atk", "def"],
       "a1": ["def"],
       "a4": [],
-      "constellation": [
-        { "C4": ["atk"] },
-        { "C6": ["def"] }
-      ],
+      "constellation": [{ "C4": ["atk"] }, { "C6": ["def"] }],
       "sand": ["def"],
       "goblet": ["geo"],
       "circlet": ["crit-abbr"],
@@ -1029,9 +924,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C4": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["physical"],
       "circlet": ["crit-abbr"],
@@ -1057,10 +950,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": ["heal"],
-      "constellation": [
-        { "C1": ["hp"] },
-        { "C2": ["hp"] }
-      ],
+      "constellation": [{ "C1": ["hp"] }, { "C2": ["hp"] }],
       "sand": ["hp", "er"],
       "goblet": ["hp"],
       "circlet": ["heal"],
@@ -1073,9 +963,7 @@
       "q": ["atk"],
       "a1": ["em"],
       "a4": ["hp"],
-      "constellation": [
-        { "C6": ["atk", "em"] }
-      ],
+      "constellation": [{ "C6": ["atk", "em"] }],
       "sand": ["em", "er"],
       "goblet": ["atk", "em"],
       "circlet": ["heal", "em"],
@@ -1127,9 +1015,7 @@
       "q": ["hp"],
       "a1": ["hp"],
       "a4": [],
-      "constellation": [
-        { "C2": ["hp"] }
-      ],
+      "constellation": [{ "C2": ["hp"] }],
       "sand": ["hp"],
       "goblet": ["hp"],
       "circlet": ["hp"],
@@ -1142,10 +1028,7 @@
       "q": [],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["atk"] },
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }, { "C6": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["cryo", "atk"],
       "circlet": ["crit-abbr"],
@@ -1171,9 +1054,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["em"],
-      "constellation": [
-        { "C4": ["normal-attack", "elemental-skill"] }
-      ],
+      "constellation": [{ "C4": ["normal-attack", "elemental-skill"] }],
       "sand": ["atk"],
       "goblet": ["hydro"],
       "circlet": ["crit-abbr"],
@@ -1199,9 +1080,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["em"],
-      "constellation": [
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C6": ["atk"] }],
       "sand": ["em", "atk"],
       "goblet": ["dendro"],
       "circlet": ["crit-abbr"],
@@ -1253,9 +1132,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["atk"],
-      "constellation": [
-        { "C2": ["elemental-skill"] }
-      ],
+      "constellation": [{ "C2": ["elemental-skill"] }],
       "sand": ["atk"],
       "goblet": ["geo"],
       "circlet": ["crit-abbr"],
@@ -1268,10 +1145,7 @@
       "q": ["atk"],
       "a1": ["hp"],
       "a4": ["hp"],
-      "constellation": [
-        { "C4": ["hp"] },
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C4": ["hp"] }, { "C6": ["hp"] }],
       "sand": ["atk"],
       "goblet": ["hydro"],
       "circlet": ["hp"],
@@ -1284,10 +1158,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C4": ["hp"] },
-        { "C6": ["atk"] }
-      ],
+      "constellation": [{ "C4": ["hp"] }, { "C6": ["atk"] }],
       "sand": ["er", "atk"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -1300,10 +1171,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["atk"] },
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }, { "C4": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["electro"],
       "circlet": ["crit-abbr"],
@@ -1316,9 +1184,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["normal-attack"] }
-      ],
+      "constellation": [{ "C1": ["normal-attack"] }],
       "sand": ["em", "atk"],
       "goblet": ["em", "anemo"],
       "circlet": ["em", "crit-abbr"],
@@ -1331,9 +1197,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["atk"],
-      "constellation": [
-        { "C1": ["atk"] }
-      ],
+      "constellation": [{ "C1": ["atk"] }],
       "sand": ["atk"],
       "goblet": ["anemo"],
       "circlet": ["crit-abbr"],
@@ -1359,9 +1223,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C2": ["atk"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }],
       "sand": ["em", "er"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -1374,9 +1236,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["atk"],
-      "constellation": [
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C4": ["atk"] }],
       "sand": ["er", "atk"],
       "goblet": ["atk"],
       "circlet": ["atk", "heal"],
@@ -1402,9 +1262,7 @@
       "q": ["def"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C4": ["def"] }
-      ],
+      "constellation": [{ "C4": ["def"] }],
       "sand": ["def", "er"],
       "goblet": ["def"],
       "circlet": ["def", "heal"],
@@ -1430,9 +1288,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C6": ["def"] }
-      ],
+      "constellation": [{ "C6": ["def"] }],
       "sand": ["atk"],
       "goblet": ["physical"],
       "circlet": ["crit-abbr"],
@@ -1458,9 +1314,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["atk"],
-      "constellation": [
-        { "C4": ["hp"] }
-      ],
+      "constellation": [{ "C4": ["hp"] }],
       "sand": ["atk", "em"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -1473,10 +1327,7 @@
       "q": ["atk", "hp"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C4": ["hp"] },
-        { "C6": ["atk", "hp"] }
-      ],
+      "constellation": [{ "C4": ["hp"] }, { "C6": ["atk", "hp"] }],
       "sand": ["hp"],
       "goblet": ["hp"],
       "circlet": ["heal"],
@@ -1489,10 +1340,7 @@
       "q": ["hp"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C2": ["hp"] },
-        { "C6": ["normal-attack"] }
-      ],
+      "constellation": [{ "C2": ["hp"] }, { "C6": ["normal-attack"] }],
       "sand": ["er", "hp"],
       "goblet": ["hydro"],
       "circlet": ["crit-abbr"],
@@ -1505,9 +1353,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C6": ["normal-attack"] }
-      ],
+      "constellation": [{ "C6": ["normal-attack"] }],
       "sand": ["atk", "em"],
       "goblet": ["pyro"],
       "circlet": ["crit-abbr"],
@@ -1520,9 +1366,7 @@
       "q": ["atk", "em"],
       "a1": [],
       "a4": [],
-      "constellation": [
-        { "C1": ["em"] }
-      ],
+      "constellation": [{ "C1": ["em"] }],
       "sand": ["em", "er"],
       "goblet": ["em"],
       "circlet": ["em"],
@@ -1548,9 +1392,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["hp"],
-      "constellation": [
-        { "C6": ["hp"] }
-      ],
+      "constellation": [{ "C6": ["hp"] }],
       "sand": ["hp"],
       "goblet": ["hp"],
       "circlet": ["hp"],

@@ -9,11 +9,5 @@
   ],
   "day": 2,
   "region": 5,
-  "characters": [
-    "freminet",
-    "furina",
-    "charlotte",
-    "clorinde",
-    "escoffier"
-  ]
+  "characters": ["freminet", "furina", "charlotte", "clorinde", "escoffier"]
 }

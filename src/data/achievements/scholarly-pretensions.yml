@@ -6,8 +6,8 @@ region: liyue
 checklist: 2
 name: "Scholarly Pretensions"
 commission:
-- "The Lost Relic"
-- "A Little Raid"
+  - "The Lost Relic"
+  - "A Little Raid"
 description: "Complete “The Lost Relic” and “A Little Raid.”"
 notes: |
   The Box of Gadgets version (random) of “The Lost Relic” is required to unlock the commission “A Little Raid”.

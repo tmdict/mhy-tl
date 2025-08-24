@@ -1,7 +1,7 @@
 ---
 character: sangonomiya-kokomi
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
   - reaction
@@ -28,14 +28,14 @@ mainstat:
     - heal
 
 stats:
-  - hp: '41,000'
-  - er: ''
-  - atk: '1,300'
-  - heal: '85%'
+  - hp: "41,000"
+  - er: ""
+  - atk: "1,300"
+  - heal: "85%"
 
-talent: 'Q > E > A'
+talent: "Q > E > A"
 
-notes: 'Q > (while Q) NAx2 > Dash'
+notes: "Q > (while Q) NAx2 > Dash"
 
 source:
   - ysmxt: default

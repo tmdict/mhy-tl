@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 12,
-  "drop": [
-    "ascended-sample-knight",
-    "ascended-sample-rook",
-    "ascended-sample-queen"
-  ]
+  "drop": ["ascended-sample-knight", "ascended-sample-rook", "ascended-sample-queen"]
 }

@@ -2,18 +2,24 @@
 let _filterlist = $state({});
 
 export const filterlist = {
-  get all() { return _filterlist },
-  get: (filterType) => { return _filterlist[filterType]; },
-  getFilters: () => { return Object.keys(_filterlist); },
+  get all() {
+    return _filterlist;
+  },
+  get: (filterType) => {
+    return _filterlist[filterType];
+  },
+  getFilters: () => {
+    return Object.keys(_filterlist);
+  },
   // Given a list of keys, create an empty filter for each key
   init: (filterKeys) => {
     _filterlist = filterKeys.reduce(
       (acc, filterName) => ({
         [filterName]: { common: [], quick: "" },
-        ...acc
+        ...acc,
       }),
-      {}
-    )
+      {},
+    );
   },
   // Only one quick filter can be selected at a time
   updateQuickFilter: (filterType, filterValue) => {
@@ -36,6 +42,6 @@ export const filterlist = {
     Object.keys(_filterlist).forEach((filterType) => {
       _filterlist[filterType].common = [];
       _filterlist[filterType].quick = "";
-    })
-  }
+    });
+  },
 };

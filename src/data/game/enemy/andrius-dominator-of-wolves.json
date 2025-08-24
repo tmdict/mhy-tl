@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 2,
-  "drop": [
-    "tail-of-boreas",
-    "ring-of-boreas",
-    "spirit-locket-of-boreas"
-  ]
+  "drop": ["tail-of-boreas", "ring-of-boreas", "spirit-locket-of-boreas"]
 }

@@ -1,7 +1,7 @@
 ---
 character: traveler-anemo
 c: 6
-name: 'Anemo DPS'
+name: "Anemo DPS"
 type:
   - dps
   - sub-dps
@@ -30,14 +30,14 @@ mainstat:
     - crit
 
 stats:
-  - em: '720'
-  - er: ''
-  - atk: '1,300'
-  - crit: ''
+  - em: "720"
+  - er: ""
+  - atk: "1,300"
+  - crit: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'E/Q > Swap'
+notes: "E/Q > Swap"
 
 source:
   - ysmxt: default

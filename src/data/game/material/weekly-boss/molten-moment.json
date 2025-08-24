@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "la-signora",
-  "characters": [
-    "raiden-shogun",
-    "aloy",
-    "gorou"
-  ]
+  "characters": ["raiden-shogun", "aloy", "gorou"]
 }

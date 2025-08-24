@@ -1,7 +1,7 @@
 ---
 character: freminet
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -28,11 +28,11 @@ mainstat:
     - crit
 
 stats:
-  - er: ''
-  - crit: '60-75% / 120-150%'
-  - atk: '2,400'
+  - er: ""
+  - crit: "60-75% / 120-150%"
+  - atk: "2,400"
 
-talent: 'E > Q = A'
+talent: "E > Q = A"
 
 source:
   - ysmxt: default

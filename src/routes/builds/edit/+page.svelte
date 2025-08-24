@@ -1,25 +1,25 @@
 <script>
-  import { toast } from '@store/toast';
-  import lzstring from 'lz-string';
-  import { browser } from '$app/environment';
-  import { availableInputs, editor } from '@store/editor.svelte';
-  import { CHARACTERS_DATA, WEAPONS_DATA } from '@store/gamedata';
-  import { localData } from '@store/sitedata';
-  import ID from '$lib/util/alias.json';
-  import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from '$lib/util/codec';
-  import { parser } from '$lib/util/parser';
-  import { validator } from '$lib/util/validator';
-  import BuildFullPage from '$lib/components/build/BuildFullPage.svelte';
-  import Copy from '$lib/svg/copy.svelte';
-  import EditorBuildArtifact from '$lib/components/editor/EditorBuildArtifact.svelte';
-  import EditorBuildStat from '$lib/components/editor/EditorBuildStat.svelte';
-  import EditorBuildType from '$lib/components/editor/EditorBuildType.svelte';
-  import EditorBuildWeapon from '$lib/components/editor/EditorBuildWeapon.svelte';
-  import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
-  import EditorTextArea from '$lib/components/editor/EditorTextArea.svelte';
-  import EditorTextField from '$lib/components/editor/EditorTextField.svelte';
+  import { toast } from "@store/toast";
+  import lzstring from "lz-string";
+  import { browser } from "$app/environment";
+  import { availableInputs, editor } from "@store/editor.svelte";
+  import { CHARACTERS_DATA, WEAPONS_DATA } from "@store/gamedata";
+  import { localData } from "@store/sitedata";
+  import ID from "$lib/util/alias.json";
+  import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from "$lib/util/codec";
+  import { parser } from "$lib/util/parser";
+  import { validator } from "$lib/util/validator";
+  import BuildFullPage from "$lib/components/build/BuildFullPage.svelte";
+  import Copy from "$lib/svg/copy.svelte";
+  import EditorBuildArtifact from "$lib/components/editor/EditorBuildArtifact.svelte";
+  import EditorBuildStat from "$lib/components/editor/EditorBuildStat.svelte";
+  import EditorBuildType from "$lib/components/editor/EditorBuildType.svelte";
+  import EditorBuildWeapon from "$lib/components/editor/EditorBuildWeapon.svelte";
+  import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
+  import EditorTextArea from "$lib/components/editor/EditorTextArea.svelte";
+  import EditorTextField from "$lib/components/editor/EditorTextField.svelte";
 
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
+  const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   const debugMode = false;
 
   editor.reset(); // Reset editor
@@ -29,7 +29,9 @@
     const link = window.location.hash.substring(1);
     if (link.length > 0) {
       try {
-        const importedBuild = decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)));
+        const importedBuild = decodeBuild(
+          extractBuild(lzstring.decompressFromEncodedURIComponent(link)),
+        );
         editor.build = parser.importToEditor(importedBuild, editor.getKeys);
       } catch (err) {
         toast.error(`Cannot read build: ${err}`);
@@ -38,35 +40,39 @@
   }
 
   // Re-validate everytime an input changes
-  let validated = $derived(validator.validateEditorBuild(editor.build, editor.getKeys, CHARACTERS_DATA, WEAPONS_DATA));
+  let validated = $derived(
+    validator.validateEditorBuild(editor.build, editor.getKeys, CHARACTERS_DATA, WEAPONS_DATA),
+  );
   let parsed = $derived.by(() => {
     return validated.result ? parser.parse(editor.build, editor.getKeys, CHARACTERS_DATA) : {};
-  })
+  });
   let encoded = $derived.by(() => {
-    return validated.result ? lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(parsed))) : '';
-  })
+    return validated.result
+      ? lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(parsed)))
+      : "";
+  });
 
   function copyToClipboard(link) {
     navigator.clipboard.writeText(window.location.hostname + link);
-    toast.success('Copied to clipboard!');
+    toast.success("Copied to clipboard!");
   }
 
   function saveBuild() {
     try {
       const id = hash(JSON.stringify(parsed));
       // Only save if current build ID doesn't already exist
-      if (!$localData['builds'].some((b) => b.id === id)) {
+      if (!$localData["builds"].some((b) => b.id === id)) {
         // Update local storage
         $localData = {
           ...$localData,
-          builds: [...$localData['builds'], { ...parsed, id: id }]
+          builds: [...$localData["builds"], { ...parsed, id: id }],
         };
         if (browser) {
-          localStorage.setItem('tmdict.genshin.data', JSON.stringify($localData));
+          localStorage.setItem("tmdict.genshin.data", JSON.stringify($localData));
         }
-        toast.success('Build saved.');
+        toast.success("Build saved.");
       } else {
-        toast.error('Duplicate build!');
+        toast.error("Duplicate build!");
       }
     } catch (err) {
       toast.error(`Something went wrong: ${err}`);
@@ -84,7 +90,7 @@
     raw: {JSON.stringify(editor.build, null, 2)}<br /><br />
     validate: {JSON.stringify(validated, null, 2)}<br /><br />
     parsed: {JSON.stringify(parsed, null, 2)}<br /><br />
-    num: {JSON.stringify(editor.build['num'], null, 2)}<br /><br />
+    num: {JSON.stringify(editor.build["num"], null, 2)}<br /><br />
   </div>
 {/if}
 
@@ -100,7 +106,7 @@
           {/each}
         </ul>
       </div>
-    {:else if encoded != ''}
+    {:else if encoded != ""}
       <BuildFullPage build={parsed} link={encoded} allowEdit={false} />
 
       <div class="share">
@@ -127,10 +133,10 @@
       label="Character"
       list={availableInputs.characters}
       l10n={Object.values(CHARACTERS_DATA).reduce(
-        (acc, c) => ({ ...acc, [c.id]: c.data ? c.data['name'] : c.id }),
-        { '-': '-' }
+        (acc, c) => ({ ...acc, [c.id]: c.data ? c.data["name"] : c.id }),
+        { "-": "-" },
       )}
-      bind:selected={editor.build['character']}
+      bind:selected={editor.build["character"]}
     />
     {#if validator.character(editor.build)}
       <EditorDropdownList
@@ -138,9 +144,9 @@
         label="Constellation"
         list={availableInputs.const}
         inputWidth="60px"
-        bind:selected={editor.build['constellation']}
+        bind:selected={editor.build["constellation"]}
       />
-      <EditorTextField id="build-name" label="Name" bind:value={editor.build['name']} />
+      <EditorTextField id="build-name" label="Name" bind:value={editor.build["name"]} />
       <EditorBuildType />
     {/if}
   </div>
@@ -148,72 +154,74 @@
   {#if validator.character(editor.build)}
     <h4>Equipments</h4>
     <div class="content-row edit-section">
-      <div class="content-col ">
-        {#each Array(editor.build['num'].weapons) as _, i}
+      <div class="content-col">
+        {#each Array(editor.build["num"].weapons) as _, i}
           <EditorBuildWeapon
             weaponKey={i}
-            availableWeapons={availableInputs.weapons[CHARACTERS_DATA[editor.build['character']].weapon]}
+            availableWeapons={availableInputs.weapons[
+              CHARACTERS_DATA[editor.build["character"]].weapon
+            ]}
           />
         {/each}
         <div class="content-row add-remove">
-          {#if editor.build['num'].weapons > 1}
+          {#if editor.build["num"].weapons > 1}
             <span
               class="remove-input"
               role="button"
               tabindex="0"
               onclick={() =>
                 editor.removeInput(
-                  'weapons',
-                  Object.values(editor.getKeys.weapon(editor.build['num']['weapons'] - 1))
+                  "weapons",
+                  Object.values(editor.getKeys.weapon(editor.build["num"]["weapons"] - 1)),
                 )}
               onkeydown={() =>
                 editor.removeInput(
-                  'weapons',
-                  Object.values(editor.getKeys.weapon(editor.build['num']['weapons'] - 1))
+                  "weapons",
+                  Object.values(editor.getKeys.weapon(editor.build["num"]["weapons"] - 1)),
                 )}>-</span
             >
           {/if}
-          {#if editor.build['num'].weapons < 2}
+          {#if editor.build["num"].weapons < 2}
             <span
               class="add-input"
               role="button"
               tabindex="0"
-              onclick={() => editor.addInput('weapons', 2)}
-              onkeydown={() => editor.addInput('weapons', 2)}>+</span
+              onclick={() => editor.addInput("weapons", 2)}
+              onkeydown={() => editor.addInput("weapons", 2)}>+</span
             >
           {/if}
         </div>
       </div>
 
       <div class="content-col">
-        {#each Array(editor.build['num'].artifacts) as _, i}
+        {#each Array(editor.build["num"].artifacts) as _, i}
           <EditorBuildArtifact artifactKey={i} />
         {/each}
         <div class="content-row add-remove">
-          {#if editor.build['num'].artifacts > 1}
+          {#if editor.build["num"].artifacts > 1}
             <span
               class="remove-input"
               role="button"
               tabindex="0"
               onclick={() =>
                 editor.removeInput(
-                  'artifacts',
-                  Object.values(editor.getKeys.artifact(editor.build['num']['artifacts'] - 1))
+                  "artifacts",
+                  Object.values(editor.getKeys.artifact(editor.build["num"]["artifacts"] - 1)),
                 )}
               onkeydown={() =>
                 editor.removeInput(
-                  'artifacts',
-                  Object.values(editor.getKeys.artifact(editor.build['num']['artifacts'] - 1))
+                  "artifacts",
+                  Object.values(editor.getKeys.artifact(editor.build["num"]["artifacts"] - 1)),
                 )}>-</span
             >
           {/if}
-          {#if editor.build['num'].artifacts < 2}
+          {#if editor.build["num"].artifacts < 2}
             <span
               class="add-input"
               role="button"
               tabindex="0"
-              onclick={() => editor.addInput('artifacts', 2)}
-              onkeydown={() => editor.addInput('artifacts', 2)}>+</span
+              onclick={() => editor.addInput("artifacts", 2)}
+              onkeydown={() => editor.addInput("artifacts", 2)}>+</span
             >
           {/if}
         </div>
@@ -223,14 +231,14 @@
     <h4>Stats</h4>
     <div class="content-row edit-section">
       <div class="content-col edit-mainstat">
-        {#each ['sand', 'goblet', 'circlet'] as piece}
+        {#each ["sand", "goblet", "circlet"] as piece}
           <div class="content-row">
             <div class="content-col">
-              {#each Array(editor.build['num']['mainstat'][piece]) as _, i}
+              {#each Array(editor.build["num"]["mainstat"][piece]) as _, i}
                 {@const mainstatKey = editor.getKeys.mainstat(piece, i).mainstat}
                 <EditorDropdownList
                   id={mainstatKey}
-                  label={i === 0 ? `${ID[piece]} Main Stats` : ''}
+                  label={i === 0 ? `${ID[piece]} Main Stats` : ""}
                   list={availableInputs[piece]}
                   l10n={availableInputs[piece].reduce((acc, c) => ({ ...acc, [c]: ID[c] }), {})}
                   width="200px"
@@ -239,28 +247,30 @@
               {/each}
             </div>
             <div class="content-row add-remove">
-              {#if editor.build['num']['mainstat'][piece] > 1}
+              {#if editor.build["num"]["mainstat"][piece] > 1}
                 <span
                   class="remove-input"
                   role="button"
                   tabindex="0"
                   onclick={() =>
-                    editor.removeNestedInput('mainstat', piece, [
-                      editor.getKeys.mainstat(piece, editor.build['num']['mainstat'][piece] - 1).mainstat
+                    editor.removeNestedInput("mainstat", piece, [
+                      editor.getKeys.mainstat(piece, editor.build["num"]["mainstat"][piece] - 1)
+                        .mainstat,
                     ])}
                   onkeydown={() =>
-                    editor.removeNestedInput('mainstat', piece, [
-                      editor.getKeys.mainstat(piece, editor.build['num']['mainstat'][piece] - 1).mainstat
+                    editor.removeNestedInput("mainstat", piece, [
+                      editor.getKeys.mainstat(piece, editor.build["num"]["mainstat"][piece] - 1)
+                        .mainstat,
                     ])}>-</span
                 >
               {/if}
-              {#if editor.build['num']['mainstat'][piece] < 2}
+              {#if editor.build["num"]["mainstat"][piece] < 2}
                 <span
                   class="add-input"
                   role="button"
                   tabindex="0"
-                  onclick={() => editor.addNestedInput('mainstat', piece, 2)}
-                  onkeydown={() => editor.addNestedInput('mainstat', piece, 2)}>+</span
+                  onclick={() => editor.addNestedInput("mainstat", piece, 2)}
+                  onkeydown={() => editor.addNestedInput("mainstat", piece, 2)}>+</span
                 >
               {/if}
             </div>
@@ -270,34 +280,34 @@
       </div>
 
       <div class="content-col">
-        {#each Array(editor.build['num'].stats) as _, i}
+        {#each Array(editor.build["num"].stats) as _, i}
           <EditorBuildStat statKey={i} />
         {/each}
         <div class="content-row add-remove">
-          {#if editor.build['num'].stats > 1}
+          {#if editor.build["num"].stats > 1}
             <span
               class="remove-input"
               role="button"
               tabindex="0"
               onclick={() =>
                 editor.removeInput(
-                  'stats',
-                  Object.values(editor.getKeys.stat(editor.build['num']['stats'] - 1))
+                  "stats",
+                  Object.values(editor.getKeys.stat(editor.build["num"]["stats"] - 1)),
                 )}
               onkeydown={() =>
                 editor.removeInput(
-                  'stats',
-                  Object.values(editor.getKeys.stat(editor.build['num']['stats'] - 1))
+                  "stats",
+                  Object.values(editor.getKeys.stat(editor.build["num"]["stats"] - 1)),
                 )}>-</span
             >
           {/if}
-          {#if editor.build['num'].stats < 4}
+          {#if editor.build["num"].stats < 4}
             <span
               class="add-input"
               role="button"
               tabindex="0"
-              onclick={() => editor.addInput('stats', 4)}
-              onkeydown={() => editor.addInput('stats', 4)}>+</span
+              onclick={() => editor.addInput("stats", 4)}
+              onkeydown={() => editor.addInput("stats", 4)}>+</span
             >
           {/if}
         </div>
@@ -312,18 +322,18 @@
           label="Talent Priority"
           placeholder="A > E > Q"
           width="300px"
-          bind:value={editor.build['talent']}
+          bind:value={editor.build["talent"]}
         />
         <EditorTextField
           id="source"
           label="Sources"
           placeholder="Optional"
           width="300px"
-          bind:value={editor.build['source']}
+          bind:value={editor.build["source"]}
         />
       </div>
       <div class="content-col" style="flex: 1;">
-        <EditorTextArea id="notes" label="Notes" bind:value={editor.build['notes']} />
+        <EditorTextArea id="notes" label="Notes" bind:value={editor.build["notes"]} />
       </div>
     </div>
   {/if}

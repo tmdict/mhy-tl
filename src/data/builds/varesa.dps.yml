@@ -1,7 +1,7 @@
 ---
 character: varesa
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,12 +26,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70% / 150-170%'
-  - atk: '1,800-2,100'
-  - er: '130%'
-  - em: ''
+  - crit: "70% / 150-170%"
+  - atk: "1,800-2,100"
+  - er: "130%"
+  - em: ""
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
 source:
   - ysytl: default

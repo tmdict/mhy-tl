@@ -7,9 +7,9 @@ checklist: 4
 name: "New Inspiration! New Products!"
 description: "Help Heinry develop 3 new types of Fonta and try the “experimental drink” once."
 commission:
-- "Refreshing Fonta, a Font of Refreshment!"
-- "Time to Drink"
-notes: | 
+  - "Refreshing Fonta, a Font of Refreshment!"
+  - "Time to Drink"
+notes: |
   Complete world quest series “Fontaine Research Institute Chronicles” to trigger follow-up daily commission “Refreshing Fonta, a Font of Refreshment!” Completing this commission three times unlocks the daily commission “Time to Drink”, completing it grants the achievement.
 checklistItem:
   1: "Refreshing Fonta, a Font of Refreshment! x1"

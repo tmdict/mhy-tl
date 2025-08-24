@@ -7,10 +7,10 @@ checklist: 4
 name: "Her and Her Cat"
 description: "Follow Neko up Mt. Yougou to find “Hibiki”’s trail."
 commission:
-- "A Fishy Flavor"
-- "Shrine Cleanup"
-- "The Cat’s Trail"
-notes: | 
+  - "A Fishy Flavor"
+  - "Shrine Cleanup"
+  - "The Cat’s Trail"
+notes: |
   Complete “Neko Is a Cat” World Quest series, and 4 total completions of any of the following daily commission:
 
   - A Fishy Flavor

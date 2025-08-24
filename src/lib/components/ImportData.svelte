@@ -1,12 +1,12 @@
 <script>
-  import { toast } from '@store/toast';
-  import { browser } from '$app/environment';
-  import { localData } from '@store/sitedata';
+  import { toast } from "@store/toast";
+  import { browser } from "$app/environment";
+  import { localData } from "@store/sitedata";
 
   // Support drag and drop in the future
   function getFilesFromInputEvent({ target }) {
     const files = target.files ? [...target.files] : [];
-    target.value = ''; // Reset value so file can be uploaded again
+    target.value = ""; // Reset value so file can be uploaded again
     return files;
   }
 
@@ -17,8 +17,8 @@
       try {
         const imported = JSON.parse(reader.result);
         $localData = imported;
-        browser && localStorage.setItem('tmdict.genshin.data', reader.result);
-        toast.success('Import successful!');
+        browser && localStorage.setItem("tmdict.genshin.data", reader.result);
+        toast.success("Import successful!");
       } catch (err) {
         toast.error(`Import failed: ${err}`);
       }

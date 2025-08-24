@@ -1,7 +1,7 @@
 ---
 character: sucrose
 c: 1
-name: 'EM Support'
+name: "EM Support"
 type:
   - support
 
@@ -27,14 +27,14 @@ mainstat:
     - em
 
 stats:
-  - em: '755'
-  - er: ''
-  - atk: '1,100'
-  - crit: ''
+  - em: "755"
+  - er: ""
+  - atk: "1,100"
+  - crit: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'E/Q swirl'
+notes: "E/Q swirl"
 
 source:
   - ysmxt: default

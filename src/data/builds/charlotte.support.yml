@@ -1,7 +1,7 @@
 ---
 character: charlotte
 c: 0
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -27,11 +27,11 @@ mainstat:
     - heal
 
 stats:
-  - er: '175-220%'
-  - atk: '1,500'
-  - crit: ''
+  - er: "175-220%"
+  - atk: "1,500"
+  - crit: ""
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

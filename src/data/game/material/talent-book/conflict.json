@@ -9,11 +9,5 @@
   ],
   "day": 3,
   "region": 6,
-  "characters": [
-    "kachina",
-    "chasca",
-    "varesa",
-    "ifa",
-    "ineffa"
-  ]
+  "characters": ["kachina", "chasca", "varesa", "ifa", "ineffa"]
 }

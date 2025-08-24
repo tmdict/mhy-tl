@@ -1,7 +1,7 @@
 ---
 character: yanfei
 c: 1
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '75% / 155%'
-  - atk: '1,800'
-  - er: ''
-  - em: '160'
+  - crit: "75% / 155%"
+  - atk: "1,800"
+  - er: ""
+  - em: "160"
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
-notes: 'Nx3 > CA'
+notes: "Nx3 > CA"
 
 source:
   - ysmxt: default

@@ -1,7 +1,7 @@
 ---
 character: ineffa
 c: 2
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -28,12 +28,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70% / 140-170%'
-  - atk: '2,000'
-  - em: '200'
-  - er: ''
+  - crit: "70% / 140-170%"
+  - atk: "2,000"
+  - em: "200"
+  - er: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysjsgl: default

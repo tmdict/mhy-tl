@@ -4,10 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "andrius-dominator-of-wolves",
-  "characters": [
-    "sucrose",
-    "ningguang",
-    "kaeya",
-    "fischl"
-  ]
+  "characters": ["sucrose", "ningguang", "kaeya", "fischl"]
 }

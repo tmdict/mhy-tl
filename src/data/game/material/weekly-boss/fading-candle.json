@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "the-knave",
-  "characters": [
-    "arlecchino",
-    "kachina",
-    "yumemizuki-mizuki"
-  ]
+  "characters": ["arlecchino", "kachina", "yumemizuki-mizuki"]
 }

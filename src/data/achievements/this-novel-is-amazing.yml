@@ -6,7 +6,7 @@ region: liyue
 checklist: 1
 name: "This Novel Is Amazing!"
 commission:
-- "This Novel Is Amazing!"
+  - "This Novel Is Amazing!"
 description: "Steal a peek at Chang the Ninth’s draft manuscript."
 notes: |
   Choosing to peek at the book grants the achievement “This Novel Is Amazing!”

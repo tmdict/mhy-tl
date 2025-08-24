@@ -9,11 +9,5 @@
   ],
   "day": 2,
   "region": 3,
-  "characters": [
-    "kamisato-ayaka",
-    "kujou-sara",
-    "arataki-itto",
-    "kamisato-ayato",
-    "kuki-shinobu"
-  ]
+  "characters": ["kamisato-ayaka", "kujou-sara", "arataki-itto", "kamisato-ayato", "kuki-shinobu"]
 }

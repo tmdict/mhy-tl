@@ -1,7 +1,7 @@
 ---
 character: alhaitham
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,12 +26,12 @@ mainstat:
     - crit
 
 stats:
-  - er: ''
-  - crit: '70-80% / 195%'
-  - em: '385'
-  - atk: '1,200'
+  - er: ""
+  - crit: "70-80% / 195%"
+  - em: "385"
+  - atk: "1,200"
 
-talent: 'E > A > Q'
+talent: "E > A > Q"
 
 source:
   - ysmxt: default

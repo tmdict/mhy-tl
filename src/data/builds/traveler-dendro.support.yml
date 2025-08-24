@@ -1,7 +1,7 @@
 ---
 character: traveler-dendro
 c: 6
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -29,12 +29,12 @@ mainstat:
     - em
 
 stats:
-  - er: '175-180%'
-  - crit: '60% / 125%'
-  - atk: '1,300'
-  - em: '265'
+  - er: "175-180%"
+  - crit: "60% / 125%"
+  - atk: "1,300"
+  - em: "265"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

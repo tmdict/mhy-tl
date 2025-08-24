@@ -1,7 +1,7 @@
 ---
 character: escoffier
 c: 0
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -27,11 +27,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70-80% / 150-160%'
-  - atk: '1,900-2,100'
-  - er: '160%'
+  - crit: "70-80% / 150-160%"
+  - atk: "1,900-2,100"
+  - er: "160%"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysytl: default

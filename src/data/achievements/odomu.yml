@@ -7,7 +7,7 @@ checklist: 1
 name: "…Odomu?"
 description: "Successfully conduct cultural exchange with the hilichurls in “Language Exchange.”"
 commission:
-- "Language Exchange"
+  - "Language Exchange"
 notes: |
   You are granted the achievement upon first-time success.
 checklistItem:

@@ -1,7 +1,7 @@
 ---
 character: candace
 c: 6
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -28,12 +28,12 @@ mainstat:
     - hp
 
 stats:
-  - er: '190-205%'
-  - crit: '50% / 60%'
-  - hp: '32,000-37,000'
-  - atk: '1,100'
+  - er: "190-205%"
+  - crit: "50% / 60%"
+  - hp: "32,000-37,000"
+  - atk: "1,100"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "all-devouring-narwhal",
-  "characters": [
-    "chevreuse",
-    "xianyun",
-    "sigewinne"
-  ]
+  "characters": ["chevreuse", "xianyun", "sigewinne"]
 }

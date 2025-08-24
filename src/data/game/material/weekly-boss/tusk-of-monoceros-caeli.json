@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "childe",
-  "characters": [
-    "albedo",
-    "zhongli",
-    "xinyan"
-  ]
+  "characters": ["albedo", "zhongli", "xinyan"]
 }

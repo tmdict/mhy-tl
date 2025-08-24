@@ -1,7 +1,7 @@
 ---
 character: kaeya
 c: 2
-name: 'Reverse-Melt'
+name: "Reverse-Melt"
 type:
   - burst
   - reaction
@@ -29,12 +29,12 @@ mainstat:
     - crit
 
 stats:
-  - er: '230%'
-  - crit: '50-75% / 135-180%'
-  - atk: '1,500-1,600'
-  - em: ''
+  - er: "230%"
+  - crit: "50-75% / 135-180%"
+  - atk: "1,500-1,600"
+  - em: ""
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

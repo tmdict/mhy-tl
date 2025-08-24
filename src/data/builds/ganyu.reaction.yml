@@ -1,7 +1,7 @@
 ---
 character: ganyu
 c: 0
-name: 'Melt DPS'
+name: "Melt DPS"
 type:
   - reaction
   - sub-dps
@@ -28,11 +28,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '50% / 175-215%'
-  - em: '80-265'
-  - atk: '2,400'
+  - crit: "50% / 175-215%"
+  - em: "80-265"
+  - atk: "2,400"
 
-talent: 'A > E > Q'
+talent: "A > E > Q"
 
 source:
   - ysmxt: default

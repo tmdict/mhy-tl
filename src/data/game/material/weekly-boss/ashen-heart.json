@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "la-signora",
-  "characters": [
-    "kujou-sara",
-    "arataki-itto",
-    "yun-jin"
-  ]
+  "characters": ["kujou-sara", "arataki-itto", "yun-jin"]
 }

@@ -1,7 +1,7 @@
 ---
 character: ifa
 c: 1
-name: 'Support'
+name: "Support"
 type:
   - healer
   - support
@@ -29,11 +29,11 @@ mainstat:
     - heal
 
 stats:
-  - er: '160–195%'
-  - em: ''
-  - cr: ''
+  - er: "160–195%"
+  - em: ""
+  - cr: ""
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - kqm: https://keqingmains.com/q/ifa-quickguide/

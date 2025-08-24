@@ -7,8 +7,8 @@ checklist: 3
 name: "Catch Me-ow if You Can!"
 description: "Help Sareh find all the little cats."
 commission:
-- "Meow… Meow meow? Meow! Meow."
-notes: | 
+  - "Meow… Meow meow? Meow! Meow."
+notes: |
   Completing all three variants of the commission grants the achievement, each cat has their own cat-talk.
 checklistItem:
   1: "Lale: Meow, meow meow meow, meow—"

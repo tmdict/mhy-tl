@@ -1,31 +1,35 @@
 <script>
-  import { browser } from '$app/environment';
-  import { slide } from 'svelte/transition';
-  import { localData } from '@store/sitedata';
-  import { marked } from 'marked';
-  import ID from '$lib/util/alias.json';
+  import { browser } from "$app/environment";
+  import { slide } from "svelte/transition";
+  import { localData } from "@store/sitedata";
+  import { marked } from "marked";
+  import ID from "$lib/util/alias.json";
 
   let { achievement, alt = false, expand = false } = $props();
 
   // Update local storage
   function updateChecklist(achievementName, todo) {
-    $localData['achievements'][achievementName][todo] = !$localData['achievements'][achievementName][todo];
-    browser && localStorage.setItem('tmdict.genshin.data', JSON.stringify($localData));
+    $localData["achievements"][achievementName][todo] =
+      !$localData["achievements"][achievementName][todo];
+    browser && localStorage.setItem("tmdict.genshin.data", JSON.stringify($localData));
     // Update achievement completion status
-    complete = Object.values($localData['achievements'][achievementName]).every((c) => c === true);
+    complete = Object.values($localData["achievements"][achievementName]).every((c) => c === true);
   }
 
   function trueUpChecklist(achievement) {
     // Compare number of todo's between local storage and achievement data
-    if (Object.keys($localData['achievements'][achievement.achievement]).length !== achievement.checklist) {
+    if (
+      Object.keys($localData["achievements"][achievement.achievement]).length !==
+      achievement.checklist
+    ) {
       let updated = new Array(achievement.checklist).fill(false);
-      for (let i = 0; i < $localData['achievements'][achievement.achievement].length; i++) {
+      for (let i = 0; i < $localData["achievements"][achievement.achievement].length; i++) {
         if (i < achievement.checklist) {
-          updated[i] = $localData['achievements'][achievement.achievement][i];
+          updated[i] = $localData["achievements"][achievement.achievement][i];
         }
       }
-      $localData['achievements'][achievement.achievement] = updated;
-      browser && localStorage.setItem('tmdict.genshin.data', JSON.stringify($localData));
+      $localData["achievements"][achievement.achievement] = updated;
+      browser && localStorage.setItem("tmdict.genshin.data", JSON.stringify($localData));
       console.log(`Achievement checklist updated: ${achievement.achievement}`);
     }
   }
@@ -34,7 +38,9 @@
   trueUpChecklist(achievement);
 
   // Go through checklist to determine achievement completion status
-  let complete = $derived(Object.values($localData['achievements'][achievement.achievement]).every((c) => c === true));
+  let complete = $derived(
+    Object.values($localData["achievements"][achievement.achievement]).every((c) => c === true),
+  );
 </script>
 
 <div
@@ -85,7 +91,7 @@
               id="{achievement.achievement}-{todo}"
               name="{achievement.achievement}-{todo}"
               value={achievement.checklistItem[todo + 1]}
-              checked={$localData['achievements'][achievement.achievement][todo]}
+              checked={$localData["achievements"][achievement.achievement][todo]}
             />
             <label
               role="presentation"

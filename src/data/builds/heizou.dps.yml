@@ -1,7 +1,7 @@
 ---
 character: shikanoin-heizou
 c: 4
-name: 'Anemo DPS'
+name: "Anemo DPS"
 type:
   - dps
 
@@ -26,14 +26,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60-75% / 120-150%'
-  - atk: '2,200'
-  - er: ''
-  - em: ''
+  - crit: "60-75% / 120-150%"
+  - atk: "2,200"
+  - er: ""
+  - em: ""
 
-talent: 'E > A > Q'
+talent: "E > A > Q"
 
-notes: 'NA > Q > E'
+notes: "NA > Q > E"
 
 source:
   - ysmxt: default

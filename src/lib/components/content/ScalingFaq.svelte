@@ -1,7 +1,11 @@
 <h5>About</h5>
 
 <p>
-  Information on which stats each character scales with, as well as recommended main stats for different artifact pieces, used to help decide whether an artifact with certain main and sub stats is good for a character, or which off-piece artifact to keep. Most of the information is derived from the <a href="https://genshin-impact.fandom.com/wiki/Character/Comparison">Genshin Impact Wiki</a
+  Information on which stats each character scales with, as well as recommended main stats for
+  different artifact pieces, used to help decide whether an artifact with certain main and sub stats
+  is good for a character, or which off-piece artifact to keep. Most of the information is derived
+  from the <a href="https://genshin-impact.fandom.com/wiki/Character/Comparison"
+    >Genshin Impact Wiki</a
   >.
 </p>
 
@@ -14,12 +18,15 @@
   <li><strong>Q:</strong> Elemental burst</li>
   <li><strong>Ascend 1:</strong> 1st ascension passive</li>
   <li><strong>Ascend 4:</strong> 4th ascension passive</li>
-  <li><strong>Const:</strong> Any bonus scaling that comes from a Constellation (1, 2, 4, and 6)</li>
+  <li>
+    <strong>Const:</strong> Any bonus scaling that comes from a Constellation (1, 2, 4, and 6)
+  </li>
   <li><strong>Sand:</strong> Recommended main stat(s) for Sand artifact pieces</li>
   <li><strong>Goblet:</strong> Recommended main stat(s) for Goblet artifact pieces</li>
   <li><strong>Circlet:</strong> Recommended main stat(s) for Circlet artifact pieces</li>
   <li>
-    <strong>Recommended Talent:</strong> The top recommended talent (to be leveled) for a character's "meta" build.
+    <strong>Recommended Talent:</strong> The top recommended talent (to be leveled) for a character's
+    "meta" build.
   </li>
 </ul>
 
@@ -27,11 +34,14 @@
 
 <ul>
   <li>
-    A stat <span class="highlight">is highlighted</span> if it's selected in the stats filter AND is a scaling-stat for the key selected in the keys filter.
+    A stat <span class="highlight">is highlighted</span> if it's selected in the stats filter AND is
+    a scaling-stat for the key selected in the keys filter.
   </li>
 
   <li>
-    A stat <span class="recommended">is highlighted</span> if it's a scaling stat for a talent (normal attack, elemental skill, or elemental burst) AND said talent is the top recommended talent (the one that should be leveled first) for that character's "meta" build.
+    A stat <span class="recommended">is highlighted</span> if it's a scaling stat for a talent (normal
+    attack, elemental skill, or elemental burst) AND said talent is the top recommended talent (the one
+    that should be leveled first) for that character's "meta" build.
   </li>
 
   <li>
@@ -41,7 +51,8 @@
           >Dendro, <span class="electro"
             >Electro, <span class="geo"
               >Geo, <span class="hydro"
-                >Hydro, <span class="physical">Physical, <span class="pyro">Pyro</span>.</span></span
+                >Hydro, <span class="physical">Physical, <span class="pyro">Pyro</span>.</span
+                ></span
               ></span
             ></span
           ></span

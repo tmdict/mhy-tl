@@ -7,9 +7,9 @@ checklist: 4
 name: "A Lingering Fragrance"
 description: "Witness Nermin’s tale."
 commission:
-- "Desert Bloom"
-- "Blooming Sands: Lasting Scent"
-notes: | 
+  - "Desert Bloom"
+  - "Blooming Sands: Lasting Scent"
+notes: |
   Complete world quest “Blooming Sands” to trigger follow-up daily commission “Desert Bloom”, completing all three versions and then “Blooming Sands: Lasting Scent” grants the achievement.
 checklistItem:
   1: "Desert Bloom: Fetching water"

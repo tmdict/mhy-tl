@@ -1,7 +1,7 @@
 ---
 character: nahida
 c: 2
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - dps
   - reaction
@@ -30,12 +30,12 @@ mainstat:
     - crit
 
 stats:
-  - er: '130%'
-  - em: '745-940'
-  - crit: '30-45% / 95-125%'
-  - atk: '1,200-1,500'
+  - er: "130%"
+  - em: "745-940"
+  - crit: "30-45% / 95-125%"
+  - atk: "1,200-1,500"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

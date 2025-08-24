@@ -7,8 +7,8 @@ checklist: 1
 name: "Get Your Own Emergency Food!"
 description: "Consume the food during “Food Delivery”…?"
 commission:
-- "Food Delivery"
-notes: | 
+  - "Food Delivery"
+notes: |
   Eating the food instead of delivering it during “Food Delivery” grants the achievement.
 checklistItem:
   1: "Food Delivery"

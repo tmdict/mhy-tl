@@ -1,7 +1,7 @@
 ---
 character: thoma
 c: 4
-name: 'Shield Support'
+name: "Shield Support"
 type:
   - shield
   - support
@@ -29,14 +29,14 @@ mainstat:
     - cr
 
 stats:
-  - er: '220%'
-  - hp: '23,000-34,000'
-  - cr: '70%'
-  - atk: '1,500'
+  - er: "220%"
+  - hp: "23,000-34,000"
+  - cr: "70%"
+  - atk: "1,500"
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'Full-stack shields'
+notes: "Full-stack shields"
 
 source:
   - ysmxt: default

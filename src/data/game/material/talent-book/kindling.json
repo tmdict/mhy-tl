@@ -9,10 +9,5 @@
   ],
   "day": 2,
   "region": 6,
-  "characters": [
-    "kinich",
-    "xilonen",
-    "ororon",
-    "citlali"
-  ]
+  "characters": ["kinich", "xilonen", "ororon", "citlali"]
 }

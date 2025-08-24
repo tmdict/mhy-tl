@@ -6,8 +6,8 @@ region: liyue
 checklist: 2
 name: "A Nourishing Friendship"
 commission:
-- "Fishing Jiangxue"
-- "Yanxiao's Dilemma"
+  - "Fishing Jiangxue"
+  - "Yanxiao's Dilemma"
 description: "Complete “Fishing Jiangxue” and “Yanxiao’s Dilemma.”"
 notes: ""
 checklistItem:

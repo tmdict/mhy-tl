@@ -1,7 +1,7 @@
 ---
 character: fischl
 c: 6
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - reaction
   - sub-dps
@@ -28,12 +28,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60-75% / 120-150%'
-  - atk: '1,800-2,200'
-  - er: ''
-  - em: '80-245'
+  - crit: "60-75% / 120-150%"
+  - atk: "1,800-2,200"
+  - er: ""
+  - em: "80-245"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

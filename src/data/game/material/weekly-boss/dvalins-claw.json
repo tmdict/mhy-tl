@@ -4,10 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "stormterror-dvalin",
-  "characters": [
-    "xiangling",
-    "lisa",
-    "noelle",
-    "razor"
-  ]
+  "characters": ["xiangling", "lisa", "noelle", "razor"]
 }

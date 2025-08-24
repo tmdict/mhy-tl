@@ -1,7 +1,7 @@
 ---
 character: sethos
 c: 6
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,11 +26,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 160%'
-  - em: '350'
-  - atk: '1,350'
+  - crit: "80% / 160%"
+  - em: "350"
+  - atk: "1,350"
 
-talent: 'A > Q = E'
+talent: "A > Q = E"
 
 source:
   - ysytl: default

@@ -1,13 +1,13 @@
 <script>
-  import { availableInputs, editor } from '@store/editor.svelte';
-  import { ARTIFACTS_DATA } from '@store/gamedata';
-  import EditorDropdownList from '$lib/components/editor/EditorDropdownList.svelte';
+  import { availableInputs, editor } from "@store/editor.svelte";
+  import { ARTIFACTS_DATA } from "@store/gamedata";
+  import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
 
   let { artifactKey } = $props();
   const keys = editor.getKeys.artifact(artifactKey);
 
   const l10n = Object.values(ARTIFACTS_DATA).reduce((acc, a) => {
-    const name = a['data'] ? a['data']['name'] : a.id;
+    const name = a["data"] ? a["data"]["name"] : a.id;
     return { ...acc, [a.id]: name };
   }, {});
 </script>

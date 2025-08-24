@@ -1,7 +1,7 @@
 ---
 character: aloy
 c: 0
-name: 'Burst Support'
+name: "Burst Support"
 type:
   - burst
   - dps
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '50% / 135%'
-  - atk: '1,700'
-  - em: ''
-  - er: ''
+  - crit: "50% / 135%"
+  - atk: "1,700"
+  - em: ""
+  - er: ""
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'Q'
+notes: "Q"
 
 source:
   - ysmxt: default

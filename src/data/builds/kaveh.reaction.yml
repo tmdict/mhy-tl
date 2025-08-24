@@ -1,7 +1,7 @@
 ---
 character: kaveh
 c: 0
-name: 'Bloom Support'
+name: "Bloom Support"
 type:
   - reaction
   - support
@@ -27,12 +27,12 @@ mainstat:
     - em
 
 stats:
-  - er: '200%'
-  - em: '550-715'
-  - crit: ''
-  - atk: '1,100-1,400'
+  - er: "200%"
+  - em: "550-715"
+  - crit: ""
+  - atk: "1,100-1,400"
 
-talent: 'Q > E > A'
+talent: "Q > E > A"
 
 source:
   - ysmxt: default

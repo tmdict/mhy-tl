@@ -7,8 +7,8 @@ checklist: 3
 name: "Saurian’s Cradle"
 description: "Become friends with a little Yumkasaur."
 commission:
-- "How to Make Friends"
-notes: | 
+  - "How to Make Friends"
+notes: |
   Complete the quest three times, each time choosing the option to comfort the Yumkasaurus, grants the grants the achievement.
 checklistItem:
   1: "Comfort the Yumkasaurus x1"

@@ -7,12 +7,12 @@ checklist: 12
 name: "Principia Arithmetica"
 description: "Help Garcia perfect his machine."
 commission:
-- "Garcia’s Paean: Key Items"
-- "Garcia’s Paean: Substitutes"
-- "Garcia’s Paean: By Bearings"
-- "Garcia’s Paean: Easy Peasy"
-- "Garcia’s Paean: the Echo of Someone"
-notes: | 
+  - "Garcia’s Paean: Key Items"
+  - "Garcia’s Paean: Substitutes"
+  - "Garcia’s Paean: By Bearings"
+  - "Garcia’s Paean: Easy Peasy"
+  - "Garcia’s Paean: the Echo of Someone"
+notes: |
   Complete the “Garcia’s Paean” chain of quests:
 
   1. Complete “Garcia’s Paean” world quest at Wangshu Inn to unlock the daily commission quest “Garcia’s Paean: Key Items”.

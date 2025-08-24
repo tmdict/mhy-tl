@@ -4,71 +4,71 @@
   "data": {
     "northlander": {
       "bow": {
-         "prototype-crescent": 0,
-         "hamayumi": 0,
-         "compound-bow": 0
+        "prototype-crescent": 0,
+        "hamayumi": 0,
+        "compound-bow": 0
       },
       "catalyst": {
-         "prototype-amber": 0,
-         "hakushin-ring": 0,
-         "frostbearer": 0,
-         "mappa-mare": 0
+        "prototype-amber": 0,
+        "hakushin-ring": 0,
+        "frostbearer": 0,
+        "mappa-mare": 0
       },
       "claymore": {
-         "prototype-archaic": 0,
-         "katsuragikiri-nagamasa": 0,
-         "snow-tombed-starsilver": 0,
-         "whiteblind": 0
+        "prototype-archaic": 0,
+        "katsuragikiri-nagamasa": 0,
+        "snow-tombed-starsilver": 0,
+        "whiteblind": 0
       },
       "polearm": {
-         "prototype-starglitter": 0,
-         "kitain-cross-spear": 0,
-         "dragonspine-spear": 0,
-         "crescent-pike": 0
+        "prototype-starglitter": 0,
+        "kitain-cross-spear": 0,
+        "dragonspine-spear": 0,
+        "crescent-pike": 0
       },
       "sword": {
-         "prototype-rancour": 0,
-         "amenoma-kageuchi": 0,
-         "iron-sting": 0
+        "prototype-rancour": 0,
+        "amenoma-kageuchi": 0,
+        "iron-sting": 0
       }
     },
     "midlander": {
       "bow": {
-         "kings-squire": 0,
-         "song-of-stillness": 0
+        "kings-squire": 0,
+        "song-of-stillness": 0
       },
       "catalyst": {
-         "fruit-of-fulfillment": 0,
-         "flowing-purity": 0
+        "fruit-of-fulfillment": 0,
+        "flowing-purity": 0
       },
       "claymore": {
-         "forest-regalia": 0,
-         "tidal-shadow": 0
+        "forest-regalia": 0,
+        "tidal-shadow": 0
       },
       "polearm": {
-         "moonpiercer": 0,
-         "rightful-reward": 0
+        "moonpiercer": 0,
+        "rightful-reward": 0
       },
       "sword": {
-         "sapwood-blade": 0,
-         "finale-of-the-deep": 0
+        "sapwood-blade": 0,
+        "finale-of-the-deep": 0
       }
     },
     "borderland": {
       "bow": {
-         "chain-breaker": 0
+        "chain-breaker": 0
       },
       "catalyst": {
-         "ring-of-yaxche": 0
+        "ring-of-yaxche": 0
       },
       "claymore": {
-         "earth-shaker": 0
+        "earth-shaker": 0
       },
       "polearm": {
-         "footprint-of-the-rainbow": 0
+        "footprint-of-the-rainbow": 0
       },
       "sword": {
-         "flute-of-ezpitzal": 0
+        "flute-of-ezpitzal": 0
       }
     }
   }

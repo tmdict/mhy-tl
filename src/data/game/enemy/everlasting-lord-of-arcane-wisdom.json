@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 7,
-  "drop": [
-    "puppet-strings",
-    "mirror-of-mushin",
-    "dakas-bell"
-  ]
+  "drop": ["puppet-strings", "mirror-of-mushin", "dakas-bell"]
 }

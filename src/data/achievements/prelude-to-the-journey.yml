@@ -6,10 +6,10 @@ region: liyue
 checklist: 4
 name: "Prelude to the Journey"
 commission:
-- "Pirate Invasion, in Liyue Harbor!"
-- "Ahoy! A Pirate's Growth for Ye!"
-- "Troubles Traveling Through Tributaries"
-- "The Little Pirate Goes Out to Sea"
+  - "Pirate Invasion, in Liyue Harbor!"
+  - "Ahoy! A Pirate's Growth for Ye!"
+  - "Troubles Traveling Through Tributaries"
+  - "The Little Pirate Goes Out to Sea"
 description: "A young man is about to embark on a long journey…"
 notes: |
   Granted after completing the following series of daily commissions:

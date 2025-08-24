@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "magatsu-mitake-narukami-no-mikoto",
-  "characters": [
-    "kamisato-ayato",
-    "traveler-dendro",
-    "cyno"
-  ]
+  "characters": ["kamisato-ayato", "traveler-dendro", "cyno"]
 }

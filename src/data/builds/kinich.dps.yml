@@ -1,7 +1,7 @@
 ---
 character: kinich
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,11 +26,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '40% / 180%'
-  - atk: '2,000-2,200'
-  - er: '120%'
+  - crit: "40% / 180%"
+  - atk: "2,000-2,200"
+  - er: "120%"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysytl: default

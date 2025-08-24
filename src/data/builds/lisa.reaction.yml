@@ -1,7 +1,7 @@
 ---
 character: lisa
 c: 4
-name: 'Aggravate DPS'
+name: "Aggravate DPS"
 type:
   - dps
   - reaction
@@ -28,14 +28,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '75% / 155%'
-  - atk: '1,900'
-  - em: '175'
-  - er: ''
+  - crit: "75% / 155%"
+  - atk: "1,900"
+  - em: "175"
+  - er: ""
 
-talent: 'E > Q > A'
+talent: "E > Q > A"
 
-notes: 'E > E > NAx2 (2 stacks) > E > E hold'
+notes: "E > E > NAx2 (2 stacks) > E > E hold"
 
 source:
   - ysmxt: default

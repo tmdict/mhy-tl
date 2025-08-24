@@ -1,7 +1,7 @@
 ---
 character: sigewinne
 c: 0
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -27,10 +27,10 @@ mainstat:
     - hp
 
 stats:
-  - hp: '60,000'
-  - er: ''
+  - hp: "60,000"
+  - er: ""
 
-talent: 'E = Q > A'
+talent: "E = Q > A"
 
 source:
   - ysytl: default

@@ -1,7 +1,7 @@
 ---
 character: shenhe
 c: 2
-name: 'Support'
+name: "Support"
 type:
   - support
 
@@ -27,13 +27,13 @@ mainstat:
     - atk
 
 stats:
-  - er: '180-215%'
-  - atk: '4,100'
-  - crit: ''
+  - er: "180-215%"
+  - atk: "4,100"
+  - crit: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
-notes: 'Q > Swap'
+notes: "Q > Swap"
 
 source:
   - ysmxt: default

@@ -7,8 +7,8 @@ checklist: 1
 name: "Inspiration Walk"
 description: "Help Zicheng gather inspiration for poetry…?"
 commission:
-- "Sharpshooter on Hand"
-notes: | 
+  - "Sharpshooter on Hand"
+notes: |
   The commission has three different versions and each version has a side task. A notice stating “Camera has been adjusted to a suitable angle” will be shown if the player’s camera is correctly facing the side task’s target.
 
   Side task:

@@ -1,7 +1,7 @@
 ---
 character: jean
 c: 4
-name: 'Burst Support'
+name: "Burst Support"
 type:
   - burst
   - healer
@@ -31,14 +31,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: ''
-  - atk: '2,200'
-  - er: '165-180%'
-  - heal: '60%'
+  - crit: ""
+  - atk: "2,200"
+  - er: "165-180%"
+  - heal: "60%"
 
-talent: 'Q = E > A'
+talent: "Q = E > A"
 
-notes: 'Q heal'
+notes: "Q heal"
 
 source:
   - ysmxt: default

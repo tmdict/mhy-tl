@@ -1,7 +1,7 @@
 ---
 character: yaoyao
 c: 0
-name: 'Healer'
+name: "Healer"
 type:
   - healer
   - support
@@ -27,12 +27,12 @@ mainstat:
     - heal
 
 stats:
-  - hp: '39,000-47,000'
-  - er: ''
-  - cr: '30%'
-  - atk: '1,100'
+  - hp: "39,000-47,000"
+  - er: ""
+  - cr: "30%"
+  - atk: "1,100"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

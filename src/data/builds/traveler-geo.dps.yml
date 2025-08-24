@@ -1,7 +1,7 @@
 ---
 character: traveler-geo
 c: 6
-name: 'DPS'
+name: "DPS"
 type:
   - burst
   - dps
@@ -27,13 +27,13 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 170%'
-  - atk: '2,200'
-  - er: ''
+  - crit: "80% / 170%"
+  - atk: "2,200"
+  - er: ""
 
-talent: 'E = Q'
+talent: "E = Q"
 
-notes: 'E/Q > Swap'
+notes: "E/Q > Swap"
 
 source:
   - ysmxt: default

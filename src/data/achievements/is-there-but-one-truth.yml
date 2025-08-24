@@ -7,13 +7,13 @@ checklist: 12
 name: "Is There But One Truth…?"
 description: "Witness Ryuuji’s tale."
 commission:
-- "Bantan Sango Case File"
-- "Bantan Sango Case File: The Search"
-- "Bantan Sango Case File: Misdirection"
-- "Bantan Sango Case File: The Right Identity"
-- "Bantan Sango Case File: Case-Closing Time"
-- "Bantan Sango Case File: Cleanup Work"
-notes: | 
+  - "Bantan Sango Case File"
+  - "Bantan Sango Case File: The Search"
+  - "Bantan Sango Case File: Misdirection"
+  - "Bantan Sango Case File: The Right Identity"
+  - "Bantan Sango Case File: Case-Closing Time"
+  - "Bantan Sango Case File: Cleanup Work"
+notes: |
   Complete Bantan Sango Case File series.
 checklistItem:
   1: "Bantan Sango Case File"

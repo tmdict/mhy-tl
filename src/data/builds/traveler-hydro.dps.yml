@@ -1,7 +1,7 @@
 ---
 character: traveler-hydro
 c: 6
-name: 'Hydro DPS'
+name: "Hydro DPS"
 type:
   - dps
 
@@ -26,12 +26,12 @@ mainstat:
     - hp
 
 stats:
-  - er: '120%'
-  - crit: '80% / 170%'
-  - atk: '2,000'
-  - hp: '18,000'
+  - er: "120%"
+  - crit: "80% / 170%"
+  - atk: "2,000"
+  - hp: "18,000"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

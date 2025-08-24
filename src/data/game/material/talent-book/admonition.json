@@ -9,10 +9,5 @@
   ],
   "day": 1,
   "region": 4,
-  "characters": [
-    "tighnari",
-    "cyno",
-    "candace",
-    "faruzan"
-  ]
+  "characters": ["tighnari", "cyno", "candace", "faruzan"]
 }

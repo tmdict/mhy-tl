@@ -1,4 +1,4 @@
-import tippy from 'tippy.js';
+import tippy from "tippy.js";
 
 export function tooltip(node, params = {}) {
   if (!tippy || !params.enabled) return;
@@ -11,7 +11,7 @@ export function tooltip(node, params = {}) {
 
   // Clear out the HTML title attribute since we don't want the default
   // behavior of it showing up on hover.
-  node.title = '';
+  node.title = "";
   const tip = tippy(node, { content, ...params.tippy });
 
   return {
@@ -19,6 +19,6 @@ export function tooltip(node, params = {}) {
     update: (newParams) => tip.setProps({ content, ...newParams.tippy }),
 
     // Clean up the Tippy instance on unmount:
-    destroy: () => tip.destroy()
+    destroy: () => tip.destroy(),
   };
 }

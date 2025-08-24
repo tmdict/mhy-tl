@@ -1,7 +1,7 @@
 ---
 character: mavuika
 c: 2
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,11 +27,11 @@ mainstat:
     - crit
 
 stats:
-  - crit: '40% / 200-220%'
-  - atk: '1,800'
-  - em: '200'
+  - crit: "40% / 200-220%"
+  - atk: "1,800"
+  - em: "200"
 
-talent: 'Q > E > A'
+talent: "Q > E > A"
 
 source:
   - ysytl: default

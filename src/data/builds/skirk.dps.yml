@@ -1,7 +1,7 @@
 ---
 character: skirk
 c: 2
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -27,10 +27,10 @@ mainstat:
     - crit
 
 stats:
-  - crit: '70-80% / 150-190%'
-  - atk: '1,200'
+  - crit: "70-80% / 150-190%"
+  - atk: "1,200"
 
-talent: 'E = Q'
+talent: "E = Q"
 
 source:
   - ysjsgl: default

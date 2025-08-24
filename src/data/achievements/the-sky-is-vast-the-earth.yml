@@ -6,9 +6,9 @@ region: sumeru
 checklist: 3
 name: "The Sky is Vast; The Earth…"
 commission:
-- "To Measure the World!"
+  - "To Measure the World!"
 description: "Help Farghani perform measurements."
-notes: | 
+notes: |
   Complete all versions of “To Measure the World!”.
 checklistItem:
   1: "Defeating monsters"

@@ -7,7 +7,7 @@ checklist: 3
 name: "Perfectionist"
 description: "Complete all of Tsarevich’s commissions flawlessly in “Reliable Helper.”"
 commission:
-- "Reliable Helper"
+  - "Reliable Helper"
 notes: |
   Completing all of Tsarevich’s commission variants flawlessly grants the achievement:
 

@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "everlasting-lord-of-arcane-wisdom",
-  "characters": [
-    "nahida",
-    "faruzan",
-    "dehya"
-  ]
+  "characters": ["nahida", "faruzan", "dehya"]
 }

@@ -2,20 +2,20 @@
   let {
     id,
     name = id,
-    label = '',
+    label = "",
     value = $bindable(),
-    width = '520px',
-    height = '200px'
+    width = "520px",
+    height = "200px",
   } = $props();
 
   if (value === undefined) {
-    value = '';
+    value = "";
   }
 </script>
 
 <div class="input-field" style="--input-width: {width}; --input-height: {height}">
   <label for={id}>{label}</label>
-  <textarea class="input" type="textarea" {id} {name} bind:value={value}></textarea>
+  <textarea class="input" type="textarea" {id} {name} bind:value></textarea>
 </div>
 
 <style lang="scss">

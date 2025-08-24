@@ -4,10 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "everlasting-lord-of-arcane-wisdom",
-  "characters": [
-    "layla",
-    "alhaitham",
-    "mika",
-    "xilonen"
-  ]
+  "characters": ["layla", "alhaitham", "mika", "xilonen"]
 }

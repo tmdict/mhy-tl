@@ -1,7 +1,7 @@
 ---
 character: furina
 c: 0
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
   - support
@@ -29,11 +29,11 @@ mainstat:
     - crit
 
 stats:
-  - er: '170%'
-  - hp: '32,000-39,000'
-  - crit: '80% / 210%'
+  - er: "170%"
+  - hp: "32,000-39,000"
+  - crit: "80% / 210%"
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

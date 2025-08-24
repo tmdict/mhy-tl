@@ -7,10 +7,10 @@ checklist: 4
 name: "Aesthetic Critique"
 description: "Listen to Depierris’ theories regarding “aesthetics.”"
 commission:
-- "Aesthetic Critique: Principles of Aesthetics"
-- "Aesthetic Critique: Practice of Aesthetics"
-- "Aesthetic Critique: Self-Critique"
-notes: | 
+  - "Aesthetic Critique: Principles of Aesthetics"
+  - "Aesthetic Critique: Practice of Aesthetics"
+  - "Aesthetic Critique: Self-Critique"
+notes: |
   Complete “Aesthetic Critique: Principles of Aesthetics” twice to trigger follow-up daily commission “Aesthetic Critique: Practice of Aesthetics”. Completing this commission once unlocks the daily commission “Aesthetic Critique: Self-Critique” which grants the achievement.
 checklistItem:
   1: "Aesthetic Critique: Principles of Aesthetics x1"

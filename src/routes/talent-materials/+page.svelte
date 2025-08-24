@@ -1,13 +1,13 @@
 <script>
-  import { CHARACTERS_DATA, MATERIALS_DATA, RARITY } from '@store/gamedata';
-  import { IMAGES } from '@store/sitedata';
-  import ID from '$lib/util/alias.json';
-  import Icon from '$lib/components/Icon.svelte';
+  import { CHARACTERS_DATA, MATERIALS_DATA, RARITY } from "@store/gamedata";
+  import { IMAGES } from "@store/sitedata";
+  import ID from "$lib/util/alias.json";
+  import Icon from "$lib/components/Icon.svelte";
 
-  const weekdays = ['Mon · Thur', 'Tue · Fri', 'Wed · Sat'];
+  const weekdays = ["Mon · Thur", "Tue · Fri", "Wed · Sat"];
 
   const weaponMaterials = Object.values(MATERIALS_DATA)
-    .filter((material) => material.materialType === 'weapon-ascension')
+    .filter((material) => material.materialType === "weapon-ascension")
     // Group materials by region, day and rarity
     .sort((m1, m2) => m1.region - m2.region || m1.day - m2.day || m1.rarity - m2.rarity)
     .reduce((weapons, weapon) => {
@@ -18,7 +18,7 @@
     }, {});
 
   const talentMaterials = Object.values(MATERIALS_DATA)
-    .filter((material) => material.materialType === 'talent-book')
+    .filter((material) => material.materialType === "talent-book")
     .sort((m1, m2) => m1.region - m2.region || m1.day - m2.day)
     .reduce((talents, talent) => {
       // Group materials by region, day and rarity
@@ -27,7 +27,8 @@
       talents[talent.region][talent.day].id = talents[talent.region][talent.day].id || talent.id;
       talents[talent.region][talent.day].characters =
         talents[talent.region][talent.day].characters || talent.characters;
-      talents[talent.region][talent.day].group = talents[talent.region][talent.day].group || talent.group;
+      talents[talent.region][talent.day].group =
+        talents[talent.region][talent.day].group || talent.group;
       return talents;
     }, {});
 </script>
@@ -80,7 +81,9 @@
             {#each material.characters as character}
               <Icon
                 id={character}
-                title={CHARACTERS_DATA[character] ? CHARACTERS_DATA[character].data.name : character}
+                title={CHARACTERS_DATA[character]
+                  ? CHARACTERS_DATA[character].data.name
+                  : character}
                 src={IMAGES[`/src/lib/img/character/${character}.png`]}
                 rarity={RARITY[character]}
               />

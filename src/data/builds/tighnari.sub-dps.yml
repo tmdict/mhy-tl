@@ -1,7 +1,7 @@
 ---
 character: tighnari
 c: 0
-name: 'Quickswap DPS'
+name: "Quickswap DPS"
 type:
   - sub-dps
 
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 170%'
-  - em: '345'
-  - atk: '1,100-1,300'
-  - er: ''
+  - crit: "80% / 170%"
+  - em: "345"
+  - atk: "1,100-1,300"
+  - er: ""
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
-notes: 'E > CA > Q > CAx2'
+notes: "E > CA > Q > CAx2"
 
 source:
   - ysmxt: default

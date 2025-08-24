@@ -4,10 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "stormterror-dvalin",
-  "characters": [
-    "chongyun",
-    "amber",
-    "beidou",
-    "traveler-anemo"
-  ]
+  "characters": ["chongyun", "amber", "beidou", "traveler-anemo"]
 }

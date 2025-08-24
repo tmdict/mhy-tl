@@ -1,7 +1,7 @@
 ---
 character: dehya
 c: 1
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - sub-dps
 
@@ -27,12 +27,12 @@ mainstat:
     - crit
 
 stats:
-  - er: ''
-  - crit: '75% / 155%'
-  - atk: '1,400-2,100'
-  - hp: '33,000-40,000'
+  - er: ""
+  - crit: "75% / 155%"
+  - atk: "1,400-2,100"
+  - hp: "33,000-40,000"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

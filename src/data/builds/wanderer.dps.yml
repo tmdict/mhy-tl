@@ -1,7 +1,7 @@
 ---
 character: wanderer
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,14 +26,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 165-185%'
-  - atk: '2,100'
-  - em: ''
-  - er: ''
+  - crit: "80% / 165-185%"
+  - atk: "2,100"
+  - em: ""
+  - er: ""
 
-talent: 'A > E > Q'
+talent: "A > E > Q"
 
-notes: 'Q > E > CA > NA3x6'
+notes: "Q > E > CA > NA3x6"
 
 source:
   - ysmxt: default

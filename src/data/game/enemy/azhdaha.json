@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 4,
-  "drop": [
-    "dragon-lords-crown",
-    "bloodjade-branch",
-    "gilded-scale"
-  ]
+  "drop": ["dragon-lords-crown", "bloodjade-branch", "gilded-scale"]
 }

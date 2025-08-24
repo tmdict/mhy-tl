@@ -9,11 +9,5 @@
   ],
   "day": 3,
   "region": 4,
-  "characters": [
-    "collei",
-    "nilou",
-    "wanderer",
-    "dehya",
-    "sethos"
-  ]
+  "characters": ["collei", "nilou", "wanderer", "dehya", "sethos"]
 }

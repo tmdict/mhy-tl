@@ -1,7 +1,7 @@
 ---
 character: xilonen
 c: 0
-name: 'Support'
+name: "Support"
 type:
   - healer
   - support
@@ -29,11 +29,11 @@ mainstat:
     - heal
 
 stats:
-  - er: '180%'
-  - def: '2,800-3,000'
-  - crit: ''
+  - er: "180%"
+  - def: "2,800-3,000"
+  - crit: ""
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysytl: default

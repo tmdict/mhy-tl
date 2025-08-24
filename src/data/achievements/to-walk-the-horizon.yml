@@ -7,11 +7,11 @@ checklist: 8
 name: "To Walk The Horizon…?"
 description: "Witness Sun Yu’s tale."
 commission:
-- "The Sparrow Studies the Blade"
-- "The Day the Sword Departs"
-notes: | 
+  - "The Sparrow Studies the Blade"
+  - "The Day the Sword Departs"
+notes: |
   After completing “The Sparrow Studies the Blade”, finish “The Day the Sword Departs” series of commissions to receive the achievment.
-  
+
   Because this is a new achievement, previous completions of “The Sparrow Studies the Blade” do not count and you need to complete it once after version 3.3.
 checklistItem:
   1: "The Sparrow Studies the Blade"

@@ -1,35 +1,35 @@
 class Validator {
   name(build) {
-    return build.name !== '';
+    return build.name !== "";
   }
 
   character(build) {
-    return build.character && build.character !== '-';
+    return build.character && build.character !== "-";
   }
 
   type(build) {
-    let invalid = '';
+    let invalid = "";
     if (build.type && build.type.some((t) => t.length > 20)) {
-      invalid = 'Build Type length too long';
+      invalid = "Build Type length too long";
     }
     if (build.type && build.type.length > 10) {
-      invalid = 'Too many Build Type';
+      invalid = "Too many Build Type";
     }
     if (build.type && build.type.length === 0) {
-      invalid = 'Build Type';
+      invalid = "Build Type";
     }
     return invalid;
   }
 
   weapons(build, getKeys, characters, weapons) {
-    let invalid = '';
+    let invalid = "";
     let selected = [];
     [...Array(build.num.weapons).keys()].forEach((i) => {
       const keys = getKeys.weapon(i);
-      if (characters[build['character']] && weapons[build[keys.weapon]]) {
+      if (characters[build["character"]] && weapons[build[keys.weapon]]) {
         // Check if current selected weapon matches character's weapon type
-        if (characters[build['character']].weapon !== weapons[build[keys.weapon]].weaponType) {
-          invalid = 'Invalid weapon type';
+        if (characters[build["character"]].weapon !== weapons[build[keys.weapon]].weaponType) {
+          invalid = "Invalid weapon type";
         }
       }
       // If selected weapon is already present in another input
@@ -43,7 +43,7 @@ class Validator {
   }
 
   artifacts(build, getKeys) {
-    let invalid = '';
+    let invalid = "";
     [...Array(build.num.artifacts).keys()].forEach((i) => {
       const keys = getKeys.artifact(i);
       // If artifact is not set (i.e. on instantiation)
@@ -63,7 +63,7 @@ class Validator {
   }
 
   mainstat(build, mainstat, keys) {
-    let invalid = '';
+    let invalid = "";
     const key1 = keys.mainstat(mainstat, 0).mainstat;
     const key2 = keys.mainstat(mainstat, 1).mainstat;
     // If both mainstats are the same
@@ -74,7 +74,7 @@ class Validator {
   }
 
   stats(build, getKeys) {
-    let invalid = '';
+    let invalid = "";
     let selected = [];
     [...Array(build.num.stats).keys()].forEach((i) => {
       const keys = getKeys.stat(i);
@@ -94,43 +94,43 @@ class Validator {
       let result = true;
       if (!validator.name(build)) {
         result = false;
-        missing.push('Build Name');
+        missing.push("Build Name");
       }
       if (!validator.character(build)) {
         result = false;
-        missing.push('Character');
+        missing.push("Character");
       }
       const typeResult = validator.type(build);
-      if (typeResult !== '') {
+      if (typeResult !== "") {
         result = false;
         missing.push(typeResult);
       }
       const weaponResult = validator.weapons(build, keys, characters, weapons);
-      if (weaponResult !== '') {
+      if (weaponResult !== "") {
         result = false;
         missing.push(weaponResult);
       }
       const artifactResult = validator.artifacts(build, keys);
-      if (artifactResult !== '') {
+      if (artifactResult !== "") {
         result = false;
         missing.push(artifactResult);
       }
-      ['sand', 'goblet', 'circlet'].forEach((mainstat) => {
+      ["sand", "goblet", "circlet"].forEach((mainstat) => {
         const mainstatResult = validator.mainstat(build, mainstat, keys);
-        if (mainstatResult !== '') {
+        if (mainstatResult !== "") {
           result = false;
           missing.push(mainstatResult);
         }
       });
       const statsResult = validator.stats(build, keys);
-      if (statsResult !== '') {
+      if (statsResult !== "") {
         result = false;
         missing.push(statsResult);
       }
 
       return {
         result: result,
-        missing: missing
+        missing: missing,
       };
     } catch (err) {
       console.log(`[validateEditorBuild] Error validating build for: ${err}`);
@@ -143,11 +143,11 @@ class Validator {
         return false;
       }
       return (
-        'attr' in build &&
-        build.id !== '' &&
+        "attr" in build &&
+        build.id !== "" &&
         build.type.length > 0 &&
         build.name &&
-        build.name !== '' &&
+        build.name !== "" &&
         build.weapon &&
         build.weapon.length > 0 &&
         build.artifact &&

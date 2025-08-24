@@ -1,7 +1,7 @@
 ---
 character: arataki-itto
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,14 +26,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 205%'
-  - def: '2,400-2,700'
-  - er: '120%'
-  - atk: '1,200'
+  - crit: "80% / 205%"
+  - def: "2,400-2,700"
+  - er: "120%"
+  - atk: "1,200"
 
-talent: 'A > Q > E'
+talent: "A > Q > E"
 
-notes: 'Q > CA'
+notes: "Q > CA"
 
 source:
   - ysmxt: default

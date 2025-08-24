@@ -4,10 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "warden-of-the-last-oasis",
-  "characters": [
-    "kirara",
-    "lynette",
-    "neuvillette",
-    "clorinde"
-  ]
+  "characters": ["kirara", "lynette", "neuvillette", "clorinde"]
 }

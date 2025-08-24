@@ -1,22 +1,22 @@
 <script>
-  import { buildtypes } from '@store/builds';
-  import { editor } from '@store/editor.svelte';
-  import ID from '$lib/util/alias.json';
-  import EditorAutoComplete from '$lib/components/editor/EditorAutoComplete.svelte';
+  import { buildtypes } from "@store/builds";
+  import { editor } from "@store/editor.svelte";
+  import ID from "$lib/util/alias.json";
+  import EditorAutoComplete from "$lib/components/editor/EditorAutoComplete.svelte";
 
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
-  let selectedOptions = $state(editor.build['type'] ? editor.build['type'] : []);
+  const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
+  let selectedOptions = $state(editor.build["type"] ? editor.build["type"] : []);
 
   const handleSubmit = (selectedValue) => {
     if (selectedOptions.indexOf(selectedValue) === -1) {
       selectedOptions = [...selectedOptions, selectedValue];
     }
-    editor.set('type', selectedOptions);
+    editor.set("type", selectedOptions);
   };
 
   const clearAll = () => {
     selectedOptions = [];
-    editor.set('type', []);
+    editor.set("type", []);
   };
 </script>
 

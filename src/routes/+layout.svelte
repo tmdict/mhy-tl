@@ -1,7 +1,7 @@
 <script>
-  import Header from '$lib/components/Header.svelte';
-  import Footer from '$lib/components/content/Footer.svelte';
-  import ThemeContext from '$lib/components/ThemeContext.svelte';
+  import Header from "$lib/components/Header.svelte";
+  import Footer from "$lib/components/content/Footer.svelte";
+  import ThemeContext from "$lib/components/ThemeContext.svelte";
 
   let { children } = $props();
 </script>
@@ -24,7 +24,7 @@
 </ThemeContext>
 
 <style lang="scss" global>
-  @import 'normalize.css';
+  @import "normalize.css";
 
   *,
   *:before,
@@ -71,7 +71,9 @@
     border: 2px solid var(--theme-bg-container-alt);
     border-radius: 5px;
     font: 1rem normal var(--theme-main-font);
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+    box-shadow:
+      0 4px 8px 0 rgb(0 0 0 / 90%),
+      0 6px 20px 0 rgb(0 0 0 / 20%);
 
     @media only screen and (max-width: 960px) {
       width: auto;
@@ -196,27 +198,27 @@
   }
 
   .rarity-1 img {
-    background: url('/img/rarity/1.png');
+    background: url("/img/rarity/1.png");
   }
 
   .rarity-2 img {
-    background: url('/img/rarity/2.png');
+    background: url("/img/rarity/2.png");
   }
 
   .rarity-3 img {
-    background: url('/img/rarity/3.png');
+    background: url("/img/rarity/3.png");
   }
 
   .rarity-4 img {
-    background: url('/img/rarity/4.png');
+    background: url("/img/rarity/4.png");
   }
 
   .rarity-5 img {
-    background: url('/img/rarity/5.png');
+    background: url("/img/rarity/5.png");
   }
 
   .rarity-sp img {
-    background: url('/img/rarity/sp.png');
+    background: url("/img/rarity/sp.png");
   }
 
   .rarity-na img {
@@ -269,10 +271,15 @@
     font-size: 12px;
     color: var(--theme-bg-highlight);
     font-weight: bold;
-    text-shadow: -1px -1px 0 var(--theme-text-highlight), 1px -1px 0 var(--theme-text-highlight),
-      -1px 1px 0 var(--theme-text-highlight), 1px 1px 0 var(--theme-text-highlight),
-      -2px -2px 4px var(--theme-text-highlight), 2px -2px 4px var(--theme-text-highlight),
-      -2px 2px 4px var(--theme-text-highlight), 2px 2px 4px var(--theme-text-highlight);
+    text-shadow:
+      -1px -1px 0 var(--theme-text-highlight),
+      1px -1px 0 var(--theme-text-highlight),
+      -1px 1px 0 var(--theme-text-highlight),
+      1px 1px 0 var(--theme-text-highlight),
+      -2px -2px 4px var(--theme-text-highlight),
+      2px -2px 4px var(--theme-text-highlight),
+      -2px 2px 4px var(--theme-text-highlight),
+      2px 2px 4px var(--theme-text-highlight);
   }
 
   .input-field {
@@ -319,14 +326,16 @@
     margin-right: 5px;
   }
 
-  @import 'tippy.js/animations/scale-subtle.css';
+  @import "tippy.js/animations/scale-subtle.css";
 
-  .tippy-box[data-theme~='custom'] {
+  .tippy-box[data-theme~="custom"] {
     background-color: var(--theme-bg-highlight-alt);
     border: 1px solid #555;
     border-radius: 5px;
     font: 1rem normal var(--theme-main-font);
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 90%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+    box-shadow:
+      0 4px 8px 0 rgb(0 0 0 / 90%),
+      0 6px 20px 0 rgb(0 0 0 / 20%);
     padding: 15px;
   }
 

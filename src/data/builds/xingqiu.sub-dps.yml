@@ -1,7 +1,7 @@
 ---
 character: xingqiu
 c: 6
-name: 'Off-Field DPS'
+name: "Off-Field DPS"
 type:
   - burst
   - sub-dps
@@ -28,14 +28,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60-80% / 120-170%'
-  - atk: '1,600-1,700'
-  - er: '180-190%'
-  - hp: '17,000-19,000'
+  - crit: "60-80% / 120-170%"
+  - atk: "1,600-1,700"
+  - er: "180-190%"
+  - hp: "17,000-19,000"
 
-talent: 'Q > E'
+talent: "Q > E"
 
-notes: 'Q off-field DPS'
+notes: "Q off-field DPS"
 
 source:
   - ysmxt: default

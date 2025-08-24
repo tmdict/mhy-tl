@@ -1,12 +1,12 @@
-export function highlight(searchResult, highlightClassName = 'search-highlight') {
+export function highlight(searchResult, highlightClassName = "search-highlight") {
   // Iteratively go into nested object key until highlight value, then replace it with highlighted value
   const set = (item, match, value) => {
-    const pathValue = match.key.split('.');
+    const pathValue = match.key.split(".");
     let i;
     for (i = 0; i < pathValue.length - 1; i++) {
       item = item[pathValue[i]];
     }
-    if ('refIndex' in match) {
+    if ("refIndex" in match) {
       item[pathValue[i]][match.refIndex] = value;
     } else {
       item[pathValue[i]] = value;
@@ -15,7 +15,7 @@ export function highlight(searchResult, highlightClassName = 'search-highlight')
 
   // Given match value(s) and the indices of the matching substring, append span tags around the substrings
   const generateHighlightedText = (inputText, indices = []) => {
-    let content = '';
+    let content = "";
     // Start = start of string of end of last highlight
     let start = 0;
     indices.forEach((highlightStartEnd) => {
@@ -25,8 +25,8 @@ export function highlight(searchResult, highlightClassName = 'search-highlight')
         inputText.substring(start, highlightStartEnd[0]),
         `<span class="${highlightClassName}">`,
         inputText.substring(highlightStartEnd[0], end),
-        '</span>'
-      ].join('');
+        "</span>",
+      ].join("");
       start = end;
     });
     // Append rest of none highlighted string to recreate entire content

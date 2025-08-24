@@ -6,7 +6,7 @@ region: liyue
 checklist: 3
 name: "Pirates! Argh!"
 commission:
-- "Pirate Invasion, in Liyue Harbor!"
+  - "Pirate Invasion, in Liyue Harbor!"
 description: "Play a game of pirates with Little Lulu, Little Fei, and Little Meng."
 notes: |
   Complete all three versions of the quest.

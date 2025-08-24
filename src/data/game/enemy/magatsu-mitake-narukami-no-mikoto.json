@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 6,
-  "drop": [
-    "mudra-of-the-malefic-general",
-    "tears-of-the-calamitous-god",
-    "the-meaning-of-aeons"
-  ]
+  "drop": ["mudra-of-the-malefic-general", "tears-of-the-calamitous-god", "the-meaning-of-aeons"]
 }

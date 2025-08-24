@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 9,
-  "drop": [
-    "lightless-silk-string",
-    "lightless-eye-of-the-maelstrom",
-    "lightless-mass"
-  ]
+  "drop": ["lightless-silk-string", "lightless-eye-of-the-maelstrom", "lightless-mass"]
 }

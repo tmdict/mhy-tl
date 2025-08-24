@@ -1,7 +1,7 @@
 ---
 character: xinyan
 c: 2
-name: 'Physical DPS'
+name: "Physical DPS"
 type:
   - dps
 
@@ -27,14 +27,14 @@ mainstat:
     - crit
 
 stats:
-  - crit: '60% / 120%'
-  - atk: '2,800'
-  - er: ''
-  - def: '1,000-1,700'
+  - crit: "60% / 120%"
+  - atk: "2,800"
+  - er: ""
+  - def: "1,000-1,700"
 
-talent: 'A >= Q >= E'
+talent: "A >= Q >= E"
 
-notes: 'Nx2 > CA > Q > CA'
+notes: "Nx2 > CA > Q > CA"
 
 source:
   - ysmxt: default

@@ -1,7 +1,7 @@
 ---
 character: arlecchino
 c: 1
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -26,10 +26,10 @@ mainstat:
     - crit
 
 stats:
-  - crit: '80% / 165-195%'
-  - atk: '1,900-2,300'
+  - crit: "80% / 165-195%"
+  - atk: "1,900-2,300"
 
-talent: 'A > Q = E'
+talent: "A > Q = E"
 
 source:
   - ysmxt: default

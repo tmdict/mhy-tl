@@ -3,9 +3,5 @@
   "type": "enemy",
   "enemyType": "weekly-boss",
   "order": 8,
-  "drop": [
-    "world­span-fern",
-    "primor­dial-green­bloom",
-    "ever­amber"
-  ]
+  "drop": ["world­span-fern", "primor­dial-green­bloom", "ever­amber"]
 }

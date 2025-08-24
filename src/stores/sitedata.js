@@ -1,23 +1,27 @@
-import { browser } from '$app/environment';
-import { writable } from 'svelte/store';
+import { browser } from "$app/environment";
+import { writable } from "svelte/store";
 
-const rawImages = import.meta.glob(
-  "$lib/img/**/*.png", {
-    eager: true,
-    import: 'default',
-    query: { enhanced: true },
-  }
-);
+const rawImages = import.meta.glob("$lib/img/**/*.png", {
+  eager: true,
+  import: "default",
+  query: { enhanced: true },
+});
 
 export const IMAGES = {
   ...rawImages,
-  ...Object.fromEntries(['anemo', 'geo', 'electro', 'dendro', 'hydro', 'pyro'].map(element =>
-    [`/src/lib/img/character/traveler-${element}.png`, rawImages['/src/lib/img/character/traveler.png']]
-  ))
+  ...Object.fromEntries(
+    ["anemo", "geo", "electro", "dendro", "hydro", "pyro"].map((element) => [
+      `/src/lib/img/character/traveler-${element}.png`,
+      rawImages["/src/lib/img/character/traveler.png"],
+    ]),
+  ),
 };
 
 function createLocalData() {
-  const importedAchievements = import.meta.glob('@data/achievements/*.yml', { eager: true, import: 'default' });
+  const importedAchievements = import.meta.glob("@data/achievements/*.yml", {
+    eager: true,
+    import: "default",
+  });
 
   const defaultData = {
     builds: [],
@@ -25,29 +29,29 @@ function createLocalData() {
       // Defaults all achievement commissions to false
       return {
         ...acc,
-        [d.achievement]: new Array(d.checklist).fill(false)
+        [d.achievement]: new Array(d.checklist).fill(false),
       };
     }, {}),
-    billets: {}
+    billets: {},
   };
 
   let local = defaultData;
 
-  if (browser && localStorage.getItem('tmdict.genshin.data')) {
+  if (browser && localStorage.getItem("tmdict.genshin.data")) {
     try {
-      local = JSON.parse(localStorage.getItem('tmdict.genshin.data'));
+      local = JSON.parse(localStorage.getItem("tmdict.genshin.data"));
       // Check if any new achievements have been added
       Object.values(importedAchievements).forEach((d) => {
-        if (!(d.achievement in local['achievements'])) {
-          local['achievements'] = {
-            ...local['achievements'],
-            [d.achievement]: new Array(d.checklist).fill(false)
+        if (!(d.achievement in local["achievements"])) {
+          local["achievements"] = {
+            ...local["achievements"],
+            [d.achievement]: new Array(d.checklist).fill(false),
           };
         }
       });
       // Add craftable weapon tracker
-      if (!('billets' in local)) {
-        local['billets'] = {};
+      if (!("billets" in local)) {
+        local["billets"] = {};
       }
     } catch (err) {
       console.log(`[createLocalData] Err parsing localStorage data: ${err}`);

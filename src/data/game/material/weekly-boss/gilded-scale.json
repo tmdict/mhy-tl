@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "azhdaha",
-  "characters": [
-    "kaedehara-kazuha",
-    "sayu",
-    "yelan"
-  ]
+  "characters": ["kaedehara-kazuha", "sayu", "yelan"]
 }

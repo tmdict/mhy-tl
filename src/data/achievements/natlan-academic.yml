@@ -7,8 +7,8 @@ checklist: 3
 name: "Natlan Academic"
 description: "Answer all the questions correctly during a round of Keita’s questioning."
 commission:
-- "Hmm? Natlan?"
-notes: | 
+  - "Hmm? Natlan?"
+notes: |
   Answering all three questions correctly grants the grants the achievement. If a question is missed, restart the game to reset the quest.
 
   - “Who are the companions of the Children of Echoes? What is their true name?”

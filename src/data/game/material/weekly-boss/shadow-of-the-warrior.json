@@ -4,9 +4,5 @@
   "materialType": "weekly-boss",
   "rarity": 5,
   "source": "childe",
-  "characters": [
-    "ganyu",
-    "xiao",
-    "rosaria"
-  ]
+  "characters": ["ganyu", "xiao", "rosaria"]
 }

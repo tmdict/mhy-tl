@@ -1,7 +1,7 @@
 ---
 character: neuvillette
 c: 0
-name: 'DPS'
+name: "DPS"
 type:
   - dps
 
@@ -28,13 +28,13 @@ mainstat:
     - hp
 
 stats:
-  - er: ''
-  - crit: '65% / 240%'
-  - hp: '33,000'
+  - er: ""
+  - crit: "65% / 240%"
+  - hp: "33,000"
 
-talent: 'A > Q = E'
+talent: "A > Q = E"
 
-notes: 'Q > Swap > CA > E > CA > Swap > CA > E'
+notes: "Q > Swap > CA > E > CA > Swap > CA > E"
 
 source:
   - ysmxt: default

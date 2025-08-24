@@ -1,7 +1,7 @@
 ---
 character: chongyun
 c: 2
-name: 'Burst Support'
+name: "Burst Support"
 type:
   - burst
   - dps
@@ -27,12 +27,12 @@ mainstat:
     - crit
 
 stats:
-  - crit: '50-65% / 135-165%'
-  - atk: '2,600'
-  - em: ''
-  - er: ''
+  - crit: "50-65% / 135-165%"
+  - atk: "2,600"
+  - em: ""
+  - er: ""
 
-talent: 'Q > E'
+talent: "Q > E"
 
 source:
   - ysmxt: default

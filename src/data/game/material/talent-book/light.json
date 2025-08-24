@@ -9,11 +9,5 @@
   ],
   "day": 3,
   "region": 3,
-  "characters": [
-    "sayu",
-    "raiden-shogun",
-    "gorou",
-    "yae-miko",
-    "chiori"
-  ]
+  "characters": ["sayu", "raiden-shogun", "gorou", "yae-miko", "chiori"]
 }

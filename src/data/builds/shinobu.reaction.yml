@@ -1,7 +1,7 @@
 ---
 character: kuki-shinobu
 c: 0
-name: 'Elemental Reaction'
+name: "Elemental Reaction"
 type:
   - reaction
   - sub-dps
@@ -31,12 +31,12 @@ mainstat:
     - crit
 
 stats:
-  - em: '965'
-  - hp: '22,000'
-  - er: ''
-  - atk: '1,100'
+  - em: "965"
+  - hp: "22,000"
+  - er: ""
+  - atk: "1,100"
 
-talent: 'E > Q'
+talent: "E > Q"
 
 source:
   - ysmxt: default

@@ -1,5 +1,5 @@
 <script>
-  import { tooltip } from '$lib/util/tooltip';
+  import { tooltip } from "$lib/util/tooltip";
 
   let {
     enhance = true,
@@ -7,10 +7,10 @@
     id,
     title = id,
     rarity = -1,
-    size = '60px',
-    margin = '10px',
+    size = "60px",
+    margin = "10px",
     hasTooltip = false,
-    tooltipContent = ''
+    tooltipContent = "",
   } = $props();
 </script>
 
@@ -21,15 +21,22 @@
     enabled: hasTooltip,
     tippy: {
       content: tooltipContent,
-      trigger: 'click',
-      theme: 'custom',
-      animation: 'scale-subtle',
-      allowHTML: true
-    }
+      trigger: "click",
+      theme: "custom",
+      animation: "scale-subtle",
+      allowHTML: true,
+    },
   }}
 >
   {#if enhance}
-    <enhanced:img class="icon-img" {src} {title} alt={id} style="--icon-size: {size}" loading="lazy"/>
+    <enhanced:img
+      class="icon-img"
+      {src}
+      {title}
+      alt={id}
+      style="--icon-size: {size}"
+      loading="lazy"
+    />
   {:else}
     <img class="icon-img" {src} {title} alt={id} style="--icon-size: {size}" loading="lazy" />
   {/if}
