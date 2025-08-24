@@ -1,8 +1,8 @@
 <script>
+  import EditorAutoComplete from "$lib/components/editor/EditorAutoComplete.svelte";
+  import ID from "$lib/util/alias.json";
   import { buildtypes } from "@store/builds";
   import { editor } from "@store/editor.svelte";
-  import ID from "$lib/util/alias.json";
-  import EditorAutoComplete from "$lib/components/editor/EditorAutoComplete.svelte";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   let selectedOptions = $state(editor.build["type"] ? editor.build["type"] : []);

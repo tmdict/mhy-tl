@@ -1,9 +1,9 @@
 <script>
-  import { browser } from "$app/environment";
   import { slide } from "svelte/transition";
+  import { browser } from "$app/environment";
+  import ID from "$lib/util/alias.json";
   import { localData } from "@store/sitedata";
   import { marked } from "marked";
-  import ID from "$lib/util/alias.json";
 
   let { achievement, alt = false, expand = false } = $props();
 

@@ -1,6 +1,6 @@
-import fs from "fs-extra";
-import { fdir } from "fdir";
 import path from "path";
+import { fdir } from "fdir";
+import fs from "fs-extra";
 
 // Builds an ENUM map of id to game terms
 const buildIdMap = (src, dest, filename = "enum.json", overwrite = false) => {

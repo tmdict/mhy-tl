@@ -1,10 +1,10 @@
 <script>
-  import { slide, fade } from "svelte/transition";
-  import { filterlist } from "@store/filterlist.svelte";
-  import { CHARACTERS_DATA, MISC_DATA } from "@store/gamedata";
+  import { fade, slide } from "svelte/transition";
   import ScalingFaq from "$lib/components/content/ScalingFaq.svelte";
   import ScalingFilter from "$lib/components/scaling/ScalingFilter.svelte";
   import ScalingStatCol from "$lib/components/scaling/ScalingStatCol.svelte";
+  import { filterlist } from "@store/filterlist.svelte";
+  import { CHARACTERS_DATA, MISC_DATA } from "@store/gamedata";
 
   const statFilter = [
     "hp",

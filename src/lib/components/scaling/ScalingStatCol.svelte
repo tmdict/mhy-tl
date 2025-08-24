@@ -1,9 +1,9 @@
 <script>
+  import Icon from "$lib/components/Icon.svelte";
+  import ID from "$lib/util/alias.json";
   import { filterlist } from "@store/filterlist.svelte";
   import { CHARACTERS_DATA, RARITY } from "@store/gamedata";
   import { IMAGES } from "@store/sitedata";
-  import ID from "$lib/util/alias.json";
-  import Icon from "$lib/components/Icon.svelte";
 
   let { data, baseKey, isRecommended = false, icon = false, fill = false } = $props();
 

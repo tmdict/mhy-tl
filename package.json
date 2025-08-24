@@ -15,6 +15,7 @@
     "format:check": "prettier --check ."
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.6.2",
     "@modyfi/vite-plugin-yaml": "^1.0.4",
     "@sveltejs/adapter-static": "^3.0.4",
     "@sveltejs/enhanced-img": "^0.6.0",

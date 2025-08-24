@@ -1,7 +1,7 @@
 <script>
+  import Icon from "$lib/components/Icon.svelte";
   import { CHARACTERS_DATA, ENEMIES_DATA, MATERIALS_DATA, RARITY } from "@store/gamedata";
   import { IMAGES } from "@store/sitedata";
-  import Icon from "$lib/components/Icon.svelte";
 
   const bossMaterials = Object.values(ENEMIES_DATA)
     .filter((enemy) => enemy.enemyType === "weekly-boss")

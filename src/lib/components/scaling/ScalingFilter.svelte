@@ -1,6 +1,6 @@
 <script>
-  import { filterlist } from "@store/filterlist.svelte";
   import ID from "$lib/util/alias.json";
+  import { filterlist } from "@store/filterlist.svelte";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
 

@@ -1,16 +1,6 @@
 <script>
-  import { toast } from "@store/toast";
-  import lzstring from "lz-string";
   import { browser } from "$app/environment";
-  import { availableInputs, editor } from "@store/editor.svelte";
-  import { CHARACTERS_DATA, WEAPONS_DATA } from "@store/gamedata";
-  import { localData } from "@store/sitedata";
-  import ID from "$lib/util/alias.json";
-  import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from "$lib/util/codec";
-  import { parser } from "$lib/util/parser";
-  import { validator } from "$lib/util/validator";
   import BuildFullPage from "$lib/components/build/BuildFullPage.svelte";
-  import Copy from "$lib/svg/copy.svelte";
   import EditorBuildArtifact from "$lib/components/editor/EditorBuildArtifact.svelte";
   import EditorBuildStat from "$lib/components/editor/EditorBuildStat.svelte";
   import EditorBuildType from "$lib/components/editor/EditorBuildType.svelte";
@@ -18,6 +8,16 @@
   import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
   import EditorTextArea from "$lib/components/editor/EditorTextArea.svelte";
   import EditorTextField from "$lib/components/editor/EditorTextField.svelte";
+  import Copy from "$lib/svg/copy.svelte";
+  import ID from "$lib/util/alias.json";
+  import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from "$lib/util/codec";
+  import { parser } from "$lib/util/parser";
+  import { validator } from "$lib/util/validator";
+  import { availableInputs, editor } from "@store/editor.svelte";
+  import { CHARACTERS_DATA, WEAPONS_DATA } from "@store/gamedata";
+  import { localData } from "@store/sitedata";
+  import { toast } from "@store/toast";
+  import lzstring from "lz-string";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   const debugMode = false;

@@ -1,13 +1,13 @@
 <script>
-  import Fuse from "fuse.js";
-  import cloneDeep from "lodash.clonedeep";
   import { slide } from "svelte/transition";
-  import { localData } from "@store/sitedata";
-  import ID from "$lib/util/alias.json";
   import Achievement from "$lib/components/Achievement.svelte";
   import AchievementFaq from "$lib/components/content/AchievementFaq.svelte";
   import ManageData from "$lib/components/ManageData.svelte";
+  import ID from "$lib/util/alias.json";
   import { highlight } from "$lib/util/highlight";
+  import { localData } from "@store/sitedata";
+  import Fuse from "fuse.js";
+  import cloneDeep from "lodash.clonedeep";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   const filters = ["mondstadt", "liyue", "inazuma", "sumeru", "fontaine", "natlan"];

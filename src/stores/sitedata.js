@@ -1,5 +1,5 @@
-import { browser } from "$app/environment";
 import { writable } from "svelte/store";
+import { browser } from "$app/environment";
 
 const rawImages = import.meta.glob("$lib/img/**/*.png", {
   eager: true,

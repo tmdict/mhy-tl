@@ -1,6 +1,6 @@
-import adapter from "@sveltejs/adapter-static";
-import { sveltePreprocess } from "svelte-preprocess";
 import { fileURLToPath, URL } from "url";
+import { sveltePreprocess } from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

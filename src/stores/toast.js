@@ -1,5 +1,6 @@
 import { browser } from "$app/environment";
 import { Notyf } from "notyf";
+
 import "notyf/notyf.min.css";
 
 let notyf;

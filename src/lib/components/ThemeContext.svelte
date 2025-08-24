@@ -1,6 +1,6 @@
 <script>
-  import { browser } from "$app/environment";
   import { onMount, setContext } from "svelte";
+  import { browser } from "$app/environment";
   import dark from "$lib/style/themes/dark.json";
   import light from "$lib/style/themes/light.json";
 

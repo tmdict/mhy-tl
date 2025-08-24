@@ -1,7 +1,7 @@
 <script>
+  import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
   import { availableInputs, editor } from "@store/editor.svelte";
   import { ARTIFACTS_DATA } from "@store/gamedata";
-  import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
 
   let { artifactKey } = $props();
   const keys = editor.getKeys.artifact(artifactKey);

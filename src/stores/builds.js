@@ -1,5 +1,5 @@
-import { CHARACTERS_DATA } from "@store/gamedata";
 import { parser } from "$lib/util/parser";
+import { CHARACTERS_DATA } from "@store/gamedata";
 
 export const buildtypes = ["burst", "dps", "healer", "reaction", "shield", "sub-dps", "support"];
 

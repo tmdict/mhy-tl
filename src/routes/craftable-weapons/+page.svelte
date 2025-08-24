@@ -1,12 +1,11 @@
 <script>
-  import { browser } from "$app/environment";
   import { slide } from "svelte/transition";
-  import { MISC_DATA, RARITY, WEAPONS_DATA } from "@store/gamedata";
-  import { localData } from "@store/sitedata";
-  import { IMAGES } from "@store/sitedata";
+  import { browser } from "$app/environment";
   import CraftableWeaponsFaq from "$lib/components/content/CraftableWeaponsFaq.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import ManageData from "$lib/components/ManageData.svelte";
+  import { MISC_DATA, RARITY, WEAPONS_DATA } from "@store/gamedata";
+  import { IMAGES, localData } from "@store/sitedata";
 
   let showFaq = $state(false);
 

@@ -1,5 +1,5 @@
-import fs from "fs-extra";
 import path from "path";
+import fs from "fs-extra";
 
 // Compiles theme colors into importable styles
 const buildThemes = (config, src, dest) => {
