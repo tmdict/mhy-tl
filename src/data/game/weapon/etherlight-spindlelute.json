@@ -1,0 +1,11 @@
+{
+  "id": "etherlight-spindlelute",
+  "type": "weapon",
+  "rarity": 4,
+  "weaponType": "catalyst",
+  "subStat": "er",
+  "data": {
+    "name": "Etherlight Spindlelute",
+    "passiveDescription": "For 20s after using an Elemental Skill, the equipping character’s Elemental Mastery is increased by {{100//125//150//175//200}}."
+  }
+}

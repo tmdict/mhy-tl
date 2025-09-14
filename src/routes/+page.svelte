@@ -3,13 +3,11 @@
 
   const links = [
     {
-      new: true,
       name: "Character Builds",
       url: "builds",
       updated: "2025-08-10",
     },
     {
-      new: true,
       name: "Character Stat Scaling",
       url: "character-scaling",
       updated: "2025-08-10",
@@ -20,18 +18,18 @@
       updated: "2025-01-19",
     },
     {
+      new: true,
       name: "Craftable Weapons",
       url: "craftable-weapons",
-      updated: "2024-09-14",
+      updated: "2025-09-14",
     },
     {
       new: true,
       name: "Talent Materials",
       url: "talent-materials",
-      updated: "2025-08-10",
+      updated: "2025-09-14",
     },
     {
-      new: true,
       name: "Links",
       url: "links",
       updated: "2025-06-22",

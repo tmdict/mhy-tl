@@ -1,0 +1,11 @@
+{
+  "id": "blackmarrow-lantern",
+  "type": "weapon",
+  "rarity": 4,
+  "weaponType": "catalyst",
+  "subStat": "em",
+  "data": {
+    "name": "Blackmarrow Lantern",
+    "passiveDescription": "Bloom DMG is increased by {{48//60//72//84//96%}}, and Lunar-Bloom DMG is increased by {{12//15//18//21//24%}}. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional {{12//15//18//21//24%}}."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "aino",
+  "type": "character",
+  "rarity": 4,
+  "vision": "hydro",
+  "weapon": "claymore",
+  "released": "6.0.0",
+  "data": {
+    "name": "Aino"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "master-key",
+  "type": "weapon",
+  "rarity": 4,
+  "weaponType": "claymore",
+  "subStat": "er",
+  "data": {
+    "name": "Master Key",
+    "passiveDescription": "Upon causing an Elemental Reaction, increases Elemental Mastery by {{60//75//90//105//120}} for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by {{60//75//90//105//120}}. This effect can be triggered even if the equipping character is off-field."
+  }
+}

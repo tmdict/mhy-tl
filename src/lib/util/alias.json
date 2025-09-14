@@ -38,6 +38,7 @@
   "elegance": "Elegance",
   "elemental-skill": "Elemental Skill",
   "elemental-burst": "Elemental Burst",
+  "elysium": "Elysium",
   "em": "EM",
   "equipments": "Equipments",
   "equity": "Equity",
@@ -58,6 +59,7 @@
   "light": "Light",
   "liyue": "Liyue",
   "mondstadt": "Mondstadt",
+  "moonlight": "Moonlight",
   "name": "Name",
   "natlan": "Natlan",
   "normal-attack": "Normal Attack",
@@ -83,6 +85,7 @@
   "talent": "Talent",
   "transience": "Transience",
   "type": "Type",
+  "vagrancy": "Vagrancy",
   "vision": "Element",
   "weapon-type": "Weapon Type"
 }

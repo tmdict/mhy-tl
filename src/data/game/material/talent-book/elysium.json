@@ -1,0 +1,13 @@
+{
+  "id": "elysium",
+  "type": "material",
+  "materialType": "talent-book",
+  "group": [
+    { "rarity": 2, "id": "teachings-of" },
+    { "rarity": 3, "id": "guide-to" },
+    { "rarity": 4, "id": "philosophies-of" }
+  ],
+  "day": 2,
+  "region": 7,
+  "characters": ["aino"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "lauma",
+  "type": "character",
+  "rarity": 5,
+  "vision": "dendro",
+  "weapon": "catalyst",
+  "released": "6.0.0",
+  "data": {
+    "name": "Lauma"
+  }
+}

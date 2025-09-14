@@ -378,7 +378,17 @@
     "azurelight",
     "ineffa",
     "flame-forged-insight",
-    "fractured-halo"
+    "fractured-halo",
+    "aino",
+    "flins",
+    "lauma",
+    "blackmarrow-lantern",
+    "etherlight-spindlelute",
+    "master-key",
+    "nightweavers-looking-glass",
+    "prospectors-shovel",
+    "serenitys-call",
+    "snare-hook"
   ],
   "name2id": {
     "geo": 0,
@@ -759,6 +769,16 @@
     "azurelight": 375,
     "ineffa": 376,
     "flame-forged-insight": 377,
-    "fractured-halo": 378
+    "fractured-halo": 378,
+    "aino": 379,
+    "flins": 380,
+    "lauma": 381,
+    "blackmarrow-lantern": 382,
+    "etherlight-spindlelute": 383,
+    "master-key": 384,
+    "nightweavers-looking-glass": 385,
+    "prospectors-shovel": 386,
+    "serenitys-call": 387,
+    "snare-hook": 388
   }
 }

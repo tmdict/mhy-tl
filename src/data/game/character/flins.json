@@ -1,0 +1,11 @@
+{
+  "id": "flins",
+  "type": "character",
+  "rarity": 5,
+  "vision": "electro",
+  "weapon": "polearm",
+  "released": "6.0.1",
+  "data": {
+    "name": "Flins"
+  }
+}

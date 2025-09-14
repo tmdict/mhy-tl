@@ -56,19 +56,24 @@
     },
     "borderland": {
       "bow": {
-        "chain-breaker": 0
+        "chain-breaker": 0,
+        "snare-hook": 0
       },
       "catalyst": {
-        "ring-of-yaxche": 0
+        "ring-of-yaxche": 0,
+        "blackmarrow-lantern": 0
       },
       "claymore": {
-        "earth-shaker": 0
+        "earth-shaker": 0,
+        "master-key": 0
       },
       "polearm": {
-        "footprint-of-the-rainbow": 0
+        "footprint-of-the-rainbow": 0,
+        "prospectors-shovel": 0
       },
       "sword": {
-        "flute-of-ezpitzal": 0
+        "flute-of-ezpitzal": 0,
+        "serenitys-call": 0
       }
     }
   }

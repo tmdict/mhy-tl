@@ -1,0 +1,11 @@
+{
+  "id": "nightweavers-looking-glass",
+  "type": "weapon",
+  "rarity": 5,
+  "weaponType": "catalyst",
+  "subStat": "em",
+  "data": {
+    "name": "Nightweaver’s Looking Glass",
+    "passiveDescription": "When the equipping character’s Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by {{60//75//90//105//120}} for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by {{60//75//90//105//120}} for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members’ Bloom DMG is increased by {{120//150//180//210//240%}}, their Hyperbloom and Burgeon DMG is increased by {{80//100//120//140//160%}}, and their Lunar-Bloom DMG is increased by {{40//50//60//70//80%}}. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field."
+  }
+}

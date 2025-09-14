@@ -1,0 +1,11 @@
+{
+  "id": "prospectors-shovel",
+  "type": "weapon",
+  "rarity": 4,
+  "weaponType": "polearm",
+  "subStat": "atk",
+  "data": {
+    "name": "Prospector’s Shovel",
+    "passiveDescription": "Electro-Charged DMG is increased by {{48//60//72//84//96%}}, and Lunar-Charged DMG is increased by {{12//15//18//21//24%}}. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional {{12//15//18//21//24%}}."
+  }
+}
