@@ -4,6 +4,7 @@
   import CraftableWeaponsFaq from "$lib/components/content/CraftableWeaponsFaq.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import ManageData from "$lib/components/ManageData.svelte";
+  import ID from "$lib/util/alias.json";
   import { MISC_DATA, RARITY, WEAPONS_DATA } from "@store/gamedata";
   import { IMAGES, localData } from "@store/sitedata";
 
@@ -92,7 +93,7 @@
                   tooltipContent={`
                     <span class="heading">${details ? details["name"] : weapon}</span><br />
                     <span class="highlight">Sub Stat:</span> ${
-                      WEAPONS_DATA[weapon] ? WEAPONS_DATA[weapon].subStat : ""
+                      WEAPONS_DATA[weapon] ? ID[WEAPONS_DATA[weapon].subStat] : ""
                     }<br />
                     ${
                       details

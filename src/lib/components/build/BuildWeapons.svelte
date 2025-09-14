@@ -1,6 +1,7 @@
 <script>
   import { RARITY, WEAPONS_DATA } from '@store/gamedata';
   import { IMAGES } from '@store/sitedata';
+  import ID from "$lib/util/alias.json";
   import Icon from '$lib/components/Icon.svelte';
 
   let { weapons } = $props();
@@ -30,7 +31,7 @@
         tooltipContent={`
           <span class="heading">${details ? details['name'] : weapon.name}</span><br />
           <span class="highlight">Sub Stat:</span> ${
-          data[weapon.name] ? data[weapon.name].subStat : ''
+          data[weapon.name] ? ID[data[weapon.name].subStat] : ''
         }<br />
           ${
             details
