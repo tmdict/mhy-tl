@@ -388,7 +388,9 @@
     "nightweavers-looking-glass",
     "prospectors-shovel",
     "serenitys-call",
-    "snare-hook"
+    "snare-hook",
+    "night-of-the-skys-unveiling",
+    "silken-moons-serenade"
   ],
   "name2id": {
     "geo": 0,
@@ -779,6 +781,8 @@
     "nightweavers-looking-glass": 385,
     "prospectors-shovel": 386,
     "serenitys-call": 387,
-    "snare-hook": 388
+    "snare-hook": 388,
+    "night-of-the-skys-unveiling": 389,
+    "silken-moons-serenade": 390
   }
 }

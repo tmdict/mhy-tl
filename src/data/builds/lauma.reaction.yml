@@ -1,0 +1,39 @@
+---
+character: lauma
+c: 2
+name: "Bloom Support"
+type:
+  - reaction
+  - support
+
+weapon:
+  - name: nightweavers-looking-glass
+    r: 0
+  - name: etherlight-spindlelute
+    r: 5
+
+artifact:
+  - set: [silken-moons-serenade]
+    p: 4
+  - set: [deepwood-memories]
+    p: 4
+
+mainstat:
+  sand:
+    - er
+    - em
+  goblet:
+    - em
+  circlet:
+    - em
+
+stats:
+  - em: "1,050"
+  - er: "180%"
+  - crit: "40% / 80%"
+
+talent: "Q = E > A"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

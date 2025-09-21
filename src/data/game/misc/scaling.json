@@ -2,6 +2,19 @@
   "id": "scaling",
   "type": "misc",
   "data": {
+    "aino": {
+      "base-stat": ["em"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": ["em"],
+      "constellation": [{ "C2": ["atk", "em"] }],
+      "sand": ["em", "er"],
+      "goblet": ["em"],
+      "circlet": ["crit-abbr", "em"],
+      "recommended-talent": ["q"]
+    },
     "albedo": {
       "base-stat": ["geo"],
       "a": ["atk"],
@@ -695,6 +708,19 @@
       "goblet": ["atk", "anemo"],
       "circlet": ["atk", "crit-abbr"],
       "recommended-talent": ["e"]
+    },
+    "lauma": {
+      "base-stat": ["em"],
+      "a": ["atk"],
+      "e": ["atk", "em"],
+      "q": ["em"],
+      "a1": [],
+      "a4": ["em"],
+      "constellation": [{ "C1": ["em"] }, { "C2": ["em"] }],
+      "sand": ["em", "er"],
+      "goblet": ["em"],
+      "circlet": ["em"],
+      "recommended-talent": ["q"]
     },
     "layla": {
       "base-stat": ["hp"],

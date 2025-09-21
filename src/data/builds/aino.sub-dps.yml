@@ -1,0 +1,39 @@
+---
+character: aino
+c: 1
+name: "Off-Field DPS"
+type:
+  - sub-dps
+
+weapon:
+  - name: favonius-greatsword
+    r: 0
+  - name: flame-forged-insight
+    r: 5
+
+artifact:
+  - set: [silken-moons-serenade]
+    p: 4
+  - set: [noblesse-oblige]
+    p: 4
+
+mainstat:
+  sand:
+    - er
+    - em
+  goblet:
+    - em
+  circlet:
+    - crit
+    - em
+
+stats:
+  - er: "140-180%"
+  - em: "700-900"
+  - crit: "35% / 200%"
+
+talent: "Q = E > A"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

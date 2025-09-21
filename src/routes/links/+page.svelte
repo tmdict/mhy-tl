@@ -21,7 +21,7 @@
     {
       name: "原神角色一图流攻略",
       lang: ["中文"],
-      url: "https://www.miyoushe.com/ys/collection/10772",
+      url: "https://www.miyoushe.com/ys/collection/2558464",
       description: "只讲重点，全角色的一图流攻略。",
     },
     {
