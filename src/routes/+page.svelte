@@ -44,15 +44,6 @@
 
 <svelte:head>
   <title>mHY一图流</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "mHY一图流",
-      "alternateName": "mHY-TL",
-      "url": "https://mhy.tmdict.com/"
-    }
-  </script>
 </svelte:head>
 
 <Top />
