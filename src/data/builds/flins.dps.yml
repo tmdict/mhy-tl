@@ -1,0 +1,40 @@
+---
+character: flins
+c: 1
+name: "DPS"
+type:
+  - dps
+
+weapon:
+  - name: bloodsoaked-ruins
+    r: 0
+  - name: deathmatch
+    r: 0
+
+artifact:
+  - set: [night-of-the-skys-unveiling]
+    p: 4
+  - set: [gilded-dreams]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+    - em
+  goblet:
+    - atk
+    - em
+  circlet:
+    - crit
+
+stats:
+  - crit: "50-70% / 180-200%"
+  - atk: "2,000"
+  - em: "160"
+  - er: "130%"
+
+talent: "Q = E > A"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

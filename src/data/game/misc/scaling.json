@@ -410,6 +410,22 @@
       "circlet": ["crit-abbr"],
       "recommended-talent": ["e"]
     },
+    "flins": {
+      "base-stat": ["cdmg"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": ["atk"],
+      "constellation": [
+        { "C2": ["atk"] },
+        { "C4": ["atk"] }
+      ],
+      "sand": ["atk", "em"],
+      "goblet": ["atk", "em"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["q"]
+    },
     "freminet": {
       "base-stat": ["atk"],
       "a": ["atk"],
