@@ -1,0 +1,11 @@
+{
+  "id": "sacrificers-staff",
+  "type": "weapon",
+  "rarity": 4,
+  "weaponType": "polearm",
+  "subStat": "cr",
+  "data": {
+    "name": "Sacrificer’s Staff",
+    "passiveDescription": "For 6s after an Elemental Skill hits an opponent, ATK is increased by {{8//10//12//14//16%}} and Energy Recharge is increased by {{6//7.5//9//10.5//12%}}. Max 3 stacks. This effect can be triggered even when the equipping character is off-field."
+  }
+}

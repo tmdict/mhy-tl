@@ -1,0 +1,11 @@
+{
+  "id": "dawning-frost",
+  "type": "weapon",
+  "rarity": 4,
+  "weaponType": "catalyst",
+  "subStat": "cdmg",
+  "data": {
+    "name": "Dawning Frost",
+    "passiveDescription": "For 10s after a Charged Attack hits an opponent, Elemental Mastery is increased by {{72//90//108//126//144}}. For 10s after an Elemental Skill hits an opponent, Elemental Mastery is increased by {{48//60//72//84//96}}."
+  }
+}

@@ -417,10 +417,7 @@
       "q": ["atk"],
       "a1": [],
       "a4": ["atk"],
-      "constellation": [
-        { "C2": ["atk"] },
-        { "C4": ["atk"] }
-      ],
+      "constellation": [{ "C2": ["atk"] }, { "C4": ["atk"] }],
       "sand": ["atk", "em"],
       "goblet": ["atk", "em"],
       "circlet": ["crit-abbr"],
@@ -866,6 +863,19 @@
       "sand": ["atk", "er"],
       "goblet": ["geo"],
       "circlet": ["crit-abbr"],
+      "recommended-talent": ["e"]
+    },
+    "nefer": {
+      "base-stat": ["cdmg"],
+      "a": ["atk"],
+      "e": ["atk", "em"],
+      "q": ["atk", "em"],
+      "a1": [],
+      "a4": ["em"],
+      "constellation": [{ "C1": ["em"] }],
+      "sand": ["em"],
+      "goblet": ["em"],
+      "circlet": ["crit-abbr", "em"],
       "recommended-talent": ["e"]
     },
     "neuvillette": {

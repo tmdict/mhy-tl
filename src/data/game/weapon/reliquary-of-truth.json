@@ -1,0 +1,11 @@
+{
+  "id": "reliquary-of-truth",
+  "type": "weapon",
+  "rarity": 5,
+  "weaponType": "catalyst",
+  "subStat": "cdmg",
+  "data": {
+    "name": "Reliquary of Truth",
+    "passiveDescription": "CRIT Rate is increased by {{8//10//12//14//16%}}. When the equipping character unleashes an Elemental Skill, they gain the Secret of Lies effect: Elemental Mastery is increased by {{80//100//120//140//160}} for 12s. When the equipping character deals Lunar-Bloom DMG to an opponent, they gain the Moon of Truth effect: CRIT DMG is increased by {{24//30//36//42//48%}} for 4s. When both the Secret of Lies and Moon of Truth effects are active at the same time, the results of both effects will be increased by 50%."
+  }
+}

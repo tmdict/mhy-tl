@@ -391,7 +391,11 @@
     "snare-hook",
     "night-of-the-skys-unveiling",
     "silken-moons-serenade",
-    "bloodsoaked-ruins"
+    "bloodsoaked-ruins",
+    "nefer",
+    "dawning-frost",
+    "reliquary-of-truth",
+    "sacrificers-staff"
   ],
   "name2id": {
     "geo": 0,
@@ -785,6 +789,10 @@
     "snare-hook": 388,
     "night-of-the-skys-unveiling": 389,
     "silken-moons-serenade": 390,
-    "bloodsoaked-ruins": 391
+    "bloodsoaked-ruins": 391,
+    "nefer": 392,
+    "dawning-frost": 393,
+    "reliquary-of-truth": 394,
+    "sacrificers-staff": 395
   }
 }

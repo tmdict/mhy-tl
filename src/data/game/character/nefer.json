@@ -1,0 +1,11 @@
+{
+  "id": "nefer",
+  "type": "character",
+  "rarity": 5,
+  "vision": "dendro",
+  "weapon": "catalyst",
+  "released": "6.1.0",
+  "data": {
+    "name": "Nefer"
+  }
+}
