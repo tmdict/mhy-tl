@@ -340,6 +340,19 @@
       "circlet": ["heal"],
       "recommended-talent": ["q"]
     },
+    "durin": {
+      "base-stat": ["cdmg"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": ["atk"],
+      "constellation": [{ "C1": ["atk"] }],
+      "sand": ["atk"],
+      "goblet": ["pyro"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["q"]
+    },
     "emilie": {
       "base-stat": ["cdmg"],
       "a": ["atk"],
@@ -539,6 +552,19 @@
       "goblet": ["em"],
       "circlet": ["cr"],
       "recommended-talent": ["e", "q"]
+    },
+    "jahoda": {
+      "base-stat": ["heal"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": [],
+      "constellation": [],
+      "sand": ["er"],
+      "goblet": ["atk"],
+      "circlet": ["heal", "atk"],
+      "recommended-talent": ["q"]
     },
     "jean": {
       "base-stat": ["heal"],

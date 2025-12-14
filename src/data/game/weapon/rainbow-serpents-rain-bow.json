@@ -1,0 +1,11 @@
+{
+  "id": "rainbow-serpents-rain-bow",
+  "type": "weapon",
+  "rarity": 4,
+  "weaponType": "bow",
+  "subStat": "er",
+  "data": {
+    "name": "Rainbow Serpent’s Rain Bow",
+    "passiveDescription": "ATK is increased by {{28//35//42//49//56%}} for 8s after the equipping character’s attacks hit an opponent while the equipping character is off-field."
+  }
+}

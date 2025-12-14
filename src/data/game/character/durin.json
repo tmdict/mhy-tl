@@ -1,0 +1,11 @@
+{
+  "id": "durin",
+  "type": "character",
+  "rarity": 5,
+  "vision": "pyro",
+  "weapon": "sword",
+  "released": "6.2.0",
+  "data": {
+    "name": "Durin"
+  }
+}

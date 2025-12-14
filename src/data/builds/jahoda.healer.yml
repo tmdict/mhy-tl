@@ -1,0 +1,38 @@
+---
+character: jahoda
+c: 0
+name: "Healer"
+type:
+  - healer
+  - support
+
+weapon:
+  - name: favonius-warbow
+    r: 0
+  - name: elegy-for-the-end
+    r: 0
+
+artifact:
+  - set: [viridescent-venerer]
+    p: 4
+  - set: [silken-moons-serenade]
+    p: 4
+
+mainstat:
+  sand:
+    - er
+  goblet:
+    - atk
+  circlet:
+    - heal
+    - atk
+
+stats:
+  - er: "230%"
+  - atk: "1,550-1,850"
+  - cr: "30%"
+
+talent: "Q"
+
+source:
+  - ysjsgl: default

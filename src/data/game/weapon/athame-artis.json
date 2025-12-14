@@ -1,0 +1,11 @@
+{
+  "id": "athame-artis",
+  "type": "weapon",
+  "rarity": 5,
+  "weaponType": "sword",
+  "subStat": "cr",
+  "data": {
+    "name": "Athame Artis",
+    "passiveDescription": "CRIT DMG from Elemental Bursts is increased by {{16//20//24//28//32%}}. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours effect: ATK is increased by {{20//25//30//35//40%}}. Nearby active party members other than the equipping character have their ATK increased by {{16//20//24//28//32%}} for 3s.<br />Additionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional 75%. This effect can be triggered even if the equipping character is off-field."
+  }
+}

@@ -1,0 +1,37 @@
+---
+character: durin
+c: 0
+name: "Off-Field DPS"
+type:
+  - sub-dps
+
+weapon:
+  - name: athame-artis
+    r: 0
+  - name: wolf-fang
+    r: 0
+
+artifact:
+  - set: [noblesse-oblige]
+    p: 4
+  - set: [emblem-of-severed-fate]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+  goblet:
+    - pyro
+  circlet:
+    - crit
+
+stats:
+  - crit: "70-80% / 150-180%"
+  - atk: "2,100"
+  - er: "130%"
+
+talent: "Q > E"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

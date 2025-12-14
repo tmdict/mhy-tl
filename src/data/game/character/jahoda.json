@@ -1,0 +1,11 @@
+{
+  "id": "jahoda",
+  "type": "character",
+  "rarity": 4,
+  "vision": "anemo",
+  "weapon": "bow",
+  "released": "6.2.0",
+  "data": {
+    "name": "Jahoda"
+  }
+}
