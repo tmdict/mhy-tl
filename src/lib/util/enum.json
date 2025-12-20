@@ -395,7 +395,12 @@
     "nefer",
     "dawning-frost",
     "reliquary-of-truth",
-    "sacrificers-staff"
+    "sacrificers-staff",
+    "durin",
+    "jahoda",
+    "athame-artis",
+    "rainbow-serpents-rain-bow",
+    "the-daybreak-chronicles"
   ],
   "name2id": {
     "geo": 0,
@@ -793,6 +798,11 @@
     "nefer": 392,
     "dawning-frost": 393,
     "reliquary-of-truth": 394,
-    "sacrificers-staff": 395
+    "sacrificers-staff": 395,
+    "durin": 396,
+    "jahoda": 397,
+    "athame-artis": 398,
+    "rainbow-serpents-rain-bow": 399,
+    "the-daybreak-chronicles": 400
   }
 }
