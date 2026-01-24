@@ -12,7 +12,7 @@
     onSubmit = (value) => {},
   } = $props();
 
-  let results = $state([...options]);
+  let results = $derived([...options]);
   let showAutocompleteResults = $state(false);
   let highlightIndex = $state(0);
 

@@ -5,7 +5,7 @@
 
   // Pass in from parent so there's no error when character is changed to '-'
   let { weaponKey, availableWeapons } = $props();
-  const keys = editor.getKeys.weapon(weaponKey);
+  const keys = $derived(editor.getKeys.weapon(weaponKey));
 
   let l10n = $derived(
     Object.values(availableWeapons).reduce((acc, w) => {

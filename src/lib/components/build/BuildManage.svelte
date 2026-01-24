@@ -6,12 +6,14 @@
   import { compressBuild, encodeBuild } from '$lib/util/codec';
 
   let { build } = $props();
-  let encoded = $state('');
-  try {
-    encoded = lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(build)));
-  } catch (err) {
-    console.log(`Failed to generate build link: ${err}`);
-  }
+  let encoded = $derived.by(() => {
+    try {
+      return lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(build)));
+    } catch (err) {
+      console.log(`Failed to generate build link: ${err}`);
+      return '';
+    }
+  });
 
   function deleteBuild() {
     try {

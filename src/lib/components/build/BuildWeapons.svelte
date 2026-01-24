@@ -6,7 +6,7 @@
 
   let { weapons } = $props();
   
-  const data = weapons.reduce((acc, w) => ({ ...acc, [w.name]: WEAPONS_DATA[w.name] }), {});
+  const data = $derived(weapons.reduce((acc, w) => ({ ...acc, [w.name]: WEAPONS_DATA[w.name] }), {}));
   let isHover = $state('');
 </script>
 

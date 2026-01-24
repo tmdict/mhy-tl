@@ -34,8 +34,8 @@
 
 <ul>
   <li>
-    A stat <span class="highlight">is highlighted</span> if it's selected in the stats filter AND is
-    a scaling-stat for the key selected in the keys filter.
+    A stat <span class="highlight">is highlighted</span> if it's selected in the stats filter AND is a
+    scaling-stat for the key selected in the keys filter.
   </li>
 
   <li>

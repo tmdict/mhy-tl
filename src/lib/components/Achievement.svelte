@@ -1,4 +1,5 @@
 <script>
+  import { untrack } from "svelte";
   import { slide } from "svelte/transition";
   import { browser } from "$app/environment";
   import ID from "$lib/util/alias.json";
@@ -35,7 +36,9 @@
   }
 
   // Update outdated achievement checklist
-  trueUpChecklist(achievement);
+  untrack(() => {
+    trueUpChecklist(achievement);
+  });
 
   // Go through checklist to determine achievement completion status
   let complete = $derived(

@@ -5,7 +5,7 @@
   import { availableInputs, editor } from "@store/editor.svelte";
 
   let { statKey } = $props();
-  const keys = editor.getKeys.stat(statKey);
+  const keys = $derived(editor.getKeys.stat(statKey));
 </script>
 
 <div class="content-row">

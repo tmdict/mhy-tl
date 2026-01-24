@@ -4,11 +4,8 @@
   import BuildFilterItem from '$lib/components/build/BuildFilterItem.svelte';
 
   const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
-  let { filter, showFilter = false } = $props()
-
-  if (['type', 'vision'].includes(filter.name)) {
-    showFilter = true;
-  }
+  let { filter, showFilter: initialShow } = $props()
+  let showFilter = $derived(initialShow ?? ['type', 'vision'].includes(filter.name))
 </script>
 
 <div class="filter">

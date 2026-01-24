@@ -4,10 +4,10 @@
   import Icon from '$lib/components/Icon.svelte';
 
   let { artifacts } = $props();
-  const data = artifacts.reduce((acc, a) => {
+  const data = $derived(artifacts.reduce((acc, a) => {
     const aSet = a.set.reduce((aAcc, aname) => ({ ...aAcc, [aname]: ARTIFACTS_DATA[aname] }), {});
     return { ...acc, ...aSet };
-  }, {});
+  }, {}));
 </script>
 
 {#each artifacts as artifact, i}

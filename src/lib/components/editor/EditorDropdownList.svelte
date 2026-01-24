@@ -1,4 +1,5 @@
 <script>
+  import { untrack } from "svelte";
   import { slide } from "svelte/transition";
 
   let {
@@ -14,9 +15,11 @@
     l10n = {}, // For overriding display value
   } = $props();
 
-  if (selected === undefined && list.length > 0) {
-    selected = list[0];
-  }
+  untrack(() => {
+    if (selected === undefined && list.length > 0) {
+      selected = list[0];
+    }
+  });
 </script>
 
 <div transition:slide class="input-field" style="--input-width: {width}">
