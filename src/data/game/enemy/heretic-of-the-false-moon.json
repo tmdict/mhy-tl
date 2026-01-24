@@ -1,0 +1,7 @@
+{
+  "id": "heretic-of-the-false-moon",
+  "type": "enemy",
+  "enemyType": "weekly-boss",
+  "order": 13,
+  "drop": ["mask-of-the-virtuous-doctor", "madmans-restraint", "elixir-of-the-heretic"]
+}

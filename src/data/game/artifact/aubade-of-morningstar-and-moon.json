@@ -1,0 +1,10 @@
+{
+  "id": "aubade-of-morningstar-and-moon",
+  "type": "artifact",
+  "rarity": 5,
+  "data": {
+    "name": "Aubade of Morningstar and Moon",
+    "2p": "Increases Elemental Mastery by 80.",
+    "4p": "When the equipping character is off-field, Lunar Reaction DMG is increased by 20%. When the party’s Moonsign Level is at least Ascendant Gleam, Lunar Reaction DMG will be further increased by 40%. This effect will disappear after the equipping character is active for 3s."
+  }
+}

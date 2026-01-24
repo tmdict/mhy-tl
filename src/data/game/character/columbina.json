@@ -1,0 +1,11 @@
+{
+  "id": "columbina",
+  "type": "character",
+  "rarity": 5,
+  "vision": "hydro",
+  "weapon": "catalyst",
+  "released": "6.3.0",
+  "data": {
+    "name": "Columbina"
+  }
+}

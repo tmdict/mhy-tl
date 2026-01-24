@@ -3,13 +3,11 @@
 
   const links = [
     {
-      new: true,
       name: "Character Builds",
       url: "builds",
       updated: "2025-12-13",
     },
     {
-      new: true,
       name: "Character Stat Scaling",
       url: "character-scaling",
       updated: "2025-12-13",
@@ -35,9 +33,10 @@
       updated: "2025-06-22",
     },
     {
+      new: true,
       name: "Weekly Boss Materials",
       url: "weekly-boss-materials",
-      updated: "2025-08-10",
+      updated: "2026-01-23",
     },
   ].sort((a, b) => b.updated.localeCompare(a.updated));
 </script>

@@ -1,0 +1,8 @@
+{
+  "id": "mask-of-the-virtuous-doctor",
+  "type": "material",
+  "materialType": "weekly-boss",
+  "rarity": 5,
+  "source": "heretic-of-the-false-moon",
+  "characters": ["columbina"]
+}
