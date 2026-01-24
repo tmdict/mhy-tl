@@ -12,7 +12,6 @@
     onSubmit = (value) => {},
   } = $props();
 
-  let results = $derived([...options]);
   let showAutocompleteResults = $state(false);
   let highlightIndex = $state(0);
 
@@ -75,7 +74,7 @@
     hideResults();
   };
 
-  let matches = $derived(findMatches(results, selectedValue));
+  let matches = $derived(findMatches([...options], selectedValue));
 </script>
 
 <div transition:slide class="input-field">
