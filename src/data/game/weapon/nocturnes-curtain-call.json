@@ -1,7 +1,7 @@
 {
   "id": "nocturnes-curtain-call",
   "type": "weapon",
-  "rarity": 3,
+  "rarity": 5,
   "weaponType": "catalyst",
   "subStat": "hp",
   "data": {
