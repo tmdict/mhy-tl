@@ -1,0 +1,11 @@
+{
+  "id": "illuga",
+  "type": "character",
+  "rarity": 4,
+  "vision": "geo",
+  "weapon": "polearm",
+  "released": "6.3.1",
+  "data": {
+    "name": "Illuga"
+  }
+}

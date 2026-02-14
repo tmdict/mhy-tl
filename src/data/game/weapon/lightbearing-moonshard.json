@@ -1,0 +1,11 @@
+{
+  "id": "lightbearing-moonshard",
+  "type": "weapon",
+  "rarity": 5,
+  "weaponType": "sword",
+  "subStat": "cdmg",
+  "data": {
+    "name": "Lightbearing Moonshard",
+    "passiveDescription": "Increases DEF by {{20//25//30//35//40%}}. DMG inflicted by Lunar-Crystallize reactions increases by {{64//80//96//112//128%}} for 5s after the equipping character uses an Elemental Skill."
+  }
+}

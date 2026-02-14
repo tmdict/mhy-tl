@@ -1,0 +1,37 @@
+---
+character: illuga
+c: 0
+name: "Support"
+type:
+  - support
+
+weapon:
+  - name: favonius-lance
+    r: 0
+  - name: kitain-cross-spear
+    r: 0
+
+artifact:
+  - set: [silken-moons-serenade]
+    p: 4
+  - set: [silken-moons-serenade, night-of-the-skys-unveiling]
+    p: 2
+
+mainstat:
+  sand:
+    - er
+  goblet:
+    - em
+  circlet:
+    - em
+
+stats:
+  - er: "240%"
+  - em: "550"
+  - cr: "35%"
+
+talent: "Q"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

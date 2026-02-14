@@ -1,0 +1,11 @@
+{
+  "id": "nocturnes-curtain-call",
+  "type": "weapon",
+  "rarity": 3,
+  "weaponType": "catalyst",
+  "subStat": "hp",
+  "data": {
+    "name": "Nocturne’s Curtain Call",
+    "passiveDescription": "Max HP increases by {{10//12//14//16//18%}}. When triggering Lunar reactions or inflicting Lunar Reaction DMG on opponents, the equipping character will recover {{14//15//16//17//18}} Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional {{14//16//18//20//22%}}, CRIT DMG from Lunar Reaction DMG increases by {{60//80//100//120//140%}}. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field."
+  }
+}

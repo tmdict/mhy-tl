@@ -1,0 +1,42 @@
+---
+character: columbina
+c: 2
+name: "Support"
+type:
+  - reaction
+  - sub-dps
+  - support
+
+weapon:
+  - name: nocturnes-curtain-call
+    r: 0
+  - name: sacrificial-jade
+    r: 0
+
+artifact:
+  - set: [aubade-of-morningstar-and-moon]
+    p: 4
+  - set: [silken-moons-serenade]
+    p: 4
+
+mainstat:
+  sand:
+    - er
+    - hp
+  goblet:
+    - hp
+  circlet:
+    - crit
+    - hp
+
+stats:
+  - er: "220%"
+  - crit: "55-85% / 140-170%"
+  - hp: "31,000-35,000"
+  - em: ""
+
+talent: "E = Q"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

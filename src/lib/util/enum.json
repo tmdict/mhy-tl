@@ -400,7 +400,14 @@
     "jahoda",
     "athame-artis",
     "rainbow-serpents-rain-bow",
-    "the-daybreak-chronicles"
+    "the-daybreak-chronicles",
+    "columbina",
+    "illuga",
+    "zibai",
+    "a-day-carved-from-rising-winds",
+    "aubade-of-morningstar-and-moon",
+    "lightbearing-moonshard",
+    "nocturnes-curtain-call"
   ],
   "name2id": {
     "geo": 0,
@@ -803,6 +810,13 @@
     "jahoda": 397,
     "athame-artis": 398,
     "rainbow-serpents-rain-bow": 399,
-    "the-daybreak-chronicles": 400
+    "the-daybreak-chronicles": 400,
+    "columbina": 401,
+    "illuga": 402,
+    "zibai": 403,
+    "a-day-carved-from-rising-winds": 404,
+    "aubade-of-morningstar-and-moon": 405,
+    "lightbearing-moonshard": 406,
+    "nocturnes-curtain-call": 407
   }
 }

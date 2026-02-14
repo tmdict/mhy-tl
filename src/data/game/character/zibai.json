@@ -1,0 +1,11 @@
+{
+  "id": "zibai",
+  "type": "character",
+  "rarity": 5,
+  "vision": "geo",
+  "weapon": "sword",
+  "released": "6.3.1",
+  "data": {
+    "name": "Zibai"
+  }
+}

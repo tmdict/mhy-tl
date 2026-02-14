@@ -249,6 +249,19 @@
       "circlet": ["crit-abbr"],
       "recommended-talent": ["e"]
     },
+    "columbina": {
+      "base-stat": ["cr"],
+      "a": ["atk", "hp"],
+      "e": ["hp"],
+      "q": ["hp"],
+      "a1": [],
+      "a4": [],
+      "constellation": [{ "C1": ["hp"] }, { "C2": ["hp"] }, { "C4": ["hp"] }],
+      "sand": ["er", "hp"],
+      "goblet": ["hp"],
+      "circlet": ["crit-abbr", "hp"],
+      "recommended-talent": ["e", "q"]
+    },
     "collei": {
       "base-stat": ["atk"],
       "a": ["atk"],
@@ -552,6 +565,19 @@
       "goblet": ["em"],
       "circlet": ["cr"],
       "recommended-talent": ["e", "q"]
+    },
+    "illuga": {
+      "base-stat": ["em"],
+      "a": ["atk"],
+      "e": [],
+      "q": ["def", "em"],
+      "a1": [],
+      "a4": ["em"],
+      "constellation": [{ "C2": ["def", "em"] }],
+      "sand": ["er"],
+      "goblet": ["em"],
+      "circlet": ["em"],
+      "recommended-talent": ["q"]
     },
     "jahoda": {
       "base-stat": ["heal"],
@@ -1475,6 +1501,19 @@
       "goblet": ["hp"],
       "circlet": ["hp"],
       "recommended-talent": ["e"]
+    },
+    "zibai": {
+      "base-stat": ["cdmg"],
+      "a": [],
+      "e": ["def"],
+      "q": ["def"],
+      "a1": ["def"],
+      "a4": [],
+      "constellation": [],
+      "sand": ["def"],
+      "goblet": ["def"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["e", "q"]
     }
   }
 }

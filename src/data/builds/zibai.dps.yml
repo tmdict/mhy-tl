@@ -1,0 +1,37 @@
+---
+character: zibai
+c: 0
+name: "DPS"
+type:
+  - dps
+
+weapon:
+  - name: lightbearing-moonshard
+    r: 0
+  - name: flute-of-ezpitzal
+    r: 0
+
+artifact:
+  - set: [night-of-the-skys-unveiling]
+    p: 4
+  - set: [husk-of-opulent-dreams]
+    p: 4
+
+mainstat:
+  sand:
+    - def
+  goblet:
+    - def
+  circlet:
+    - crit
+
+stats:
+  - crit: "40-70% / 200%"
+  - def: "2,000"
+  - em: ""
+
+talent: "E = Q > A"
+
+source:
+  - ysjsgl: default
+  - ysytl: default
