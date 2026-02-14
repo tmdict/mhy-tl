@@ -79,12 +79,6 @@
       description: "Builds, artifacts and character recommendation and optmization tool.",
     },
     {
-      name: "Haku.shin",
-      lang: ["English", "中文", "한국어"],
-      url: "https://gi.hakush.in/",
-      description: "Genshin Impact database and tools.",
-    },
-    {
       name: "Honey Impact",
       lang: ["Multi-lingual · 多语言"],
       url: "https://genshin.honeyhunterworld.com/",
