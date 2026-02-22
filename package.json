@@ -10,7 +10,7 @@
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
     "process:css": "node scripts/css.js",
     "process:enum": "node scripts/enum.js",
-    "clean": "rimraf bin dist build",
+    "clean": "rimraf bin dist build .svelte-kit",
     "format": "prettier --write --list-different .",
     "format:check": "prettier --check ."
   },
