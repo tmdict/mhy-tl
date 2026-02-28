@@ -1,0 +1,11 @@
+{
+  "id": "varka",
+  "type": "character",
+  "rarity": 5,
+  "vision": "anemo",
+  "weapon": "claymore",
+  "released": "6.4.0",
+  "data": {
+    "name": "Varka"
+  }
+}
