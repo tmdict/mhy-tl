@@ -407,7 +407,9 @@
     "a-day-carved-from-rising-winds",
     "aubade-of-morningstar-and-moon",
     "lightbearing-moonshard",
-    "nocturnes-curtain-call"
+    "nocturnes-curtain-call",
+    "varka",
+    "gest-of-the-mighty-wolf"
   ],
   "name2id": {
     "geo": 0,
@@ -817,6 +819,8 @@
     "a-day-carved-from-rising-winds": 404,
     "aubade-of-morningstar-and-moon": 405,
     "lightbearing-moonshard": 406,
-    "nocturnes-curtain-call": 407
+    "nocturnes-curtain-call": 407,
+    "varka": 408,
+    "gest-of-the-mighty-wolf": 409
   }
 }

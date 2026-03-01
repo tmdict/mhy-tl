@@ -1,0 +1,36 @@
+---
+character: varka
+c: 6
+name: "DPS"
+type:
+  - dps
+
+weapon:
+  - name: gest-of-the-mighty-wolf
+    r: 0
+  - name: serpent-spine
+    r: 0
+
+artifact:
+  - set: [a-day-carved-from-rising-winds]
+    p: 4
+  - set: [desert-pavilion-chronicle]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+  goblet:
+    - atk
+  circlet:
+    - crit
+
+stats:
+  - crit: "70% / 160-220%"
+  - atk: "2,500"
+
+talent: "E > Q"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

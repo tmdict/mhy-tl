@@ -1281,6 +1281,19 @@
       "circlet": ["crit-abbr"],
       "recommended-talent": ["a", "q"]
     },
+    "varka": {
+      "base-stat": ["cdmg"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": ["atk"],
+      "a4": [],
+      "constellation": [{ "C2": ["atk"] }],
+      "sand": ["atk"],
+      "goblet": ["atk"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["e", "q"]
+    },
     "venti": {
       "base-stat": ["er"],
       "a": ["atk"],
