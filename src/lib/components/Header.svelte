@@ -83,6 +83,8 @@
       <div class="group">
         <a href="/achievements">Achievements</a>
         <span class="separator">·</span>
+        <a href="/tcg">TCG Masterful Mimicry</a>
+        <span class="separator">·</span>
         <a href="/links">Links</a>
       </div>
     </div>

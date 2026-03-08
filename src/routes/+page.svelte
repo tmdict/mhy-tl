@@ -35,6 +35,11 @@
       updated: "2025-06-22",
     },
     {
+      name: "TCG Masterful Mimicry",
+      url: "tcg",
+      updated: "2026-03-08",
+    },
+    {
       name: "Weekly Boss Materials",
       url: "weekly-boss-materials",
       updated: "2026-01-23",
