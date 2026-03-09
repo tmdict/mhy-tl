@@ -3,13 +3,11 @@
 
   const links = [
     {
-      new: true,
       name: "Character Builds",
       url: "builds",
       updated: "2026-03-01",
     },
     {
-      new: true,
       name: "Character Stat Scaling",
       url: "character-scaling",
       updated: "2026-03-01",
@@ -35,6 +33,7 @@
       updated: "2025-06-22",
     },
     {
+      new: true,
       name: "TCG Masterful Mimicry",
       url: "tcg",
       updated: "2026-03-08",
