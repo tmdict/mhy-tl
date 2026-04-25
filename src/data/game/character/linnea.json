@@ -1,0 +1,11 @@
+{
+  "id": "linnea",
+  "type": "character",
+  "rarity": 5,
+  "vision": "geo",
+  "weapon": "bow",
+  "released": "6.5.0",
+  "data": {
+    "name": "Linnea"
+  }
+}

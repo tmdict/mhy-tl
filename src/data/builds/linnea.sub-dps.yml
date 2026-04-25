@@ -1,0 +1,38 @@
+---
+character: linnea
+c: 2
+name: "Off-Field DPS"
+type:
+  - sub-dps
+
+weapon:
+  - name: golden-frostbound-oath
+    r: 0
+  - name: slingshot
+    r: 0
+
+artifact:
+  - set: [aubade-of-morningstar-and-moon]
+    p: 4
+  - set: [husk-of-opulent-dreams]
+    p: 4
+
+mainstat:
+  sand:
+    - def
+    - er
+  goblet:
+    - def
+  circlet:
+    - crit
+
+stats:
+  - er: "180%"
+  - crit: "70-80% / 140-180%"
+  - def: "2,000-2,500"
+
+talent: "E > Q"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

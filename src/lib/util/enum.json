@@ -409,7 +409,9 @@
     "lightbearing-moonshard",
     "nocturnes-curtain-call",
     "varka",
-    "gest-of-the-mighty-wolf"
+    "gest-of-the-mighty-wolf",
+    "linnea",
+    "golden-frostbound-oath"
   ],
   "name2id": {
     "geo": 0,
@@ -821,6 +823,8 @@
     "lightbearing-moonshard": 406,
     "nocturnes-curtain-call": 407,
     "varka": 408,
-    "gest-of-the-mighty-wolf": 409
+    "gest-of-the-mighty-wolf": 409,
+    "linnea": 410,
+    "golden-frostbound-oath": 411
   }
 }

@@ -800,6 +800,19 @@
       "circlet": ["hp", "crit-abbr"],
       "recommended-talent": ["e"]
     },
+    "linnea": {
+      "base-stat": ["cr"],
+      "a": [],
+      "e": ["def"],
+      "q": ["def"],
+      "a1": [],
+      "a4": ["def"],
+      "constellation": [{ "C1": ["def"] }],
+      "sand": ["def", "er"],
+      "goblet": ["def"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["e", "q"]
+    },
     "lisa": {
       "base-stat": ["em"],
       "a": ["atk"],
