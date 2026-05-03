@@ -6,13 +6,13 @@
       new: true,
       name: "Character Builds",
       url: "builds",
-      updated: "2026-04-35",
+      updated: "2026-04-25",
     },
     {
       new: true,
       name: "Character Stat Scaling",
       url: "character-scaling",
-      updated: "2026-04-35",
+      updated: "2026-04-25",
     },
     {
       name: "Commission Achievements",
