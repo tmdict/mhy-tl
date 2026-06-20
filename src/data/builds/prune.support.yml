@@ -1,0 +1,37 @@
+---
+character: prune
+c: 0
+name: "Support"
+type:
+  - support
+
+weapon:
+  - name: favonius-codex
+    r: 0
+  - name: oathsworn-eye
+    r: 5
+
+artifact:
+  - set: [viridescent-venerer]
+    p: 4
+  - set: [celestial-gift]
+    p: 4
+
+mainstat:
+  sand:
+    - er
+    - atk
+  goblet:
+    - atk
+  circlet:
+    - atk
+
+stats:
+  - er: "240%"
+  - cr: ""
+  - atk: ""
+
+talent: "Q > E"
+
+source:
+  - ysjsgl: default

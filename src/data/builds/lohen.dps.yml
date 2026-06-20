@@ -1,0 +1,35 @@
+---
+character: lohen
+c: 0
+name: "DPS"
+type:
+  - dps
+
+weapon:
+  - name: disaster-and-remorse
+    r: 0
+  - name: deathmatch
+    r: 5
+
+artifact:
+  - set: [a-day-carved-from-rising-winds]
+    p: 4
+  - set: [blizzard-strayer]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+  goblet:
+    - cryo
+  circlet:
+    - crit
+
+stats:
+  - crit: "50-80% / 140-200%"
+  - atk: "1,850-2,050"
+
+talent: "E > Q"
+
+source:
+  - ysjsgl: default

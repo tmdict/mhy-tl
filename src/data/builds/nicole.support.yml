@@ -1,0 +1,37 @@
+---
+character: nicole
+c: 0
+name: "Support"
+type:
+  - shield
+  - support
+
+weapon:
+  - name: angelos-heptades
+    r: 0
+  - name: oathsworn-eye
+    r: 5
+
+artifact:
+  - set: [celestial-gift]
+    p: 4
+  - set: [noblesse-oblige]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+  goblet:
+    - atk
+  circlet:
+    - atk
+
+stats:
+  - atk: "3,500-4,000"
+  - er: "160%"
+
+talent: "E > Q"
+
+source:
+  - ysjsgl: default
+  - ysytl: default

@@ -1,0 +1,11 @@
+{
+  "id": "nicole",
+  "type": "character",
+  "rarity": 5,
+  "vision": "pyro",
+  "weapon": "catalyst",
+  "released": "6.6.0",
+  "data": {
+    "name": "Nicole"
+  }
+}

@@ -826,6 +826,19 @@
       "circlet": ["crit-abbr"],
       "recommended-talent": ["e"]
     },
+    "lohen": {
+      "base-stat": ["cdmg"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": [],
+      "constellation": [{ "C2": ["atk"] }],
+      "sand": ["atk"],
+      "goblet": ["cryo"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["e"]
+    },
     "lynette": {
       "base-stat": ["anemo"],
       "a": ["atk"],
@@ -956,6 +969,19 @@
       "circlet": ["crit-abbr", "hp"],
       "recommended-talent": ["a"]
     },
+    "nicole": {
+      "base-stat": ["atk"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": [],
+      "constellation": [{ "C1": ["atk"] }, { "C4": ["atk"] }],
+      "sand": ["atk"],
+      "goblet": ["atk"],
+      "circlet": ["atk"],
+      "recommended-talent": ["e"]
+    },
     "nilou": {
       "base-stat": ["hp"],
       "a": ["atk"],
@@ -1006,6 +1032,19 @@
       "sand": ["atk"],
       "goblet": ["electro"],
       "circlet": ["crit-abbr"],
+      "recommended-talent": ["q"]
+    },
+    "prune": {
+      "base-stat": ["atk"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": ["atk"],
+      "constellation": [{ "C4": ["atk"] }],
+      "sand": ["er", "atk"],
+      "goblet": ["atk"],
+      "circlet": ["atk"],
       "recommended-talent": ["q"]
     },
     "qiqi": {

@@ -1,0 +1,7 @@
+{
+  "id": "exalted-master-of-the-heretical-path",
+  "type": "enemy",
+  "enemyType": "weekly-boss",
+  "order": 14,
+  "drop": ["counterfeit-resin", "profaned-sprout", "twisted-withered-branch"]
+}

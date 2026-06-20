@@ -1,0 +1,11 @@
+{
+  "id": "prune",
+  "type": "character",
+  "rarity": 4,
+  "vision": "anemo",
+  "weapon": "catalyst",
+  "released": "6.6.0",
+  "data": {
+    "name": "Prune"
+  }
+}

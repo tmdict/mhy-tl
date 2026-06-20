@@ -1,0 +1,11 @@
+{
+  "id": "lohen",
+  "type": "character",
+  "rarity": 5,
+  "vision": "cryo",
+  "weapon": "polearm",
+  "released": "6.6.1",
+  "data": {
+    "name": "Lohen"
+  }
+}

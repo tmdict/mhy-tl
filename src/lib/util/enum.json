@@ -411,7 +411,14 @@
     "varka",
     "gest-of-the-mighty-wolf",
     "linnea",
-    "golden-frostbound-oath"
+    "golden-frostbound-oath",
+    "lohen",
+    "nicole",
+    "prune",
+    "celestial-gift",
+    "disenchantment-in-deep-shadow",
+    "angelos-heptades",
+    "disaster-and-remorse"
   ],
   "name2id": {
     "geo": 0,
@@ -825,6 +832,13 @@
     "varka": 408,
     "gest-of-the-mighty-wolf": 409,
     "linnea": 410,
-    "golden-frostbound-oath": 411
+    "golden-frostbound-oath": 411,
+    "lohen": 412,
+    "nicole": 413,
+    "prune": 414,
+    "celestial-gift": 415,
+    "disenchantment-in-deep-shadow": 416,
+    "angelos-heptades": 417,
+    "disaster-and-remorse": 418
   }
 }
