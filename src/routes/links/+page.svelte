@@ -7,6 +7,12 @@
       description: "Comprehensive theorycrafting and guides.",
     },
     {
+      name: "Genshin Builds",
+      lang: ["Multi-lingual · 多语言"],
+      url: "https://genshin-impact-helper-team.github.io/genshin-builds/en/",
+      description: "Character builds by Genshin Impact Helper Team.",
+    },
+    {
       name: "全角色参考面板",
       lang: ["中文"],
       url: "https://www.miyoushe.com/ys/collection/10772",
@@ -70,7 +76,7 @@
       name: "Genshin Community Character Builds",
       lang: ["English"],
       url: "https://tinyurl.com/genshinbuilds",
-      description: "Character builds by Genshin Impact Helper Team.",
+      description: "Character builds by Genshin Impact Helper Team (replaced by Genshin Builds).",
     },
     {
       name: "Genshin Optimizer",

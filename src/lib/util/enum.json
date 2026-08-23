@@ -418,7 +418,9 @@
     "celestial-gift",
     "disenchantment-in-deep-shadow",
     "angelos-heptades",
-    "disaster-and-remorse"
+    "disaster-and-remorse",
+    "sandrone",
+    "a-teaspoon-of-transcendence"
   ],
   "name2id": {
     "geo": 0,
@@ -839,6 +841,8 @@
     "celestial-gift": 415,
     "disenchantment-in-deep-shadow": 416,
     "angelos-heptades": 417,
-    "disaster-and-remorse": 418
+    "disaster-and-remorse": 418,
+    "sandrone": 419,
+    "a-teaspoon-of-transcendence": 420
   }
 }

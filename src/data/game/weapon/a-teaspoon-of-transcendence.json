@@ -1,0 +1,11 @@
+{
+  "id": "a-teaspoon-of-transcendence",
+  "type": "weapon",
+  "rarity": 5,
+  "weaponType": "claymore",
+  "subStat": "cdmg",
+  "data": {
+    "name": "A Teaspoon of Transcendence",
+    "passiveDescription": "ATK is increased by {{28//35//42//49//56%}}.<br />Additionally, each time the equipping character hits an opponent with their Charged Attack, they attain “Transcendence” for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by {{16//20//24//28//32%}} for 5s. This effect can stack once every 0.2s, max 3 stacks."
+  }
+}

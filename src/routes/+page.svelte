@@ -3,16 +3,14 @@
 
   const links = [
     {
-      new: true,
       name: "Character Builds",
       url: "builds",
-      updated: "2026-06-19",
+      updated: "2026-08-23",
     },
     {
-      new: true,
       name: "Character Stat Scaling",
       url: "character-scaling",
-      updated: "2026-06-19",
+      updated: "2026-08-23",
     },
     {
       name: "Commission Achievements",
@@ -40,7 +38,6 @@
       updated: "2026-03-08",
     },
     {
-      new: true,
       name: "Weekly Boss Materials",
       url: "weekly-boss-materials",
       updated: "2026-06-19",

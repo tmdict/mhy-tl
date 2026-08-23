@@ -1,0 +1,11 @@
+{
+  "id": "sandrone",
+  "type": "character",
+  "rarity": 5,
+  "vision": "cryo",
+  "weapon": "claymore",
+  "released": "6.7.0",
+  "data": {
+    "name": "Sandrone"
+  }
+}

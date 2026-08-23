@@ -1,5 +1,6 @@
 <script>
   import Footer from "$lib/components/content/Footer.svelte";
+  import Notice from "$lib/components/content/Notice.svelte";
   import Header from "$lib/components/Header.svelte";
   import ThemeContext from "$lib/components/ThemeContext.svelte";
 
@@ -14,6 +15,7 @@
       </div>
 
       <div id="main">
+        <Notice />
         {@render children?.()}
       </div>
       <div id="footer">

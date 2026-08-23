@@ -1,0 +1,37 @@
+---
+character: sandrone
+c: 0
+name: "DPS"
+type:
+  - dps
+
+weapon:
+  - name: a-teaspoon-of-transcendence
+    r: 0
+  - name: tidal-shadow
+    r: 5
+
+artifact:
+  - set: [disenchantment-in-deep-shadow]
+    p: 4
+  - set: [gilded-dreams]
+    p: 4
+
+mainstat:
+  sand:
+    - atk
+  goblet:
+    - atk
+  circlet:
+    - crit
+
+stats:
+  - crit: "55-85% / 140-200%"
+  - atk: "2,000"
+  - er: "130%"
+  - em: ""
+
+talent: "A = Q > E"
+
+source:
+  - ysjsgl: default

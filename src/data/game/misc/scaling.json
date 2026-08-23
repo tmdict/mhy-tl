@@ -1092,12 +1092,25 @@
       "e": ["atk"],
       "q": ["atk"],
       "a1": [],
-      "a4": ["cr"],
+      "a4": ["atk"],
       "constellation": [],
       "sand": ["atk", "er"],
       "goblet": ["cryo"],
       "circlet": ["crit-abbr"],
       "recommended-talent": ["q"]
+    },
+    "sandrone": {
+      "base-stat": ["cr"],
+      "a": ["atk"],
+      "e": ["atk"],
+      "q": ["atk"],
+      "a1": [],
+      "a4": [],
+      "constellation": [{ "C4": ["atk"] }, { "C6": ["atk"] }],
+      "sand": ["atk"],
+      "goblet": ["atk"],
+      "circlet": ["crit-abbr"],
+      "recommended-talent": ["a"]
     },
     "sangonomiya-kokomi": {
       "base-stat": ["hydro"],
