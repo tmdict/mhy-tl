@@ -1,5 +1,4 @@
 <script>
-  import Footer from "$lib/components/content/Footer.svelte";
   import Notice from "$lib/components/content/Notice.svelte";
   import Header from "$lib/components/Header.svelte";
   import ThemeContext from "$lib/components/ThemeContext.svelte";
@@ -17,9 +16,6 @@
       <div id="main">
         <Notice />
         {@render children?.()}
-      </div>
-      <div id="footer">
-        <Footer />
       </div>
     </div>
   </main>
@@ -85,13 +81,6 @@
 
   #content {
     margin-top: 20px;
-  }
-
-  #footer {
-    color: #bfbfbf;
-    margin: 10px auto 20px;
-    font-family: var(--theme-main-font);
-    font-size: 0.8rem;
   }
 
   p {

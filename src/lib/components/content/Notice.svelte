@@ -1,8 +1,7 @@
 <p class="notice">
   <span class="highlight">2026-08:</span> This site will no longer be updated. Most of the tools and
   information it provides are now available directly in the game, so there is little need to keep
-  maintaining it. The site may be taken down at a future date. If you still rely on it, please back
-  up any data you need and consider one of the alternatives listed on the
+  maintaining it. If you still rely on it, please consider one of the alternatives listed on the
   <a href="/links">Links</a> page.
 </p>
 
