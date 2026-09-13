@@ -40,6 +40,7 @@
   #container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
   }
 
   #header {
