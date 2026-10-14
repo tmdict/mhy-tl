@@ -7,7 +7,6 @@
   import { highlight } from "#lib/util/highlight.js";
   import { localData } from "#store/sitedata.js";
   import Fuse from "fuse.js";
-  import cloneDeep from "lodash.clonedeep";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   const filters = ["mondstadt", "liyue", "inazuma", "sumeru", "fontaine", "natlan"];
@@ -21,7 +20,7 @@
   let showFaq = $state(false);
 
   let filteredList = $derived.by(() => {
-    let tempList = cloneDeep(achievements);
+    let tempList = structuredClone(achievements);
     // 1. filter by search
     if (searchTerm !== "") {
       // Update what language to search for
@@ -41,16 +40,16 @@
       if (results.length > 0) {
         // Highlight and return search results
         // Deep clone results so highlight doesn't modify original results
-        tempList = highlight(cloneDeep(results));
+        tempList = highlight(structuredClone(results));
       }
     } else {
-      tempList = cloneDeep(achievements);
+      tempList = structuredClone(achievements);
     }
     // 2. filter by static filters
     tempList =
       currentFilter.field == ""
         ? tempList
-        : cloneDeep(
+        : structuredClone(
             tempList.filter(
               (achievement) => achievement[currentFilter.field] === currentFilter.value,
             ),
@@ -78,7 +77,7 @@
   }
 
   function clearAll() {
-    filteredList = cloneDeep(achievements);
+    filteredList = structuredClone(achievements);
     currentFilter = { field: "", value: "" };
     sortByCompletion = false;
     searchTerm = "";

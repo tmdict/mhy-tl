@@ -9,36 +9,29 @@
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
     "process:css": "node scripts/css.js",
     "process:enum": "node scripts/enum.js",
-    "clean": "rimraf bin dist build .svelte-kit",
+    "clean": "node -e \"for (const dir of ['build', '.svelte-kit']) require('fs').rmSync(dir, { recursive: true, force: true })\"",
     "format": "prettier --write --list-different .",
     "format:check": "prettier --check ."
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
-    "@modyfi/vite-plugin-yaml": "^1.1.1",
     "@sveltejs/adapter-static": "^4.0.0",
     "@sveltejs/enhanced-img": "^1.0.0",
     "@sveltejs/kit": "^3.0.1",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
-    "fdir": "^6.5.0",
-    "fs-extra": "^11.4.1",
     "fuse.js": "^7.5.0",
-    "lodash.clonedeep": "^4.5.0",
+    "js-yaml": "^4.3.2",
     "lz-string": "^1.5.0",
     "marked": "^18.1.1",
     "normalize.css": "^8.0.1",
     "notyf": "^3.10.0",
     "prettier": "^3.9.10",
     "prettier-plugin-svelte": "^4.1.1",
-    "rimraf": "^6.1.3",
     "svelte": "^5.57.2",
     "svelte-check": "^4.7.6",
     "tippy.js": "^6.3.7",
     "typescript": "^6.0.3",
     "vite": "^8.3.4"
-  },
-  "overrides": {
-    "js-yaml": "^4.3.2"
   },
   "type": "module",
   "imports": {

@@ -1,8 +1,9 @@
+import fs from "fs";
 import path from "path";
-import fs from "fs-extra";
 
 // Compiles theme colors into importable styles
 const buildThemes = (config, src, dest) => {
+  fs.mkdirSync(dest, { recursive: true });
   for (const theme of config) {
     let fileContent = fs.readFileSync(path.join(src, theme.src), "utf8");
     // Keep only the custom properties inside the theme's `:root { ... }` block
@@ -10,7 +11,7 @@ const buildThemes = (config, src, dest) => {
     const regex = /^ *--(.*): (.*);\n/gm;
     // Inner double quotes (e.g. font names) would break the JSON string
     const toEntry = (_, name, value) => `    "${name}": "${value.replaceAll('"', "'")}",\n`;
-    fs.outputFile(
+    fs.writeFileSync(
       path.join(dest, theme.name) + ".json",
       `{
         "name": "${theme.name}",

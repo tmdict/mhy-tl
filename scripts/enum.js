@@ -1,6 +1,5 @@
+import fs from "fs";
 import path from "path";
-import { fdir } from "fdir";
-import fs from "fs-extra";
 
 // Builds an ENUM map of id to game terms
 const buildIdMap = (src, dest, filename = "enum.json", overwrite = false) => {
@@ -19,9 +18,7 @@ const buildIdMap = (src, dest, filename = "enum.json", overwrite = false) => {
   }
 
   ["character", "artifact", "weapon"].forEach((dir) => {
-    const api = new fdir().glob("./**/*.json").withFullPaths().crawl(`${src}/${dir}`);
-    const files = api.sync();
-    files.forEach((f) => {
+    fs.globSync(`${src}/${dir}/**/*.json`).forEach((f) => {
       const content = JSON.parse(fs.readFileSync(f, "utf8"));
 
       if ((!overwrite && !(content.id in data.name2id)) || overwrite) {
@@ -49,7 +46,8 @@ const buildIdMap = (src, dest, filename = "enum.json", overwrite = false) => {
     });
   });
 
-  fs.outputFile(
+  fs.mkdirSync(dest, { recursive: true });
+  fs.writeFileSync(
     path.join(dest, filename),
     `${JSON.stringify({ id2name: data.id2name, name2id: data.name2id }, 0, 2)}\n`,
   );
