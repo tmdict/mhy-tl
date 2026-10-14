@@ -18,7 +18,7 @@
   <textarea class="input" type="textarea" {id} {name} bind:value></textarea>
 </div>
 
-<style lang="scss">
+<style>
   .input-field {
     width: 100%;
   }

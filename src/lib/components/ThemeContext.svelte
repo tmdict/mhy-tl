@@ -1,8 +1,8 @@
 <script>
   import { onMount, setContext } from "svelte";
-  import { browser } from "$app/environment";
-  import dark from "$lib/style/themes/dark.json";
-  import light from "$lib/style/themes/light.json";
+  import { browser } from "$app/env";
+  import dark from "#lib/style/themes/dark.json";
+  import light from "#lib/style/themes/light.json";
 
   let { children } = $props();
 

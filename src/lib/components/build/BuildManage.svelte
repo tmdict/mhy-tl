@@ -1,9 +1,9 @@
 <script>
-  import { toast } from '@store/toast';
-  import lzstring from 'lz-string';
-  import { browser } from '$app/environment';
-  import { localData } from '@store/sitedata';
-  import { compressBuild, encodeBuild } from '$lib/util/codec';
+  import { browser } from "$app/env";
+  import { compressBuild, encodeBuild } from "#lib/util/codec.js";
+  import { localData } from "#store/sitedata.js";
+  import { toast } from "#store/toast.js";
+  import lzstring from "lz-string";
 
   let { build } = $props();
   let encoded = $derived.by(() => {
@@ -11,16 +11,16 @@
       return lzstring.compressToEncodedURIComponent(compressBuild(encodeBuild(build)));
     } catch (err) {
       console.log(`Failed to generate build link: ${err}`);
-      return '';
+      return "";
     }
   });
 
   function deleteBuild() {
     try {
-      const afterDeletion = $localData['builds'].filter((b) => b.id != build.id);
+      const afterDeletion = $localData["builds"].filter((b) => b.id != build.id);
       $localData = { ...$localData, builds: afterDeletion };
-      browser && localStorage.setItem('tmdict.genshin.data', JSON.stringify($localData));
-      toast.success('Build deleted.');
+      browser && localStorage.setItem("tmdict.genshin.data", JSON.stringify($localData));
+      toast.success("Build deleted.");
     } catch (err) {
       toast.error(`Something went wrong: ${err}`);
     }
@@ -28,26 +28,31 @@
 </script>
 
 <div class="menu manage">
-  <a href="/builds/build#{encoded}"
+  <a
+    href="/builds/build#{encoded}"
     onclick={(e) => e.stopPropagation()}
-    onkeydown={(e) => e.stopPropagation()}
-  >Link</a>
+    onkeydown={(e) => e.stopPropagation()}>Link</a
+  >
   <span class="menu-separator"></span>
-  <a href="/builds/edit#{encoded}"
+  <a
+    href="/builds/edit#{encoded}"
     onclick={(e) => e.stopPropagation()}
-    onkeydown={(e) => e.stopPropagation()}
-  >Edit</a>
-  {#if 'id' in build}
+    onkeydown={(e) => e.stopPropagation()}>Edit</a
+  >
+  {#if "id" in build}
     <span class="menu-separator"></span>
-    <a href="/#" onclick={(e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      deleteBuild();
-    }}>Delete</a>
+    <a
+      href="/#"
+      onclick={(e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        deleteBuild();
+      }}>Delete</a
+    >
   {/if}
 </div>
 
-<style lang="scss">
+<style>
   .manage {
     width: 100%;
     border-top: 1px dotted var(--theme-border-light);

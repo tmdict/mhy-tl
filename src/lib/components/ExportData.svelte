@@ -1,5 +1,5 @@
 <script>
-  import { localData } from "@store/sitedata";
+  import { localData } from "#store/sitedata.js";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
 

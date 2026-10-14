@@ -1,7 +1,7 @@
 <script>
-  import { browser } from "$app/environment";
-  import { localData } from "@store/sitedata";
-  import { toast } from "@store/toast";
+  import { browser } from "$app/env";
+  import { localData } from "#store/sitedata.js";
+  import { toast } from "#store/toast.js";
 
   // Support drag and drop in the future
   function getFilesFromInputEvent({ target }) {
@@ -42,7 +42,7 @@
   />
 </span>
 
-<style lang="scss">
+<style>
   .file-upload {
     .import {
       color: var(--theme-site-secondary-main);

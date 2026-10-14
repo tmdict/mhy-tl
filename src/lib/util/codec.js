@@ -1,4 +1,4 @@
-import * as data from "$lib/util/enum.json";
+import * as data from "#lib/util/enum.json";
 
 const delimiter = "\0";
 const typeReplacer = ["burst", "dps", "healer", "reaction", "shield", "sub-dps", "support"];

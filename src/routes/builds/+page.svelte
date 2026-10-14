@@ -1,12 +1,12 @@
 <script>
   import { slide } from "svelte/transition";
-  import Build from "$lib/components/build/Build.svelte";
-  import BuildFilter from "$lib/components/build/BuildFilter.svelte";
-  import BuildFaq from "$lib/components/content/BuildFaq.svelte";
-  import ManageData from "$lib/components/ManageData.svelte";
-  import { BUILD_FILTERS, BUILDS } from "@store/builds";
-  import { filterlist } from "@store/filterlist.svelte";
-  import { localData } from "@store/sitedata";
+  import Build from "#lib/components/build/Build.svelte";
+  import BuildFilter from "#lib/components/build/BuildFilter.svelte";
+  import BuildFaq from "#lib/components/content/BuildFaq.svelte";
+  import ManageData from "#lib/components/ManageData.svelte";
+  import { BUILD_FILTERS, BUILDS } from "#store/builds.js";
+  import { filterlist } from "#store/filterlist.svelte.js";
+  import { localData } from "#store/sitedata.js";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
 
@@ -95,7 +95,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style>
   .menu a {
     &.show:after {
       color: var(--theme-site-primary-alt);

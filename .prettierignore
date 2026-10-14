@@ -10,7 +10,7 @@ bun.lockb
 
 # Build directories
 .svelte-kit
-build
+/build
 dist
 bin
 

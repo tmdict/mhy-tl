@@ -1,9 +1,9 @@
 <script>
   import { untrack } from "svelte";
   import { slide } from "svelte/transition";
-  import { browser } from "$app/environment";
-  import ID from "$lib/util/alias.json";
-  import { localData } from "@store/sitedata";
+  import { browser } from "$app/env";
+  import ID from "#lib/util/alias.json";
+  import { localData } from "#store/sitedata.js";
   import { marked } from "marked";
 
   let { achievement, alt = false, expand = false } = $props();
@@ -111,7 +111,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style>
   .achievement {
     padding: 20px;
     color: var(--theme-text-normal);

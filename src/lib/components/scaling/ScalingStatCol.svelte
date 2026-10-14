@@ -1,9 +1,9 @@
 <script>
-  import Icon from "$lib/components/Icon.svelte";
-  import ID from "$lib/util/alias.json";
-  import { filterlist } from "@store/filterlist.svelte";
-  import { CHARACTERS_DATA, RARITY } from "@store/gamedata";
-  import { IMAGES } from "@store/sitedata";
+  import Icon from "#lib/components/Icon.svelte";
+  import ID from "#lib/util/alias.json";
+  import { filterlist } from "#store/filterlist.svelte.js";
+  import { CHARACTERS_DATA, RARITY } from "#store/gamedata.js";
+  import { IMAGES } from "#store/sitedata.js";
 
   let { data, baseKey, isRecommended = false, icon = false, fill = false } = $props();
 
@@ -72,7 +72,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style>
   .col {
     width: 75px;
     padding: 5px 2px;

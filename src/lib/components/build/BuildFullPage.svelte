@@ -1,14 +1,15 @@
 <script>
-  import { CHARACTERS_DATA } from '@store/gamedata';
-  import ID from '$lib/util/alias.json';
-  import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
-  import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
-  import BuildMainStats from './BuildMainStats.svelte';
-  import BuildManage from '$lib/components/build/BuildManage.svelte';
-  import BuildNotes from '$lib/components/build/BuildNotes.svelte';
-  import BuildSource from '$lib/components/build/BuildSource.svelte';
-  import BuildSubStats from '$lib/components/build/BuildSubStats.svelte';
-  import BuildWeapons from '$lib/components/build/BuildWeapons.svelte';
+  import BuildArtifactSet from "#lib/components/build/BuildArtifactSet.svelte";
+  import BuildCharacter from "#lib/components/build/BuildCharacter.svelte";
+  import BuildManage from "#lib/components/build/BuildManage.svelte";
+  import BuildNotes from "#lib/components/build/BuildNotes.svelte";
+  import BuildSource from "#lib/components/build/BuildSource.svelte";
+  import BuildSubStats from "#lib/components/build/BuildSubStats.svelte";
+  import BuildWeapons from "#lib/components/build/BuildWeapons.svelte";
+  import ID from "#lib/util/alias.json";
+  import { CHARACTERS_DATA } from "#store/gamedata.js";
+
+  import BuildMainStats from "./BuildMainStats.svelte";
 
   // Delete does not show in full page because build object is dynamically generated
   // from URL, and generated URL doesn't contain custom build ID; Build ID is
@@ -19,7 +20,9 @@
 <div class="content-row header">
   <BuildCharacter character={build.character} constellation={build.constellation} size="80px" />
   <div class="content-row name">
-    <h1>{CHARACTERS_DATA[build.character].data.name} · {build.name} <a href="./build#{link}">#</a></h1>
+    <h1>
+      {CHARACTERS_DATA[build.character].data.name} · {build.name} <a href="./build#{link}">#</a>
+    </h1>
   </div>
 </div>
 
@@ -27,7 +30,7 @@
   <div class="types">
     <span class="build-heading">Type:</span>
     {#each build.type as type, i}
-      {i !== 0 ? ' · ' : ''}{ID[type]}
+      {i !== 0 ? " · " : ""}{ID[type]}
     {/each}
   </div>
   <div class="content-row build-info align-center" style="--text-size: 0.8rem">
@@ -57,7 +60,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style>
   .build {
     @media only screen and (max-width: 960px) {
       width: 440px;

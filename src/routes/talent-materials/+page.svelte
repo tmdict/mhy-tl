@@ -1,8 +1,8 @@
 <script>
-  import Icon from "$lib/components/Icon.svelte";
-  import ID from "$lib/util/alias.json";
-  import { CHARACTERS_DATA, MATERIALS_DATA, RARITY } from "@store/gamedata";
-  import { IMAGES } from "@store/sitedata";
+  import Icon from "#lib/components/Icon.svelte";
+  import ID from "#lib/util/alias.json";
+  import { CHARACTERS_DATA, MATERIALS_DATA, RARITY } from "#store/gamedata.js";
+  import { IMAGES } from "#store/sitedata.js";
 
   const weekdays = ["Mon · Thur", "Tue · Fri", "Wed · Sat"];
 
@@ -95,7 +95,7 @@
   {/each}
 </div>
 
-<style lang="scss">
+<style>
   #content {
     margin-top: 40px;
   }

@@ -1,13 +1,15 @@
 <script>
-  import { ARTIFACTS_DATA, RARITY } from '@store/gamedata';
-  import { IMAGES } from '@store/sitedata';
-  import Icon from '$lib/components/Icon.svelte';
+  import Icon from "#lib/components/Icon.svelte";
+  import { ARTIFACTS_DATA, RARITY } from "#store/gamedata.js";
+  import { IMAGES } from "#store/sitedata.js";
 
   let { artifacts } = $props();
-  const data = $derived(artifacts.reduce((acc, a) => {
-    const aSet = a.set.reduce((aAcc, aname) => ({ ...aAcc, [aname]: ARTIFACTS_DATA[aname] }), {});
-    return { ...acc, ...aSet };
-  }, {}));
+  const data = $derived(
+    artifacts.reduce((acc, a) => {
+      const aSet = a.set.reduce((aAcc, aname) => ({ ...aAcc, [aname]: ARTIFACTS_DATA[aname] }), {});
+      return { ...acc, ...aSet };
+    }, {}),
+  );
 </script>
 
 {#each artifacts as artifact, i}
@@ -23,21 +25,21 @@
       >
         <Icon
           id={set}
-          title={details ? details['name'] : set}
+          title={details ? details["name"] : set}
           src={IMAGES[`/src/lib/img/artifact/${set}.png`]}
           rarity={RARITY[set]}
           size="50px"
           margin="0 2px"
           hasTooltip={true}
           tooltipContent={`
-          <span class="heading">${details ? details['name'] : set}</span><br />
+          <span class="heading">${details ? details["name"] : set}</span><br />
           ${
             details
               ? '<span class="highlight">2-Piece Bonus:</span> ' +
-                details['2p'] +
+                details["2p"] +
                 '<br /><span class="highlight">4-Piece Bonus:</span> ' +
-                details['4p']
-              : ''
+                details["4p"]
+              : ""
           }
         `}
         />
@@ -47,7 +49,7 @@
   </div>
 {/each}
 
-<style lang="scss">
+<style>
   .divider {
     border-left: 1px dashed var(--theme-border-gold);
     margin-left: 15px;

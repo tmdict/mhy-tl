@@ -1,14 +1,14 @@
 <script>
-  import { slide } from 'svelte/transition';
-  import { CHARACTERS_DATA } from '@store/gamedata';
-  import BuildArtifactSet from '$lib/components/build/BuildArtifactSet.svelte';
-  import BuildCharacter from '$lib/components/build/BuildCharacter.svelte';
-  import BuildMainStats from '$lib/components/build/BuildMainStats.svelte';
-  import BuildManage from '$lib/components/build/BuildManage.svelte';
-  import BuildNotes from '$lib/components/build/BuildNotes.svelte';
-  import BuildSource from '$lib/components/build/BuildSource.svelte';
-  import BuildSubStats from '$lib/components/build/BuildSubStats.svelte';
-  import BuildWeapons from '$lib/components/build/BuildWeapons.svelte';
+  import { slide } from "svelte/transition";
+  import BuildArtifactSet from "#lib/components/build/BuildArtifactSet.svelte";
+  import BuildCharacter from "#lib/components/build/BuildCharacter.svelte";
+  import BuildMainStats from "#lib/components/build/BuildMainStats.svelte";
+  import BuildManage from "#lib/components/build/BuildManage.svelte";
+  import BuildNotes from "#lib/components/build/BuildNotes.svelte";
+  import BuildSource from "#lib/components/build/BuildSource.svelte";
+  import BuildSubStats from "#lib/components/build/BuildSubStats.svelte";
+  import BuildWeapons from "#lib/components/build/BuildWeapons.svelte";
+  import { CHARACTERS_DATA } from "#store/gamedata.js";
 
   let { build, alt = false, showDetail = false } = $props();
 
@@ -25,15 +25,9 @@
   onclick={toggleDetails}
   onkeydown={toggleDetails}
 >
-  <div
-    class="content-row build-info"
-    style="--text-size: 0.8rem"
-  >
+  <div class="content-row build-info" style="--text-size: 0.8rem">
     <div class="content-row build-character">
-      <BuildCharacter
-        character={build.character}
-        constellation={build.c}
-      />
+      <BuildCharacter character={build.character} constellation={build.c} />
       <div class="content-col names">
         <div class="character-name">
           {CHARACTERS_DATA[build.character].data.name}
@@ -44,8 +38,7 @@
       </div>
     </div>
     <div class="content-row weapons">
-      <BuildWeapons weapons={build.weapon}
-      />
+      <BuildWeapons weapons={build.weapon} />
     </div>
     <div class="content-row build-stat">
       <div class="mainstats">
@@ -78,7 +71,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style>
   .build {
     @media only screen and (max-width: 940px) {
       border-top: 1px solid var(--theme-border-strong);
@@ -104,7 +97,7 @@
         width: 80px;
         padding-left: 10px;
         justify-content: center;
-        
+
         .character-name {
           font-weight: bold;
           margin-bottom: 5px;
@@ -118,7 +111,7 @@
         .build-name {
           color: var(--theme-site-secondary-main);
         }
-      
+
         @media only screen and (max-width: 940px) {
           width: 70px;
         }
@@ -139,7 +132,7 @@
       flex-wrap: wrap;
       align-items: center;
       font-size: 0.95em;
-      
+
       @media only screen and (max-width: 940px) {
         width: 100%;
         border-left: 0;
@@ -150,7 +143,7 @@
       .mainstats {
         width: 130px;
         padding: 5px 0;
-      
+
         @media only screen and (max-width: 940px) {
           width: 135px;
         }
@@ -159,7 +152,7 @@
       .substats {
         width: 220px;
         padding: 5px 10px;
-      
+
         @media only screen and (max-width: 940px) {
           padding: 5px 0;
         }
@@ -171,7 +164,7 @@
       height: 70px;
       margin-left: 10px;
       padding: 10px;
-      
+
       @media only screen and (max-width: 940px) {
         width: 100%;
         border-top: 1px dotted var(--theme-border-light);

@@ -9,13 +9,12 @@
       }
     }
   ],
-  "svelteStrictMode": false,
   "svelteAllowShorthand": true,
   "svelteIndentScriptAndStyle": true,
   "importOrder": [
     "^svelte",
     "^\\$app/",
-    "^\\$lib/",
+    "^#lib/",
     "<THIRD_PARTY_MODULES>",
     "",
     "^@/",

@@ -1,18 +1,18 @@
 <script>
   import { slide } from "svelte/transition";
-  import Achievement from "$lib/components/Achievement.svelte";
-  import AchievementFaq from "$lib/components/content/AchievementFaq.svelte";
-  import ManageData from "$lib/components/ManageData.svelte";
-  import ID from "$lib/util/alias.json";
-  import { highlight } from "$lib/util/highlight";
-  import { localData } from "@store/sitedata";
+  import Achievement from "#lib/components/Achievement.svelte";
+  import AchievementFaq from "#lib/components/content/AchievementFaq.svelte";
+  import ManageData from "#lib/components/ManageData.svelte";
+  import ID from "#lib/util/alias.json";
+  import { highlight } from "#lib/util/highlight.js";
+  import { localData } from "#store/sitedata.js";
   import Fuse from "fuse.js";
   import cloneDeep from "lodash.clonedeep";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   const filters = ["mondstadt", "liyue", "inazuma", "sumeru", "fontaine", "natlan"];
   const achievements = Object.values(
-    import.meta.glob("@data/achievements/*.yml", { eager: true, import: "default" }),
+    import.meta.glob("#data/achievements/*.yml", { eager: true, import: "default" }),
   );
 
   let searchTerm = $state("");
@@ -130,7 +130,7 @@
   <Achievement {achievement} alt={i % 2 != 0} />
 {/each}
 
-<style lang="scss">
+<style>
   .top {
     input {
       width: 90%;

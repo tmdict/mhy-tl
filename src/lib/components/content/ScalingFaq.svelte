@@ -62,7 +62,7 @@
   </li>
 </ul>
 
-<style lang="scss">
+<style>
   .highlight {
     color: var(--theme-site-primary-main);
     font-weight: bold;

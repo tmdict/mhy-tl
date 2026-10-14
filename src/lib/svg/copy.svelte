@@ -6,7 +6,7 @@
   />
 </svg>
 
-<style lang="scss">
+<style>
   svg {
     stroke: #777;
     fill: none;

@@ -5,7 +5,7 @@
   /></svg
 >
 
-<style lang="scss">
+<style>
   svg {
     fill: #72a6c0;
 

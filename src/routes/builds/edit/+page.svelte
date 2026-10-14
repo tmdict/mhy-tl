@@ -1,22 +1,22 @@
 <script>
-  import { browser } from "$app/environment";
-  import BuildFullPage from "$lib/components/build/BuildFullPage.svelte";
-  import EditorBuildArtifact from "$lib/components/editor/EditorBuildArtifact.svelte";
-  import EditorBuildStat from "$lib/components/editor/EditorBuildStat.svelte";
-  import EditorBuildType from "$lib/components/editor/EditorBuildType.svelte";
-  import EditorBuildWeapon from "$lib/components/editor/EditorBuildWeapon.svelte";
-  import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
-  import EditorTextArea from "$lib/components/editor/EditorTextArea.svelte";
-  import EditorTextField from "$lib/components/editor/EditorTextField.svelte";
-  import Copy from "$lib/svg/copy.svelte";
-  import ID from "$lib/util/alias.json";
-  import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from "$lib/util/codec";
-  import { parser } from "$lib/util/parser";
-  import { validator } from "$lib/util/validator";
-  import { availableInputs, editor } from "@store/editor.svelte";
-  import { CHARACTERS_DATA, WEAPONS_DATA } from "@store/gamedata";
-  import { localData } from "@store/sitedata";
-  import { toast } from "@store/toast";
+  import { browser } from "$app/env";
+  import BuildFullPage from "#lib/components/build/BuildFullPage.svelte";
+  import EditorBuildArtifact from "#lib/components/editor/EditorBuildArtifact.svelte";
+  import EditorBuildStat from "#lib/components/editor/EditorBuildStat.svelte";
+  import EditorBuildType from "#lib/components/editor/EditorBuildType.svelte";
+  import EditorBuildWeapon from "#lib/components/editor/EditorBuildWeapon.svelte";
+  import EditorDropdownList from "#lib/components/editor/EditorDropdownList.svelte";
+  import EditorTextArea from "#lib/components/editor/EditorTextArea.svelte";
+  import EditorTextField from "#lib/components/editor/EditorTextField.svelte";
+  import Copy from "#lib/svg/copy.svelte";
+  import ID from "#lib/util/alias.json";
+  import { compressBuild, decodeBuild, encodeBuild, extractBuild, hash } from "#lib/util/codec.js";
+  import { parser } from "#lib/util/parser.js";
+  import { validator } from "#lib/util/validator.js";
+  import { availableInputs, editor } from "#store/editor.svelte.js";
+  import { CHARACTERS_DATA, WEAPONS_DATA } from "#store/gamedata.js";
+  import { localData } from "#store/sitedata.js";
+  import { toast } from "#store/toast.js";
   import lzstring from "lz-string";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
@@ -339,7 +339,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style>
   h4 {
     margin: 0 20px;
     padding: 0px 4px 4px;

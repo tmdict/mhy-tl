@@ -1,6 +1,6 @@
 <script>
-  import ID from "$lib/util/alias.json";
-  import { filterlist } from "@store/filterlist.svelte";
+  import ID from "#lib/util/alias.json";
+  import { filterlist } from "#store/filterlist.svelte.js";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
 
@@ -31,7 +31,7 @@
   </ul>
 </div>
 
-<style lang="scss">
+<style>
   .filter {
     margin: 15px 40px;
     align-items: flex-start;

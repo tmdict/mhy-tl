@@ -1,8 +1,8 @@
 <script>
-  import EditorAutoComplete from "$lib/components/editor/EditorAutoComplete.svelte";
-  import ID from "$lib/util/alias.json";
-  import { buildtypes } from "@store/builds";
-  import { editor } from "@store/editor.svelte";
+  import EditorAutoComplete from "#lib/components/editor/EditorAutoComplete.svelte";
+  import ID from "#lib/util/alias.json";
+  import { buildtypes } from "#store/builds.js";
+  import { editor } from "#store/editor.svelte.js";
 
   const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
   let selectedOptions = $state(editor.build["type"] ? editor.build["type"] : []);
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style>
   .type-label {
     margin: 0 8px;
     max-width: 240px;

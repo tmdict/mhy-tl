@@ -1,22 +1,26 @@
 <script>
-  import { IMAGES } from '@store/sitedata';
-  import ID from '$lib/util/alias.json';
+  import ID from "#lib/util/alias.json";
+  import { IMAGES } from "#store/sitedata.js";
 
   let { type, stats } = $props();
 </script>
 
 <div class="content-row mainstat">
   <div class="icon">
-    <enhanced:img class="piece-img" src={IMAGES[`/src/lib/img/artifact-piece/${type}.png`]} alt={type} />
+    <enhanced:img
+      class="piece-img"
+      src={IMAGES[`/src/lib/img/artifact-piece/${type}.png`]}
+      alt={type}
+    />
   </div>
   <div>
     {#each stats as stat, i}
-      {i !== 0 ? ' · ' : ''}{ID[stat]}
+      {i !== 0 ? " · " : ""}{ID[stat]}
     {/each}
   </div>
 </div>
 
-<style lang="scss">
+<style>
   .mainstat {
     align-items: center;
     padding: 2px 0;

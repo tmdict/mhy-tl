@@ -16,7 +16,7 @@
   <input class="input" type="text" {placeholder} {id} {name} bind:value />
 </div>
 
-<style lang="scss">
+<style>
   .input-field {
     width: var(--input-width);
   }

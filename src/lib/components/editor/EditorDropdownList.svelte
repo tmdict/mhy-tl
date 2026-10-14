@@ -45,7 +45,7 @@
   </select>
 </div>
 
-<style lang="scss">
+<style>
   .input-field {
     width: var(--input-width);
   }

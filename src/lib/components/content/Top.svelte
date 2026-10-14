@@ -6,7 +6,7 @@
   </p>
 </div>
 
-<style lang="scss">
+<style>
   #intro {
     font-size: 1.1em;
     padding: 20px 40px;

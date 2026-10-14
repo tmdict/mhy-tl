@@ -1,9 +1,9 @@
 <script>
-  import { CHARACTERS_DATA, RARITY } from '@store/gamedata';
-  import { IMAGES } from '@store/sitedata';
-  import Icon from '$lib/components/Icon.svelte';
+  import Icon from "#lib/components/Icon.svelte";
+  import { CHARACTERS_DATA, RARITY } from "#store/gamedata.js";
+  import { IMAGES } from "#store/sitedata.js";
 
-  let { character, constellation, size = '50px' } = $props();
+  let { character, constellation, size = "50px" } = $props();
 </script>
 
 <div class="content-row character">
@@ -18,7 +18,7 @@
   {#if constellation > 0}<div class="overlay">{constellation}</div>{/if}
 </div>
 
-<style lang="scss">
+<style>
   .character {
     position: relative;
   }

@@ -115,7 +115,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style>
   label {
     padding: 6px 0 0 13px;
   }

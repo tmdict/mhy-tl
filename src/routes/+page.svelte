@@ -1,5 +1,5 @@
 <script>
-  import Top from "$lib/components/content/Top.svelte";
+  import Top from "#lib/components/content/Top.svelte";
 
   const links = [
     {
@@ -63,7 +63,7 @@
   </a>
 {/each}
 
-<style lang="scss">
+<style>
   a {
     color: var(--theme-text-normal);
 

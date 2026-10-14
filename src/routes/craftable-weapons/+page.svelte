@@ -1,12 +1,12 @@
 <script>
   import { slide } from "svelte/transition";
-  import { browser } from "$app/environment";
-  import CraftableWeaponsFaq from "$lib/components/content/CraftableWeaponsFaq.svelte";
-  import Icon from "$lib/components/Icon.svelte";
-  import ManageData from "$lib/components/ManageData.svelte";
-  import ID from "$lib/util/alias.json";
-  import { MISC_DATA, RARITY, WEAPONS_DATA } from "@store/gamedata";
-  import { IMAGES, localData } from "@store/sitedata";
+  import { browser } from "$app/env";
+  import CraftableWeaponsFaq from "#lib/components/content/CraftableWeaponsFaq.svelte";
+  import Icon from "#lib/components/Icon.svelte";
+  import ManageData from "#lib/components/ManageData.svelte";
+  import ID from "#lib/util/alias.json";
+  import { MISC_DATA, RARITY, WEAPONS_DATA } from "#store/gamedata.js";
+  import { IMAGES, localData } from "#store/sitedata.js";
 
   let showFaq = $state(false);
 
@@ -138,7 +138,7 @@
   {/each}
 </div>
 
-<style lang="scss">
+<style>
   #content {
     margin: 20px 0;
     min-width: 260px;

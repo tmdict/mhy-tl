@@ -1,10 +1,16 @@
 <script>
   let { references } = $props();
   const sources = {
-    ysmxt: { name: '原神冒险团', url: 'https://www.miyoushe.com/ys/collection/10772' },
-    ysjsgl: { name: 'Asgater: 角色攻略（含一图流）', url: 'https://www.miyoushe.com/ys/collection/613' },
-    ysytl: { name: '荧岁镇太辰: 原神角色一图流攻略', url: 'https://www.miyoushe.com/ys/collection/2558464' },
-    kqm: { name: 'Keqing Mains', url: 'https://keqingmains.com/' }
+    ysmxt: { name: "原神冒险团", url: "https://www.miyoushe.com/ys/collection/10772" },
+    ysjsgl: {
+      name: "Asgater: 角色攻略（含一图流）",
+      url: "https://www.miyoushe.com/ys/collection/613",
+    },
+    ysytl: {
+      name: "荧岁镇太辰: 原神角色一图流攻略",
+      url: "https://www.miyoushe.com/ys/collection/2558464",
+    },
+    kqm: { name: "Keqing Mains", url: "https://keqingmains.com/" },
   };
 
   function parseSource(source) {
@@ -12,7 +18,7 @@
     return {
       id: id,
       name: sources[id] ? sources[id].name : id,
-      src: src === 'default' ? sources[id].url : src
+      src: src === "default" ? sources[id].url : src,
     };
   }
 </script>
@@ -23,8 +29,8 @@
     <ul>
       {#each references as source}
         <li>
-          {#if parseSource(source).id === 'custom'}
-            {#if parseSource(source).src.slice(0, 8) === 'https://'}
+          {#if parseSource(source).id === "custom"}
+            {#if parseSource(source).src.slice(0, 8) === "https://"}
               <a href={parseSource(source).src}>{parseSource(source).src}</a>
             {:else}
               {parseSource(source).src}
@@ -44,7 +50,7 @@
   </div>
 {/if}
 
-<style lang="scss">
+<style>
   .source {
     line-height: 1.5em;
 

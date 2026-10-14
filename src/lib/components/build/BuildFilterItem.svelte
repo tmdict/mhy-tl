@@ -1,13 +1,14 @@
 <script>
-  import { filterlist } from "@store/filterlist.svelte"
-  import { IMAGES } from '@store/sitedata';
-  import ID from '$lib/util/alias.json';
-  import Icon from '$lib/components/Icon.svelte';
+  import Icon from "#lib/components/Icon.svelte";
+  import ID from "#lib/util/alias.json";
+  import { filterlist } from "#store/filterlist.svelte.js";
+  import { IMAGES } from "#store/sitedata.js";
 
   let { name, type, item } = $props();
 </script>
 
-<div class="filter-item"
+<div
+  class="filter-item"
   class:active={filterlist.get(name).quick === item || filterlist.get(name).common.includes(item)}
   role="presentation"
 >
@@ -19,15 +20,17 @@
     onclick={() => filterlist.updateQuickFilter(name, item)}
     onkeydown={() => filterlist.updateQuickFilter(name, item)}
   >
-    {#if type === 'icon'}
+    {#if type === "icon"}
       <Icon
-        enhance={['artifact', 'weapon-type'].includes(name)}
+        enhance={["artifact", "weapon-type"].includes(name)}
         id={item}
-        src={name === 'vision' ? `/img/${name}/${item}.svg` : IMAGES[`/src/lib/img/${name}/${item}.png`]}
-        size={name === 'artifact' ? '40px' : '25px'}
+        src={name === "vision"
+          ? `/img/${name}/${item}.svg`
+          : IMAGES[`/src/lib/img/${name}/${item}.png`]}
+        size={name === "artifact" ? "40px" : "25px"}
         margin="0 5px 0 0"
       />
-      {#if ['vision', 'weapon-type'].includes(name)}
+      {#if ["vision", "weapon-type"].includes(name)}
         {ID[item]}
       {/if}
     {:else}
@@ -44,7 +47,7 @@
   ></div>
 </div>
 
-<style lang="scss">
+<style>
   .filter-item {
     display: flex;
     font-size: 0.8em;

@@ -1,7 +1,7 @@
 <script>
-  import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
-  import { availableInputs, editor } from "@store/editor.svelte";
-  import { WEAPONS_DATA } from "@store/gamedata";
+  import EditorDropdownList from "#lib/components/editor/EditorDropdownList.svelte";
+  import { availableInputs, editor } from "#store/editor.svelte.js";
+  import { WEAPONS_DATA } from "#store/gamedata.js";
 
   // Pass in from parent so there's no error when character is changed to '-'
   let { weaponKey, availableWeapons } = $props();

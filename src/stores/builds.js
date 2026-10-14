@@ -1,5 +1,5 @@
-import { parser } from "$lib/util/parser";
-import { CHARACTERS_DATA } from "@store/gamedata";
+import { parser } from "#lib/util/parser.js";
+import { CHARACTERS_DATA } from "#store/gamedata.js";
 
 export const buildtypes = ["burst", "dps", "healer", "reaction", "shield", "sub-dps", "support"];
 
@@ -20,7 +20,7 @@ function parseBuilds(buildsData, charactersData) {
 }
 
 // Build Data
-const buildData = import.meta.glob("@data/builds/*.yml", { eager: true, import: "default" });
+const buildData = import.meta.glob("#data/builds/*.yml", { eager: true, import: "default" });
 export const BUILDS = parseBuilds(buildData, CHARACTERS_DATA);
 
 // Build Filters

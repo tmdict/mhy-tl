@@ -1,0 +1,31 @@
+:root {
+  --site-primary-main: #c05b4d;
+  --site-primary-alt: #2e86ab;
+  --site-primary-sub: #c05b4d;
+
+  --site-secondary-main: #2e86ab;
+  --site-secondary-alt: #c05b4d;
+  --site-secondary-sub: #eee;
+
+  --bg-site: #222;
+  --bg-container-main: #f8f7f6 url("/img/bg_light.gif");
+  --bg-container-alt: #e9e9e9;
+  --bg-highlight: #fff;
+  --bg-highlight-alt: #eee;
+
+  --text-normal: #333;
+  --text-highlight: #111;
+
+  --border-gold: #baaf81;
+  --border-light: #777;
+  --border-strong: #444;
+
+  --rarity-1: #a4a4a4;
+  --rarity-2: #5d8c81;
+  --rarity-3: #6faaca;
+  --rarity-4: #917ab1;
+  --rarity-5: #de9552;
+
+  --main-font: Verdana, Arial, "Microsoft YaHei", sans-serif;
+  --header-font: Georgia, serif;
+}

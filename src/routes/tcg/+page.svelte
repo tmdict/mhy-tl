@@ -81,7 +81,7 @@
 <div id="content">
   <div id="intro">
     <div class="img-container">
-      <enhanced:img src="$lib/img/tcg/whopperflower.png" alt="Pyro Whopperflower" />
+      <enhanced:img src="#lib/img/tcg/whopperflower.png" alt="Pyro Whopperflower" />
     </div>
     <p>
       In some TCG challenges, the Pyro Whopperflower has a passive skill called
@@ -107,7 +107,7 @@
   {/each}
 </div>
 
-<style lang="scss">
+<style>
   #intro {
     font-size: 1.1em;
     padding: 20px 40px;

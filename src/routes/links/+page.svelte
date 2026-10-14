@@ -196,7 +196,7 @@
   {/each}
 </div>
 
-<style lang="scss">
+<style>
   h4 {
     color: var(--theme-site-primary-alt);
     margin: 40px 0 5px;

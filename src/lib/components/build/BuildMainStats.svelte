@@ -1,5 +1,5 @@
 <script>
-  import BuildMainStat from '$lib/components/build/BuildMainStat.svelte';
+  import BuildMainStat from "#lib/components/build/BuildMainStat.svelte";
 
   let { mainstat, showHeader = true } = $props();
 </script>
@@ -11,7 +11,7 @@
   <BuildMainStat type="circlet-of-logos" stats={mainstat.circlet} />
 </div>
 
-<style lang="scss">
+<style>
   .mainstats {
     width: 150px;
   }

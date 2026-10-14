@@ -1,18 +1,20 @@
 <script>
-  import { filterlist } from "@store/filterlist.svelte"
-  import ID from '$lib/util/alias.json';
-  import BuildFilterItem from '$lib/components/build/BuildFilterItem.svelte';
+  import BuildFilterItem from "#lib/components/build/BuildFilterItem.svelte";
+  import ID from "#lib/util/alias.json";
+  import { filterlist } from "#store/filterlist.svelte.js";
 
-  const preventDefault = fn => e => (e.preventDefault(), fn.call(this, e));
-  let { filter, showFilter: initialShow } = $props()
-  let showFilter = $derived(initialShow ?? ['type', 'vision'].includes(filter.name))
+  const preventDefault = (fn) => (e) => (e.preventDefault(), fn.call(this, e));
+  let { filter, showFilter: initialShow } = $props();
+  let showFilter = $derived(initialShow ?? ["type", "vision"].includes(filter.name));
 </script>
 
 <div class="filter">
   <h4>
-    <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}>  
+    <a href="/#" onclick={preventDefault(() => (showFilter = !showFilter))}>
       {ID[filter.name]}
-      <span class="show">{#if showFilter}-{:else}+{/if}</span>
+      <span class="show"
+        >{#if showFilter}-{:else}+{/if}</span
+      >
     </a>
   </h4>
   {#if showFilter}
@@ -21,7 +23,11 @@
         <BuildFilterItem name={filter.name} type={filter.type} {item} />
       {/each}
       <div>
-        <a class="clear" href="/#" onclick={preventDefault(() => filterlist.resetByType(filter.name))}>
+        <a
+          class="clear"
+          href="/#"
+          onclick={preventDefault(() => filterlist.resetByType(filter.name))}
+        >
           Clear
         </a>
         ·
@@ -33,11 +39,11 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style>
   h4 {
     font-size: 0.85em;
     margin-left: 5px;
-    
+
     a {
       color: var(--theme-site-primary-main);
 

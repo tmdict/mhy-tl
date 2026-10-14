@@ -5,7 +5,7 @@
   /></svg
 >
 
-<style lang="scss">
+<style>
   svg {
     fill: #c05b4d;
     width: 22px;

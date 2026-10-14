@@ -5,7 +5,7 @@
   <a href="/links">Links</a> page.
 </p>
 
-<style lang="scss">
+<style>
   .notice {
     font-size: 1.1em;
     margin: 20px 40px 0;

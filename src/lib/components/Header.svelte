@@ -1,12 +1,12 @@
 <script>
   import { getContext } from "svelte";
-  import TopLightAlt from "$lib/img/top_alt_l.png?enhanced";
-  import TopAlt from "$lib/img/top_alt.png?enhanced";
-  import TopLight from "$lib/img/top_l.png?enhanced";
-  import Top from "$lib/img/top.png?enhanced";
-  import GitIcon from "$lib/svg/git.svelte";
-  import ToggleDark from "$lib/svg/moon.svelte";
-  import ToggleLight from "$lib/svg/sun.svelte";
+  import TopLightAlt from "#lib/img/top_alt_l.png?enhanced";
+  import TopAlt from "#lib/img/top_alt.png?enhanced";
+  import TopLight from "#lib/img/top_l.png?enhanced";
+  import Top from "#lib/img/top.png?enhanced";
+  import GitIcon from "#lib/svg/git.svelte";
+  import ToggleDark from "#lib/svg/moon.svelte";
+  import ToggleLight from "#lib/svg/sun.svelte";
 
   const { getTheme, toggle } = getContext("theme");
   let spin = $state(false);
@@ -91,7 +91,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style>
   #top {
     flex-flow: row wrap;
     display: flex;
@@ -196,19 +196,16 @@
     }
   }
 
-  %spin {
+  .spin-left {
     animation: spin 575ms cubic-bezier(0.075, 0.82, 0.17, 1.135);
   }
 
-  .spin-left {
-    @extend %spin;
-    @keyframes spin {
-      0% {
-        transform: scale(0) rotate(0deg);
-      }
-      100% {
-        transform: scale(1) rotate(-720deg);
-      }
+  @keyframes spin {
+    0% {
+      transform: scale(0) rotate(0deg);
+    }
+    100% {
+      transform: scale(1) rotate(-720deg);
     }
   }
 </style>

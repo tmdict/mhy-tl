@@ -1,5 +1,5 @@
 <script>
-  import ID from '$lib/util/alias.json';
+  import ID from "#lib/util/alias.json";
 
   let { stats, showHeader = true } = $props();
 </script>
@@ -12,13 +12,13 @@
     {#each stats as stat}
       {@const [id, value] = Object.entries(stat).flat()}
       <li>
-        {ID[id]}{#if value !== ''}: <span class="highlight">{value}</span>{/if}
+        {ID[id]}{#if value !== ""}: <span class="highlight">{value}</span>{/if}
       </li>
     {/each}
   </ol>
 </div>
 
-<style lang="scss">
+<style>
   .substats {
     width: 220px;
 

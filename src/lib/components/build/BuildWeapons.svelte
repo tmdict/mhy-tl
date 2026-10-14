@@ -1,13 +1,15 @@
 <script>
-  import { RARITY, WEAPONS_DATA } from '@store/gamedata';
-  import { IMAGES } from '@store/sitedata';
-  import ID from "$lib/util/alias.json";
-  import Icon from '$lib/components/Icon.svelte';
+  import Icon from "#lib/components/Icon.svelte";
+  import ID from "#lib/util/alias.json";
+  import { RARITY, WEAPONS_DATA } from "#store/gamedata.js";
+  import { IMAGES } from "#store/sitedata.js";
 
   let { weapons } = $props();
-  
-  const data = $derived(weapons.reduce((acc, w) => ({ ...acc, [w.name]: WEAPONS_DATA[w.name] }), {}));
-  let isHover = $state('');
+
+  const data = $derived(
+    weapons.reduce((acc, w) => ({ ...acc, [w.name]: WEAPONS_DATA[w.name] }), {}),
+  );
+  let isHover = $state("");
 </script>
 
 <div class="content-row align-center">
@@ -18,28 +20,33 @@
       role="presentation"
       onclick={(e) => e.stopPropagation()}
       onmouseenter={() => (isHover = weapon.name)}
-      onmouseleave={() => (isHover = '')}
+      onmouseleave={() => (isHover = "")}
     >
       <Icon
         id={weapon.name}
-        title={details ? details['name'] : weapon.name}
-        src={IMAGES[`/src/lib/img/weapon${isHover === weapon.name ? '-ascension/' : '/'}${weapon.name}.png`]}
+        title={details ? details["name"] : weapon.name}
+        src={IMAGES[
+          `/src/lib/img/weapon${isHover === weapon.name ? "-ascension/" : "/"}${weapon.name}.png`
+        ]}
         rarity={RARITY[weapon.name]}
         size="50px"
         margin="0 2px"
         hasTooltip={true}
         tooltipContent={`
-          <span class="heading">${details ? details['name'] : weapon.name}</span><br />
+          <span class="heading">${details ? details["name"] : weapon.name}</span><br />
           <span class="highlight">Sub Stat:</span> ${
-          data[weapon.name] ? ID[data[weapon.name].subStat] : ''
-        }<br />
+            data[weapon.name] ? ID[data[weapon.name].subStat] : ""
+          }<br />
           ${
             details
-              ? details['passiveDescription']
+              ? details["passiveDescription"]
                   .replace(/{{/g, '<span style="color:var(--theme-site-secondary-main)">')
-                  .replace(/}}/g, '</span>')
-                  .replace(/\/{2}/g, '</span>/<span style="color:var(--theme-site-secondary-main)">')
-              : ''
+                  .replace(/}}/g, "</span>")
+                  .replace(
+                    /\/{2}/g,
+                    '</span>/<span style="color:var(--theme-site-secondary-main)">',
+                  )
+              : ""
           }
         `}
       />
@@ -48,7 +55,7 @@
   {/each}
 </div>
 
-<style lang="scss">
+<style>
   .weapon {
     position: relative;
 

@@ -1,4 +1,4 @@
-import { ARTIFACTS_DATA, CHARACTERS_DATA, WEAPONS_DATA } from "@store/gamedata";
+import { ARTIFACTS_DATA, CHARACTERS_DATA, WEAPONS_DATA } from "#store/gamedata.js";
 
 // Collection of inputs used to populate dropdown boxes in the editor
 export const availableInputs = {

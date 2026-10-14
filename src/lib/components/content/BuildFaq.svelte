@@ -1,11 +1,11 @@
 <script>
   import { slide } from "svelte/transition";
-  import BuildArtifactSet from "$lib/components/build/BuildArtifactSet.svelte";
-  import BuildCharacter from "$lib/components/build/BuildCharacter.svelte";
-  import BuildMainStats from "$lib/components/build/BuildMainStats.svelte";
-  import BuildNotes from "$lib/components/build/BuildNotes.svelte";
-  import BuildSubStats from "$lib/components/build/BuildSubStats.svelte";
-  import BuildWeapons from "$lib/components/build/BuildWeapons.svelte";
+  import BuildArtifactSet from "#lib/components/build/BuildArtifactSet.svelte";
+  import BuildCharacter from "#lib/components/build/BuildCharacter.svelte";
+  import BuildMainStats from "#lib/components/build/BuildMainStats.svelte";
+  import BuildNotes from "#lib/components/build/BuildNotes.svelte";
+  import BuildSubStats from "#lib/components/build/BuildSubStats.svelte";
+  import BuildWeapons from "#lib/components/build/BuildWeapons.svelte";
 
   const exampleBuild = {
     character: "kaedehara-kazuha",
@@ -174,7 +174,7 @@
   </div>
 </div>
 
-<style lang="scss">
+<style>
   .example {
     min-width: 200px;
     border-top: 1px dotted var(--theme-border-gold);

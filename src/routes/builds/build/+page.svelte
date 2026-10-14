@@ -1,17 +1,18 @@
 <script>
-  import lzstring from 'lz-string';
-  import { browser } from '$app/environment';
-  import { CHARACTERS_DATA } from '@store/gamedata';
-  import BuildFullPage from '$lib/components/build/BuildFullPage.svelte';
-  import { decodeBuild, extractBuild } from '$lib/util/codec';
-  import { validator } from '$lib/util/validator';
+  import { browser } from "$app/env";
+  import BuildFullPage from "#lib/components/build/BuildFullPage.svelte";
+  import { decodeBuild, extractBuild } from "#lib/util/codec.js";
+  import { validator } from "#lib/util/validator.js";
+  import { CHARACTERS_DATA } from "#store/gamedata.js";
+  import lzstring from "lz-string";
 
-  const link = browser ? window.location.hash.substring(1) : '';
+  const link = browser ? window.location.hash.substring(1) : "";
   let build = $state({});
   try {
-    build = (link.length > 0)
-      ? decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)))
-      : {};
+    build =
+      link.length > 0
+        ? decodeBuild(extractBuild(lzstring.decompressFromEncodedURIComponent(link)))
+        : {};
   } catch (err) {
     console.log(`Failed to generate build link: ${err}`);
   }

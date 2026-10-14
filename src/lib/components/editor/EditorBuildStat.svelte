@@ -1,8 +1,8 @@
 <script>
-  import EditorDropdownList from "$lib/components/editor/EditorDropdownList.svelte";
-  import EditorTextField from "$lib/components/editor/EditorTextField.svelte";
-  import ID from "$lib/util/alias.json";
-  import { availableInputs, editor } from "@store/editor.svelte";
+  import EditorDropdownList from "#lib/components/editor/EditorDropdownList.svelte";
+  import EditorTextField from "#lib/components/editor/EditorTextField.svelte";
+  import ID from "#lib/util/alias.json";
+  import { availableInputs, editor } from "#store/editor.svelte.js";
 
   let { statKey } = $props();
   const keys = $derived(editor.getKeys.stat(statKey));

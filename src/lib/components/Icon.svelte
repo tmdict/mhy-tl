@@ -1,5 +1,5 @@
 <script>
-  import { tooltip } from "$lib/util/tooltip";
+  import { tooltip } from "#lib/util/tooltip.js";
 
   let {
     enhance = true,
@@ -42,7 +42,7 @@
   {/if}
 </div>
 
-<style lang="scss">
+<style>
   .icon {
     margin: var(--icon-margin, 10px);
 
